@@ -62,7 +62,9 @@ const SortOption = ({ value, label, current, onChange }: SortOptionProps) => (
       }`}
     >
       {current === value && (
-        <span className="text-zinc-900 dark:text-white text-sm font-black">✔</span>
+        <span className="text-zinc-900 dark:text-white text-sm font-black">
+          ✔
+        </span>
       )}
     </div>
     <input
@@ -263,22 +265,13 @@ export default function CookPot() {
   };
 
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-950 text-zinc-900 dark:text-white min-h-screen">
-      <div className="max-w-full mx-w-md">
-        {/* PAGE TITLE */}
-        <h1 className="flex items-center justify-center gap-2 text-4xl font-bold py-2">
-          <img
-            src="/icons/icon_cookpot.png"
-            className="w-14 h-14 object-contain"
-          />
-          <span>{t("title")}</span>
-        </h1>
-      </div>
+    <div className="bg-zinc-300 dark:bg-zinc-950 text-zinc-900 dark:text-white min-h-screen">
+      <div className="max-w-full pt-16 pb-1"></div>
       {/* STICKY SEARCH + FILTER + SORT + BACK TO TOP */}
-      <div className="sticky top-0 z-40 bg-zinc-100 dark:bg-zinc-950">
-        <div className="max-w-3xl mx-auto p-2 flex flex-col items-center gap-3">
-          {/* SEARCH */}
-          <div className="relative w-full max-w-md">
+      <div className="sticky top-14 z-40 bg-zinc-300 dark:bg-zinc-950 shadow-md">
+        <div className="max-w-4xl mx-auto p-2 flex flex-row items-center justify-center gap-3">
+          {/* SEARCH - Agora alinhado horizontalmente */}
+          <div className="relative w-full max-w-sm">
             <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-zinc-500 dark:text-white">
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </div>
@@ -319,7 +312,7 @@ export default function CookPot() {
                   selectRecipe(searchedRecipes[highlightIndex]);
                 }
               }}
-              className="w-full bg-white dark:bg-zinc-900 rounded-xl px-10 py-3 text-zinc-900 dark:text-white italic focus:outline-none focus:border-zinc-300 dark:focus:border-zinc-700 transition"
+              className="w-full bg-white dark:bg-zinc-900 rounded-xl px-10 py-2 text-zinc-900 dark:text-white italic focus:outline-none focus:border-zinc-300 dark:focus:border-zinc-700 transition"
             />
             {searchOpen && search && (
               <div
@@ -364,7 +357,7 @@ export default function CookPot() {
               </button>
 
               {!filtersOpen && (
-                <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
+                <div className="absolute top-9 mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white dark:bg-white dark:text-black text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
                   {t("filters.title")}
                 </div>
               )}
@@ -380,7 +373,7 @@ export default function CookPot() {
               </button>
 
               {!sortingOpen && (
-                <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
+                <div className="absolute top-9 mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white dark:bg-white dark:text-black text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
                   {t("sorting.title")}
                 </div>
               )}
@@ -399,8 +392,8 @@ export default function CookPot() {
                 </button>
               )}
 
-              <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
-                {t("backtotop")}
+              <div className="absolute top-9 mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white dark:bg-white dark:text-black text-xs font-semibold px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
+                {t("main.backtotop")}
               </div>
             </div>
 
@@ -437,7 +430,7 @@ export default function CookPot() {
                       />
                     </DropdownGroup>
 
-                    <div className="w-full h-1 bg-white/20" />
+                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
                     <DropdownGroup
                       title={t("filters.foodtype")}
@@ -461,7 +454,7 @@ export default function CookPot() {
                         ))}
                     </DropdownGroup>
 
-                    <div className="w-full h-1 bg-white/20" />
+                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
                     <DropdownGroup
                       title={t("filters.debuff.title")}
@@ -476,7 +469,7 @@ export default function CookPot() {
                       />
                     </DropdownGroup>
 
-                    <div className="w-full h-1 bg-white/20" />
+                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
                     <button
                       onClick={() => {
@@ -510,7 +503,7 @@ export default function CookPot() {
                       />
                     </DropdownGroup>
 
-                    <div className="w-full h-1 bg-white/20" />
+                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
                     <DropdownGroup
                       title={t("sorting.ordertype")}
@@ -558,7 +551,7 @@ export default function CookPot() {
                       />
                     </DropdownGroup>
 
-                    <div className="w-full h-1 bg-white/20" />
+                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
                     <button
                       onClick={() => {
@@ -577,7 +570,7 @@ export default function CookPot() {
         </div>
       </div>
       {/* CARD GRID */}
-      <div className="grid grid-cols-4 gap-5 font-bold m-6">
+      <div className="grid grid-cols-4 gap-5 font-bold m-6 select-none">
         {sortedRecipes.map((recipe, index) => (
           <div
             key={index}
@@ -641,7 +634,7 @@ export default function CookPot() {
                 "
               >
                 <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                {t("close")}
+                {t("main.close")}
               </button>
             </div>
 
@@ -655,7 +648,7 @@ export default function CookPot() {
             </h2>
 
             <div className="flex justify-center my-4">
-              <div className="w-100 h-1 bg-white/20"></div>
+              <div className="w-200 h-1 bg-zinc-200 dark:bg-zinc-700" />
             </div>
 
             {/* FOODTYPE + EFFECTS */}
@@ -741,7 +734,9 @@ export default function CookPot() {
 function FilterGroup({ title, children }: any) {
   return (
     <div className="flex flex-col gap-2">
-      <span className="text-sm font-semibold text-zinc-900 dark:text-white mb-1">{title}</span>
+      <span className="text-sm font-semibold text-zinc-900 dark:text-white mb-1">
+        {title}
+      </span>
       {children}
     </div>
   );
@@ -764,7 +759,11 @@ function CheckboxFilter({ label, checked, onChange }: any) {
           }
         `}
       >
-        {checked && <span className="text-zinc-900 dark:text-white text-xs font-bold">✔</span>}
+        {checked && (
+          <span className="text-zinc-900 dark:text-white text-xs font-bold">
+            ✔
+          </span>
+        )}
       </div>
 
       <input
@@ -836,7 +835,7 @@ function Stat({ icon, value, tooltip, isStatus = false }: any) {
         absolute bottom-full mb-2
         left-1/2 -translate-x-1/2
         hidden group-hover:block
-        bg-black text-white text-xs font-semibold
+        bg-black text-white dark:bg-white dark:text-black text-xs font-semibold
         px-3 py-1 rounded whitespace-nowrap
         shadow-lg z-50 pointer-events-none
       "
@@ -851,8 +850,10 @@ function FoodType({ type, t }: { type: string; t: (key: string) => string }) {
   return (
     <div className="relative group flex items-center gap-2 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded-full text-xs tracking-wide cursor-default">
       <img src="/icons/icon_foodtype.png" className="w-5 h-5 object-contain" />
-      <span className="text-zinc-900 dark:text-white">{t(`foodtypes.${type}`)}</span>
-      <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white text-xs px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
+      <span className="text-zinc-900 dark:text-white">
+        {t(`foodtypes.${type}`)}
+      </span>
+      <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white dark:bg-white dark:text-black text-xs px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">
         {t("tooltips.foodtype")}
       </div>
     </div>
@@ -881,7 +882,7 @@ function TopEffect({ icon, value, tooltip, enableTooltip = true }: any) {
             absolute bottom-full mb-2
             left-1/2 -translate-x-1/2
             hidden group-hover:block
-            bg-black text-white text-xs
+            bg-black text-white text-xs dark:bg-white dark:text-black
             px-3 py-1 rounded
             shadow-lg z-50
             whitespace-nowrap
