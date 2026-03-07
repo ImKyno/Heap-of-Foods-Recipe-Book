@@ -5,7 +5,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import { Footer } from "./components/Footer";
 import ClientSettings from "./settings_client"; 
-import Settings from "./settings";
 import "./globals.css";
 import { useTranslation } from "@/lib/i18n";
 
@@ -27,7 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${plusJakarta.className} antialiased flex flex-col min-h-screen`}>
           {children}
-          <Settings />
           <ClientSettings />
           <Footer />
       </body>

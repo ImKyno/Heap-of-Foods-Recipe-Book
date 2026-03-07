@@ -87,17 +87,17 @@ export default function Settings({
   const currentLang = LANGUAGES.find((l) => l.code === language);
 
   return (
-    <div className="fixed top-4 right-4 z-50 select-none text-white">
+    <div className="fixed top-4 right-4 z-50 select-none text-zinc-900 dark:text-white">
       {/* SETTINGS BUTTON */}
       <button
         onClick={() => setSettingsOpen(!settingsOpen)}
-        className="bg-z800 hover:bg-z700 px-4 py-2 rounded-xl flex items-center gap-2 cursor-pointer"
+        className="bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 px-4 py-2 rounded-xl flex items-center gap-2 cursor-pointer"
       >
         <FontAwesomeIcon icon={faGear} />
       </button>
 
       {settingsOpen && (
-        <div className="absolute right-0 mt-2 w-56 bg-z900 rounded-xl shadow-lg px-5 py-4 flex flex-col gap-3">
+        <div className="absolute right-0 mt-2 w-56 bg-white dark:bg-zinc-900 rounded-xl shadow-lg px-5 py-4 flex flex-col gap-3">
           {/* THEMES */}
           
           <div className="flex items-center justify-between">
@@ -112,27 +112,27 @@ export default function Settings({
                 relative w-14 h-7 rounded-full
                 transition-colors
                 cursor-pointer
-                ${darkMode ? "bg-z800" : "bg-z800"}
+                ${darkMode ? "bg-zinc-100 dark:bg-zinc-800" : "bg-zinc-100 dark:bg-zinc-800"}
               `}
             >
               <span
                 className={`
                   absolute top-0.5
                   flex items-center justify-center
-                  w-6 h-6 bg-white rounded-full shadow
+                  w-6 h-6 bg-zinc-100 dark:bg-white rounded-full shadow
                   transition-transform
                   ${darkMode ? "translate-x-7" : "translate-x-1"}
                 `}
               >
                 <FontAwesomeIcon
                   icon={darkMode ? faMoon : faSun}
-                  className="text-z800 text-xs"
+                  className="text-zinc-200 dark:text-zinc-800 text-xs"
                 />
               </span>
             </button>
           </div>
 
-          <div className="w-full h-1 bg-white/20" />
+          <div className="w-full h-1 bg-zinc-300/20 dark:bg-white/20" />
           
           {/* LANGUAGE */}
           <div className="flex flex-col gap-2" ref={langRef}>
@@ -143,7 +143,7 @@ export default function Settings({
 
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="w-full bg-z800 hover:bg-z700 rounded-lg px-3 py-2 flex items-center justify-between transition cursor-pointer"
+              className="w-full bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg px-3 py-2 flex items-center justify-between transition cursor-pointer"
             >
               <span>{currentLang?.label}</span>
 
@@ -155,12 +155,12 @@ export default function Settings({
 
             {/* LANGUAGE LIST */}
             {langOpen && (
-              <div className="bg-z800 rounded-lg overflow-hidden">
+              <div className="bg-zinc-100 dark:bg-zinc-800 rounded-lg overflow-hidden">
                 {LANGUAGES.map((lang) => (
                   <button
                     key={lang.code}
                     onClick={() => handleLanguageChange(lang.code as Lang)}
-                    className="w-full text-left px-3 py-2 hover:bg-z700 transition cursor-pointer"
+                    className="w-full text-left px-3 py-2 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition cursor-pointer"
                   >
                     {lang.label}
                   </button>
