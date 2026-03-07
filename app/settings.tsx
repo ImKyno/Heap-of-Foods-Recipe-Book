@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useTheme } from "next-themes";
 import { t, useTranslation, type Locale } from "@/lib/i18n"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +13,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 interface SettingsProps {
-  initialDarkMode?: boolean;
   initialLanguage?: string;
   onLanguageChange?: (lang: Locale) => void;
 }
@@ -25,43 +25,29 @@ const LANGUAGES = [
 ];
 
 export default function Settings({
-    initialDarkMode = false,
   initialLanguage = "en",
   onLanguageChange,
 }: SettingsProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(initialDarkMode);
   const [language, setLanguage] = useState<Lang>(initialLanguage as Lang);
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
-  // HOOK
+  // THEME HOOK
+  const { theme, setTheme } = useTheme();
+  const isDarkMode = theme === "dark";
+
+  // I18N HOOK
   const { locale, setLocale: setGlobalLocale } = useTranslation();
 
-  // LOAD SAVED PREFERENCES
+  // LOAD SAVED LANGUAGE PREFERENCE  
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
     const savedLang = localStorage.getItem("lang");
-
-    if (savedTheme) setDarkMode(savedTheme === "dark");
     if (savedLang) {
       setLanguage(savedLang as Lang);
-      setGlobalLocale(savedLang as Lang); // ✅ usar o setLocale do hook
+      setGlobalLocale(savedLang as Lang);
     }
   }, [setGlobalLocale]);
-
-  // APPLY THEME
-  useEffect(() => {
-  const html = document.documentElement;
-  if (darkMode) {
-    html.classList.add("dark");
-    html.classList.remove("light");
-  } else {
-    html.classList.add("light");
-    html.classList.remove("dark");
-  }
-  localStorage.setItem("theme", darkMode ? "dark" : "light");
-}, [darkMode]);
 
   // OUTSIDE CLICK
   useEffect(() => {
@@ -74,7 +60,9 @@ export default function Settings({
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const toggleDarkMode = () => setDarkMode(prev => !prev);
+  const toggleDarkMode = () => {
+    setTheme(isDarkMode ? "light" : "dark");
+  };
 
   const handleLanguageChange = (lang: Lang) => {
     setLanguage(lang);
@@ -102,7 +90,7 @@ export default function Settings({
           
           <div className="flex items-center justify-between">
             <span className="flex items-center gap-2 font-bold">
-              <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
+              <FontAwesomeIcon icon={isDarkMode ? faMoon : faSun} />
               {t("settings.theme")}
             </span>
 
@@ -112,7 +100,7 @@ export default function Settings({
                 relative w-14 h-7 rounded-full
                 transition-colors
                 cursor-pointer
-                ${darkMode ? "bg-zinc-100 dark:bg-zinc-800" : "bg-zinc-100 dark:bg-zinc-800"}
+                ${isDarkMode ? "bg-zinc-100 dark:bg-zinc-800" : "bg-zinc-100 dark:bg-zinc-800"}
               `}
             >
               <span
@@ -121,11 +109,11 @@ export default function Settings({
                   flex items-center justify-center
                   w-6 h-6 bg-zinc-100 dark:bg-white rounded-full shadow
                   transition-transform
-                  ${darkMode ? "translate-x-7" : "translate-x-1"}
+                  ${isDarkMode ? "translate-x-7" : "translate-x-1"}
                 `}
               >
                 <FontAwesomeIcon
-                  icon={darkMode ? faMoon : faSun}
+                  icon={isDarkMode ? faMoon : faSun}
                   className="text-zinc-200 dark:text-zinc-800 text-xs"
                 />
               </span>
