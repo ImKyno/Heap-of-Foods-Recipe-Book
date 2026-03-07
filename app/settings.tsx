@@ -12,7 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 interface SettingsProps {
-  initialDarkMode?: boolean;
   initialLanguage?: string;
   onLanguageChange?: (lang: Locale) => void;
 }
@@ -25,43 +24,39 @@ const LANGUAGES = [
 ];
 
 export default function Settings({
-    initialDarkMode = false,
   initialLanguage = "en",
   onLanguageChange,
 }: SettingsProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(initialDarkMode);
+  const [darkMode, setDarkMode] = useState(true); // Default to dark
   const [language, setLanguage] = useState<Lang>(initialLanguage as Lang);
   const [langOpen, setLangOpen] = useState(false);
   const langRef = useRef<HTMLDivElement>(null);
 
-  // HOOK
+  // I18N HOOK
   const { locale, setLocale: setGlobalLocale } = useTranslation();
 
-  // LOAD SAVED PREFERENCES
+  // LOAD SAVED PREFERENCES ON MOUNT
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     const savedLang = localStorage.getItem("lang");
-
-    if (savedTheme) setDarkMode(savedTheme === "dark");
+    
+    if (savedTheme) {
+      const isDark = savedTheme === "dark";
+      setDarkMode(isDark);
+      // Update DOM immediately 
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    }
+    
     if (savedLang) {
       setLanguage(savedLang as Lang);
-      setGlobalLocale(savedLang as Lang); // ✅ usar o setLocale do hook
+      setGlobalLocale(savedLang as Lang);
     }
   }, [setGlobalLocale]);
-
-  // APPLY THEME
-  useEffect(() => {
-  const html = document.documentElement;
-  if (darkMode) {
-    html.classList.add("dark");
-    html.classList.remove("light");
-  } else {
-    html.classList.add("light");
-    html.classList.remove("dark");
-  }
-  localStorage.setItem("theme", darkMode ? "dark" : "light");
-}, [darkMode]);
 
   // OUTSIDE CLICK
   useEffect(() => {
@@ -74,7 +69,18 @@ export default function Settings({
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const toggleDarkMode = () => setDarkMode(prev => !prev);
+  const toggleDarkMode = () => {
+    const newDarkMode = !darkMode;
+    setDarkMode(newDarkMode);
+    
+    // Update DOM and localStorage
+    if (newDarkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("theme", newDarkMode ? "dark" : "light");
+  };
 
   const handleLanguageChange = (lang: Lang) => {
     setLanguage(lang);
