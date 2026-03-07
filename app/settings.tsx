@@ -1,71 +1,174 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react";
+import { t, useTranslation, type Locale } from "@/lib/i18n"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGear,
+  faSun,
+  faMoon,
+  faLanguage,
+  faChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface SettingsProps {
-  initialDarkMode?: boolean
-  initialLanguage?: string
-  onLanguageChange?: (lang: string) => void
+  initialDarkMode?: boolean;
+  initialLanguage?: string;
+  onLanguageChange?: (lang: Locale) => void;
 }
 
+type Lang = "en" | "pt";
+
+const LANGUAGES = [
+  { code: "en", label: "English" },
+  { code: "pt", label: "Português" },
+];
+
 export default function Settings({
-  initialDarkMode = false,
+    initialDarkMode = false,
   initialLanguage = "en",
   onLanguageChange,
 }: SettingsProps) {
-  const [settingsOpen, setSettingsOpen] = useState(false)
-  const [darkMode, setDarkMode] = useState(initialDarkMode)
-  const [language, setLanguage] = useState(initialLanguage)
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(initialDarkMode);
+  const [language, setLanguage] = useState<Lang>(initialLanguage as Lang);
+  const [langOpen, setLangOpen] = useState(false);
+  const langRef = useRef<HTMLDivElement>(null);
 
-  // Atualiza o modo escuro no <html>
+  // HOOK
+  const { locale, setLocale: setGlobalLocale } = useTranslation();
+
+  // LOAD SAVED PREFERENCES
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode)
-  }, [darkMode])
+    const savedTheme = localStorage.getItem("theme");
+    const savedLang = localStorage.getItem("lang");
 
-  const toggleDarkMode = () => setDarkMode(!darkMode)
+    if (savedTheme) setDarkMode(savedTheme === "dark");
+    if (savedLang) {
+      setLanguage(savedLang as Lang);
+      setGlobalLocale(savedLang as Lang); // ✅ usar o setLocale do hook
+    }
+  }, [setGlobalLocale]);
 
-  const handleLanguageChange = (lang: string) => {
-    setLanguage(lang)
-    if (onLanguageChange) onLanguageChange(lang)
+  // APPLY THEME
+  useEffect(() => {
+  const html = document.documentElement;
+  if (darkMode) {
+    html.classList.add("dark");
+    html.classList.remove("light");
+  } else {
+    html.classList.add("light");
+    html.classList.remove("dark");
   }
+  localStorage.setItem("theme", darkMode ? "dark" : "light");
+}, [darkMode]);
+
+  // OUTSIDE CLICK
+  useEffect(() => {
+    const handleClick = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  const toggleDarkMode = () => setDarkMode(prev => !prev);
+
+  const handleLanguageChange = (lang: Lang) => {
+    setLanguage(lang);
+    setGlobalLocale(lang);
+    localStorage.setItem("lang", lang);
+    onLanguageChange?.(lang);
+    setLangOpen(false);
+  };
+
+  const currentLang = LANGUAGES.find((l) => l.code === language);
 
   return (
     <div className="fixed top-4 right-4 z-50">
+      {/* SETTINGS BUTTON */}
       <button
         onClick={() => setSettingsOpen(!settingsOpen)}
-        className="bg-zinc-800 hover:bg-zinc-700 text-white px-4 py-2 rounded-lg font-semibold transition"
+        className="bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-xl flex items-center gap-2"
       >
-        ⚙️
+        <FontAwesomeIcon icon={faGear} />
       </button>
 
       {settingsOpen && (
-        <div className="absolute right-0 mt-2 w-48 bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg p-4 flex flex-col gap-4">
-          {/* Dark / Light Mode */}
+        <div className="absolute right-0 mt-2 w-56 bg-zinc-900 border border-zinc-700 rounded-xl shadow-lg px-5 py-4 flex flex-col gap-3">
+          {/* THEMES */}
+          {/*
           <div className="flex items-center justify-between">
-            <span>Dark Mode</span>
-            <input
-              type="checkbox"
-              checked={darkMode}
-              onChange={toggleDarkMode}
-              className="toggle-checkbox"
-            />
+            <span className="flex items-center gap-2 font-bold">
+              <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
+              {t("settings.theme")}
+            </span>
+
+            <button
+              onClick={toggleDarkMode}
+              className={`
+                relative w-14 h-7 rounded-full
+                transition-colors
+                ${darkMode ? "bg-zinc-700" : "bg-zinc-600"}
+              `}
+            >
+              <span
+                className={`
+                  absolute top-0.5
+                  flex items-center justify-center
+                  w-6 h-6 bg-white rounded-full shadow
+                  transition-transform
+                  ${darkMode ? "translate-x-7" : "translate-x-1"}
+                `}
+              >
+                <FontAwesomeIcon
+                  icon={darkMode ? faMoon : faSun}
+                  className="text-zinc-800 text-xs"
+                />
+              </span>
+            </button>
           </div>
 
-          {/* Seleção de linguagem */}
-          <div className="flex flex-col gap-1">
-            <label className="text-sm font-semibold">Language</label>
-            <select
-              value={language}
-              onChange={(e) => handleLanguageChange(e.target.value)}
-              className="bg-zinc-800 text-white p-2 rounded-lg"
+          <div className="w-full h-1 bg-white/20" />
+          */}
+          {/* LANGUAGE */}
+          <div className="flex flex-col gap-2" ref={langRef}>
+            <label className="flex items-center gap-2 font-bold">
+              <FontAwesomeIcon icon={faLanguage} />
+              {t("settings.lang")}
+            </label>
+
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="w-full bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-lg px-3 py-2 flex items-center justify-between transition"
             >
-              <option value="en">English</option>
-              <option value="pt">Português</option>
-              <option value="es">Español</option>
-            </select>
+              <span>{currentLang?.label}</span>
+
+              <FontAwesomeIcon
+                icon={faChevronDown}
+                className={`transition ${langOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {/* LANGUAGE LIST */}
+            {langOpen && (
+              <div className="bg-zinc-800 border border-zinc-700 rounded-lg overflow-hidden">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => handleLanguageChange(lang.code as Lang)}
+                    className="w-full text-left px-3 py-2 hover:bg-zinc-700 transition"
+                  >
+                    {lang.label}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
     </div>
-  )
+  );
 }

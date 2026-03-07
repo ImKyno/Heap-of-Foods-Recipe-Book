@@ -1,21 +1,21 @@
-"use client"
+"use client";
 
-import { t } from "@/lib/i18n"
-import { useRouter } from "next/navigation"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons"
+import { useTranslation } from "@/lib/i18n";
+import { useRouter } from "next/navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
 
 export function Footer() {
-  const router = useRouter()
+  const { t } = useTranslation();
+  const router = useRouter();
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <footer className="border-t border-zinc-800 bg-zinc-900 font-bold">
-      <div className="max-w-8xl mx-auto px-6 py-10 text-zinc-400">
-
+      <div className="max-w-8xl mx-auto px-6 py-5 text-zinc-400">
         <div className="flex flex-col items-center gap-6">
           <div className="flex items-center gap-5">
             <a
@@ -71,11 +71,11 @@ export function Footer() {
           <button
             onClick={scrollToTop}
             className="flex items-center gap-2 text-sm bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-lg transition"
-          > 
+          >
             {t("footer.backtotop")}
           </button>
         </div>
       </div>
     </footer>
-  )
+  );
 }

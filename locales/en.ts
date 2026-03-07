@@ -1,10 +1,17 @@
 const en = {
   title: "Crock Pot Recipes",
   close: "Back",
+  backtotop: "Back to Top",
 
   search: {
-    title: "Search recipe...",
+    title: "Browse recipe...",
     notfound: "No recipe found with that name.",
+  },
+
+  settings: {
+    title: "Settings",
+    theme: "Theme",
+    lang: "Language",
   },
 
   footer: {
@@ -13,13 +20,14 @@ const en = {
     discord: "Join our Discord",
     workshop: "Workshop Page",
     kofi: "Support Me!",
-    description: `Heap of Foods is a mod for the game Don't Starve Together made by Kyno.
+    description: `Heap of Foods is a mod for Don't Starve Together made by Kyno.
     It is not affiliated with Klei Entertainment.
 
     A special thanks to everyone who made this mod possible! ❤️`
   },
 
   time: {
+    for: "for",
     second: "Second",
     seconds: "Seconds",
     minute: "Minute",
@@ -101,7 +109,8 @@ const en = {
   card: {
     temperature: {
       hot: "Hot",
-      cold: "Cold"
+      cold: "Cold",
+      none: "None",
     },
 
     debuff: {

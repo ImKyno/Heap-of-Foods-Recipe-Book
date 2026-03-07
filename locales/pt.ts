@@ -1,6 +1,18 @@
 const pt = {
   title: "Receitas da Panela",
   close: "Retornar",
+  backtotop: "Retornar ao Topo",
+
+  search: {
+    title: "Pesquisar receita...",
+    notfound: "Nenhuma receita com este nome foi encontrada.",
+  },
+
+  settings: {
+    title: "Configurações",
+    theme: "Tema",
+    lang: "Idioma",
+  },
 
   footer: {
     backtotop: "Retornar ao Topo",
@@ -8,15 +20,16 @@ const pt = {
     discord: "Entre em nosso Discord",
     workshop: "Página da Oficina",
     kofi: "Me Apoie!",
-    description: `Heap of Foods é um mod para o jogo Don't Starve Together feito por Kyno.
+    description: `Heap of Foods é um mod para o Don't Starve Together feito por Kyno.
     Este mod não é afiliado com a Klei Entertainment.
 
     Um obrigado especial para todos que tornaram esse mod possível! ❤️`
   },
   
   time: {
+    for: "por",
     second: "Segundo",
-    seconds: "Segundo",
+    seconds: "Segundos",
     minute: "Minuto",
     minutes: "Minutos",
     oneday: "1 Dia",
@@ -49,7 +62,7 @@ const pt = {
       sanity: "Sanidade",
       priority: "Prioridade de Cozimento",
       cooktime: "Tempo de Cozimento",
-      spoilage: "Tempo de Estragamento",
+      spoilage: "Tempo até Estragar",
     },
     clear: "Resetar para Padrão",
   },
@@ -60,7 +73,7 @@ const pt = {
     sanity: "Sanidade",
     priority: "Prioridade de Cozimento",
     cooktime: "Tempo de Cozimento",
-    spoilage: "Tempo de Estragamento",
+    spoilage: "Tempo até Estragar",
     stacksize: "Pilha de Cozimento",
     temperature: "Temperatura",
     foodtype: "Tipo da Receita",
@@ -96,7 +109,8 @@ const pt = {
   card: {
     temperature: {
       hot: "Quente",
-      cold: "Frio"
+      cold: "Frio",
+      none: "Nenhuma",
     },
 
     debuff: {
