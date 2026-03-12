@@ -1122,7 +1122,11 @@ const pt = {
     tillweed: "Tillweed",
     veggie: "Vegetal",
     wobster: "Lagosta",
-  }
+  },
+
+  seealso: {
+    label: "Veja também",
+  },
 }
 
 export default pt
