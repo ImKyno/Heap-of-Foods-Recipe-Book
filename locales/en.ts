@@ -1,6 +1,8 @@
 const en = {
   main: {
     close: "Back",
+    previous: "Previous",
+    next: "Next",
     backtotop: "Back to Top",
     cookpot: "Crock Pot",
     cookpot_warly: "Chef's Specials",

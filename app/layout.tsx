@@ -25,10 +25,12 @@ export const metadata: Metadata = {
   publisher: "Kyno",
   icons: {
     icon: [
-      { url: "/icons/misc/icon_hof.png", sizes: "any", type: "image/png" },
+      { url: "/icons/misc/icon_hof.png?v=2", sizes: "16x16", type: "image/png" },
+      { url: "/icons/misc/icon_hof.png?v=2", sizes: "32x32", type: "image/png" },
+      { url: "/icons/misc/icon_hof.png?v=2", sizes: "48x48", type: "image/png" }
     ],
     apple: [
-      { url: "/icons/misc/icon_hof.png", sizes: "any", type: "image/png" },
+      { url: "/icons/misc/icon_hof.png", sizes: "180x180", type: "image/png" }
     ],
   },
 };

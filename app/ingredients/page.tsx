@@ -11,6 +11,9 @@ import {
   faFilterCircleXmark,
   faArrowDownAZ,
   faCircleChevronUp,
+  faCircleChevronDown,
+  faCircleChevronLeft,
+  faCircleChevronRight,
   faArrowRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -335,6 +338,39 @@ export default function Ingredients() {
     scrollToCard(ingredient.name);
     setTimeout(() => setSelected(ingredient), 300);
   };
+
+  const selectedIndex = useMemo(() => {
+    if (!selected) return -1;
+    return sortedIngredients.findIndex(r => r.name === selected.name);
+  }, [selected, sortedIngredients]);
+
+  const goNext = () => {
+    if (selectedIndex < sortedIngredients.length - 1) {
+      setSelected(sortedIngredients[selectedIndex + 1]);
+    }
+  };
+
+  const goPrev = () => {
+    if (selectedIndex > 0) {
+      setSelected(sortedIngredients[selectedIndex - 1]);
+    }
+  };
+
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") setSelected(null);
+      if (e.key === "ArrowRight") goNext();
+      if (e.key === "ArrowLeft") goPrev();
+    }
+
+    if (selected) {
+      document.addEventListener("keydown", handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [selected, selectedIndex]);
 
   return (
     <div className="bg-zinc-300 dark:bg-zinc-950 text-zinc-900 dark:text-white min-h-screen">
@@ -689,8 +725,43 @@ export default function Ingredients() {
               className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
               onClick={() => setSelected(null)}
             >
+              <div className="flex items-center gap-6">
+                {/* PREVIOUS */}
+                {selectedIndex > 0 && (
+                  <div
+                    className="p-8 flex items-center justify-center"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="relative group">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          goPrev();
+                        }}
+                        className="text-5xl text-white/70 hover:text-white transition cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faCircleChevronLeft} />
+                      </button>
+                      <div
+                        className="
+                        absolute bottom-full mb-2
+                        left-1/2 -translate-x-1/2
+                        hidden group-hover:block
+                        bg-black text-white dark:bg-white dark:text-black
+                        text-xs font-semibold
+                        px-3 py-1 rounded
+                        whitespace-nowrap
+                        shadow-lg
+                        "
+                      >
+                        {t("main.previous")}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
               <div
-                className="bg-white dark:bg-zinc-900 rounded-2xl p-8 w-[750px] relative shadow-xl dark:shadow-none"
+                className="bg-white dark:bg-zinc-900 rounded-2xl p-8 w-[750px] relative shadow-xl dark:shadow-none scale-95"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="flex justify-end">
@@ -795,6 +866,39 @@ export default function Ingredients() {
                   </div>
                 ))}
               </div>
+              {/* NEXT */}
+              {selectedIndex < sortedIngredients.length - 1 && (
+                <div
+                  className="p-8 flex items-center justify-center"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <div className="relative group">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        goNext();
+                      }}
+                      className="text-5xl text-white/70 hover:text-white transition cursor-pointer"
+                    >
+                      <FontAwesomeIcon icon={faCircleChevronRight} />
+                    </button>
+                    <div
+                      className="
+                      absolute bottom-full mb-2
+                      left-1/2 -translate-x-1/2
+                      hidden group-hover:block
+                      bg-black text-white dark:bg-white dark:text-black
+                      text-xs font-semibold
+                      px-3 py-1 rounded
+                      whitespace-nowrap
+                      shadow-lg
+                      "
+                    >
+                      {t("main.next")}
+                    </div>
+                  </div>
+                </div>
+              )}
             </div>
           );
         })()}
