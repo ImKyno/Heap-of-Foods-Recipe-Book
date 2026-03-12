@@ -3,6 +3,8 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import { useTranslation } from "@/lib/i18n";
 import { usePageTitle } from "@/components/PageTitle";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import recipes from "@/data/recipes_cookpot_warly.json";
 import { recommendRecipe } from "@/lib/recommend";
 import SeeAlso from "@/components/SeeAlso";
@@ -404,6 +406,38 @@ export default function CookPotWarly() {
     };
   }, [selected, selectedIndex]);
 
+  const searchParams = useSearchParams();
+  const recipeParam = searchParams.get("recipe");
+  
+  useEffect(() => {
+    if (recipeParam) {
+      const recipe = sortedRecipes.find(r => r.name === recipeParam);
+      if (recipe) {
+        setSelected(recipe);
+        const element = document.getElementById(`recipe-${recipe.name}`);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    }
+  }, [recipeParam, sortedRecipes]);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (recipeParam) {
+      const recipe = sortedRecipes.find(r => r.name === recipeParam);
+      if (recipe) {
+        setSelected(recipe);
+        const element = document.getElementById(`recipe-${recipe.name}`);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+      router.replace("/recipes_warly", { scroll: false });
+    }
+  }, [recipeParam, sortedRecipes]);
+
   return (
     <div className="bg-zinc-300 dark:bg-zinc-950 text-zinc-900 dark:text-white min-h-screen">
       <div className="max-w-full pt-16 pb-1"></div>
@@ -462,7 +496,7 @@ export default function CookPotWarly() {
                 <div className="max-h-80 overflow-y-auto overscroll-contain">
                   {searchedRecipes.length === 0 && (
                     <div className="px-4 py-3 text-sm text-zinc-500 dark:text-white italic">
-                      {t("search.notfound")}
+                      {t("search.notfound.recipe")}
                     </div>
                   )}
                   {searchedRecipes.map((recipe, idx) => (

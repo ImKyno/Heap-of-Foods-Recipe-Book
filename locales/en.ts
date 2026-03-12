@@ -1,9 +1,12 @@
 const en = {
   main: {
     title: "Heap of Foods",
+    subtitle: "The Recipe Book",
     description: "A complete recipes sheet for the Heap of Foods Mod!",
+    randomrecipe: "Random Pick",
     close: "Back",
     previous: "Previous",
+    browsecategory: "or browse one of the categories...",
     next: "Next",
     backtotop: "Back to Top",
     cookpot: "Crock Pot",
@@ -43,10 +46,15 @@ const en = {
 
   search: {
     title: {
+      everything: "Browse recipe or ingredient...",
       recipe: "Browse recipe...",
       ingredient: "Browse ingredient...",
     },
-    notfound: "No recipe found with that name.",
+    notfound: {
+      everything: "No recipe or ingredient found with that name.",
+      recipe: "No recipe found with that name.",
+      ingredient: "No ingredient found with that name.",
+    },
   },
 
   settings: {
@@ -62,6 +70,7 @@ const en = {
     backtotop: "Back to Top",
     mainpage: "Main Page",
     discord: "Join our Discord",
+    download: "Download the Mod",
     workshop: "Workshop Page",
     kofi: "Support Me!",
     description: `Heap of Foods is a mod for Don't Starve Together made by Kyno.

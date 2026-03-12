@@ -2,6 +2,7 @@
 
 import { useTranslation } from "@/lib/i18n";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +10,10 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons";
 export function Footer() {
   const { t } = useTranslation();
   const router = useRouter();
+
+  const pathname = usePathname();
+
+  if (pathname === "/") return null;
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

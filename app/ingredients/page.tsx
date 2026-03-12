@@ -3,6 +3,8 @@
 import { useState, useMemo, useRef, useEffect } from "react";
 import { useTranslation } from "@/lib/i18n";
 import { usePageTitle } from "@/components/PageTitle";
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import ingredients from "@/data/ingredients.json";
 import Fuse from "fuse.js";
 
@@ -243,9 +245,8 @@ export default function Ingredients() {
   const fuse = useMemo(() => {
     return new Fuse(expandedIngredients, {
       keys: ["label"],
-      threshold: 0.35,
+      threshold: 0.4,
       ignoreLocation: true,
-      minMatchCharLength: 2,
     });
   }, [expandedIngredients]);
 
@@ -387,6 +388,38 @@ export default function Ingredients() {
     };
   }, [selected, selectedIndex]);
 
+  const searchParams = useSearchParams();
+  const ingredientParam = searchParams.get("ingredient");
+  
+  useEffect(() => {
+    if (ingredientParam) {
+      const ingredient = sortedIngredients.find(r => r.name === ingredientParam);
+      if (ingredient) {
+        setSelected(ingredient);
+        const element = document.getElementById(`ingredient-${ingredient.name}`);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    }
+  }, [ingredientParam, sortedIngredients]);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (ingredientParam) {
+      const ingredient = sortedIngredients.find(r => r.name === ingredientParam);
+      if (ingredient) {
+        setSelected(ingredient);
+        const element = document.getElementById(`ingredient-${ingredient.name}`);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+      router.replace("/ingredients", { scroll: false });
+    }
+  }, [ingredientParam, sortedIngredients]);
+
   return (
     <div className="bg-zinc-300 dark:bg-zinc-950 text-zinc-900 dark:text-white min-h-screen">
       <div className="max-w-full pt-16 pb-1"></div>
@@ -445,7 +478,7 @@ export default function Ingredients() {
                 <div className="max-h-80 overflow-y-auto overscroll-contain">
                   {searchedIngredients.length === 0 && (
                     <div className="px-4 py-3 text-sm text-zinc-500 dark:text-white italic">
-                      {t("search.notfound")}
+                      {t("search.notfound.ingredient")}
                     </div>
                   )}
                   {searchedIngredients.map((ingredient, idx) => (

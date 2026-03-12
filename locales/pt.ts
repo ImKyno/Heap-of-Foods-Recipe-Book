@@ -1,9 +1,12 @@
 const pt = {
   main: {
     title: "Heap of Foods",
+    subtitle: "O Livro de Receitas",
     description: "Um livro de receitas completo para o Mod Heap of Foods!",
+    randomrecipe: "Receita Aleatória",
     close: "Retornar",
     previous: "Anterior",
+    browsecategory: "...ou navegue por uma das categorias:",
     next: "Próximo",
     backtotop: "Retornar ao Topo",
     cookpot: "Panela",
@@ -12,23 +15,6 @@ const pt = {
     cookpot_jar: "Jarra de Conserva",
     cookpot_seasonal: "Sazonal",
     ingredients: "Ingredientes",
-  },
-
-  search: {
-    title: {
-      recipe: "Pesquisar receita...",
-      ingredient: "Pesquisar ingrediente...",
-    },
-    notfound: "Nenhuma receita com este nome foi encontrada.",
-  },
-
-  settings: {
-    title: "Configurações",
-    theme: {
-      dark: "Tema Escuro",
-      light: "Tema Claro",
-    },
-    lang: "Idioma",
   },
 
   pages: {
@@ -58,10 +44,33 @@ const pt = {
     },
   },
 
+  search: {
+    title: {
+      everything: "Pesquisar receita ou ingrediente...",
+      recipe: "Pesquisar receita...",
+      ingredient: "Pesquisar ingrediente...",
+    },
+    notfound: {
+      everything: "Nenhuma receita ou ingrediente com este nome foi encontrado.",
+      recipe: "Nenhuma receita com este nome foi encontrada.",
+      ingredient: "Nenhum ingrediente com este nome foi encontrado.",
+    },
+  },
+
+  settings: {
+    title: "Configurações",
+    theme: {
+      dark: "Tema Escuro",
+      light: "Tema Claro",
+    },
+    lang: "Idioma",
+  },
+
   footer: {
     backtotop: "Retornar ao Topo",
     mainpage: "Página Principal",
     discord: "Entre em nosso Discord",
+    download: "Baixe o Mod",
     workshop: "Página da Oficina",
     kofi: "Me Apoie!",
     description: `Heap of Foods é um mod para o Don't Starve Together feito por Kyno.
