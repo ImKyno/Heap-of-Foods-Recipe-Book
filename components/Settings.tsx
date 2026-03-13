@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import { useTheme } from "next-themes";
 import { t, useTranslation, type Locale } from "@/lib/i18n";
 import { usePageTitle } from "@/components/PageTitle";
@@ -60,13 +61,13 @@ export default function Settings({
   usePageTitle(t("pages.settings.title")); 
 
   return (
-    <div className="min-h-screen bg-zinc-300 dark:bg-zinc-800 text-zinc-900 dark:text-white flex flex-col items-center p-4 sm:p-6 md:p-8 pt-12 sm:pt-20">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-8 drop-shadow-md">
+    <div className="min-h-screen bg-zinc-300 dark:bg-zinc-800 text-zinc-900 dark:text-white flex flex-col items-center p-8 pt-20">
+      <h1 className="text-4xl font-bold mb-8 drop-shadow-md">
         {t("settings.title") || "Settings"}
       </h1>
 
       {/* CARD */}
-      <div className="w-full max-w-md px-4 sm:px-0 bg-white dark:bg-zinc-900 rounded-xl shadow-md p-4 sm:p-6 flex flex-col gap-6">
+      <div className="w-full max-w-md min-w-[300px] bg-white dark:bg-zinc-900 rounded-xl shadow-md p-6 flex flex-col gap-6">
         {/* THEME CARD */}
         <div className="flex items-center justify-between bg-zinc-200 dark:bg-zinc-800 p-4 rounded-lg">
           <span className="font-bold">

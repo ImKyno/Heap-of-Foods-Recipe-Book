@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react"
 import en from "@/locales/en"
 import pt from "@/locales/pt"
@@ -7,13 +6,7 @@ export type Locale = "en" | "pt"
 
 const locales = { en, pt }
 
-let currentLocale: Locale = (() => {
-  if (typeof window !== "undefined") {
-    const saved = localStorage.getItem("lang")
-    if (saved === "en" || saved === "pt") return saved
-  }
-  return "en"
-})()
+let currentLocale: Locale = "en"
 let listeners: (() => void)[] = []
 
 export function setLocale(locale: Locale) {
@@ -21,31 +14,13 @@ export function setLocale(locale: Locale) {
   listeners.forEach((fn) => fn())
 }
 
-export function t(path: string, params?: Record<string, string | number>): string {
+export function t(path: string): string {
   const keys = path.split(".")
-
   let result: any = locales[currentLocale]
   for (const key of keys) {
     result = result?.[key]
   }
-
-  if (result === undefined || result === null) {
-    let fallback: any = locales["en"]
-    for (const key of keys) {
-      fallback = fallback?.[key]
-    }
-    result = fallback ?? path
-  }
-
-  if (typeof result !== "string") return path
-
-  if (params) {
-    result = result.replace(/\{\{(\w+)\}\}/g, (_: string, key: string) =>
-      params[key] !== undefined ? String(params[key]) : `{{${key}}}`
-    )
-  }
-
-  return result
+  return result ?? path
 }
 
 // HOOK
