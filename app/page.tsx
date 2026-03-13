@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useTranslation } from "@/lib/i18n";
 import { usePageTitle } from "@/components/PageTitle";
+import { useRouter } from "next/navigation";
 import RandomRecipe from "../components/RandomRecipe";
 import DailyRecipe from "../components/DailyRecipe";
 
@@ -18,7 +19,6 @@ import {
   faMagnifyingGlass,
   faCircleQuestion,
   faGear,
-  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
 
@@ -27,6 +27,7 @@ import Fuse from "fuse.js";
 
 export default function HomePage() {
   const { t } = useTranslation();
+  const router = useRouter();
 
   usePageTitle(t("pages.home.title"));
 
@@ -47,7 +48,7 @@ export default function HomePage() {
       const query = item.name;
 
       if (currentPath !== "/ingredients") {
-        window.location.href = `/ingredients?ingredient=${query}`;
+        router.push(`/ingredients?ingredient=${query}`);
       } else {
         const element = document.getElementById(`ingredient-${query}`);
         if (element) {
@@ -66,7 +67,7 @@ export default function HomePage() {
       const page = recipePageMap[item.type] || "/recipes_cookpot";
 
       if (currentPath !== page) {
-        window.location.href = `${page}?recipe=${item.name}`;
+        router.push(`${page}?recipe=${item.name}`);
       } else {
         const element = document.getElementById(`recipe-${item.name}`);
         if (element) {
@@ -346,11 +347,6 @@ export default function HomePage() {
             label={t("footer.discord")}
             href="https://discord.gg/jjNr4Vvutn"
           />
-          <LocalButton
-            icon={faUsers}
-            label={t("footer.contributors")}
-            href="/contributors"
-          />
           <ExternalButton
             icon={faKoFi}
             label={t("footer.kofi")}
@@ -395,28 +391,6 @@ function ExternalButton({ icon, label, href }: any) {
     <a
       href={href}
       target="_blank"
-      className="
-      bg-zinc-100 dark:bg-zinc-900
-      px-6 py-4
-      rounded-xl
-      flex items-center gap-3
-      font-bold
-      text-lg
-      hover:scale-105
-      transition
-      shadow
-      "
-    >
-      <FontAwesomeIcon icon={icon} />
-      {label}
-    </a>
-  );
-}
-
-function LocalButton({ icon, label, href }: any) {
-  return (
-    <a
-      href={href}
       className="
       bg-zinc-100 dark:bg-zinc-900
       px-6 py-4
