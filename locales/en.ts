@@ -34,6 +34,7 @@ const en = {
     download: "Download the Mod",
     workshop: "Workshop Page",
     kofi: "Support Me!",
+    contributors: "Contributors",
     copyright: "© Copyright {{year}} - All rights reserved.",
     description: `Heap of Foods is a mod for Don't Starve Together made by Kyno.
     It is not affiliated with Klei Entertainment.
@@ -49,6 +50,9 @@ const en = {
         timer: "Next Recipe in:",
         details: "See more details",
       },
+    },
+    contributors: {
+      title: "Contributors",
     },
     cookpot: {
       title: "Crock Pot",
@@ -70,6 +74,24 @@ const en = {
     },
     settings: {
       title: "Settings",
+    },
+  },
+
+  contributors: {
+    title: "Contributors",
+    description: "This page celebrates all the extraordinary people who have contributed to this project. From generous donors to talented artists, content creators, guides and translators, every contribution is essential to the success of this mod!",
+    cta: "If you would like to have your card here, you can make a donation (never required, always appreciated!) on my Ko-fi or contribute to the mod on our Discord through betas, arts, translations and much more other things!",
+    nocontributors: "No contributors found.",
+    badges: {
+      donator: "Donator",
+      topdonator: "Top Donator",
+      contentcreator: "Content Creator",
+      moddev: "Programmer",
+      modartist: "Artist",
+      modtester: "Beta Tester",
+      modguide: "Guide Creator",
+      modlocpl: "Translator - Polski",
+      modloczh: "Translator - 简体中文",
     },
   },
 

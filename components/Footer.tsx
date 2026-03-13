@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer() {
   const { t } = useTranslation();
@@ -43,6 +43,14 @@ export function Footer() {
             >
               <FontAwesomeIcon icon={faDiscord} />
               {t("footer.discord")}
+            </a>
+
+            <a
+              href="/contributors"
+              className="flex items-center gap-2 hover:text-grey transition"
+            >
+              <FontAwesomeIcon icon={faUsers} />
+              {t("footer.contributors")}
             </a>
 
             <a

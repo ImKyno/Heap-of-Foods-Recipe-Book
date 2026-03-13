@@ -1,0 +1,108 @@
+[
+  {
+    "name": "adai1198",
+    "image": "/icons/contributors/contributor_adai1198.png",
+    "badges": ["contributors.badges.donator", "contributors.badges.moddev"]
+  },
+  {
+    "name": "alisonetc",
+    "image": "/icons/contributors/contributor_alisonetc.png",
+    "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "别偷我的小摸包Lotic",
+    "image": "/icons/contributors/contributor_lotic.png",
+    "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "DemonRebuilt",
+    "image": "/icons/contributors/contributor_demon_rebuilt.png",
+    "badges": ["contributors.badges.contentcreator"]
+  },
+  {
+    "name": "Dr_Brzeszczot",
+    "image": "/icons/contributors/contributor_dr_brzeszczot.png",
+    "badges": ["contributors.badges.modlocpl"]
+  },
+  {
+    "name": "Dmitry Grach",
+    "image": "/icons/contributors/contributor_dmitry.png",
+    "badges": ["contributors.badges.modguide"]
+  },
+  {
+    "name": "Eventide",
+    "image": "/icons/contributors/contributor_eventide.png",
+    "badges": ["contributors.badges.donator", "contributors.badges.modtester"]
+  },
+  {
+    "name": "Fliphe",
+    "image": "/icons/contributors/contributor_fliphe.png",
+    "badges": ["contributors.badges.modartist"]
+  },
+  {
+    "name": "Francierton Games",
+    "image": "/icons/contributors/contributor_francierton_games.png",
+    "badges": ["contributors.badges.modguide", "contributors.badges.contentcreator"],
+    "youtube": "https://www.youtube.com/@franciertongames/"
+  },
+  {
+    "name": "glooms",
+    "image": "/icons/contributors/contributor_glooms.png",
+    "badges": ["contributors.badges.donator", "contributors.badges.modartist", "contributors.badges.modtester"]
+  },
+  {
+    "name": "Jazzy Games",
+    "image": "/icons/contributors/contributor_jazzy_games.png",
+    "badges": ["contributors.badges.donator", "contributors.badges.contentcreator"],
+    "youtube": "https://www.youtube.com/@jazzysgames",
+    "twitch": "https://www.twitch.tv/jazzystarves"
+  },
+  {
+    "name": "Leonidas IV 💀",
+    "image": "/icons/contributors/contributor_leonidasiv.png",
+    "badges": ["contributors.badges.moddev"]
+  },
+  {
+    "name": "LeWasp",
+    "image": "/icons/contributors/contributor_lewasp.png",
+    "badges": ["contributors.badges.moddev"],
+    "specialIcon": "/icons/misc/icon_bloodtrail.png"
+  },
+  {
+    "name": "LunarShadow",
+    "image": "/icons/contributors/contributor_lunarshadow.png",
+    "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "Milanjorim7",
+    "image": "/icons/contributors/contributor_milanjorim7.png",
+    "badges": ["contributors.badges.modartist"],
+    "twitter": "https://twitter.com/milanjorim7"
+  },
+  {
+    "name": "Mina",
+    "image": "/icons/contributors/contributor_mina.png",
+    "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "NanaHugs 💕",
+    "image": "/icons/contributors/contributor_nanahugs.png",
+    "badges": ["contributors.badges.donator"],
+    "twitch": "https://www.twitch.tv/nanahugs"
+  },
+  {
+    "name": "Pep",
+    "image": "/icons/contributors/contributor_pep.png",
+    "badges": ["contributors.badges.donator", "contributors.badges.modartist"]
+  },
+  {
+    "name": "Sir Eugene",
+    "image": "/icons/contributors/contributor_sir_eugene.png",
+    "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "糖豆罐里好多颜色",
+    "image": "/icons/contributors/contributor_tangdouguanli.png",
+    "badges": ["contributors.badges.modloczh"]
+  }
+]
