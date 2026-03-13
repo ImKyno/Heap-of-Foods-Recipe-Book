@@ -425,7 +425,7 @@ export default function Ingredients() {
       <div className="max-w-full pt-14"></div>
       {/* STICKY SEARCH + FILTER + SORT + BACK TO TOP */}
       <div className="sticky top-14 z-40 bg-zinc-300 dark:bg-zinc-800 shadow-md">
-        <div className="max-w-4xl mx-auto p-1 sm:p-2 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="max-w-4xl mx-auto p-2 flex flex-row items-center justify-center gap-3">
           {/* SEARCH - Agora alinhado horizontalmente */}
           <div className="relative w-full max-w-sm">
             <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-zinc-500 dark:text-white">
@@ -563,7 +563,7 @@ export default function Ingredients() {
               <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 flex items-start gap-4 z-50">
                 {/* FILTER PANEL */}
                 {filtersOpen && (
-                  <div className="w-11/12 sm:w-[700px] max-h-[420px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl overflow-hidden shadow-sm dark:shadow-none">
+                  <div className="w-[700px] max-h-[420px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl overflow-hidden shadow-sm dark:shadow-none">
                     <div className="max-h-[420px] overflow-y-auto overscroll-contain p-4 flex flex-col gap-2 font-bold">
                       <DropdownGroup
                         title={t("filters.foodtype")}
@@ -625,7 +625,7 @@ export default function Ingredients() {
 
                 {/* SORT PANEL */}
                 {sortingOpen && (
-                  <div className="w-11/12 sm:w-[300px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 flex flex-col gap-3 font-bold shadow-sm dark:shadow-none">
+                  <div className="w-[300px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 flex flex-col gap-3 font-bold shadow-sm dark:shadow-none">
                     <DropdownGroup
                       title={t("sorting.directiontype")}
                       icon="/icons/cooking/icon_priority.png"
@@ -701,7 +701,7 @@ export default function Ingredients() {
         </div>
       </div>
       {/* CARD GRID */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5 font-bold m-6 select-none relative">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 font-bold m-6 select-none relative">
         {sortedIngredients.length === 0 && (
           <div className="col-span-full flex flex-col items-center justify-center text-center py-40">
             <FontAwesomeIcon
@@ -773,20 +773,43 @@ export default function Ingredients() {
               className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
               onClick={() => setSelected(null)}
             >
-              {/* PREVIOUS */}
-              {selectedIndex > 0 && (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    goPrev();
-                  }}
-                  className="absolute left-2 sm:left-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
-                >
-                  <FontAwesomeIcon icon={faCircleChevronLeft} />
-                </button>
-              )}
+              <div className="flex items-center gap-6">
+                {/* PREVIOUS */}
+                {selectedIndex > 0 && (
+                  <div
+                    className="p-8 flex items-center justify-center"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <div className="relative group">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          goPrev();
+                        }}
+                        className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faCircleChevronLeft} />
+                      </button>
+                      <div
+                        className="
+                        absolute bottom-full mb-2
+                        left-1/2 -translate-x-1/2
+                        hidden group-hover:block
+                        bg-black text-white dark:bg-white dark:text-black
+                        text-xs font-semibold
+                        px-3 py-1 rounded
+                        whitespace-nowrap
+                        shadow-lg
+                        "
+                      >
+                        {t("main.previous")}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
               <div
-                className="bg-white dark:bg-zinc-900 rounded-2xl p-4 sm:p-8 w-11/12 md:w-[750px] max-h-[90vh] overflow-y-auto relative shadow-xl dark:shadow-none"
+                className="bg-white dark:bg-zinc-900 rounded-2xl p-8 w-[750px] relative shadow-xl dark:shadow-none scale-95"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="flex justify-end">
@@ -893,15 +916,36 @@ export default function Ingredients() {
               </div>
               {/* NEXT */}
               {selectedIndex < sortedIngredients.length - 1 && (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    goNext();
-                  }}
-                  className="absolute right-2 sm:right-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
+                <div
+                  className="p-8 flex items-center justify-center"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <FontAwesomeIcon icon={faCircleChevronRight} />
-                </button>
+                  <div className="relative group">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        goNext();
+                      }}
+                      className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
+                    >
+                      <FontAwesomeIcon icon={faCircleChevronRight} />
+                    </button>
+                    <div
+                      className="
+                      absolute bottom-full mb-2
+                      left-1/2 -translate-x-1/2
+                      hidden group-hover:block
+                      bg-black text-white dark:bg-white dark:text-black
+                      text-xs font-semibold
+                      px-3 py-1 rounded
+                      whitespace-nowrap
+                      shadow-lg
+                      "
+                    >
+                      {t("main.next")}
+                    </div>
+                  </div>
+                </div>
               )}
             </div>
           );
@@ -972,7 +1016,7 @@ function DropdownGroup({ title, icon, children }: any) {
 
 function Block({ children }: any) {
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap justify-evenly items-center gap-y-3 mb-5 min-h-[70px] shadow-sm dark:shadow-none">
+    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex justify-evenly items-center mb-5 min-h-[70px] shadow-sm dark:shadow-none">
       {children}
     </div>
   );
@@ -1002,7 +1046,7 @@ function Stat({ icon, value, tooltip, isStatus = false }: any) {
   }
 
   return (
-    <div className="relative group flex items-center gap-3 min-w-[110px] justify-center">
+    <div className="relative group flex items-center gap-3 min-w-[120px] justify-center">
       <img src={icon} className="w-9 h-9 object-contain" />
 
       <span className={`text-base font-semibold ${colorClass}`}>
