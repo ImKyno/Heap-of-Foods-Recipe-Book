@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Heap of Foods - The Recipe Book
 
-## Getting Started
+An interactive recipe and ingredient search platform for the Heap of Foods Mod.  
+Discover and learn how to cook every recipe the mod has to offer!
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **🔍 Advanced Search**: Search for recipes and ingredients with fuzzy matching support using Fuse.js
+- **🌍 Multi-language Support**: Browse content in multiple languages (English, Portuguese, and more)
+- **🎨 Dark/Light Theme**: Toggle between dark and light themes with persistent preferences
+- **📖 Recipe Book**: Browse recipes for different cooking methods:
+  - Crock Pot Recipes
+  - Chef's Special (Warly Recipes)
+  - Wooden Keg Recipes
+  - Preserves Jar Recipes
+  - Seasonal Recipes (Available During Special Events)
+- **🎲 Random & Daily Recipes**: Get inspired with random recipe suggestions or a recipe of the day
+- **👥 Contributors**: View community contributors
+- **⚙️ Settings**: Customize your experience with personalized settings
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Searching for Recipes
+1. Click the search icon on the home page
+2. Type to search for recipes or ingredients
+3. Results will appear in real-time with fuzzy matching
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Browsing Categories
+Navigate through the different recipe collections using the navigation menu:
+- Crock Pot Recipes
+- Chef's Special (Warly Recipes)
+- Wooden Keg Recipes
+- Preserves Jar Recipes
+- Seasonal Recipes (Available During Special Events)
 
-## Learn More
+### Settings
+Click the settings icon to customize your experience with available preferences.
 
-To learn more about Next.js, take a look at the following resources:
+## Data Source
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Recipe data is extracted from Heap of Foods Mod files using the collection of scripts in the `scripts/` directory. The raw game data files are located in `scripts/recipes_data/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+We welcome contributions! You can help by:
+- Reporting bugs
+- Suggesting new features
+- Improving translations
+- Adding new recipe data
+- Improving documentation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+See our [contributors page](./app/contributors/page.tsx) to view all contributors.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Community
+
+Join our community:
+- 🎮 [Download the Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2334209327)
+- 💬 [Join our Discord](https://discord.gg/jjNr4Vvutn)
+- ☕ [Ko-Fi Support](https://ko-fi.com/kynoox)
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Next.js](https://nextjs.org)
+- Game data from Don't Starve Together.
+- Icons from FontAwesome and Lucide React.
+- All contributors who help maintain and improve Heap of Foods Mod.

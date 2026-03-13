@@ -27,7 +27,7 @@ const PERISH_MAP = {
 }
 
 const BLOCKED_RECIPES = new Set([
-  "kyno_foods_seasonal", // The actual table is being extracted...
+  "kyno_foods_seasonal",
 ])
 
 const IGNORE_DEBUFF_RECIPES = new Set([

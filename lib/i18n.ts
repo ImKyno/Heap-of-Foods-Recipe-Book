@@ -7,7 +7,6 @@ export type Locale = "en" | "pt"
 
 const locales = { en, pt }
 
-// Contexto para gerenciar locale globalmente
 const LocaleContext = createContext<Locale>("en")
 
 let currentLocale: Locale = "en"
@@ -26,7 +25,6 @@ export function getLocale(): Locale {
 }
 
 export function t(path: string, params?: Record<string, string | number>): string {
-  // Usa o locale global que foi sincronizado
   const activeLocale = currentLocale
   const keys = path.split(".")
 
@@ -62,11 +60,9 @@ export function useTranslation() {
   useEffect(() => {
     setIsClient(true)
     
-    // Sincroniza com o localStorage quando o componente monta
     const saved = localStorage.getItem("lang")
     const initialLocale = (saved === "en" || saved === "pt") ? saved : "en"
     
-    // Atualiza o locale global
     currentLocale = initialLocale
     setLocaleState(initialLocale)
 

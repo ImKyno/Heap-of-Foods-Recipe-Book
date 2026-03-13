@@ -8,7 +8,6 @@ export function ThemeInitializer() {
   const { theme, setTheme, systemTheme } = useTheme();
 
   useEffect(() => {
-    // Sincroniza idioma e tema globais
     try {
       const savedLang = localStorage.getItem("lang");
       if (savedLang === "en" || savedLang === "pt") {
@@ -16,7 +15,6 @@ export function ThemeInitializer() {
       }
     } catch (e) {}
 
-    // Garante que o tema está aplicado corretamente após hidratação
     const savedTheme = localStorage.getItem("theme");
     
     if (savedTheme === "dark" || savedTheme === "light") {
@@ -26,7 +24,6 @@ export function ThemeInitializer() {
     }
   }, [setTheme, systemTheme]);
 
-  // Monitora mudanças no localStorage
   useEffect(() => {
     const applyTheme = () => {
       try {
@@ -53,7 +50,6 @@ export function ThemeInitializer() {
     return () => timeouts.forEach(t => clearTimeout(t));
   }, []);
 
-  // Observer global para garantir que a classe não seja removida
   useEffect(() => {
     const observer = new MutationObserver(() => {
       try {
@@ -76,7 +72,6 @@ export function ThemeInitializer() {
     return () => observer.disconnect();
   }, []);
 
-  // Listener para mudanças no localStorage (sincroniza entre abas)
   useEffect(() => {
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === 'theme') {

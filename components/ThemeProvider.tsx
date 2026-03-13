@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   useEffect(() => {
-    // Força a aplicação do tema no próximo frame para evitar flash
     const applyTheme = () => {
       try {
         const theme = localStorage.getItem('theme');
