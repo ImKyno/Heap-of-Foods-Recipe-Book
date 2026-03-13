@@ -290,7 +290,7 @@ export default function HomePage() {
         </div>
 
         {/* CATEGORIES */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-25 mb-6 w-full justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-6 mb-6 w-full justify-items-center">
           <CategoryCard
             icon="/icons/misc/icon_cookpot.png"
             label={t("main.cookpot")}
@@ -323,7 +323,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="w-263 h-1 bg-zinc-700/20 dark:bg-white/20" />
+        <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
         {/* EXTERNAL LINKS */}
         <div className="flex flex-wrap justify-center m-6 gap-6 mb-10 w-full">

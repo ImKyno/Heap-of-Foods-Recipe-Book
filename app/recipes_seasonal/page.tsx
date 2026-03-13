@@ -860,43 +860,20 @@ export default function CookPotSeasonal() {
           className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
           onClick={() => setSelected(null)}
         >
-          <div className="flex items-center gap-6">
-            {/* PREVIOUS */}
-            {selectedIndex > 0 && (
-              <div
-                className="p-8 flex items-center justify-center"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <div className="relative group">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      goPrev();
-                    }}
-                    className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
-                  >
-                    <FontAwesomeIcon icon={faCircleChevronLeft} />
-                  </button>
-                  <div
-                    className="
-                    absolute bottom-full mb-2
-                    left-1/2 -translate-x-1/2
-                    hidden group-hover:block
-                    bg-black text-white dark:bg-white dark:text-black
-                    text-xs font-semibold
-                    px-3 py-1 rounded
-                    whitespace-nowrap
-                    shadow-lg
-                    "
-                  >
-                    {t("main.previous")}
-                  </div>
-                </div>
-              </div>
-            )}
-          </div>
+          {/* PREVIOUS */}
+          {selectedIndex > 0 && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                goPrev();
+              }}
+              className="absolute left-2 sm:left-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
+            >
+              <FontAwesomeIcon icon={faCircleChevronLeft} />
+            </button>
+          )}
           <div
-            className="bg-white dark:bg-zinc-900 rounded-2xl p-8 w-11/12 md:w-[750px] relative shadow-xl dark:shadow-none scale-95"
+            className="bg-white dark:bg-zinc-900 rounded-2xl p-4 sm:p-8 w-11/12 md:w-[750px] max-h-[90vh] overflow-y-auto relative shadow-xl dark:shadow-none"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-end">
@@ -930,7 +907,7 @@ export default function CookPotSeasonal() {
             </h2>
 
             <div className="flex justify-center my-4">
-              <div className="w-200 h-1 bg-zinc-200 dark:bg-zinc-700" />
+              <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
             </div>
             <Block
               showInfo={true}
@@ -966,7 +943,7 @@ export default function CookPotSeasonal() {
               <IngredientsTable recipe={selected} />
             </Block>
             <div className="flex justify-center my-3">
-              <div className="w-200 h-1 bg-zinc-200 dark:bg-zinc-700" />
+              <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
             </div>
             {/* FOODTYPE + EFFECTS */}
             <div className="flex justify-center items-center gap-4 mb-3 mt-2 flex-wrap font-semibold">
@@ -1069,36 +1046,15 @@ export default function CookPotSeasonal() {
           </div>
           {/* NEXT */}
           {selectedIndex < sortedRecipes.length - 1 && (
-            <div
-              className="p-8 flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                goNext();
+              }}
+              className="absolute right-2 sm:right-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
             >
-              <div className="relative group">
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    goNext();
-                  }}
-                  className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
-                >
-                  <FontAwesomeIcon icon={faCircleChevronRight} />
-                </button>
-                <div
-                  className="
-                  absolute bottom-full mb-2
-                  left-1/2 -translate-x-1/2
-                  hidden group-hover:block
-                  bg-black text-white dark:bg-white dark:text-black
-                  text-xs font-semibold
-                  px-3 py-1 rounded
-                  whitespace-nowrap
-                  shadow-lg
-                  "
-                >
-                  {t("main.next")}
-                </div>
-              </div>
-            </div>
+              <FontAwesomeIcon icon={faCircleChevronRight} />
+            </button>
           )}
         </div>
       )}
@@ -1185,7 +1141,7 @@ function Block({ children, showInfo = false, infoText, infoLink }: BlockProps) {
   }, []);
 
   return (
-    <div className="relative bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex justify-evenly items-center mb-5 min-h-[70px] shadow-sm dark:shadow-none">
+    <div className="relative bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap gap-x-2 gap-y-2 justify-center items-center mb-5 min-h-[70px] shadow-sm dark:shadow-none">
       {showInfo && (
         <div ref={boxRef} className="absolute top-1 right-2">
           <button
@@ -1196,7 +1152,7 @@ function Block({ children, showInfo = false, infoText, infoLink }: BlockProps) {
           </button>
 
           {open && (
-            <div className="absolute top-full right-0 mt-2 w-[440px] bg-black text-white dark:bg-white dark:text-black text-[12px] px-4 py-3 rounded shadow z-30 text-left leading-relaxed">
+            <div className="absolute top-full right-0 mt-2 w-72 max-w-[calc(100vw-2rem)] break-words bg-black text-white dark:bg-white dark:text-black text-[12px] px-4 py-3 rounded shadow z-30 text-left leading-relaxed">
               {infoText}
 
               {infoLink && (
@@ -1366,7 +1322,7 @@ function TopEffect({ icon, value, tooltip, enableTooltip = true }: any) {
             bg-black text-white text-xs dark:bg-white dark:text-black
             px-3 py-1 rounded
             shadow-lg z-50
-            whitespace-nowrap
+            break-words max-w-xs sm:max-w-md md:max-w-lg
           "
         >
           {tooltip}
