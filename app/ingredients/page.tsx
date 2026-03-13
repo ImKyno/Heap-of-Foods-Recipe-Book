@@ -701,7 +701,7 @@ export default function Ingredients() {
         </div>
       </div>
       {/* CARD GRID */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 font-bold m-6 select-none relative">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-5 font-bold m-6 select-none relative">
         {sortedIngredients.length === 0 && (
           <div className="col-span-full flex flex-col items-center justify-center text-center py-40">
             <FontAwesomeIcon
@@ -773,43 +773,20 @@ export default function Ingredients() {
               className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
               onClick={() => setSelected(null)}
             >
-              <div className="flex items-center gap-6">
-                {/* PREVIOUS */}
-                {selectedIndex > 0 && (
-                  <div
-                    className="p-8 flex items-center justify-center"
-                    onClick={(e) => e.stopPropagation()}
-                  >
-                    <div className="relative group">
-                      <button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          goPrev();
-                        }}
-                        className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
-                      >
-                        <FontAwesomeIcon icon={faCircleChevronLeft} />
-                      </button>
-                      <div
-                        className="
-                        absolute bottom-full mb-2
-                        left-1/2 -translate-x-1/2
-                        hidden group-hover:block
-                        bg-black text-white dark:bg-white dark:text-black
-                        text-xs font-semibold
-                        px-3 py-1 rounded
-                        whitespace-nowrap
-                        shadow-lg
-                        "
-                      >
-                        {t("main.previous")}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+              {/* PREVIOUS */}
+              {selectedIndex > 0 && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    goPrev();
+                  }}
+                  className="absolute left-2 sm:left-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
+                >
+                  <FontAwesomeIcon icon={faCircleChevronLeft} />
+                </button>
+              )}
               <div
-                className="bg-white dark:bg-zinc-900 rounded-2xl p-8 w-11/12 md:w-[750px] relative shadow-xl dark:shadow-none scale-95"
+                className="bg-white dark:bg-zinc-900 rounded-2xl p-4 sm:p-8 w-11/12 md:w-[750px] max-h-[90vh] overflow-y-auto relative shadow-xl dark:shadow-none"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="flex justify-end">
@@ -916,36 +893,15 @@ export default function Ingredients() {
               </div>
               {/* NEXT */}
               {selectedIndex < sortedIngredients.length - 1 && (
-                <div
-                  className="p-8 flex items-center justify-center"
-                  onClick={(e) => e.stopPropagation()}
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    goNext();
+                  }}
+                  className="absolute right-2 sm:right-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
                 >
-                  <div className="relative group">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        goNext();
-                      }}
-                      className="text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer"
-                    >
-                      <FontAwesomeIcon icon={faCircleChevronRight} />
-                    </button>
-                    <div
-                      className="
-                      absolute bottom-full mb-2
-                      left-1/2 -translate-x-1/2
-                      hidden group-hover:block
-                      bg-black text-white dark:bg-white dark:text-black
-                      text-xs font-semibold
-                      px-3 py-1 rounded
-                      whitespace-nowrap
-                      shadow-lg
-                      "
-                    >
-                      {t("main.next")}
-                    </div>
-                  </div>
-                </div>
+                  <FontAwesomeIcon icon={faCircleChevronRight} />
+                </button>
               )}
             </div>
           );
@@ -1016,7 +972,7 @@ function DropdownGroup({ title, icon, children }: any) {
 
 function Block({ children }: any) {
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex justify-evenly items-center mb-5 min-h-[70px] shadow-sm dark:shadow-none">
+    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap justify-evenly items-center gap-y-3 mb-5 min-h-[70px] shadow-sm dark:shadow-none">
       {children}
     </div>
   );
@@ -1046,7 +1002,7 @@ function Stat({ icon, value, tooltip, isStatus = false }: any) {
   }
 
   return (
-    <div className="relative group flex items-center gap-3 min-w-[120px] justify-center">
+    <div className="relative group flex items-center gap-3 min-w-[110px] justify-center">
       <img src={icon} className="w-9 h-9 object-contain" />
 
       <span className={`text-base font-semibold ${colorClass}`}>
