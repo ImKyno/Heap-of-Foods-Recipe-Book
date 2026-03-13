@@ -174,24 +174,24 @@ export default function HomePage() {
       </div>
 
       {/* MAIN CONTAINER */}
-      <div className="w-full max-w-5xl flex flex-col items-center px-6">
+      <div className="w-full max-w-5xl flex flex-col items-center px-4 sm:px-6">
         {/* TITLE */}
         <div className="mt-10 mb-5 flex flex-col items-center text-center">
           <div className="flex items-center gap-4">
             <img
               src="/icons/misc/icon_hof.png"
-              className="w-[120px] h-[120px] drop-shadow-lg"
+              className="w-20 h-20 sm:w-[120px] sm:h-[120px] drop-shadow-lg"
             />
             <div className="flex flex-col items-center text-center drop-shadow-md">
-              <h1 className="text-3xl font-bold">{t("main.title")}</h1>
-              <p className="text-lg text-zinc-700 dark:text-zinc-400">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">{t("main.title")}</h1>
+              <p className="text-sm sm:text-base md:text-lg text-zinc-700 dark:text-zinc-400">
                 {t("main.subtitle")}
               </p>
             </div>
           </div>
         </div>
         {/* SEARCH */}
-        <div className="w-full max-w-150 mb-4 flex gap-3">
+        <div className="w-full max-w-150 mb-4 flex gap-2 sm:gap-3">
           {/* INPUT */}
           <div className="relative flex-1">
             <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-zinc-500 dark:text-white">
@@ -326,7 +326,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="w-263 h-1 bg-zinc-700/20 dark:bg-white/20" />
+        <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
         <div className="flex justify-center items-center p-7">
           <DailyRecipe/>
