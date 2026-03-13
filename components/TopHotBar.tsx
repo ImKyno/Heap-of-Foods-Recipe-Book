@@ -18,13 +18,13 @@ export default function TopHotBar() {
       className="fixed top-0 left-0 w-full z-50 bg-zinc-200 dark:bg-zinc-900 shadow-md flex items-center justify-between p-2">
       <div className="flex items-center">
         <Link href="/">
-          <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer">
+          <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer drop-shadow-md">
             <FontAwesomeIcon icon={faHouse} className="w-6 h-6" />
           </button>
         </Link>
       </div>
 
-      <div className="flex items-center justify-center gap-2">
+      <div className="flex items-center justify-center gap-2 drop-shadow-md">
         <Link href="/recipes_cookpot">
           <button className="flex items-center gap-2 px-3 py-2 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer">
             <img src="/icons/misc/icon_cookpot.png" className="w-6 h-6 object-contain"/>
@@ -70,7 +70,7 @@ export default function TopHotBar() {
 
       <div className="flex items-center">
         <Link href="/settings">
-          <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer">
+          <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer drop-shadow-md">
             <FontAwesomeIcon icon={faGear} className="w-6 h-6" />
           </button>
         </Link>

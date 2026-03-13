@@ -43,6 +43,10 @@ const pt = {
   pages: {
     home: {
       title: "Inicio",
+      daily: {
+        title: "Receita do Dia",
+        timer: "Próxima Receita em:",
+      },
     },
     cookpot: {
       title: "Panela",

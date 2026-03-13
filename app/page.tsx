@@ -4,6 +4,7 @@ import { useState, useMemo, useEffect, useRef } from "react";
 import { useTranslation } from "@/lib/i18n";
 import { usePageTitle } from "@/components/PageTitle";
 import RandomRecipe from "../components/RandomRecipe";
+import DailyRecipe from "../components/DailyRecipe";
 
 import recipes from "@/data/recipes_cookpot.json";
 import recipes_warly from "@/data/recipes_cookpot_warly.json";
@@ -159,6 +160,8 @@ export default function HomePage() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const PickDailyRecipe = recipes[Math.floor(Math.random() * recipes.length)];
+
   return (
     <div className="min-h-screen bg-zinc-300 dark:bg-zinc-800 text-zinc-900 dark:text-white flex justify-center relative">
       {/* SETTINGS BUTTON */}
@@ -284,13 +287,13 @@ export default function HomePage() {
 
         {/* SEARCH CATEGORY TEXT */}
         <div className="mb-6 text-center w-full">
-          <h2 className="text-xl font-bold tracking-wide text-zinc-900 dark:text-white">
+          <h2 className="text-xl font-bold tracking-wide text-zinc-900 dark:text-white drop-shadow-md">
             {t("main.browsecategory")}
           </h2>
         </div>
 
         {/* CATEGORIES */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-25 mb-6 w-full justify-items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-25 mb-6 w-full justify-items-center drop-shadow-md">
           <CategoryCard
             icon="/icons/misc/icon_cookpot.png"
             label={t("main.cookpot")}
@@ -321,6 +324,12 @@ export default function HomePage() {
             label={t("main.ingredients")}
             href="/ingredients"
           />
+        </div>
+
+        <div className="w-263 h-1 bg-zinc-700/20 dark:bg-white/20" />
+
+        <div className="flex justify-center items-center p-7">
+          <DailyRecipe/>
         </div>
 
         <div className="w-263 h-1 bg-zinc-700/20 dark:bg-white/20" />
