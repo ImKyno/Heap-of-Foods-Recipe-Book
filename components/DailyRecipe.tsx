@@ -147,10 +147,12 @@ export default function DailyRecipe() {
 
               <button
                 onClick={() => {
+                  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
                   const currentPath = window.location.pathname;
                   const page = source.page;
-                  if (currentPath !== page) {
-                    window.location.href = `${page}?recipe=${recipe.name}`;
+                  const fullPath = basePath + page;
+                  if (currentPath !== fullPath) {
+                    window.location.href = `${fullPath}?recipe=${recipe.name}`;
                   } else {
                     const element = document.getElementById(`recipe-${recipe.name}`);
                     if (element) element.scrollIntoView({ behavior: "smooth", block: "center" });

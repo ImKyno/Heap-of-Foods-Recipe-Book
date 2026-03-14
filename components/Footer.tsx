@@ -3,6 +3,7 @@
 import { useTranslation } from "@/lib/i18n";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
 import { faHeart, faUsers } from "@fortawesome/free-solid-svg-icons";
@@ -45,13 +46,13 @@ export function Footer() {
               {t("footer.discord")}
             </a>
 
-            <a
-              href="contributors"
+            <Link
+              href="/contributors"
               className="flex items-center gap-2 hover:text-grey transition"
             >
               <FontAwesomeIcon icon={faUsers} />
               {t("footer.contributors")}
-            </a>
+            </Link>
 
             <a
               href="https://ko-fi.com/kynoox"

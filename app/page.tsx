@@ -417,7 +417,7 @@ function ExternalButton({ icon, label, href }: any) {
 
 function LocalButton({ icon, label, href }: any) {
   return (
-    <a
+    <Link
       href={href}
       className="
         bg-zinc-100 dark:bg-zinc-900
@@ -433,6 +433,6 @@ function LocalButton({ icon, label, href }: any) {
     >
       <FontAwesomeIcon icon={icon} />
       {label}
-    </a>
+    </Link>
   );
 }
