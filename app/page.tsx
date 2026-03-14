@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect, useRef } from "react";
+import Link from "next/link";
 import { useTranslation } from "@/lib/i18n";
 import { getAssetPath } from "@/lib/paths";
 import { usePageTitle } from "@/components/PageTitle";
@@ -23,8 +24,6 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { faDiscord, faSteam, faKoFi } from "@fortawesome/free-brands-svg-icons";
-
-import Link from "next/link";
 import Fuse from "fuse.js";
 
 export default function HomePage() {
@@ -367,7 +366,7 @@ export default function HomePage() {
 
 function CategoryCard({ icon, label, href }: any) {
   return (
-    <a
+    <Link
       href={href}
       className="
         w-40 h-40
@@ -389,7 +388,7 @@ function CategoryCard({ icon, label, href }: any) {
       <img src={icon} className="w-16 h-16 object-contain" />
 
       <span>{label}</span>
-    </a>
+    </Link>
   );
 }
 
