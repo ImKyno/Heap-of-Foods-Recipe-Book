@@ -813,7 +813,11 @@ export default function CookPotKeg() {
               {recipe.foodtype && <FoodType type={recipe.foodtype} t={t} />}
               {recipe.temperature != null && (
                 <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_temperature.png")}
+                  icon={getAssetPath(
+                    recipe.temperature > 0
+                      ? "/icons/cooking/icon_temperature_hot.png"
+                      : "/icons/cooking/icon_temperature_cold.png"
+                    )}
                   value={
                     recipe.temperature > 0
                       ? t("card.temperature.hot")
@@ -939,7 +943,11 @@ export default function CookPotKeg() {
 
               {selected.temperature != null && (
                 <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_temperature.png")}
+                  icon={getAssetPath(
+                    selected.temperature > 0
+                      ? "/icons/cooking/icon_temperature_hot.png"
+                      : "/icons/cooking/icon_temperature_cold.png"
+                    )}
                   value={FormatTemperature(
                     selected.temperature,
                     selected.temperatureDuration,

@@ -788,7 +788,11 @@ export default function CookPotWarly() {
               {recipe.foodtype && <FoodType type={recipe.foodtype} t={t} />}
               {recipe.temperature != null && (
                 <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_temperature.png")}
+                  icon={getAssetPath(
+                    recipe.temperature > 0
+                      ? "/icons/cooking/icon_temperature_hot.png"
+                      : "/icons/cooking/icon_temperature_cold.png"
+                    )}
                   value={
                     recipe.temperature > 0
                       ? t("card.temperature.hot")
@@ -799,7 +803,8 @@ export default function CookPotWarly() {
               )}
               {recipe.debuff && (
                 <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_debuff.png")}                  value={t("card.debuff.hasEffect")}
+                  icon={getAssetPath("/icons/cooking/icon_debuff.png")}                  
+                  value={t("card.debuff.hasEffect")}
                   tooltip={t("tooltips.debuff")}
                 />
               )}
@@ -901,7 +906,11 @@ export default function CookPotWarly() {
 
               {selected.temperature != null && (
                 <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_temperature.png")}
+                  icon={getAssetPath(
+                    selected.temperature > 0
+                      ? "/icons/cooking/icon_temperature_hot.png"
+                      : "/icons/cooking/icon_temperature_cold.png"
+                    )}
                   value={FormatTemperature(
                     selected.temperature,
                     selected.temperatureDuration,

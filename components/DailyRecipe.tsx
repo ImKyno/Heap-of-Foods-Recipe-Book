@@ -136,10 +136,10 @@ export default function DailyRecipe() {
         {t("pages.home.daily.timer")} {timerText}
       </div>
 
-      <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full max-w-4xl shadow-md">
+      <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full max-w-4xl sm:max-w-2xl shadow-md">
         <SkeletonImage
           src={getAssetPath(`/${recipe.icon}/${recipe.name}.png`)}
-          className="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0"
+          className="w-24 h-24 sm:w-35 sm:h-35 flex-shrink-0 sm:ml-10"
           skeletonClassName="rounded-xl"
         />
         <div className="flex flex-col flex-1 gap-4 items-center text-center">
@@ -176,7 +176,14 @@ export default function DailyRecipe() {
           <div className="flex gap-2 flex-wrap font-bold justify-center">
             {recipe.foodtype && <FoodType type={recipe.foodtype} t={t} />}
             {recipe.temperature != null && (
-              <TopEffect icon={getAssetPath("/icons/cooking/icon_temperature.png")} value={formatTemperature(recipe.temperature, recipe.temperatureDuration ?? 0)} tooltip={t("tooltips.temperature")} />
+              <TopEffect 
+                icon={getAssetPath(
+                  recipe.temperature > 0
+                    ? "/icons/cooking/icon_temperature_hot.png"
+                    : "/icons/cooking/icon_temperature_cold.png"
+                  )} 
+                value={formatTemperature(recipe.temperature, recipe.temperatureDuration ?? 0)} 
+                tooltip={t("tooltips.temperature")} />
             )}
             {recipe.debuff && (
               <TopEffect icon={getAssetPath("/icons/cooking/icon_debuff.png")} value={t(`recipes_debuff.${recipe.name}`)} tooltip={t("tooltips.debuff")} />
