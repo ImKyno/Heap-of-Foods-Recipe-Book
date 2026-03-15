@@ -36,7 +36,7 @@ export default function SkeletonImage({
       className={`relative ${!loaded && skeletonClassName ? skeletonClassName : ""} ${className}`}
     >
       <img
-        key={props.src}
+        key={props.src ? String(props.src) : undefined}
         ref={imgRef}
         loading="lazy"
         {...props}
