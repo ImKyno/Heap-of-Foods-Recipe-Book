@@ -8,6 +8,7 @@ import { usePageTitle } from "@/components/PageTitle";
 import { useRouter } from "next/navigation";
 import RandomRecipe from "../components/RandomRecipe";
 import DailyRecipe from "../components/DailyRecipe";
+import { ClientOnly } from "@/components/ClientOnly";
 
 import recipes from "@/data/recipes_cookpot.json";
 import recipes_warly from "@/data/recipes_cookpot_warly.json";
@@ -283,7 +284,9 @@ export default function HomePage() {
           </div>
 
           {/* RANDOM RECIPE BUTTON */}
-          <RandomRecipe onSelectItem={selectItem} interval={500} />
+          <ClientOnly>
+            <RandomRecipe onSelectItem={selectItem} interval={500} />
+          </ClientOnly>
         </div>
 
         {/* SEARCH CATEGORY TEXT */}
@@ -331,7 +334,9 @@ export default function HomePage() {
 
         {/* DAILY RECIPE */}
         <div className="flex justify-center items-center px-4 py-7 w-full">
-          <DailyRecipe />
+          <ClientOnly>
+            <DailyRecipe />
+          </ClientOnly>
         </div>
 
         <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
