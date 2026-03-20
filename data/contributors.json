@@ -12,7 +12,9 @@
   {
     "name": "DemonRebuilt",
     "image": "/icons/contributors/contributor_demon_rebuilt.png",
-    "badges": ["contributors.badges.contentcreator"]
+    "badges": ["contributors.badges.contentcreator"],
+    "youtube": "https://www.youtube.com/@demonrebuilt",
+    "twitch": "https://www.twitch.tv/demonrebuilt"
   },
   {
     "name": "Dr_Brzeszczot",
