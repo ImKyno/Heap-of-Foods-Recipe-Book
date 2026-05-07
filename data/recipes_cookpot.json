@@ -1418,7 +1418,7 @@
     "requires": [
       {
         "items": [
-          "potato"
+          "tag_potato"
         ],
         "amount": 3,
         "comparator": "morethan"
@@ -1654,7 +1654,7 @@
     "hunger": 50,
     "sanity": 10,
     "cooktime": 0.75,
-    "stacksize": null,
+    "stacksize": 2,
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1666,7 +1666,7 @@
     "requires": [
       {
         "items": [
-          "potato"
+          "tag_potato"
         ],
         "amount": 2,
         "comparator": "morethan"
@@ -1690,6 +1690,12 @@
       {
         "items": [
           "potato_cooked"
+        ],
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_sweetpotato_cooked"
         ],
         "comparator": "equal"
       }
@@ -2039,10 +2045,10 @@
       },
       {
         "items": [
-          "potato"
+          "tag_potato"
         ],
-        "amount": 2,
-        "comparator": "morethan"
+        "amount": 1,
+        "comparator": "equal"
       }
     ],
     "excluded": [],
@@ -2065,7 +2071,14 @@
         "items": [
           "potato"
         ],
-        "amount": 2,
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_inedible"
+        ],
+        "amount": 1,
         "comparator": "equal"
       }
     ]
@@ -2394,7 +2407,7 @@
       },
       {
         "items": [
-          "potato"
+          "tag_potato"
         ],
         "amount": 1,
         "comparator": "equal"
@@ -4462,10 +4475,10 @@
       },
       {
         "items": [
-          "potato"
+          "tag_potato"
         ],
-        "amount": 2,
-        "comparator": "morethan"
+        "amount": 1,
+        "comparator": "equal"
       }
     ],
     "excluded": [],
@@ -4481,7 +4494,14 @@
         "items": [
           "potato"
         ],
-        "amount": 2,
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_inedible"
+        ],
+        "amount": 1,
         "comparator": "equal"
       }
     ]

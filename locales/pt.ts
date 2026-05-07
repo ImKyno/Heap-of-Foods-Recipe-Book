@@ -62,6 +62,11 @@ const pt = {
         title: "Receita do Dia",
         timer: "Próxima Receita em:",
         details: "Ver mais detalhes",
+        desc1: `As Receitas Diárias são pratos em destaque escolhidos diáriamente a partir de um conjunto.
+        Todos os jogadores compartilham a mesma receita. A cada dia, uma receita é escolhida aleatoriamente.`,
+        desc2: `Consumir a Receita Diária concede bônus:`,
+        desc3: `+15 em Vida, Fome e Sanidade, além dos atributos originais do prato.
+        Também concede +2 de Sorte por um certo período de tempo.`,
       },
     },
     contributors: {
@@ -306,6 +311,7 @@ const pt = {
     SWORDFISH: "Peixe-espada",
     LUNAR: "Lunar",
     SHADOW: "Sombrio",
+    POTATO: "Batata",
   },
 
   spoilagetime: {
@@ -1215,6 +1221,7 @@ const pt = {
     tillweed: "Tillweed",
     veggie: "Vegetal",
     wobster: "Lagosta",
+    potato: "Batata",
   },
 
   seealso: {

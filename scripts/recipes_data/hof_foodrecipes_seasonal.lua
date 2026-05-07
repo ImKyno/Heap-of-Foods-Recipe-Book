@@ -525,7 +525,7 @@ local kyno_foods_seasonal =
 	festive_sweetpotato =
 	{
 		test = function(cooker, names, tags) return tags.flour and ((names.kyno_sweetpotato or 0) + (names.kyno_sweetpotato_cooked or 0) >= 2)
-		and not tags.meat and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
+		and not tags.meat and not tags.egg and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 35,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
@@ -547,6 +547,7 @@ local kyno_foods_seasonal =
 		excluded = 
 		{
     		{ items = { "tag_meat" } },
+			{ items = { "tag_egg" } },
 		},
 		card_def = 
 		{

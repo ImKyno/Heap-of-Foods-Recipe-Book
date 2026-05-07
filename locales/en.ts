@@ -49,6 +49,11 @@ const en = {
         title: "Recipe of the Day",
         timer: "Next Recipe in:",
         details: "See more details",
+        desc1: `Daily Recipes are featured dishes selected everyday from the recipe pool.
+        All players share the same recipe regardless of the world. Each day, one recipe will be randomly selected.`,
+        desc2: `Eating the Daily Recipe grants bonuses:`,
+        desc3: `+15 to Health, Hunger and Sanity. Alongside the dish’s original stats. 
+        It also grants +2 Luck for a certain amount of time.`,
       },
     },
     contributors: {
@@ -308,6 +313,7 @@ const en = {
     SWORDFISH: "Swordfish",
     LUNAR: "Lunar",
     SHADOW: "Shadow",
+    POTATO: "Potato",
   },
 
   spoilagetime: {
@@ -1217,6 +1223,7 @@ const en = {
     tillweed: "Tillweed",
     veggie: "Veggie",
     wobster: "Wobster",
+    potato: "Potato",
   },
 
   seealso: {

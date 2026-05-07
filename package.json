@@ -11,7 +11,8 @@
     "recipes_cookpot_warly": "node scripts/extract_recipes_warly.js",
     "recipes_cookpot_keg": "node scripts/extract_recipes_keg.js",
     "recipes_cookpot_jar": "node scripts/extract_recipes_jar.js",
-    "recipes_cookpot_seasonal": "node scripts/extract_recipes_seasonal.js"
+    "recipes_cookpot_seasonal": "node scripts/extract_recipes_seasonal.js",
+    "convert_all_recipes": "node scripts/convert_all_recipes.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.2.0",

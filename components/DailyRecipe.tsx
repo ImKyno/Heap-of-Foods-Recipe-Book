@@ -12,7 +12,7 @@ import recipes_seasonal from "@/data/recipes_cookpot_seasonal.json";
 import recipes_jar from "@/data/recipes_cookpot_jar.json";
 import recipes_keg from "@/data/recipes_cookpot_keg.json";
 
-type SourceKeys = "cookpot" | "warly" | "keg" | "jar" | "seasonal";
+type SourceKeys = "cookpot" | "warly" | "jar" | "keg" | "seasonal";
 
 interface RecipeType {
   name: string;
@@ -39,13 +39,22 @@ export default function DailyRecipe() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const allRecipes = [
+  const blacklistRecipes = new Set<string>([
+    "gorge_bread",
+    "kyno_syrup",
+    "littlebread",
+    "watercup",
+  ]);
+
+  const allRecipesRaw = [
     ...recipes.map(r => ({ ...r, prefix: "recipes", icon: "foods_cookpot", source: "cookpot" })),
     ...recipes_warly.map(r => ({ ...r, prefix: "recipes_warly", icon: "foods_cookpot_warly", source: "warly" })),
-    ...recipes_keg.map(r => ({ ...r, prefix: "recipes_keg", icon: "foods_cookpot_keg", source: "keg" })),
-    ...recipes_jar.map(r => ({ ...r, prefix: "recipes_jar", icon: "foods_cookpot_jar", source: "jar" })),
     ...recipes_seasonal.map(r => ({ ...r, prefix: "recipes_seasonal", icon: "foods_cookpot_seasonal", source: "seasonal" })),
+    ...recipes_jar.map(r => ({ ...r, prefix: "recipes_jar", icon: "foods_cookpot_jar", source: "jar" })),
+    ...recipes_keg.map(r => ({ ...r, prefix: "recipes_keg", icon: "foods_cookpot_keg", source: "keg" })),
   ];
+
+  const allRecipes = allRecipesRaw.filter(r => !blacklistRecipes.has(r.name));
 
   const SOURCE_INFO: Record<SourceKeys, { icon: string; name: string; page: string }> = {
     cookpot: {
@@ -58,20 +67,20 @@ export default function DailyRecipe() {
       name: t("main.cookpot_warly"),
       page: "/recipes_warly",
     },
-    keg: {
-      icon: getAssetPath("/icons/misc/icon_cookpot_keg.png"),
-      name: t("main.cookpot_keg"),
-      page: "/recipes_keg",
+    seasonal: {
+      icon: getAssetPath("/icons/misc/icon_cookpot_seasonal.png"),
+      name: t("main.cookpot_seasonal"),
+      page: "/recipes_seasonal",
     },
     jar: {
       icon: getAssetPath("/icons/misc/icon_cookpot_jar.png"),
       name: t("main.cookpot_jar"),
       page: "/recipes_jar",
     },
-    seasonal: {
-      icon: getAssetPath("/icons/misc/icon_cookpot_seasonal.png"),
-      name: t("main.cookpot_seasonal"),
-      page: "/recipes_seasonal",
+    keg: {
+      icon: getAssetPath("/icons/misc/icon_cookpot_keg.png"),
+      name: t("main.cookpot_keg"),
+      page: "/recipes_keg",
     },
   } as const;
 
@@ -90,12 +99,28 @@ export default function DailyRecipe() {
   const ROTATION_HOURS = 24; // 200 = 10 sec for easy test.
   const ROTATION_MS = ROTATION_HOURS * 60 * 60 * 1000;
 
+  function luaHash(x: number) {
+    const v = (x * 1103515245 + 12345) >>> 0;
+    return v % 2147483647;
+  }
+
   function getDailyRecipe() {
-    const OFFSET_MS = 0;
-    const seed = Math.floor((now + OFFSET_MS) / ROTATION_MS);
-    const random = seededRandom(seed);
-    const index = Math.floor(random * allRecipes.length);
-    return allRecipes[index];
+    const seed = Math.floor((now) / ROTATION_MS);
+
+    const hash = luaHash(seed);
+    const index = hash % allRecipes.length;
+
+    const recipe = allRecipes[index];
+
+    // console.log("seed", seed);
+    // console.log("hash", hash);
+    // console.log("index", index);
+    // console.log("recipe", recipe?.name);
+
+    // console.log("LIST SIZE", allRecipes.length);
+    // console.log("FIRST 20", allRecipes.slice(0, 20).map(r => r.name));
+
+    return recipe;
   }
 
   const recipe = getDailyRecipe();
@@ -168,9 +193,9 @@ export default function DailyRecipe() {
           </div>
 
           <div className="flex gap-2 justify-center flex-wrap">
-            <Stat icon={getAssetPath("/icons/cooking/icon_health.png")} value={recipe.health} tooltip={t("tooltips.health")} isStatus />
-            <Stat icon={getAssetPath("/icons/cooking/icon_hunger.png")} value={recipe.hunger} tooltip={t("tooltips.hunger")} isStatus />
-            <Stat icon={getAssetPath("/icons/cooking/icon_sanity.png")} value={recipe.sanity} tooltip={t("tooltips.sanity")} isStatus />
+            <Stat icon={getAssetPath("/icons/cooking/icon_health.png")} value={recipe.health} bonus={15} tooltip={t("tooltips.health")} isStatus />
+            <Stat icon={getAssetPath("/icons/cooking/icon_hunger.png")} value={recipe.hunger} bonus={15} tooltip={t("tooltips.hunger")} isStatus />
+            <Stat icon={getAssetPath("/icons/cooking/icon_sanity.png")} value={recipe.sanity} bonus={15} tooltip={t("tooltips.sanity")} isStatus />
           </div>
 
           <div className="flex gap-2 flex-wrap font-bold justify-center">
@@ -196,11 +221,24 @@ export default function DailyRecipe() {
           </div>
         </div>
       </div>
+    <div className="max-w-4xl sm:max-w-4xl text-center text-sm sm:text-base text-zinc-700 dark:text-zinc-300 leading-relaxed px-2 whitespace-pre-line">
+        <p className="font-semibold">
+          {t("pages.home.daily.desc1")}
+        </p>
+
+        <p className="mt-5 font-semibold">
+          {t("pages.home.daily.desc2")}
+        </p>
+
+        <p>
+          {t("pages.home.daily.desc3")}
+        </p>
+      </div>
     </div>
   );
 }
 
-function Stat({ icon, value, tooltip, isStatus = false, recipe, stat }: any) {
+function Stat({ icon, value, bonus = 0, tooltip, isStatus = false, recipe, stat }: any) {
   if (value === undefined || value === null) return null;
 
   let displayValue = value;
@@ -263,6 +301,12 @@ function Stat({ icon, value, tooltip, isStatus = false, recipe, stat }: any) {
       <div className="flex flex-col items-center leading-tight">
         <span className={`text-base font-semibold ${colorClass}`}>
           {displayValue}
+
+          {bonus > 0 && (
+            <span className="text-sm ml-1 text-zinc-900 dark:text-white">
+              (<span className="text-green-500">+{bonus}</span>)
+            </span>
+          )}
         </span>
 
         {extraValues.map((extra, i) => (

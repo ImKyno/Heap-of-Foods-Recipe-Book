@@ -17,14 +17,14 @@
     "twitch": "https://www.twitch.tv/demonrebuilt"
   },
   {
-    "name": "Dr_Brzeszczot",
-    "image": "/icons/contributors/contributor_dr_brzeszczot.png",
-    "badges": ["contributors.badges.modlocpl"]
-  },
-  {
     "name": "Dmitry Grach",
     "image": "/icons/contributors/contributor_dmitry.png",
     "badges": ["contributors.badges.modguide"]
+  },
+  {
+    "name": "Dr_Brzeszczot",
+    "image": "/icons/contributors/contributor_dr_brzeszczot.png",
+    "badges": ["contributors.badges.modlocpl"]
   },
   {
     "name": "Eventide",
@@ -53,6 +53,11 @@
     "badges": ["contributors.badges.donator", "contributors.badges.contentcreator"],
     "youtube": "https://www.youtube.com/@jazzysgames",
     "twitch": "https://www.twitch.tv/jazzystarves"
+  },
+  {
+    "name": "Jelly Sapinho 🐸",
+    "image": "/icons/contributors/contributor_jelly_sapinho.png",
+    "badges": ["contributors.badges.modtester"]
   },
   {
     "name": "Leonidas IV 💀",

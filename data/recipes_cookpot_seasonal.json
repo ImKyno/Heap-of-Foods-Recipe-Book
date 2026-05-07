@@ -1051,6 +1051,12 @@
           "tag_meat"
         ],
         "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_egg"
+        ],
+        "comparator": "equal"
       }
     ],
     "card_def": [
