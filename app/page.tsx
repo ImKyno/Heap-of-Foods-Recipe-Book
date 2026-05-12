@@ -8,6 +8,7 @@ import { usePageTitle } from "@/components/PageTitle";
 import { useRouter } from "next/navigation";
 import RandomRecipe from "../components/RandomRecipe";
 import DailyRecipe from "../components/DailyRecipe";
+import RandomTips from "../components/RandomTips";
 import { ClientOnly } from "@/components/ClientOnly";
 
 import recipes from "@/data/recipes_cookpot.json";
@@ -333,9 +334,18 @@ export default function HomePage() {
         <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
 
         {/* DAILY RECIPE */}
-        <div className="flex justify-center items-center px-4 py-7 w-full">
+        <div className="flex justify-center items-center px-4 py-4 w-full">
           <ClientOnly>
             <DailyRecipe />
+          </ClientOnly>
+        </div>
+
+        <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
+
+        {/* RANDOM TIPS */}
+        <div className="flex justify-center items-center w-full mt-1 mb-5">
+          <ClientOnly>
+            <RandomTips />
           </ClientOnly>
         </div>
 

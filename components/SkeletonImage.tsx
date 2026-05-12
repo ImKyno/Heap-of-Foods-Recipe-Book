@@ -4,7 +4,7 @@ import { useState, useCallback, useRef } from "react";
 
 interface SkeletonImageProps
   extends Omit<React.ImgHTMLAttributes<HTMLImageElement>, "className"> {
-  /** Classes applied to the outer container <div>, not the <img> element. */
+  // Classes applied to the outer container <div>, not the <img> element
   className?: string;
   skeletonClassName?: string;
 }

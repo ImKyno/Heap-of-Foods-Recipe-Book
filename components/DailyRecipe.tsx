@@ -85,6 +85,8 @@ export default function DailyRecipe() {
   } as const;
 
   const [now, setNow] = useState(Date.now());
+  const [slideDirection, setSlideDirection] = useState<"left" | "right">("right");
+  const [previousRecipe, setPreviousRecipe] = useState<string | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => setNow(Date.now()), 1000);
@@ -126,6 +128,14 @@ export default function DailyRecipe() {
   const recipe = getDailyRecipe();
   const source = SOURCE_INFO[recipe.source as SourceKeys];
 
+  useEffect(() => {
+    if (previousRecipe && previousRecipe !== recipe.name) {
+      setSlideDirection("right");
+    }
+
+    setPreviousRecipe(recipe.name);
+  }, [recipe.name, previousRecipe]);
+
   const timeLeftMs = ROTATION_MS - (now % ROTATION_MS);
   const hours = Math.floor(timeLeftMs / (1000 * 60 * 60));
   const minutes = Math.floor((timeLeftMs % (1000 * 60 * 60)) / (1000 * 60));
@@ -162,16 +172,34 @@ export default function DailyRecipe() {
       </div>
 
       <div className="bg-white dark:bg-zinc-900 rounded-xl p-4 sm:p-6 flex flex-col sm:flex-row items-center gap-4 sm:gap-6 w-full max-w-4xl sm:max-w-2xl shadow-md">
+        <div
+          key={`image-${recipe.name}`}
+          className={slideDirection === "right" ? "tip-slide-right" : "tip-slide-left"}
+        >
         <SkeletonImage
           src={getAssetPath(`/${recipe.icon}/${recipe.name}.png`)}
           className="w-24 h-24 sm:w-35 sm:h-35 flex-shrink-0 sm:ml-10"
           skeletonClassName="rounded-xl"
         />
+        </div>
         <div className="flex flex-col flex-1 gap-4 items-center text-center">
           <div className="flex flex-col gap-1 items-center">
-            <h2 className="text-xl sm:text-2xl font-bold">{t(`${recipe.prefix}.${recipe.name}`)}</h2>
-
-            <div className="flex flex-wrap items-center justify-center gap-2">
+            <h2
+              key={`title-${recipe.name}`}
+              className={`
+              text-xl sm:text-2xl font-bold
+              ${slideDirection === "right" ? "tip-slide-right" : "tip-slide-left"}
+            `}
+            >
+              {t(`${recipe.prefix}.${recipe.name}`)}
+            </h2>
+            <div
+              key={`source-${recipe.name}`}
+              className={`
+              flex flex-wrap items-center justify-center gap-2
+              ${slideDirection === "right" ? "tip-slide-right" : "tip-slide-left"}
+              `}
+            >
               <img src={source.icon} className="w-7 h-7 sm:w-8 sm:h-8 object-contain" />
               <span className="text-zinc-700 dark:text-zinc-300 font-semibold">{source.name}</span>
 

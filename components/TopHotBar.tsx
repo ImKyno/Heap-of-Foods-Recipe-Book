@@ -29,7 +29,6 @@ export default function TopHotBar() {
       key={locale}
       className="fixed top-0 left-0 w-full z-50 bg-zinc-200 dark:bg-zinc-900 shadow-md flex items-center justify-between p-2"
     >
-      {/* ESQUERDA: HOME */}
       <div className="flex items-center">
         <Link href="/">
           <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer drop-shadow-md">
@@ -38,7 +37,6 @@ export default function TopHotBar() {
         </Link>
       </div>
 
-      {/* CENTRO: NAV LINKS (desktop) */}
       <div className="hidden md:flex items-center justify-center gap-1 sm:gap-2 drop-shadow-md">
         {navLinks.map((link) => (
           <Link key={link.href} href={link.href}>
@@ -50,7 +48,6 @@ export default function TopHotBar() {
         ))}
       </div>
 
-      {/* DIREITA: SETTINGS + HAMBURGER */}
       <div className="flex items-center gap-1 sm:gap-2">
         <Link href="/settings">
           <button className="flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer">
@@ -58,7 +55,7 @@ export default function TopHotBar() {
           </button>
         </Link>
 
-        {/* HAMBURGER — mobile only */}
+        {/* HAMBURGER — MOBILE ONLY */}
         <button
           className="md:hidden flex items-center gap-2 px-3 py-3 rounded-xl bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 transition font-bold cursor-pointer"
           onClick={() => setMenuOpen((prev) => !prev)}
