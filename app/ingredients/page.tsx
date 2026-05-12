@@ -890,7 +890,7 @@ function IngredientsContent() {
                 </div>
 
                 {/* FOODTYPE + EFFECTS */}
-                <div className="flex justify-center items-center gap-4 mb-6 mt-2 flex-wrap font-semibold">
+                <div className="flex justify-center items-center gap-4 mb-6  flex-wrap font-semibold">
                   {selected.foodtype && (
                     <FoodType type={selected.foodtype} t={t} />
                   )}
@@ -904,47 +904,77 @@ function IngredientsContent() {
                 </div>
                 {/* STATUS */}
                 {variants.map((variant, i) => (
-                  <div
-                    key={variant.type}
-                    className="flex flex-col items-center w-full"
-                  >
-                    {/* TITLE */}
-                    <span className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-2">
-                      {variant.label}
-                    </span>
-
-                    <Block>
-                      <Stat
-                        icon={getAssetPath("/icons/cooking/icon_health.png")}
-                        value={getVariantValue(selected.health, i)}
-                        tooltip={t("tooltips.health")}
-                        isStatus
-                      />
-
-                      <Stat
-                        icon={getAssetPath("/icons/cooking/icon_hunger.png")}
-                        value={getVariantValue(selected.hunger, i)}
-                        tooltip={t("tooltips.hunger")}
-                        isStatus
-                      />
-
-                      <Stat
-                        icon={getAssetPath("/icons/cooking/icon_sanity.png")}
-                        value={getVariantValue(selected.sanity, i)}
-                        tooltip={t("tooltips.sanity")}
-                        isStatus
-                      />
-
-                      <Stat
-                        icon={getAssetPath("/icons/cooking/icon_spoilage.png")}
-                        value={GetSpoilageLabel(
-                          getVariantValue(selected.spoilage, i),
-                        )}
-                        tooltip={t("tooltips.spoilage")}
-                      />
-                    </Block>
+                <div
+                  key={variant.type}
+                  className="flex flex-col items-center w-full"
+                >
+                {/* TITLE */}
+                <span className="text-sm font-bold text-zinc-700 dark:text-zinc-300 mb-2">
+                  {variant.label}
+                </span>
+                <Block>
+                  <Stat
+                    icon={getAssetPath("/icons/cooking/icon_health.png")}
+                    value={getVariantValue(selected.health, i)}
+                    tooltip={t("tooltips.health")}
+                    isStatus
+                  />
+                  <Stat
+                    icon={getAssetPath("/icons/cooking/icon_hunger.png")}
+                    value={getVariantValue(selected.hunger, i)}
+                    tooltip={t("tooltips.hunger")}
+                    isStatus
+                  />
+                  <Stat
+                    icon={getAssetPath("/icons/cooking/icon_sanity.png")}
+                    value={getVariantValue(selected.sanity, i)}
+                    tooltip={t("tooltips.sanity")}
+                    isStatus
+                  />
+                  <Stat
+                    icon={getAssetPath("/icons/cooking/icon_spoilage.png")}
+                    value={GetSpoilageLabel(getVariantValue(selected.spoilage, i),)}
+                    tooltip={t("tooltips.spoilage")}
+                  />
+                </Block>
+              </div>
+            ))}
+            <div className="flex justify-center my-3">
+              <div className="w-200 h-1 bg-zinc-200 dark:bg-zinc-700" />
+            </div>
+            <div className="flex justify-center items-center flex-wrap font-semibold mt-5">
+              {selected.name && (
+              <TopEffect
+                tooltip={t("tooltips.debug.title")}
+                value={(icon: string) => (
+              <>
+                <div className="flex items-center justify-center gap-2 mb-2">
+                  <img
+                    src={icon}
+                    className="w-6 h-6 object-contain shrink-0"
+                  />
+                  <span className="font-bold text-sm">
+                    {t("tooltips.debug.spawn")}:
+                  </span>
+                </div>
+                <div className="flex flex-col items-center gap-0.5">
+                  {(Array.isArray(selected.debug)
+                    ? selected.debug
+                    : [selected.debug]
+                  )
+                    .filter(Boolean)
+                    .map((code: string) => (
+                      <span key={code} className="font-mono text-xs break-all">
+                        {code}
+                      </span>
+                    ))}
                   </div>
-                ))}
+                  </>
+                  )}
+                    icon={getAssetPath("/icons/cooking/icon_debug.png")}
+                  />
+                  )}
+                </div>
               </div>
               {/* NEXT */}
               {selectedIndex < sortedIngredients.length - 1 && (
@@ -1027,7 +1057,7 @@ function DropdownGroup({ title, icon, children }: any) {
 
 function Block({ children }: any) {
   return (
-    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap justify-evenly items-center gap-y-3 mb-5 min-h-[70px] shadow-sm dark:shadow-none">
+    <div className="bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap justify-evenly items-center gap-y-3 mb-2 min-h-[70px] shadow-sm dark:shadow-none">
       {children}
     </div>
   );
@@ -1136,17 +1166,19 @@ function TopEffect({ icon, value, tooltip, enableTooltip = true }: any) {
   return (
     <div
       className={`
-        relative flex items-center gap-2
+        relative
         bg-zinc-100 dark:bg-zinc-800
-        px-3 py-1
-        rounded-full
+        px-6 py-4
+        rounded-2xl
         text-xs tracking-wide
+        shadow-sm dark:shadow-none
+        flex justify-center
         ${enableTooltip && tooltip ? "group cursor-default" : ""}
       `}
     >
-      <img src={icon} className="w-5 h-5 object-contain" />
-
-      <span className="text-zinc-900 dark:text-white">{value}</span>
+      <div className="flex flex-col items-center text-center">
+        {value(icon)}
+      </div>
 
       {enableTooltip && tooltip && (
         <div
@@ -1157,7 +1189,7 @@ function TopEffect({ icon, value, tooltip, enableTooltip = true }: any) {
             bg-black text-white text-xs dark:bg-white dark:text-black
             px-3 py-1 rounded
             shadow-lg z-50
-            whitespace-nowrap max-w-xs sm:max-w-md md:max-w-lg
+            whitespace-nowrap
           "
         >
           {tooltip}

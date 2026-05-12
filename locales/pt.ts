@@ -328,6 +328,10 @@ const pt = {
     debuff: "Efeito Temporário",
     characterfood: "Comida Favorita",
     event: "Evento Especial",
+    debug: {
+      title: "Depuração",
+      spawn: "Código de Spawn",
+    },
   },
 
   foodtypes: {

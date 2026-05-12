@@ -1017,6 +1017,24 @@ export default function CookPotJar() {
                 />
               )}
             </Block>
+            <div className="flex justify-center items-center flex-wrap font-semibold">
+              {selected.name && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_debug.png")}
+                  tooltip={t("tooltips.debug.title")}
+                  value={
+                    <span>
+                      <span className="font-semibold">
+                        {t("tooltips.debug.spawn")}:{" "}
+                      </span>
+                    <span className="font-mono font-semibold">
+                      {selected.name}
+                    </span>
+                  </span>
+                  }
+                />
+              )}
+            </div>
             {(() => {
               const suggestion = recommendRecipe(selected, recipes);
               return suggestion ? (
@@ -1129,7 +1147,7 @@ function Block({ children, showInfo = false, infoText, infoLink }: BlockProps) {
   }, []);
 
   return (
-    <div className="relative bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap gap-x-2 gap-y-2 justify-center items-center mb-5 min-h-[70px] shadow-sm dark:shadow-none">
+    <div className="relative bg-zinc-100 dark:bg-zinc-800 rounded-xl p-4 flex flex-wrap gap-x-2 gap-y-2 justify-center items-center mb-4 min-h-[70px] shadow-sm dark:shadow-none">
       {showInfo && (
         <div ref={boxRef} className="absolute top-1 right-2">
           <button

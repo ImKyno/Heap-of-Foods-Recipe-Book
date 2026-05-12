@@ -9,19 +9,8 @@
         "spoilage": [2880],
         "health": [20],
         "hunger": [25],
-        "sanity": [-10]
-    },
-    {
-        "name": "kokonut_halved",
-        "cooked": true,
-        "dried": false,
-        "foodtype": "VEGGIE",
-        "cooktype": ["FRUIT"],
-        "cookvalue": [1.0],
-        "spoilage": [4800, 4800],
-        "health": [1, 3],
-        "hunger": [3.6875, 9.375],
-        "sanity": [0, 0]
+        "sanity": [-10],
+        "debug": "kyno_shark_fin"
     },
     {
         "name": "coffeebeans",
@@ -33,7 +22,8 @@
         "spoilage": [2880, 7200],
         "health": [0, 0],
         "hunger": [9.375, 9.375],
-        "sanity": [0, -5]
+        "sanity": [0, -5],
+        "debug": ["kyno_coffeebeans", "kyno_coffeebeans_cooked"]
     },
     {
         "name": "mussel",
@@ -45,7 +35,8 @@
         "spoilage": [1440, 2880],
         "health": [0, 0],
         "hunger": [9.375, 18.5],
-        "sanity": [-15, 0]
+        "sanity": [-15, 0],
+        "debug": ["kyno_mussel", "kyno_mussel_cooked"]
     },
     {
         "name": "limpets",
@@ -57,7 +48,8 @@
         "spoilage": [2880, 4800],
         "health": [0, 1],
         "hunger": [9.375, 12.5],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["kyno_limpets", "kyno_limpets_cooked"]
     },
     {
         "name": "seaweeds",
@@ -69,7 +61,8 @@
         "spoilage": [2880, 4800, 9600],
         "health": [1, 3, 3],
         "hunger": [9.375, 9.375, 12.5],
-        "sanity": [-10, 0, 5]
+        "sanity": [-10, 0, 5],
+        "debug": ["kyno_seaweeds", "kyno_seaweeds_cooked", "kyno_seaweeds_dried"]
     },
     {
         "name": "blubber",
@@ -81,7 +74,8 @@
         "spoilage": [4800],
         "health": [10],
         "hunger": [10],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_blubber"
     },
     {
         "name": "brainrock_coral",
@@ -93,7 +87,8 @@
         "spoilage": 480,
         "health": [-10],
         "hunger": [10],
-        "sanity": [50]
+        "sanity": [50],
+        "debug": "kyno_brainrock_coral"
     },
     {
         "name": "dogfish_dead",
@@ -105,7 +100,8 @@
         "spoilage": [1440],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_dogfish_dead"
     },
     {
         "name": "swordfish_dead",
@@ -117,7 +113,8 @@
         "spoilage": [1440],
         "health": [16],
         "hunger": [37.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_swordfish_dead"
     },
     {
         "name": "beanbugs",
@@ -129,7 +126,8 @@
         "spoilage": [4800, 4800],
         "health": [0, 1],
         "hunger": [9.375, 12.5],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["kyno_beanbugs", "kyno_beanbugs_cooked"]
     },
     {
         "name": "gummybug",
@@ -141,7 +139,8 @@
         "spoilage": [4800, 4800],
         "health": [0, 1],
         "hunger": [9.375, 12.5],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["kyno_gummybug", "kyno_gummybug_cooked"]
     },
     {
         "name": "worm_bone",
@@ -153,7 +152,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_worm_bone"
     },
     {
         "name": "piko",
@@ -165,7 +165,8 @@
         "spoilage": [2400],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_piko"
     },
     {
         "name": "piko_orange",
@@ -177,7 +178,8 @@
         "spoilage": [2400],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_piko_orange"
     },
     {
         "name": "lotus_flower",
@@ -189,7 +191,8 @@
         "spoilage": [2880, 4800],
         "health": [1, 3],
         "hunger": [9.375, 9.375],
-        "sanity": [5, 15]
+        "sanity": [5, 15],
+        "debug": ["kyno_lotus_flower", "kyno_lotus_flower_cooked"]
     },
     {
         "name": "taroroot",
@@ -201,7 +204,8 @@
         "spoilage": [2880, 4800],
         "health": [8, 20],
         "hunger": [25, 25],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_taroroot", "kyno_taroroot_cooked"]
     },
     {
         "name": "waterycress",
@@ -213,7 +217,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "kyno_waterycress"
     },
     {
         "name": "flour",
@@ -225,7 +230,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_flour"
     },
     {
         "name": "spotspice_leaf",
@@ -237,7 +243,8 @@
         "spoilage": [4800],
         "health": [0],
         "hunger": [2.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_spotspice_leaf"
     },
     {
         "name": "spotspice",
@@ -249,7 +256,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_spotspice"
     },
     {
         "name": "salt",
@@ -261,7 +269,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_salt"
     },
     {
         "name": "sugar",
@@ -273,7 +282,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_sugar"
     },
     {
         "name": "oil",
@@ -285,7 +295,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [2.375],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "kyno_oil"
     },
     {
         "name": "truffles",
@@ -297,7 +308,8 @@
         "spoilage": [7200, 7200],
         "health": [0, 5],
         "hunger": [9.375, 12.5],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["kyno_truffles", "kyno_truffles_cooked"]
     },
     {
         "name": "truffleoil",
@@ -309,7 +321,8 @@
         "spoilage": [null],
         "health": [-10],
         "hunger": [12.5],
-        "sanity": [-20]
+        "sanity": [-20],
+        "debug": "truffleoil"
     },
     {
         "name": "sap",
@@ -321,7 +334,8 @@
         "spoilage": [7200],
         "health": [1],
         "hunger": [0],
-        "sanity": [3]
+        "sanity": [3],
+        "debug": "kyno_sap"
     },
     {
         "name": "syrup",
@@ -333,7 +347,8 @@
         "spoilage": [19200],
         "health": [0],
         "hunger": [6.375],
-        "sanity": [3]
+        "sanity": [3],
+        "debug": "kyno_syrup"
     },
     {
         "name": "tealeaf",
@@ -345,7 +360,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [4.6875],
-        "sanity": [1]
+        "sanity": [1],
+        "debug": "kyno_tealeaf"
     },
     {
         "name": "wheat",
@@ -357,7 +373,8 @@
         "spoilage": [4800, 7200],
         "health": [0, 1],
         "hunger": [1.6875, 1.6875],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_wheat", "kyno_wheat_cooked"]
     },
     {
         "name": "bread",
@@ -369,7 +386,8 @@
         "spoilage": [19200],
         "health": [1],
         "hunger": [6.375],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "gorge_bread"
     },
     {
         "name": "littlebread",
@@ -381,7 +399,8 @@
         "spoilage": [19200],
         "health": [0],
         "hunger": [6.375],
-        "sanity": [1]
+        "sanity": [1],
+        "debug": "littlebread"
     },
     {
         "name": "twiggynuts",
@@ -393,7 +412,8 @@
         "spoilage": 19200,
         "health": [2],
         "hunger": [0],
-        "sanity": [2]
+        "sanity": [2],
+        "debug": "kyno_twiggynuts"
     },
     {
         "name": "butter",
@@ -405,7 +425,8 @@
         "spoilage": [19200],
         "health": [40],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "butter"
     },
     {
         "name": "butter_beefalo",
@@ -417,7 +438,8 @@
         "spoilage": [19200],
         "health": [0],
         "hunger": [25],
-        "sanity": [40]
+        "sanity": [40],
+        "debug": "butter_beefalo"
     },
     {
         "name": "butter_koalefant",
@@ -429,7 +451,8 @@
         "spoilage": [19200],
         "health": [20],
         "hunger": [25],
-        "sanity": [20]
+        "sanity": [20],
+        "debug": "butter_koalefant"
     },
     {
         "name": "butter_goat",
@@ -441,7 +464,8 @@
         "spoilage": [19200],
         "health": [25],
         "hunger": [40],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "butter_goat"
     },
     {
         "name": "milkywhites",
@@ -453,7 +477,8 @@
         "spoilage": [4800],
         "health": [8],
         "hunger": [12.5],
-        "sanity": [-20]
+        "sanity": [-20],
+        "debug": "milkywhites"
     },
     {
         "name": "goatmilk",
@@ -465,7 +490,8 @@
         "spoilage": [2880],
         "health": [3],
         "hunger": [12.5],
-        "sanity": [10]
+        "sanity": [10],
+        "debug": "goatmilk"
     },
     {
         "name": "milk_beefalo",
@@ -477,7 +503,8 @@
         "spoilage": [3840],
         "health": [3],
         "hunger": [3],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "kyno_milk_beefalo"
     },
     {
         "name": "milk_koalefant",
@@ -489,7 +516,8 @@
         "spoilage": [3840],
         "health": [6],
         "hunger": [6],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "kyno_milk_koalefant"
     },
     {
         "name": "milk_box",
@@ -501,7 +529,8 @@
         "spoilage": [9600],
         "health": [25],
         "hunger": [0],
-        "sanity": [20]
+        "sanity": [20],
+        "debug": "milk_box"
     },
     {
         "name": "cheese_yellow",
@@ -513,7 +542,8 @@
         "spoilage": [9600],
         "health": [10],
         "hunger": [25],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "cheese_yellow"
     },
     {
         "name": "cheese_white",
@@ -525,7 +555,8 @@
         "spoilage": [9600],
         "health": [15],
         "hunger": [25],
-        "sanity": [20]
+        "sanity": [20],
+        "debug": "cheese_white"
     },
     {
         "name": "cheese_koalefant",
@@ -537,7 +568,8 @@
         "spoilage": [9600],
         "health": [20],
         "hunger": [25],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "cheese_koalefant"
     },
     {
         "name": "chocolate_black",
@@ -549,7 +581,8 @@
         "spoilage": 9600,
         "health": [-5],
         "hunger": [12.5],
-        "sanity": [33]
+        "sanity": [33],
+        "debug": "chocolate_black"
     },
     {
         "name": "chocolate_white",
@@ -561,7 +594,8 @@
         "spoilage": 9600,
         "health": [-5],
         "hunger": [33],
-        "sanity": [12.5]
+        "sanity": [12.5],
+        "debug": "chocolate_white"
     },
     {
         "name": "bottle_soul",
@@ -573,7 +607,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_bottle_soul"
     },
     {
         "name": "mayonnaise",
@@ -585,7 +620,8 @@
         "spoilage": [7200],
         "health": [10],
         "hunger": [12.5],
-        "sanity": [15]
+        "sanity": [15],
+        "debug": "mayonnaise"
     },
     {
         "name": "nukacola",
@@ -597,7 +633,8 @@
         "spoilage": [19200],
         "health": [-5],
         "hunger": [12.5],
-        "sanity": [60]
+        "sanity": [60],
+        "debug": "nukacola"
     },
     {
         "name": "nukacola_quantum",
@@ -609,7 +646,8 @@
         "spoilage": [19200],
         "health": [-10],
         "hunger": [20],
-        "sanity": [60]
+        "sanity": [60],
+        "debug": "nukacola_quantum"
     },
     {
         "name": "rabbit",
@@ -621,7 +659,8 @@
         "spoilage": [2400],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "rabbit"
     },
     {
         "name": "spider",
@@ -633,7 +672,8 @@
         "spoilage": [2400],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "spider"
     },
     {
         "name": "chicken2",
@@ -645,7 +685,8 @@
         "spoilage": [2400],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_chicken2"
     },
     {
         "name": "red_cap",
@@ -657,7 +698,8 @@
         "spoilage": [4800, 4800, 9600],
         "health": [-20, 1, -10],
         "hunger": [12.5, 0, 25],
-        "sanity": [0, -10, 0]
+        "sanity": [0, -10, 0],
+        "debug": ["red_cap", "red_cap_cooked", "kyno_red_cap_dried"]
     },
     {
         "name": "green_cap",
@@ -669,7 +711,8 @@
         "spoilage": [4800, 4800, 9600],
         "health": [0, -1, -10],
         "hunger": [12.5, 0, 0],
-        "sanity": [-50, 15, 25]
+        "sanity": [-50, 15, 25],
+        "debug": ["green_cap", "green_cap_cooked", "kyno_green_cap_dried"]
     },
     {
         "name": "blue_cap",
@@ -681,7 +724,8 @@
         "spoilage": [4800, 4800, 9600],
         "health": [20, -3, 25],
         "hunger": [12.5, 0, 0],
-        "sanity": [-15, 10, -10]
+        "sanity": [-15, 10, -10],
+        "debug": ["blue_cap", "blue_cap_cooked", "kyno_blue_cap_dried"]
     },
     {
         "name": "moon_cap",
@@ -693,7 +737,8 @@
         "spoilage": [4800, 4800, 9600],
         "health": [0, 0, 5],
         "hunger": [12.5, -12.5, 5],
-        "sanity": [10, -10, 5]
+        "sanity": [10, -10, 5],
+        "debug": ["moon_cap", "moon_cap_cooked", "kyno_moon_cap_dried"]
     },
     {
         "name": "white_cap",
@@ -705,7 +750,8 @@
         "spoilage": [4800, 7200],
         "health": [-10, -5],
         "hunger": [9.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_white_cap", "kyno_white_cap_cooked"]
     },
     {
         "name": "sporecap",
@@ -717,7 +763,8 @@
         "spoilage": [4800, 4800],
         "health": [-10, -5],
         "hunger": [12.5, 18.75],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["kyno_sporecap", "kyno_sporecap_cooked"]
     },
     {
         "name": "sporecap_dark",
@@ -729,7 +776,8 @@
         "spoilage": [4800, 4800],
         "health": [-20, -10],
         "hunger": [18.75, 25],
-        "sanity": [-20, -10]
+        "sanity": [-20, -10],
+        "debug": ["kyno_sporecap_dark", "kyno_sporecap_dark_cooked"]
     },
     {
         "name": "twigs",
@@ -741,7 +789,8 @@
         "spoilage": [null],
         "health": [0.5],
         "hunger": [9.4],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "twigs"
     },
     {
         "name": "foliage",
@@ -753,7 +802,8 @@
         "spoilage": [2880, 2880, null],
         "health": [1, 1, 1],
         "hunger": [0, 1, 0],
-        "sanity": [0, 0, 0]
+        "sanity": [0, 0, 0],
+        "debug": ["foliage", "kyno_foliage_cooked", "foliage_dried"]
     },
     {
         "name": "succulent_picked",
@@ -765,7 +815,8 @@
         "spoilage": [2880, null],
         "health": [0, 8],
         "hunger": [0, 0],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["succulent_picked", "succulent_picked_dried"]
     },
     {
         "name": "cutlichen",
@@ -777,7 +828,8 @@
         "spoilage": [960],
         "health": [3],
         "hunger": [12.5],
-        "sanity": [-5]
+        "sanity": [-5],
+        "debug": "cutlichen"
     },
     {
         "name": "petals",
@@ -789,7 +841,8 @@
         "spoilage": [2880, null],
         "health": [1, 1],
         "hunger": [0, 0],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["petals", "petals_dried"]
     },
     {
         "name": "petals_evil",
@@ -801,7 +854,8 @@
         "spoilage": [2880, null],
         "health": [0, 1],
         "hunger": [0, 0],
-        "sanity": [-5, -5]
+        "sanity": [-5, -5],
+        "debug": ["petals_evil", "petals_evil_dried"]
     },
     {
         "name": "moon_tree_blossom",
@@ -813,7 +867,8 @@
         "spoilage": [2880, null],
         "health": [0, 1],
         "hunger": [0, 0],
-        "sanity": [0, 10]
+        "sanity": [0, 10],
+        "debug": ["moon_tree_blossom", "moon_tree_blossom_dried"]
     },
     {
         "name": "sugartree_petals",
@@ -825,7 +880,8 @@
         "spoilage": [4800, null],
         "health": [0, 0],
         "hunger": [0, 0],
-        "sanity": [2, 5]
+        "sanity": [2, 5],
+        "debug": ["kyno_sugartree_petals", "kyno_sugartree_petals_dried"]
     },
     {
         "name": "butterflywings",
@@ -837,7 +893,8 @@
         "spoilage": [2880],
         "health": [8],
         "hunger": [9.375],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "butterflywings"
     },
     {
         "name": "moonbutterflywings",
@@ -849,7 +906,8 @@
         "spoilage": [2880],
         "health": [8],
         "hunger": [9.375],
-        "sanity": [15]
+        "sanity": [15],
+        "debug": "moonbutterflywings"
     },
     {
         "name": "sugarflywings",
@@ -861,7 +919,8 @@
         "spoilage": [4800],
         "health": [0],
         "hunger": [9.375],
-        "sanity": [8]
+        "sanity": [8],
+        "debug": "kyno_sugarflywings"
     },
     {
         "name": "firenettles",
@@ -873,7 +932,8 @@
         "spoilage": [1440, null],
         "health": [-3, -3],
         "hunger": [0, 0],
-        "sanity": [-5, -5]
+        "sanity": [-5, -5],
+        "debug": ["firenettles", "firenettles_dried"]
     },
     {
         "name": "forgetmelots",
@@ -885,7 +945,8 @@
         "spoilage": [1440, null],
         "health": [0, 1],
         "hunger": [0, 0],
-        "sanity": [1, 5]
+        "sanity": [1, 5],
+        "debug": ["forgetmelots", "forgetmelots_dried"]
     },
     {
         "name": "tillweed",
@@ -897,7 +958,8 @@
         "spoilage": [1440, null],
         "health": [1, 8],
         "hunger": [0, 0],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["tillweed", "tillweed_dried"]
     },
     {
         "name": "honey",
@@ -909,7 +971,8 @@
         "spoilage": [19200],
         "health": [3],
         "hunger": [9.375],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "honey"
     },
     {
         "name": "honeycomb",
@@ -921,7 +984,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "honeycomb"
     },
     {
         "name": "ice",
@@ -933,7 +997,8 @@
         "spoilage": [1440],
         "health": [0.5],
         "hunger": [2.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "ice"
     },
     {
         "name": "seeds",
@@ -945,7 +1010,8 @@
         "spoilage": [19200, 19200],
         "health": [0, 1],
         "hunger": [4.6875, 4.6875],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["seeds", "seeds_cooked"]
     },
     {
         "name": "aloe",
@@ -957,7 +1023,8 @@
         "spoilage": [4800, 2880, 9600],
         "health": [1, 3, 6],
         "hunger": [6.375, 12.5, 18.75],
-        "sanity": [0, 0, 0]
+        "sanity": [0, 0, 0],
+        "debug": ["kyno_aloe", "kyno_aloe_cooked", "kyno_aloe_dried"]
     },
     {
         "name": "cucumber",
@@ -969,7 +1036,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 1],
         "hunger": [12.5, 25],
-        "sanity": [-5, 5]
+        "sanity": [-5, 5],
+        "debug": ["kyno_cucumber", "kyno_cucumber_cooked"]
     },
     {
         "name": "fennel",
@@ -981,7 +1049,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [6.375, 18.5],
-        "sanity": [-5 , 5]
+        "sanity": [-5 , 5],
+        "debug": ["kyno_fennel", "kyno_fennel_cooked"]
     },
     {
         "name": "radish",
@@ -993,7 +1062,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [6.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_radish", "kyno_radish_cooked"]
     },
     {
         "name": "sweetpotato",
@@ -1005,7 +1075,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [6.375, 12.5],
-        "sanity": [1, 1]
+        "sanity": [1, 1],
+        "debug": ["kyno_sweetpotato", "kyno_sweetpotato_cooked"]
     },
     {
         "name": "parznip",
@@ -1017,7 +1088,8 @@
         "spoilage": [4800, 2880],
         "health": [2, 3],
         "hunger": [6, 18.5],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["kyno_parznip", "kyno_parznip_cooked"]
     },
     {
         "name": "parznip_eaten", 
@@ -1029,7 +1101,8 @@
         "spoilage": [4800],
         "health": [2],
         "hunger": [6],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_parznip_eaten"
     },
     {
         "name": "turnip",
@@ -1041,7 +1114,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [6.375, 12.5],
-        "sanity": [1, 3]
+        "sanity": [1, 3],
+        "debug": ["kyno_turnip", "kyno_turnip_cooked"]
     },
     {
         "name": "rice",
@@ -1053,7 +1127,8 @@
         "spoilage": [7200, 4800],
         "health": [3, 3],
         "hunger": [9.375, 18.5],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["kyno_rice", "kyno_rice_cooked"]
     },
     {
         "name": "asparagus",
@@ -1065,7 +1140,8 @@
         "spoilage": [2880, 1440],
         "health": [3, 3],
         "hunger": [12.5, 25],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["asparagus", "asparagus_cooked"]
     },
     {
         "name": "carrot",
@@ -1077,7 +1153,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["carrot", "carrot_cooked"]
     },
     {
         "name": "corn",
@@ -1089,7 +1166,8 @@
         "spoilage": [4800, 7200],
         "health": [3, 3],
         "hunger": [25, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["corn", "corn_cooked"]
     },
     {
         "name": "eggplant",
@@ -1101,7 +1179,8 @@
         "spoilage": [4800, 2880],
         "health": [8, 20],
         "hunger": [25, 25],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["eggplant", "eggplant_cooked"]
     },
     {
         "name": "garlic",
@@ -1113,7 +1192,8 @@
         "spoilage": [7200, 4880],
         "health": [0, 1],
         "hunger": [9.375, 9.375],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["garlic", "garlic_cooked"]
     },
     {
         "name": "onion",
@@ -1125,7 +1205,8 @@
         "spoilage": [7200, 4880],
         "health": [0, 1],
         "hunger": [9.375, 9.375],
-        "sanity": [-10, -5]
+        "sanity": [-10, -5],
+        "debug": ["onion", "onion_cooked"]
     },
     {
         "name": "pepper",
@@ -1137,7 +1218,8 @@
         "spoilage": [7200, 4880],
         "health": [-20, -3],
         "hunger": [9.375, 9.375],
-        "sanity": [-15, -10]
+        "sanity": [-15, -10],
+        "debug": ["pepper", "pepper_cooked"]
     },
     {
         "name": "potato",
@@ -1149,7 +1231,8 @@
         "spoilage": [4800, 4880],
         "health": [-3, 20],
         "hunger": [12.5, 25],
-        "sanity": [-5, 0]
+        "sanity": [-5, 0],
+        "debug": ["potato", "potato_cooked"]
     },
     {
         "name": "pumpkin",
@@ -1161,7 +1244,8 @@
         "spoilage": [4800, 2880],
         "health": [3, 8],
         "hunger": [37.5, 37.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["pumpkin", "pumpkin_cooked"]
     },
     {
         "name": "tomato",
@@ -1173,7 +1257,8 @@
         "spoilage": [2880, 4800],
         "health": [3, 20],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["tomato", "tomato_cooked"]
     },
     {
         "name": "cactus_meat",
@@ -1185,7 +1270,8 @@
         "spoilage": [4800, 4800],
         "health": [-3, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [-5, 15]
+        "sanity": [-5, 15],
+        "debug": ["cactus_meat", "cactus_meat_cooked"]
     },
     {
         "name": "cactus_flower",
@@ -1197,7 +1283,8 @@
         "spoilage": [1440],
         "health": [8],
         "hunger": [12.5],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "cactus_flower"
     },
     {
         "name": "rock_avocado_fruit_ripe",
@@ -1209,7 +1296,8 @@
         "spoilage": [1440, 960],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["rock_avocado_fruit_ripe", "rock_avocado_fruit_ripe_cooked"]
     },
     {
         "name": "kelp",
@@ -1221,7 +1309,8 @@
         "spoilage": [4800, 4800, 9600],
         "health": [-1, 0, 1],
         "hunger": [9.375, 9.375, 9.375],
-        "sanity": [-10, -5, 10]
+        "sanity": [-10, -5, 10],
+        "debug": ["kelp", "kelp_cooked", "kelp_dried"]
     },
     {
         "name": "berries",
@@ -1233,7 +1322,8 @@
         "spoilage": [2880, 1440],
         "health": [0, 1],
         "hunger": [9.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["berries", "berries_cooked"]
     },
     {
         "name": "berries_juicy",
@@ -1245,7 +1335,8 @@
         "spoilage": [960, 480],
         "health": [1, 3],
         "hunger": [12.5, 18.75],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["berries_juicy", "berries_juicy_cooked"]
     },
     {
         "name": "ancientfruit_nightvision",
@@ -1257,7 +1348,8 @@
         "spoilage": [2880, 1440],
         "health": [-8, -3],
         "hunger": [12.5, 18.8],
-        "sanity": [-20, -5]
+        "sanity": [-20, -5],
+        "debug": ["ancientfruit_nightvision", "ancientfruit_nightvision_cooked"]
     },
     {
         "name": "wormlight_lesser",
@@ -1269,7 +1361,8 @@
         "spoilage": [4800],
         "health": [3],
         "hunger": [12.5],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "wormlight_lesser"
     },
     {
         "name": "wormlight",
@@ -1281,7 +1374,8 @@
         "spoilage": [4800],
         "health": [11],
         "hunger": [25],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "wormlight"
     },
     {
         "name": "banana",
@@ -1293,7 +1387,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_banana", "kyno_banana_cooked"]
     },
     {
         "name": "cave_banana",
@@ -1305,7 +1400,8 @@
         "spoilage": [4800, 2880],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["cave_banana", "cave_banana_cooked"]
     },
     {
         "name": "dragonfruit",
@@ -1317,7 +1413,8 @@
         "spoilage": [2880, 1440],
         "health": [3, 20],
         "hunger": [9.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["dragonfruit", "dragonfruit_cooked"]
     },
     {
         "name": "durian",
@@ -1329,7 +1426,8 @@
         "spoilage": [4800, 2880],
         "health": [-3, 0],
         "hunger": [25, 25],
-        "sanity": [-5, -5]
+        "sanity": [-5, -5],
+        "debug": ["durian", "durian_cooked"]
     },
     {
         "name": "fig",
@@ -1341,7 +1439,8 @@
         "spoilage": [2880, 1440],
         "health": [0, 1],
         "hunger": [12.5, 18.75],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["fig", "fig_cooked"]
     },
     {
         "name": "pomegranate",
@@ -1353,7 +1452,8 @@
         "spoilage": [2880, 1440],
         "health": [3, 20],
         "hunger": [9.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["pomegranate", "pomegranate_cooked"]
     },
     {
         "name": "watermelon",
@@ -1365,7 +1465,21 @@
         "spoilage": [2880, 1440],
         "health": [3, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [5, 7.5]
+        "sanity": [5, 7.5],
+        "debug": ["watermelon", "watermelon_cooked"]
+    },
+    {
+        "name": "kokonut_halved",
+        "cooked": true,
+        "dried": false,
+        "foodtype": "VEGGIE",
+        "cooktype": ["FRUIT"],
+        "cookvalue": [1.0],
+        "spoilage": [4800, 4800],
+        "health": [1, 3],
+        "hunger": [3.6875, 9.375],
+        "sanity": [0, 0],
+        "debug": ["kyno_kokonut_halved", "kyno_kokonut_cooked"]
     },
     {
         "name": "pineapple_halved",
@@ -1377,7 +1491,8 @@
         "spoilage": [1440, 2880],
         "health": [3, 15],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 3]
+        "sanity": [0, 3],
+        "debug": ["kyno_pineapple_halved", "kyno_pineapple_cooked"]
     },
     {
         "name": "smallmeat",
@@ -1389,7 +1504,8 @@
         "spoilage": [2880, 4800, 9600],
         "health": [0, 1, 8],
         "hunger": [12.5, 12.5, 12.5],
-        "sanity": [-10, 0, 10]
+        "sanity": [-10, 0, 10],
+        "debug": ["smallmeat", "cookedsmallmeat", "smallmeat_dried"]
     },
     {
         "name": "drumstick",
@@ -1401,7 +1517,8 @@
         "spoilage": [2880, 4800],
         "health": [0, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["drumstick", "drumstick_cooked"]
     },
     {
         "name": "bacon",
@@ -1413,7 +1530,8 @@
         "spoilage": [4800, 7200],
         "health": [0, 1],
         "hunger": [12.5, 18.5],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["kyno_bacon", "kyno_bacon_cooked"]
     },
     {
         "name": "crabmeat",
@@ -1425,7 +1543,8 @@
         "spoilage": [4800, 7200, 9600],
         "health": [5, 10, 25],
         "hunger": [5, 10, 25],
-        "sanity": [-10, 5, 10]
+        "sanity": [-10, 5, 10],
+        "debug": ["kyno_crabmeat", "kyno_crabmeat_cooked", "kyno_crabmeat_dried"]
     },
     {
         "name": "froglegs",
@@ -1437,7 +1556,8 @@
         "spoilage": [2880, 4800],
         "health": [0, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["froglegs", "froglegs_cooked"]
     },
     {
         "name": "poison_froglegs",
@@ -1449,7 +1569,8 @@
         "spoilage": [2880, 4800],
         "health": [-10, -5],
         "hunger": [20, 20],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["kyno_poison_froglegs", "kyno_poison_froglegs_cooked"]
     },
     {
         "name": "moon_froglegs",
@@ -1461,7 +1582,8 @@
         "spoilage": [4800, 7200],
         "health": [0, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [-5, 15]
+        "sanity": [-5, 15],
+        "debug": ["kyno_moon_froglegs", "kyno_moon_froglegs"]
     },
     {
         "name": "batwing",
@@ -1473,7 +1595,8 @@
         "spoilage": [2880, 4800],
         "health": [3, 8],
         "hunger": [12.5, 18.5],
-        "sanity": [-10, 0]
+        "sanity": [-10, 0],
+        "debug": ["batwing", "batwing_cooked"]
     },
     {
         "name": "meat",
@@ -1485,7 +1608,8 @@
         "spoilage": [2880, 4800, 9600],
         "health": [1, 3, 20],
         "hunger": [25, 25, 25],
-        "sanity": [-10, 0, 15]
+        "sanity": [-10, 0, 15],
+        "debug": ["meat", "cookedmeat", "meat_dried"]
     },
     {
         "name": "monstermeat",
@@ -1497,7 +1621,8 @@
         "spoilage": [2880, 4800, 9600],
         "health": [-20, -3, -3],
         "hunger": [18.75, 18.75, 18.75],
-        "sanity": [-15, -10, -5]
+        "sanity": [-15, -10, -5],
+        "debug": ["monstermeat", "cookedmonstermeat", "monstermeat_dried"]
     },
     {
         "name": "plantmeat",
@@ -1509,7 +1634,8 @@
         "spoilage": [2880, 4800, 9600],
         "health": [0, 1, 15],
         "hunger": [12.5, 18.75, 25],
-        "sanity": [-10, 0, 20]
+        "sanity": [-10, 0, 20],
+        "debug": ["plantmeat", "plantmeat_cooked", "kyno_plantmeat_dried"]
     },
     {
         "name": "trunk_summer",
@@ -1521,7 +1647,8 @@
         "spoilage": [2880, 7200],
         "health": [30, 40],
         "hunger": [37.5, 75],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["trunk_summer", "trunk_cooked"]
     },
     {
         "name": "trunk_winter",
@@ -1533,7 +1660,8 @@
         "spoilage": [2880, 7200],
         "health": [30, 40],
         "hunger": [37.5, 75],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["trunk_winter", "trunk_cooked"]
     },
     {
         "name": "crabkingmeat",
@@ -1545,7 +1673,8 @@
         "spoilage": [4800, 7200, 9600],
         "health": [-10, 20, 40],
         "hunger": [10, 20, 40],
-        "sanity": [-10, 0, 20]
+        "sanity": [-10, 0, 20],
+        "debug": ["kyno_crabkingmeat", "kyno_crabkingmeat_cooked", "kyno_crabkingmeat_dried"]
     },
     {
         "name": "humanmeat",
@@ -1557,7 +1686,8 @@
         "spoilage": [1440, 4800, 9600],
         "health": [-20, -3, -3],
         "hunger": [12.5, 18.75, 25],
-        "sanity": [-33, -20, -15]
+        "sanity": [-33, -20, -15],
+        "debug": ["kyno_humanmeat", "kyno_humanmeat_cooked", "kyno_humanmeat_dried"]
     },
     {
         "name": "bird_egg",
@@ -1569,7 +1699,8 @@
         "spoilage": [4800, 2880],
         "health": [0, 0],
         "hunger": [9.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["bird_egg", "bird_egg_cooked"]
     },
     {
         "name": "tallbirdegg",
@@ -1581,7 +1712,8 @@
         "spoilage": [null, 2880],
         "health": [3, 0],
         "hunger": [25, 37.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["tallbirdegg", "tallbirdegg_cooked"]
     },
     {
         "name": "chicken_egg",
@@ -1593,7 +1725,8 @@
         "spoilage": [2880, 7200],
         "health": [1, 3],
         "hunger": [6.375, 12.5],
-        "sanity": [0, 0]
+        "sanity": [0, 0],
+        "debug": ["kyno_chicken_egg", "kyno_chicken_egg_cooked"]
     },
     {
         "name": "chicken_egg_large",
@@ -1605,7 +1738,8 @@
         "spoilage": [null],
         "health": [5],
         "hunger": [18.75],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "kyno_chicken_egg_large"
     },
     {
         "name": "barnacle",
@@ -1617,7 +1751,8 @@
         "spoilage": [2880, 7200],
         "health": [0, 1],
         "hunger": [12.5, 12.5],
-        "sanity": [-5, 0]
+        "sanity": [-5, 0],
+        "debug": ["barnacle", "barnacle_cooked"]
     },
     {
         "name": "fishmeat_small",
@@ -1629,7 +1764,8 @@
         "spoilage": [1440, 2880, 7200],
         "health": [1, 1, 15],
         "hunger": [12.5, 12.5, 12.5],
-        "sanity": [0, 0, 20]
+        "sanity": [0, 0, 20],
+        "debug": ["fishmeat_small", "fishmeat_small_cooked", "fishmeat_small_dried"]
     },
     {
         "name": "fishmeat",
@@ -1641,7 +1777,8 @@
         "spoilage": [1440, 2880, 7200],
         "health": [8, 8, 30],
         "hunger": [25, 25, 25],
-        "sanity": [0, 0, 15]
+        "sanity": [0, 0, 15],
+        "debug": ["fishmeat", "fishmeat_cooked", "fishmeat_dried"]
     },
     {
         "name": "fishmeat_small_salted",
@@ -1653,7 +1790,8 @@
         "spoilage": [9600],
         "health": [25],
         "hunger": [22.5],
-        "sanity": [30]
+        "sanity": [30],
+        "debug": "kyno_fishmeat_small_dried"
     },
     {
         "name": "fishmeat_salted",
@@ -1665,7 +1803,8 @@
         "spoilage": [9600],
         "health": [40],
         "hunger": [35],
-        "sanity": [25]
+        "sanity": [25],
+        "debug": "kyno_fishmeat_dried"
     },
     {
         "name": "pondfish",
@@ -1677,7 +1816,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "pondfish"
     },
     {
         "name": "pondeel",
@@ -1689,7 +1829,8 @@
         "spoilage": [2880],
         "health": [3],
         "hunger": [9.375],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "pondeel"
     },
     {
         "name": "wobster_sheller_land",
@@ -1701,7 +1842,8 @@
         "spoilage": [1920],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "wobster_sheller_land"
     },
     {
         "name": "wobster_monkeyisland_land",
@@ -1713,7 +1855,8 @@
         "spoilage": [1920],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "wobster_monkeyisland_land"
     },
     {
         "name": "oceanfish_small_1_inv",
@@ -1725,7 +1868,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_1_inv"
     },
     {
         "name": "oceanfish_small_2_inv",
@@ -1737,7 +1881,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_2_inv"
     },
     {
         "name": "oceanfish_small_3_inv",
@@ -1749,7 +1894,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_3_inv"
     },
     {
         "name": "oceanfish_small_4_inv",
@@ -1761,7 +1907,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_4_inv"
     },
     {
         "name": "oceanfish_small_5_inv",
@@ -1773,7 +1920,8 @@
         "spoilage": [480],
         "health": [3],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_5_inv"
     },
     {
         "name": "oceanfish_small_6_inv",
@@ -1785,7 +1933,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_6_inv"
     },
     {
         "name": "oceanfish_small_7_inv",
@@ -1797,7 +1946,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_7_inv"
     },
     {
         "name": "oceanfish_small_8_inv",
@@ -1809,7 +1959,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_8_inv"
     },
     {
         "name": "oceanfish_small_9_inv",
@@ -1821,7 +1972,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_small_9_inv"
     },
     {
         "name": "oceanfish_pufferfish_inv",
@@ -1833,7 +1985,8 @@
         "spoilage": [480],
         "health": [1],
         "hunger": [12.5],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_pufferfish_inv"
     },
     {
         "name": "oceanfish_medium_1_inv",
@@ -1845,7 +1998,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_1_inv"
     },
     {
         "name": "oceanfish_medium_2_inv",
@@ -1857,7 +2011,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_2_inv"
     },
     {
         "name": "oceanfish_medium_3_inv",
@@ -1869,7 +2024,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_3_inv"
     },
     {
         "name": "oceanfish_medium_4_inv",
@@ -1881,7 +2037,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_4_inv"
     },
     {
         "name": "oceanfish_medium_5_inv",
@@ -1893,7 +2050,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_5_inv"
     },
     {
         "name": "oceanfish_medium_6_inv",
@@ -1905,7 +2063,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_6_inv"
     },
     {
         "name": "oceanfish_medium_7_inv",
@@ -1917,7 +2076,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_7_inv"
     },
     {
         "name": "oceanfish_medium_8_inv",
@@ -1929,7 +2089,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_8_inv"
     },
     {
         "name": "oceanfish_medium_9_inv",
@@ -1941,7 +2102,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_medium_9_inv"
     },
     {
         "name": "oceanfish_sturgeon_inv",
@@ -1953,7 +2115,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_sturgeon_inv"
     },
     {
         "name": "oceanfish_midnight_carp_inv",
@@ -1965,7 +2128,8 @@
         "spoilage": [480],
         "health": [8],
         "hunger": [25],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "oceanfish_midnight_carp_inv"
     },
     {
         "name": "tropicalfish",
@@ -1977,7 +2141,8 @@
         "spoilage": [1440, 1440],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["kyno_tropicalfish", "kyno_tropicalfish_cooked"]
     },
     {
         "name": "pierrotfish",
@@ -1989,7 +2154,8 @@
         "spoilage": [1440, 1440],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["kyno_pierrotfish", "kyno_pierrotfish_cooked"]
     },
     {
         "name": "neonfish",
@@ -2001,7 +2167,8 @@
         "spoilage": [1440, 1440],
         "health": [4, 8],
         "hunger": [25, 25],
-        "sanity": [0, 5]
+        "sanity": [0, 5],
+        "debug": ["kyno_neonfish", "kyno_neonfish_cooked"]
     },
     {
         "name": "grouper",
@@ -2013,7 +2180,8 @@
         "spoilage": [1440, 1440],
         "health": [4, 8],
         "hunger": [25, 25],
-        "sanity": [0, 5]
+        "sanity": [0, 5],
+        "debug": ["kyno_grouper", "kyno_grouper_cooked"]
     },
     {
         "name": "koi",
@@ -2025,7 +2193,8 @@
         "spoilage": [1440, 1440],
         "health": [4, 8],
         "hunger": [25, 25],
-        "sanity": [0, 5]
+        "sanity": [0, 5],
+        "debug": ["kyno_koi", "kyno_koi_cooked"]
     },
     {
         "name": "salmonfish",
@@ -2037,7 +2206,8 @@
         "spoilage": [1440, 1440],
         "health": [1, 3],
         "hunger": [12.5, 12.5],
-        "sanity": [0, 1]
+        "sanity": [0, 1],
+        "debug": ["kyno_salmonfish", "kyno_salmonfish_cooked"]
     },
     {
         "name": "jellyfish",
@@ -2049,7 +2219,8 @@
         "spoilage": [480, 1440, 4800],
         "health": [10, 10, 15],
         "hunger": [10, 18.75, 25],
-        "sanity": [0, 0, 5]
+        "sanity": [0, 0, 5],
+        "debug": ["kyno_jellyfish", "kyno_jellyfish_cooked", "kyno_jellyfish_dried"]
     },
     {
         "name": "jellyfish_dead",
@@ -2061,7 +2232,8 @@
         "spoilage": [480],
         "health": [10],
         "hunger": [10],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_jellyfish_dead"
     },
     {
         "name": "jellyfish_rainbow",
@@ -2073,7 +2245,8 @@
         "spoilage": [480, 1440, 4800],
         "health": [10, 10, 15],
         "hunger": [10, 18.75, 25],
-        "sanity": [10, 10, 5]
+        "sanity": [10, 10, 5],
+        "debug": ["kyno_jellyfish_rainbow", "kyno_jellyfish_rainbow_cooked", "kyno_jellyfish_dried"]
     },
     {
         "name": "jellyfish_rainbow_dead",
@@ -2085,7 +2258,8 @@
         "spoilage": [480],
         "health": [10],
         "hunger": [10],
-        "sanity": [10]
+        "sanity": [10],
+        "debug": "kyno_jellyfish_rainbow_dead"
     },
     {
         "name": "antchovy",
@@ -2097,7 +2271,8 @@
         "spoilage": [2880],
         "health": [0],
         "hunger": [9.375],
-        "sanity": [3]
+        "sanity": [3],
+        "debug": "kyno_antchovy"
     },
     {
         "name": "swordfish_blue",
@@ -2109,19 +2284,8 @@
         "spoilage": [2880],
         "health": [4],
         "hunger": [25],
-        "sanity": [0]
-    },
-    {
-        "name": "roe",
-        "cooked": true,
-        "dried": false,
-        "foodtype": "MEAT",
-        "cooktype": ["MEAT", "FISH", "ROE"],
-        "cookvalue": [0.25, 0.25, 1],
-        "spoilage": [2880, 7200],
-        "health": [1, 3],
-        "hunger": [4.6875, 6.6875],
-        "sanity": [0, 0]
+        "sanity": [0],
+        "debug": "kyno_swordfish_blue"
     },
     {
         "name": "roe_pondfish",
@@ -2133,7 +2297,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_pondfish"
     },
     {
         "name": "roe_pondeel",
@@ -2145,7 +2310,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_pondeel"
     },
     {
         "name": "roe_wobster",
@@ -2157,7 +2323,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_wobster"
     },
     {
         "name": "roe_wobster_moonglass",
@@ -2169,7 +2336,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_wobster_moonglass"
     },
     {
         "name": "roe_wobster_monkeyisland",
@@ -2181,7 +2349,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_wobster_monkeyisland"
     },
     {
         "name": "roe_oceanfish_small_1",
@@ -2193,7 +2362,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_1"
     },
     {
         "name": "roe_oceanfish_small_2",
@@ -2205,7 +2375,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_2"
     },
     {
         "name": "roe_oceanfish_small_3",
@@ -2217,7 +2388,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_3"
     },
     {
         "name": "roe_oceanfish_small_4",
@@ -2229,7 +2401,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_4"
     },
     {
         "name": "roe_oceanfish_small_5",
@@ -2241,7 +2414,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_5"
     },
     {
         "name": "roe_oceanfish_small_6",
@@ -2253,7 +2427,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_6"
     },
     {
         "name": "roe_oceanfish_small_7",
@@ -2265,7 +2440,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_7"
     },
     {
         "name": "roe_oceanfish_small_8",
@@ -2277,7 +2453,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_8"
     },
     {
         "name": "roe_oceanfish_small_9",
@@ -2289,7 +2466,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_small_9"
     },
     {
         "name": "roe_oceanfish_pufferfish",
@@ -2301,7 +2479,8 @@
         "spoilage": [2880],
         "health": [-10],
         "hunger": [9.375],
-        "sanity": [-10]
+        "sanity": [-10],
+        "debug": "kyno_roe_oceanfish_pufferfish"
     },
     {
         "name": "roe_oceanfish_medium_1",
@@ -2313,7 +2492,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_1"
     },
     {
         "name": "roe_oceanfish_medium_2",
@@ -2325,7 +2505,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_2"
     },
     {
         "name": "roe_oceanfish_medium_3",
@@ -2337,7 +2518,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_3"
     },
     {
         "name": "roe_oceanfish_medium_4",
@@ -2349,7 +2531,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_4"
     },
     {
         "name": "roe_oceanfish_medium_5",
@@ -2361,7 +2544,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_5"
     },
     {
         "name": "roe_oceanfish_medium_6",
@@ -2373,7 +2557,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_6"
     },
     {
         "name": "roe_oceanfish_medium_7",
@@ -2385,7 +2570,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_7"
     },
     {
         "name": "roe_oceanfish_medium_8",
@@ -2397,7 +2583,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_8"
     },
     {
         "name": "roe_oceanfish_medium_9",
@@ -2409,7 +2596,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_medium_9"
     },
     {
         "name": "roe_oceanfish_sturgeon",
@@ -2421,7 +2609,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_sturgeon"
     },
     {
         "name": "roe_oceanfish_midnight_carp",
@@ -2433,7 +2622,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_midnight_carp"
     },
     {
         "name": "roe_tropicalfish",
@@ -2445,7 +2635,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_tropicalfish"
     },
     {
         "name": "roe_pierrotfish",
@@ -2457,7 +2648,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_pierrotfish"
     },
     {
         "name": "roe_neonfish",
@@ -2469,7 +2661,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_neonfish"
     },
     {
         "name": "roe_grouper",
@@ -2481,7 +2674,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_grouper"
     },
     {
         "name": "roe_koi",
@@ -2493,7 +2687,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_koi"
     },
     {
         "name": "roe_salmonfish",
@@ -2505,7 +2700,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_salmonfish"
     },
     {
         "name": "roe_jellyfish",
@@ -2517,7 +2713,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_jellyfish"
     },
     {
         "name": "roe_jellyfish_rainbow",
@@ -2529,7 +2726,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_jellyfish_rainbow"
     },
     {
         "name": "roe_antchovy",
@@ -2541,7 +2739,8 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_antchovy"
     },
     {
         "name": "roe_swordfish_blue",
@@ -2553,7 +2752,21 @@
         "spoilage": [2880],
         "health": [1],
         "hunger": [4.6875],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "kyno_roe_swordfish_blue"
+    },
+    {
+        "name": "roe_cooked",
+        "cooked": false,
+        "dried": false,
+        "foodtype": "MEAT",
+        "cooktype": ["MEAT", "FISH", "ROE"],
+        "cookvalue": [0.25, 0.25, 1],
+        "spoilage": [7200],
+        "health": [3],
+        "hunger": [6.6875],
+        "sanity": [0],
+        "debug": "kyno_roe_cooked"
     },
     {
         "name": "baconeggs",
@@ -2565,7 +2778,8 @@
         "spoilage": [9600],
         "health": [20],
         "hunger": [75],
-        "sanity": [5]
+        "sanity": [5],
+        "debug": "baconeggs"
     },
     {
         "name": "slurtle_shellpieces",
@@ -2577,7 +2791,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "slurtle_shellpieces"
     },
     {
         "name": "rocks",
@@ -2589,7 +2804,8 @@
         "spoilage": [null],
         "health": [10],
         "hunger": [1],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "rocks"
     },
     {
         "name": "gears",
@@ -2601,7 +2817,8 @@
         "spoilage": [null],
         "health": [60],
         "hunger": [75],
-        "sanity": [50]
+        "sanity": [50],
+        "debug": "gears"
     },
     {
         "name": "wagpunk_bits",
@@ -2613,7 +2830,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "wagpunk_bits"
     },
     {
         "name": "poop",
@@ -2625,7 +2843,8 @@
         "spoilage": [null],
         "health": [2],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "poop"
     },
     {
         "name": "guano",
@@ -2637,7 +2856,8 @@
         "spoilage": [null],
         "health": [2],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "guano"
     },
     {
         "name": "glommerfuel",
@@ -2649,7 +2869,8 @@
         "spoilage": [null],
         "health": [40],
         "hunger": [9.375],
-        "sanity": [-50]
+        "sanity": [-50],
+        "debug": "glommerfuel"
     },
     {
         "name": "papyrus",
@@ -2661,7 +2882,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "papyrus"
     },
     {
         "name": "nightmarefuel",
@@ -2673,7 +2895,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "nightmarefuel"
     },
     {
         "name": "horrorfuel",
@@ -2685,7 +2908,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "horrorfuel"
     },
     {
         "name": "purebrilliance",
@@ -2697,7 +2921,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "purebrilliance"
     },
     {
         "name": "horn",
@@ -2709,7 +2934,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "horn"
     },
     {
         "name": "deerclops_eyeball",
@@ -2721,7 +2947,8 @@
         "spoilage": [null],
         "health": [60],
         "hunger": [75],
-        "sanity": [-15]
+        "sanity": [-15],
+        "debug": "deerclops_eyeball"
     },
     {
         "name": "bearger_fur",
@@ -2733,7 +2960,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "bearger_fur"
     },
     {
         "name": "lavae_egg",
@@ -2745,7 +2973,8 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "lavae_egg"
     },
     {
         "name": "townportaltalisman",
@@ -2757,6 +2986,7 @@
         "spoilage": [null],
         "health": [0],
         "hunger": [0],
-        "sanity": [0]
+        "sanity": [0],
+        "debug": "townportaltalisman"
     }
 ]

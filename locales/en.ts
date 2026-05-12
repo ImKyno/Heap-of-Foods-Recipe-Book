@@ -328,6 +328,10 @@ const en = {
     debuff: "Temporary Effect",
     characterfood: "Favorite Food",
     event: "Special Event",
+    debug: {
+      title: "Debug",
+      spawn: "Spawn Code",
+    },
   },
 
   foodtypes: {
