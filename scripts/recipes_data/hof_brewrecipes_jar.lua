@@ -1857,6 +1857,67 @@ local kyno_foods_jar =
 		monsterhealth = 30,
 		monstersanity = 30,
 	},
+
+	pickles_cavetuber =
+	{
+		test = function(brewer, names, tags) return names.kyno_cavetuber and (names.kyno_cavetuber == 2) and tags.spotspice end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_MED,
+		health = -20,
+		hunger = 100,
+		sanity = 10,
+		cooktime = 72,
+		scale = .90,
+		nameoverride = "KYNO_PICKLES",
+		overridebuild = "kyno_foodrecipes_jar",
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "kyno_cavetuber" }, amount = 2 },
+			{ items = { "tag_spotspice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "kyno_cavetuber" }, amount = 2 },
+			{ items = { "kyno_spotspice" }, amount = 1 },
+		},
+	},
+
+	pickles_cavetuber_blooming =
+	{
+		test = function(brewer, names, tags) return names.kyno_cavetuber_blooming 
+		and (names.kyno_cavetuber_blooming == 2) and tags.spotspice end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_MED,
+		health = 60,
+		hunger = 75,
+		sanity = 25,
+		cooktime = 72,
+		scale = .90,
+		nameoverride = "KYNO_PICKLES",
+		overridebuild = "kyno_foodrecipes_jar",
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 2 },
+			{ items = { "tag_spotspice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 2 },
+			{ items = { "kyno_spotspice" }, amount = 1 },
+		},
+	},
 	
 	agedroe_pondfish =
 	{
@@ -2922,37 +2983,6 @@ local kyno_foods_jar =
                 end
             end
         end,
-	},
-	
-	agedroe_antchovy =
-	{
-		test = function(brewer, names, tags) return names.kyno_roe_antchovy and names.kyno_salt and names.kyno_spotspice end,
-		priority = 30,
-		foodtype = FOODTYPE.MEAT,
-		perishtime = TUNING.PERISH_PRESERVED,
-		health = 5,
-		hunger = 10,
-		sanity = 5,
-		cooktime = 48,
-		nameoverride = "AGEDROE",
-		overridebuild = "kyno_foodrecipes_jar1",
-		floater = TUNING.HOF_FLOATER,
-		required = 
-		{
-			{ items = { "kyno_roe_antchovy" }, amount = 1 },
-			{ items = { "tag_spotspice" }, amount = 1 },
-			{ items = { "kyno_salt" }, amount = 1 },
-		},
-		excluded = 
-		{
-    		
-		},
-		card_def = 
-		{
-			{ items = { "kyno_roe_antchovy" }, amount = 1 },
-			{ items = { "kyno_spotspice" }, amount = 1 },
-			{ items = { "kyno_salt" }, amount = 1 },
-		},
 	},
 	
 	agedroe_swordfish_blue =

@@ -3273,6 +3273,116 @@
     ]
   },
   {
+    "name": "pickles_cavetuber",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 4800,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "health": -20,
+    "hunger": 100,
+    "sanity": 10,
+    "cooktime": 72,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_cavetuber"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_cavetuber"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "pickles_cavetuber_blooming",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 4800,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "health": 60,
+    "hunger": 75,
+    "sanity": 25,
+    "cooktime": 72,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
     "name": "agedroe_pondfish",
     "priority": 30,
     "foodtype": "MEAT",
@@ -5529,75 +5639,6 @@
       {
         "items": [
           "kyno_roe_jellyfish_rainbow"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      },
-      {
-        "items": [
-          "kyno_spotspice"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      },
-      {
-        "items": [
-          "kyno_salt"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      }
-    ]
-  },
-  {
-    "name": "agedroe_antchovy",
-    "priority": 30,
-    "foodtype": "MEAT",
-    "spoilage": 9600,
-    "temperature": null,
-    "temperatureDuration": null,
-    "debuff": false,
-    "health": 5,
-    "hunger": 10,
-    "sanity": 5,
-    "cooktime": 48,
-    "stacksize": null,
-    "characterfood": null,
-    "mermfood": null,
-    "mermhealth": null,
-    "mermhunger": null,
-    "mermsanity": null,
-    "monsterfood": null,
-    "monsterhealth": null,
-    "monstersanity": null,
-    "requires": [
-      {
-        "items": [
-          "kyno_roe_antchovy"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      },
-      {
-        "items": [
-          "tag_spotspice"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      },
-      {
-        "items": [
-          "kyno_salt"
-        ],
-        "amount": 1,
-        "comparator": "equal"
-      }
-    ],
-    "excluded": [],
-    "card_def": [
-      {
-        "items": [
-          "kyno_roe_antchovy"
         ],
         "amount": 1,
         "comparator": "equal"

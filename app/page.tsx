@@ -8,6 +8,7 @@ import { usePageTitle } from "@/components/PageTitle";
 import { useRouter } from "next/navigation";
 import RandomRecipe from "../components/RandomRecipe";
 import DailyRecipe from "../components/DailyRecipe";
+import NewlyAddedRecipes from "../components/NewlyAddedRecipes";
 import RandomTips from "../components/RandomTips";
 import { ClientOnly } from "@/components/ClientOnly";
 
@@ -337,6 +338,15 @@ export default function HomePage() {
         <div className="flex justify-center items-center px-4 py-4 w-full">
           <ClientOnly>
             <DailyRecipe />
+          </ClientOnly>
+        </div>
+
+        <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
+
+        {/* NEWLY ADDED RECIPES */}
+        <div className="flex justify-center items-center px-4 py-4 w-full">
+          <ClientOnly>
+            <NewlyAddedRecipes />
           </ClientOnly>
         </div>
 

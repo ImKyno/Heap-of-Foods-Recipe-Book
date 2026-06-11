@@ -18,11 +18,12 @@ interface SettingsProps {
   onLanguageChange?: (lang: Locale) => void;
 }
 
-type Lang = "en" | "pt";
+type Lang = "en" | "pt" | "vi";
 
 const LANGUAGES = [
   { code: "en", label: "English" },
   { code: "pt", label: "Português" },
+  { code: "vi", label: "Tiếng Việt" },
 ];
 
 export default function Settings({

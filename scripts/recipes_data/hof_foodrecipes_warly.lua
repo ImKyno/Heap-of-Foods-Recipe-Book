@@ -888,6 +888,51 @@ local kyno_foods_warly =
 			eater:AddDebuff("buff_moistureimmunity", "buff_moistureimmunity")
 		end,
 	},
+
+	mandrakebaobuns =
+	{
+		test = function(cooker, names, tags) return names.mandrake and tags.flour and (tags.meat and tags.meat >= 1)
+		and (names.kyno_cavetuber_blooming or names.kyno_cavetuber_blooming_cooked) end,
+		priority = 1,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_SUPERSLOW,
+		health = 25,
+		hunger = 175,
+		sanity = 120,
+		cooktime = 3.5,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_HEALINGBONUS,
+		overridebuild = "kyno_foodrecipes_warly",
+		pigcoinvalue = {15, 5, 1},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "tag_meat" }, amount = 1, comparator = "morethan" },
+			{ items = { "kyno_cavetuber_blooming" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "meat" }, amount = 1 },
+			{ items = { "kyno_cavetuber_blooming" }, amount = 1 },
+		},
+		tags = {"masterfood", "mandrake"},
+		card_def = {ingredients = {{"mandrake", 1}, {"kyno_flour", 1}, {"kyno_cavetuber_blooming", 1}, {"meat", 1}}},
+		prefabs = { "kyno_healingbuff" },
+		oneatenfn = function(inst, eater)
+			if eater.SoundEmitter ~= nil then
+				eater.SoundEmitter:PlaySound("dontstarve/creatures/mandrake/death")
+			end
+
+			eater:AddDebuff("kyno_healingbuff", "kyno_healingbuff")
+		end,
+	},
 }
 
 for k, recipe in pairs(kyno_foods_warly) do

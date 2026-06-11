@@ -2,10 +2,11 @@
 import { useState, useEffect, useContext, createContext } from "react"
 import en from "@/locales/en"
 import pt from "@/locales/pt"
+import vi from "@/locales/vi"
 
-export type Locale = "en" | "pt"
+export type Locale = "en" | "pt" | "vi"
 
-const locales = { en, pt }
+const locales = { en, pt, vi }
 
 const LocaleContext = createContext<Locale>("en")
 
@@ -61,7 +62,7 @@ export function useTranslation() {
     setIsClient(true)
     
     const saved = localStorage.getItem("lang")
-    const initialLocale = (saved === "en" || saved === "pt") ? saved : "en"
+    const initialLocale = (saved === "en" || saved === "pt" || saved === "vi") ? saved : "en"
     
     currentLocale = initialLocale
     setLocaleState(initialLocale)

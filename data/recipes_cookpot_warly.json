@@ -1649,5 +1649,81 @@
         "comparator": "equal"
       }
     ]
+  },
+  {
+    "name": "mandrakebaobuns",
+    "priority": 1,
+    "foodtype": "MEAT",
+    "spoilage": 19200,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "health": 25,
+    "hunger": 175,
+    "sanity": 120,
+    "cooktime": 3.5,
+    "stacksize": null,
+    "characterfood": null,
+    "requires": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_meat"
+        ],
+        "amount": 1,
+        "comparator": "morethan"
+      },
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "meat"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
   }
 ]

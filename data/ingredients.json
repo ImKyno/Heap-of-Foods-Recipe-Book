@@ -780,6 +780,32 @@
         "debug": ["kyno_sporecap_dark", "kyno_sporecap_dark_cooked"]
     },
     {
+        "name": "cavetuber",
+        "cooked": true,
+        "dried": false,
+        "foodtype": "VEGGIE",
+        "cooktype": ["VEGGIE", "TUBER", "MONSTER"],
+        "cookvalue": [1.0, 1.0, 1.0],
+        "spoilage": [9600, 2880],
+        "health": [-10, -5],
+        "hunger": [12.5, 22.5],
+        "sanity": [0, 0],
+        "debug": ["kyno_cavetuber", "kyno_cavetuber_cooked"]
+    },
+    {
+        "name": "cavetuber_blooming",
+        "cooked": true,
+        "dried": false,
+        "foodtype": "VEGGIE",
+        "cooktype": ["VEGGIE", "TUBER"],
+        "cookvalue": [1.0, 1.0],
+        "spoilage": [9600, 2880],
+        "health": [10, 15],
+        "hunger": [12.5, 25.5],
+        "sanity": [5, 5],
+        "debug": ["kyno_cavetuber_blooming", "kyno_cavetuber_blooming_cooked"]
+    },
+    {
         "name": "twigs",
         "cooked": false,
         "dried": false,
@@ -2262,19 +2288,6 @@
         "debug": "kyno_jellyfish_rainbow_dead"
     },
     {
-        "name": "antchovy",
-        "cooked": false,
-        "dried": false,
-        "foodtype": "MEAT",
-        "cooktype": ["MEAT", "FISH"],
-        "cookvalue": [0.25, 0.25],
-        "spoilage": [2880],
-        "health": [0],
-        "hunger": [9.375],
-        "sanity": [3],
-        "debug": "kyno_antchovy"
-    },
-    {
         "name": "swordfish_blue",
         "cooked": false,
         "dried": false,
@@ -2728,19 +2741,6 @@
         "hunger": [4.6875],
         "sanity": [0],
         "debug": "kyno_roe_jellyfish_rainbow"
-    },
-    {
-        "name": "roe_antchovy",
-        "cooked": false,
-        "dried": false,
-        "foodtype": "MEAT",
-        "cooktype": ["MEAT", "FISH", "ROE"],
-        "cookvalue": [0.25, 0.25, 1],
-        "spoilage": [2880],
-        "health": [1],
-        "hunger": [4.6875],
-        "sanity": [0],
-        "debug": "kyno_roe_antchovy"
     },
     {
         "name": "roe_swordfish_blue",

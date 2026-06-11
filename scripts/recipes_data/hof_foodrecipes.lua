@@ -935,6 +935,7 @@ local kyno_foods =
 			{ items = { "carrot" }, amount = 3 },
 			{ items = { "kyno_spotspice" }, amount = 1 },
 		},
+		characterfood = {"sammy"},
 	},
 	
 	gorge_fishpie =
@@ -1132,6 +1133,7 @@ local kyno_foods =
 		oneatenfn = function(inst, eater)
 		
 		end,
+		characterfood = {"sammy"},
 	},
 	
 	gorge_garlicmashed =
@@ -2134,6 +2136,7 @@ local kyno_foods =
 			{ items = { "meat" }, amount = 2 },
 			{ items = { "kyno_bacon" }, amount = 2 },
 		},
+		characterfood = {"partitio"},
 	},
 	
 	gorge_crab_cake = 
@@ -5808,6 +5811,7 @@ local kyno_foods =
 		oneatenfn = function(inst, eater)
 			eater:AddDebuff("kyno_trufflesbuff", "kyno_trufflesbuff")
 		end,
+		characterfood = {"partitio"},
 	},
 	
 	sporecappie =
@@ -6223,6 +6227,176 @@ local kyno_foods =
 		prefabs = { "kyno_hungerratebuff" },
 		oneatenfn = function(inst, eater)
 			eater:AddDebuff("kyno_hungerratebuff", "kyno_hungerratebuff")
+		end,
+	},
+
+	cavetubertea =
+	{
+		test = function(cooker, names, tags) return (names.kyno_cavetuber_blooming or names.kyno_cavetuber_blooming_cooked) 
+		and tags.tillweed and tags.sweetener and tags.frozen and not tags.inedible end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_MED,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.FOOD_TEMP_AVERAGE,
+		health = 30,
+		hunger = 30,
+		sanity = 15,
+		cooktime = 1,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_GREENTHUMB,
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 2, 0},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 1 },
+			{ items = { "tag_tillweed" }, amount = 1 },
+			{ items = { "tag_sweetener" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		{ items = { "tag_inedible" } },
+		},
+		card_def = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 1 },
+			{ items = { "tag_tillweed" }, amount = 1 },
+			{ items = { "honey" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		tags = {"honeyed", "fooddrink"},
+		card_def = {ingredients = {{"kyno_cavetuber_blooming", 1}, {"tillweed", 1}, {"honey", 1}, {"ice", 1}}},
+		prefabs = { "kyno_greenthumbbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_greenthumbbuff", "kyno_greenthumbbuff")
+		end,
+	},
+
+	mandrakepie =
+	{
+		test = function(cooker, names, tags) return names.mandrake and tags.flour and tags.meat
+		and not (tags.monster and tags.monster > 1) and not tags.tuber end,
+		priority = 1,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_SUPERSLOW,
+		health = 120,
+		hunger = 175,
+		sanity = 25,
+		cooktime = 3.5,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SOOTHING,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {10, 3, 1},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "tag_meat" }, amount = 2 },
+		},
+		excluded = 
+		{
+    		{ items = { "tag_monster" }, amount = 1, comparator = "morethan" },
+			{ items = { "tag_tuber"} },
+		},
+		card_def = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "meat" }, amount = 2 },
+		},
+		tags = {"mandrake"},
+		card_def = {ingredients = {{"mandrake", 1}, {"kyno_flour", 1}, {"meat", 2}}},
+		oneatenfn = function(inst, eater)
+			if eater.SoundEmitter ~= nil then
+				eater.SoundEmitter:PlaySound("dontstarve/creatures/mandrake/death")
+			end
+
+			DoAreaSleepFromFood(inst)
+		end,
+	},
+
+	rainparfait =
+	{
+		test = function(cooker, names, tags) return (names.watermelon or names.watermelon_cooked) and tags.berries
+		and tags.dairy and tags.sweetener end,
+		priority = 35,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_MED,
+		health = 10,
+		hunger = 25,
+		sanity = 33,
+		cooktime = 1.2,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_RAINY,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 4, 0},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "watermelon" }, amount = 1 },
+			{ items = { "tag_berries" }, amount = 1 },
+			{ items = { "tag_dairy" }, amount = 1 },
+			{ items = { "tag_sweetener" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "watermelon" }, amount = 1 },
+			{ items = { "berries" }, amount = 1 },
+			{ items = { "goatmilk" }, amount = 1 },
+			{ items = { "honey" }, amount = 1 },
+		},
+		tags = {"honeyed"},
+		card_def = {ingredients = {{"watermelon", 1}, {"berries", 1}, {"goatmilk", 1}, {"honey", 1}}},
+		prefabs = { "kyno_wetnessbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_wetnessbuff", "kyno_wetnessbuff")
+		end,
+	},
+
+	midnightfeast =
+	{
+		test = function(cooker, names, tags) return names.oceanfish_midnight_carp_inv and tags.foliage
+		and (names.kyno_taroroot or names.kyno_taroroot_cooked) and tags.dairy end,
+		priority = 35,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_FAST,
+		health = 30,
+		hunger = 75,
+		sanity = 15,
+		cooktime = 2,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_MIDNIGHT,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {8, 1, 1},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "oceanfish_midnight_carp_inv" }, amount = 1 },
+			{ items = { "tag_foliage" }, amount = 1 },
+			{ items = { "kyno_taroroot" }, amount = 1 },
+			{ items = { "tag_dairy" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "oceanfish_midnight_carp_inv" }, amount = 1 },
+			{ items = { "foliage" }, amount = 1 },
+			{ items = { "kyno_taroroot" }, amount = 1 },
+			{ items = { "goatmilk" }, amount = 1 },
+		},
+		card_def = {ingredients = {{"oceanfish_midnight_carp_inv", 1}, {"foliage", 1}, {"kyno_taroroot", 1}, {"goatmilk", 1}}},
+		prefabs = { "kyno_nightkillbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_nightkillbuff", "kyno_nightkillbuff")
 		end,
 	},
 

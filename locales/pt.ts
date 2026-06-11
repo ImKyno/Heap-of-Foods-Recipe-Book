@@ -68,6 +68,10 @@ const pt = {
         desc3: `+15 em Vida, Fome e Sanidade, além dos atributos originais do prato.
         Também concede +2 de Sorte por um certo período de tempo.`,
       },
+      newlyadded: {
+        title: "Receitas Recém-adicionadas",
+        desc: "Receitas em destaque adicionadas na última atualização!",
+      },
     },
     contributors: {
       title: "Contribuidores",
@@ -108,8 +112,10 @@ const pt = {
       modartist: "Artista",
       modteste: "Beta Tester",
       modguide: "Criador de Guia",
+      modlocpt: "Tradutor - Português Brasileiro",
       modlocpl: "Tradutor - Polski",
       modloczh: "Tradutor - 简体中文",
+      modlocvi: "Tradutor - Tiếng Việt",
     },
   },
 
@@ -203,6 +209,15 @@ const pt = {
     tip82: "Galinhas Selvagens têm uma pequena chance de botar Ovos depois de se alimentarem.",
     tip83: "Galinhas criadas no Galinheiro só botam ovos se comerem algo diariamente, como Sementes, Trigo ou Rebentos Folhosos. Elas também podem se alimentar no Cocho de Alimentação.",
     tip84: "O Cocho de Alimentação pode ser usado para alimentar alguns animais de fazenda, como Galinhas.",
+    tip85: "As Árvores de Tubérculo das Cavernas são resistentes e não caem com facilidade. Traga seu melhor machado para derrubá-las!",
+    tip86: "Durante a Primavera, as Árvores de Tubérculo das Cavernas começarão a florescer, produzindo outro tipo de Tubérculo das Cavernas.",
+    tip87: "Mandrágoras Anciãs, quando mortas, fazem todas as criaturas ao redor adormecerem por alguns segundos.",
+    tip88: "Cuidado! Mandrágoras Anciãs não gostam que você carregue vegetais ou outras mandrágoras perto delas.",
+    tip89: "Comidas Preparadas podem ser trocadas com o Rei Porco por Koins. Cada comida tem seu próprio valor; pratos raros e melhores valem mais do que receitas comuns.",
+    tip90: "O Rei Porco está com fome e exige comida! Ele está oferecendo Koins (sua mais nova tentativa de criar uma moeda, ou assim dizem seus seguidores) em troca de refeições deliciosas.",
+    tip91: "Partitio é um porco orgulhoso que vive na Floresta Decídua. Ele vende apenas produtos de alta qualidade e está ansioso para conhecer novos clientes.",
+    tip92: "Após alguns acontecimentos infelizes no passado, Partitio agora se recusa a fazer negócios com os Povo-peixe novamente!",
+    tip93: "Partitio descobriu que alguém destruiu sua casa e agora precisa de ajuda para reconstruí-la ao seu antigo esplendor antes de voltar a fazer negócios.",
   },
   
   time: {
@@ -273,6 +288,8 @@ const pt = {
     walter: "Favorito do Walter",
     wanda: "Favorito da Wanda",
     wonkey: "Favorito de Wonkey",
+    sammy: "Favorito do Sammy",
+    partitio: "Favorito do Partitio",
   },
 
   card: {
@@ -410,6 +427,7 @@ const pt = {
     LUNAR: "Lunar",
     SHADOW: "Sombrio",
     POTATO: "Batata",
+    TUBER: "Tubérculo das Cavernas",
   },
 
   spoilagetime: {
@@ -611,6 +629,10 @@ const pt = {
     chickeneggsoup: "Sopa de Ovo Chinesa",
     chickeneggstew: "Guisado de Frango",
     chickenrotisserie: "Frango Assado",
+    cavetubertea: "Chá de Tubérculo das Cavernas",
+    mandrakepie: "Torta de Mandrágora",
+    rainparfait: "Delícia de Garoa",
+    midnightfeast: "Colhedor Noturno",
     jawsbreaker: "Quebra-queixo",
   },
 
@@ -639,12 +661,14 @@ const pt = {
     lazydessert: "Sobremesa Preguiçosa",
     lavaeeggboiled: "Ovo de Lava Assado",
     tiramisu: "Tiramisu",
+    mandrakebaobuns: "Bao de Mandrágora no Vapor",
   },
 
   recipes_keg: {
     beer: "Cerveja",
     paleale: "Pale Ale",
     mead: "Hidromel",
+    mandrakebeer: "Cerveja de Raiz",
     teagreen: "Chá Verde",
     teared: "Chá Preto",
     piraterum: "Rum de Pirata",
@@ -707,6 +731,8 @@ const pt = {
     juice_truffles: "Suco de Trufas",
     juice_sporecap: "Suco de Cogumelo-praga",
     juice_sporecap_dark: "Suco de Cogumelo Nocivo",
+    juice_cavetuber: "Suco de Tubérculo das Cavernas",
+    juice_cavetuber_blooming: "Suco de Tubérculo das Cavernas Florescido",
   },
 
   recipes_jar: {
@@ -767,6 +793,8 @@ const pt = {
     pickles_truffles: "Picles de Trufas",
     pickles_sporecap: "Picles de Cogumelo-praga",
     pickles_sporecap_dark: "Picles de Cogumelo Nocivo",
+    pickles_cavetuber: "Picles de Tubérculo das Cavernas",
+    pickles_cavetuber_blooming: "Picles de Tubérculo das Cavernas Florescido",
     agedroe_pondfish: "Ovas Maturadas de Peixe de Lago",
     agedroe_pondeel: "Ovas Maturadas de Enguia",
     agedroe_wobster: "Ovas Maturadas de Lagosta",
@@ -800,7 +828,6 @@ const pt = {
     agedroe_salmonfish: "Ovas Maturadas de Salmão",
     agedroe_jellyfish: "Ovas Maturadas de Água-viva",
     agedroe_jellyfish_rainbow: "Ovas Maturadas de Água-viva Arco-íris",
-    agedroe_antchovy: "Ovas Maturadas de Formiganchova",
     agedroe_swordfish_blue: "Ovas Maturadas de Peixe-espada Gélido",
   },
 
@@ -868,6 +895,10 @@ const pt = {
     brainmettersoup: "Estimula o cérebro",
     chickenwings: "Estimula a agressão",
     chickenrotisserie: "Desacelera a fome",
+    cavetubertea: "Aumenta o ganho de plantas",
+    mandrakepie: "Acalma criaturas próximas",
+    rainparfait: "Restaura a sanidade quando molhado",
+    midnightfeast: "Executa criaturas à noite",
     jawsbreaker: "Atrai criaturas do oceano",
 
     // WARLY RECIPES
@@ -882,6 +913,7 @@ const pt = {
     lazydessert: "Sacia o monstro",
     lavaeeggboiled: "Garante imunidade contra dano de fogo",
     tiramisu: "Acelera o corpo e dissipa umidade",
+    mandrakebaobuns: "Aumenta a eficiência de cura",
 
     // WOODEN KEG RECIPES
     beer: "Aumenta a força",
@@ -1033,6 +1065,10 @@ const pt = {
     sporecap_cooked: "Cogumelo-Praga Assado",
     sporecap_dark: "Cogumelo Nocivo",
     sporecap_dark_cooked: "Cogumelo Nocivo Assado",
+    cavetuber: "Tubérculo das Cavernas",
+    cavetuber_cooked: "Tubérculo das Cavernas Frito",
+    cavetuber_blooming: "Tubérculo das Cavernas Florescido",
+    cavetuber_blooming_cooked: "Tubérculo das Cavernas Florescido Frito",
     twigs: "Gravetos",
     foliage: "Folhagem",
     foliage_cooked: "Folhagem Assada",
@@ -1213,7 +1249,6 @@ const pt = {
     jellyfish_rainbow_cooked: "Água-viva Arco-íris Assada",
     jellyfish_rainbow_dried: "Água-viva Seca",
     jellyfish_rainbow_dead: "Água-viva Arco-íris Morta",
-    antchovy: "Formiganchova",
     swordfish_blue: "Peixe-espada Gélido",
     roe: "Ovas",
     roe_cooked: "Ovas Cozidas",
@@ -1251,7 +1286,6 @@ const pt = {
     roe_salmonfish: "Ovas de Salmão",
     roe_jellyfish: "Ovas de Água-viva",
     roe_jellyfish_rainbow: "Ovas de Água-viva Arco-íris",
-    roe_antchovy: "Ovas de Formiganchovas",
     roe_swordfish_blue: "Ovas de Peixe-espada Gélido",
     slurtle_shellpieces: "Concha Quebrada",
     rocks: "Rochas",
@@ -1320,6 +1354,7 @@ const pt = {
     veggie: "Vegetal",
     wobster: "Lagosta",
     potato: "Batata",
+    tuber: "Tubérculo das Cavernas",
   },
 
   seealso: {

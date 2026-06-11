@@ -172,6 +172,75 @@
     ]
   },
   {
+    "name": "mandrakebeer",
+    "priority": 100,
+    "foodtype": "GOODIES",
+    "spoilage": 19200,
+    "temperature": -40,
+    "temperatureDuration": 480,
+    "debuff": false,
+    "health": 150,
+    "hunger": 150,
+    "sanity": 150,
+    "cooktime": 120,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
     "name": "teagreen",
     "priority": 30,
     "foodtype": "GOODIES",
@@ -3783,6 +3852,116 @@
       {
         "items": [
           "kyno_sporecap_dark"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "juice_cavetuber",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 7200,
+    "temperature": -40,
+    "temperatureDuration": 10,
+    "debuff": false,
+    "health": -25,
+    "hunger": 62.5,
+    "sanity": 50,
+    "cooktime": 72,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_cavetuber"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_cavetuber"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "juice_cavetuber_blooming",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 7200,
+    "temperature": -40,
+    "temperatureDuration": 10,
+    "debuff": false,
+    "health": 60,
+    "hunger": 50,
+    "sanity": 20,
+    "cooktime": 72,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
         ],
         "amount": 2,
         "comparator": "equal"

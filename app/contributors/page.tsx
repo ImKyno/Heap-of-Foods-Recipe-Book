@@ -36,8 +36,10 @@ const BADGE_ICONS: Record<string, any> = {
   "contributors.badges.modtester": faFlask,
   "contributors.badges.modartist": faPalette,
   "contributors.badges.modguide": faBookAtlas,
+  "contributors.badges.modlocpt": faLanguage,
   "contributors.badges.modlocpl": faLanguage,
   "contributors.badges.modloczh": faLanguage,
+  "contributors.badges.modlocvi": faLanguage,
 };
 
 const BADGE_COLORS: Record<string, string> = {
@@ -48,8 +50,10 @@ const BADGE_COLORS: Record<string, string> = {
   "contributors.badges.modtester": "#fe45d6",
   "contributors.badges.modartist": "#a855f7",
   "contributors.badges.modguide": "#10b981",
+  "contributors.badges.modlocpt": "#378b9a",
   "contributors.badges.modlocpl": "#378b9a",
   "contributors.badges.modloczh": "#378b9a",
+  "contributors.badges.modlocvi": "#378b9a",
 };
 
 function getBadgeColor(badgeKey: string): string {

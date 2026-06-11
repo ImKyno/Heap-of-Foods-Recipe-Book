@@ -29,7 +29,7 @@
   {
     "name": "Eventide",
     "image": "/icons/contributors/contributor_eventide.png",
-    "badges": ["contributors.badges.donator", "contributors.badges.modtester"]
+    "badges": ["contributors.badges.donator", "contributors.badges.modtester", "contributors.badges.modlocpt"]
   },
   {
     "name": "Fliphe",
@@ -111,6 +111,12 @@
     "name": "Rodra",
     "image": "/icons/contributors/contributor_rodra.png",
     "badges": ["contributors.badges.donator"]
+  },
+  {
+    "name": "Saikuno",
+    "image": "/icons/contributors/contributor_saikuno.png",
+    "badges": ["contributors.badges.modlocvi"],
+    "youtube": "https://www.youtube.com/@Saikuno_6969"
   },
   {
     "name": "Sir Eugene",

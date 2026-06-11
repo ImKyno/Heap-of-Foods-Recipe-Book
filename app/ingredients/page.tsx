@@ -1152,7 +1152,7 @@ function CookType({
             const label = t(`cooktypes.${type}`);
             return value !== undefined ? `${value} ${label}` : label;
           })
-          .join("  —  ")}
+          .join("  -  ")}
       </span>
 
       <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-black text-white dark:bg-white dark:text-black text-xs px-3 py-1 rounded whitespace-nowrap shadow-lg z-50 pointer-events-none">

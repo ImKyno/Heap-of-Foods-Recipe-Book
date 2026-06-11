@@ -112,6 +112,39 @@ local kyno_foods_keg =
 		characterfood = {"wathgrithr"},
 	},
 
+	mandrakebeer =
+	{
+		test = function(brewer, names, tags) return names.mandrake and tags.sugar and tags.frozen end,
+		priority = 100,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_SUPERSLOW,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
+		health = 150,
+		hunger = 150,
+		sanity = 150,
+		cooktime = 120,
+		overridebuild = "kyno_foodrecipes_keg1",
+		floater = TUNING.HOF_FLOATER,
+		tags = {"fooddrink", "honeyed"},
+		required = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "mandrake" }, amount = 1 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+	},
+
 	teagreen =
 	{
 		test = function(brewer, names, tags) return names.kyno_piko_orange and names.green_cap and names.kyno_tealeaf end,
@@ -2339,6 +2372,73 @@ local kyno_foods_keg =
 		monsterfood = true,
 		monsterhealth = 20,
 		monstersanity = 20,
+	},
+
+	juice_cavetuber =
+	{
+		test = function(brewer, names, tags) return names.kyno_cavetuber and (names.kyno_cavetuber == 2) and tags.frozen end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_SLOW,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.FOOD_TEMP_AVERAGE,
+		health = -25,
+		hunger = 62.5,
+		sanity = 50,
+		cooktime = 72,
+		goldvalue = 10,
+		nameoverride = "KYNO_JUICE",
+		overridebuild = "kyno_foodrecipes_keg1",
+		floater = TUNING.HOF_FLOATER,
+		tags = {"fooddrink"},
+		required = 
+		{
+			{ items = { "kyno_cavetuber" }, amount = 2 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "kyno_cavetuber" }, amount = 2 },
+			{ items = { "ice" }, amount = 1 },
+		},
+	},
+
+	juice_cavetuber_blooming =
+	{
+		test = function(brewer, names, tags) return names.kyno_cavetuber_blooming 
+		and (names.kyno_cavetuber_blooming == 2) and tags.frozen end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_SLOW,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.FOOD_TEMP_AVERAGE,
+		health = 60,
+		hunger = 50,
+		sanity = 20,
+		cooktime = 72,
+		goldvalue = 10,
+		nameoverride = "KYNO_JUICE",
+		overridebuild = "kyno_foodrecipes_keg1",
+		floater = TUNING.HOF_FLOATER,
+		tags = {"fooddrink"},
+		required = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 2 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "kyno_cavetuber_blooming" }, amount = 2 },
+			{ items = { "ice" }, amount = 1 },
+		},
 	},
 }
 

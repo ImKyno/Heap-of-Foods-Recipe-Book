@@ -10,7 +10,7 @@ export function ThemeInitializer() {
   useEffect(() => {
     try {
       const savedLang = localStorage.getItem("lang");
-      if (savedLang === "en" || savedLang === "pt") {
+      if (savedLang === "en" || savedLang === "pt" || savedLang === "vi") {
         setLocale(savedLang);
       }
     } catch (e) {}

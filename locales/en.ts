@@ -68,6 +68,10 @@ const en = {
         desc3: `+15 to Health, Hunger and Sanity. Alongside the dish’s original stats. 
         It also grants +2 Luck for a certain amount of time.`,
       },
+      newlyadded: {
+        title: "Newly Added Recipes",
+        desc: "Featured recipes that were added in the latest update!",
+      },
     },
     contributors: {
       title: "Contributors",
@@ -98,7 +102,7 @@ const en = {
   contributors: {
     title: "Contributors",
     description: "This page celebrates all the extraordinary people who have contributed to this project. From generous donors to talented artists, content creators, guides and translators, every contribution is essential to the success of this mod!",
-    cta: "If you would like to have your card here, you can make a donation (never required, always appreciated!) on my Ko-fi or contribute to the mod on our Discord through betas, arts, translations and much more other things!",
+    cta: "If you would like to have your card here, you can make a donation (never required, always appreciated!) on my Ko-fi or contribute to the mod in our Discord through betas, arts, translations and much more other things!",
     nocontributors: "No contributors found.",
     badges: {
       donator: "Donator",
@@ -108,8 +112,10 @@ const en = {
       modartist: "Artist",
       modtester: "Beta Tester",
       modguide: "Guide Creator",
+      modlocpt: "Translator - Português Brasileiro",
       modlocpl: "Translator - Polski",
       modloczh: "Translator - 简体中文",
+      modlocvi: "Translator - Tiếng Việt",
     },
   },
 
@@ -203,6 +209,15 @@ const en = {
     tip82: "Chickens found in the wild have a small chance of laying Eggs after eating.",
     tip83: "Chickens living in a Coop will only produce Eggs if they eat something daily like Seeds or Grains. They can also eat from the Feeding Trough.",
     tip84: "The Feeding Trough can be used to feed some farm animals such as Chickens.",
+    tip85: "Cave Tuber Trees are sturdy and won't go down so easily. Bring your best axe to chop them down!",
+    tip86: "During the Spring Cave Tuber Trees will start blooming, producing another kind of Cave Tuber.",
+    tip87: "Elder Mandrakes when killed will put every creature around them to sleep for some seconds.",
+    tip88: "Beware! Elder Mandrakes don't like when you carry vegetables or its kind near them.",
+    tip89: "Prepared Foods can be traded to Pig King in exchange for Koins. Each food has its own value, rare and better food are worth more than common dishes.",
+    tip90: "The Pig King is hungry and demands food! He's offering Koins (His brand new attempt on currency or so his followers said.) in exchange for some delicious meals.",
+    tip91: "Partitio is a proud pig living in the Deciduous Forest. He only sells high quality stuff and is looking forward to meet new costumers.",
+    tip92: "After some unfortunate past events, Partitio now refuses to do any business with the Mermfolk ever again!",
+    tip93: "Partitio found out someone had broken his house and now he needs help to rebuild it back to its former glory in order to start doing business again.",
   },
 
   time: {
@@ -273,6 +288,8 @@ const en = {
     walter: "Walter's Favorite",
     wanda: "Wanda's Favorite",
     wonkey: "Wonkey's Favorite",
+    sammy: "Sammy's Favorite",
+    partitio: "Partitio's Favorite",
   },
 
   card: {
@@ -410,6 +427,7 @@ const en = {
     LUNAR: "Lunar",
     SHADOW: "Shadow",
     POTATO: "Potato",
+    TUBER: "Cave Tuber",
   },
 
   spoilagetime: {
@@ -611,6 +629,10 @@ const en = {
     chickeneggsoup: "Egg Drop Soup",
     chickeneggstew: "Chicken Stew",
     chickenrotisserie: "Rotisserie Chicken",
+    cavetubertea: "Cave Tuber Tea",
+    mandrakepie: "Mandrake Pie",
+    rainparfait: "Drizzle Delight",
+    midnightfeast: "Night Harvester",
     jawsbreaker: "Jawsbreaker",
   },
 
@@ -639,12 +661,14 @@ const en = {
     lazydessert: "The Lazy Dessert",
     lavaeeggboiled: "Lava Boiled Egg",
     tiramisu: "Tirameesu",
+    mandrakebaobuns: "Steamed Mandrake Bao",
   },
 
   recipes_keg: {
     beer: "Beer",
     paleale: "Pale Ale",
     mead: "Mead",
+    mandrakebeer: "Root Beer",
     teagreen: "Green Tea",
     teared: "Black Tea",
     piraterum: "Pirate Rum",
@@ -707,6 +731,8 @@ const en = {
     juice_truffles: "Truffles Juice",
     juice_sporecap: "Blight Cap Juice",
     juice_sporecap_dark: "Noxious Cap Juice",
+    juice_cavetuber: "Cave Tuber Juice",
+    juice_cavetuber_blooming: "Blooming Cave Tuber Juice",
   },
 
   recipes_jar: {
@@ -767,6 +793,8 @@ const en = {
     pickles_truffles: "Pickled Truffles",
     pickles_sporecap: "Pickled Blight Cap",
     pickles_sporecap_dark: "Pickled Noxious Cap",
+    pickles_cavetuber: "Pickled Cave Tuber",
+    pickles_cavetuber_blooming: "Pickled Blooming Cave Tuber",
     agedroe_pondfish: "Aged Freshwater Fish Roe",
     agedroe_pondeel: "Aged Eel Roe",
     agedroe_wobster: "Aged Wobster Roe",
@@ -800,7 +828,6 @@ const en = {
     agedroe_salmonfish: "Aged Salmon Roe",
     agedroe_jellyfish: "Aged Jellyfish Roe",
     agedroe_jellyfish_rainbow: "Aged Rainbow Jellyfish Roe",
-    agedroe_antchovy: "Aged Ant-Chovy Roe",
     agedroe_swordfish_blue: "Aged Chilled Swordfish Roe",
   },
 
@@ -868,6 +895,10 @@ const en = {
     brainmettersoup: "Stimulates the brain",
     chickenwings: "Stimulates aggression",
     chickenrotisserie: "Decreases hunger loss",
+    cavetubertea: "Increases plant yield",
+    mandrakepie: "Soothes nearby creatures",
+    rainparfait: "Restores sanity when wet",
+    midnightfeast: "Executes creatures at night",
     jawsbreaker: "Allures ocean creatures",
 
     // WARLY RECIPES
@@ -882,6 +913,7 @@ const en = {
     lazydessert: "Satisfies the monster",
     lavaeeggboiled: "Grants fire immunity",
     tiramisu: "Speeds the body and dissipates moisture",
+    mandrakebaobuns: "Increases healing efficiency",
 
     // WOODEN KEG RECIPES
     beer: "Increases strength",
@@ -1033,6 +1065,10 @@ const en = {
     sporecap_cooked: "Cooked Blight Cap",
     sporecap_dark: "Noxious Cap",
     sporecap_dark_cooked: "Cooked Noxious Cap",
+    cavetuber: "Cave Tuber",
+    cavetuber_cooked: "Fried Cave Tuber",
+    cavetuber_blooming: "Blooming Cave Tuber",
+    cavetuber_blooming_cooked: "Fried Blooming Cave Tuber",
     twigs: "Twigs",
     foliage: "Foliage",
     foliage_cooked: "Cooked Foliage",
@@ -1213,7 +1249,6 @@ const en = {
     jellyfish_rainbow_cooked: "Cooked Rainbow Jellyfish",
     jellyfish_rainbow_dried: "Dried Jellyfish",
     jellyfish_rainbow_dead: "Dead Rainbow Jellyfish",
-    antchovy: "Ant-Chovy",
     swordfish_blue: "Chilled Swordfish",
     roe: "Roe",
     roe_cooked: "Cooked Roe",
@@ -1251,7 +1286,6 @@ const en = {
     roe_salmonfish: "Salmon Roe",
     roe_jellyfish: "Jellyfish Roe",
     roe_jellyfish_rainbow: "Rainbow Jellyfish Roe",
-    roe_antchovy: "Ant-Chovy Roe",
     roe_swordfish_blue: "Chilled Swordfish Roe",
     slurtle_shellpieces: "Broken Shell",
     rocks: "Rocks",
@@ -1320,6 +1354,7 @@ const en = {
     veggie: "Veggie",
     wobster: "Wobster",
     potato: "Potato",
+    tuber: "Cave Tuber",
   },
 
   seealso: {

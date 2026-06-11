@@ -1896,7 +1896,9 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": null,
-    "characterfood": null,
+    "characterfood": [
+      "sammy"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,
@@ -2313,7 +2315,9 @@
     "sanity": 5,
     "cooktime": 0.75,
     "stacksize": null,
-    "characterfood": null,
+    "characterfood": [
+      "sammy"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,
@@ -4601,7 +4605,9 @@
     "sanity": 0,
     "cooktime": 0.75,
     "stacksize": null,
-    "characterfood": null,
+    "characterfood": [
+      "partitio"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,
@@ -12142,7 +12148,9 @@
     "sanity": 0,
     "cooktime": 1.5,
     "stacksize": null,
-    "characterfood": null,
+    "characterfood": [
+      "partitio"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,
@@ -13044,6 +13052,345 @@
           "carrot"
         ],
         "amount": 2,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "cavetubertea",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 4800,
+    "temperature": -40,
+    "temperatureDuration": 10,
+    "debuff": true,
+    "health": 30,
+    "hunger": 30,
+    "sanity": 15,
+    "cooktime": 1,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_tillweed"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sweetener"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [
+      {
+        "items": [
+          "tag_inedible"
+        ],
+        "comparator": "equal"
+      }
+    ],
+    "card_def": [
+      {
+        "items": [
+          "kyno_cavetuber_blooming"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_tillweed"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "honey"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "mandrakepie",
+    "priority": 1,
+    "foodtype": "MEAT",
+    "spoilage": 19200,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "health": 120,
+    "hunger": 175,
+    "sanity": 25,
+    "cooktime": 3.5,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_meat"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [
+      {
+        "items": [
+          "tag_monster"
+        ],
+        "amount": 1,
+        "comparator": "morethan"
+      },
+      {
+        "items": [
+          "tag_tuber"
+        ],
+        "comparator": "equal"
+      }
+    ],
+    "card_def": [
+      {
+        "items": [
+          "mandrake"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "meat"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "rainparfait",
+    "priority": 35,
+    "foodtype": "VEGGIE",
+    "spoilage": 4800,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "health": 10,
+    "hunger": 25,
+    "sanity": 33,
+    "cooktime": 1.2,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "watermelon"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_berries"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_dairy"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sweetener"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "watermelon"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "berries"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "goatmilk"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "honey"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "midnightfeast",
+    "priority": 35,
+    "foodtype": "MEAT",
+    "spoilage": 2880,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "health": 30,
+    "hunger": 75,
+    "sanity": 15,
+    "cooktime": 2,
+    "stacksize": null,
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "oceanfish_midnight_carp_inv"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_foliage"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_taroroot"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_dairy"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "oceanfish_midnight_carp_inv"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "foliage"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_taroroot"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "goatmilk"
+        ],
+        "amount": 1,
         "comparator": "equal"
       }
     ]
