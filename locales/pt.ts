@@ -867,6 +867,7 @@ const pt = {
     snakebonesoup: "Dano aumentado contra minhocas",
     gorge_carrot_cake: "O bolo é uma mentira",
     gorge_candy: "Acelera as mãos",
+    gorge_garlicbread: "Assusta batilisks próximos",
     cucumbersalad: "Dissipa a umidade",
     bowlofgears: "Atualiza o chassis",
     longpigmeal: "Machuca o corpo",

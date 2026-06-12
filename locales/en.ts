@@ -867,6 +867,7 @@ const en = {
     snakebonesoup: "Increased damage to worms",
     gorge_carrot_cake: "The cake is a lie",
     gorge_candy: "Speeds the hands",
+    gorge_garlicbread: "Scares nearby batilisks",
     cucumbersalad: "Dissipates moisture",
     bowlofgears: "Upgrades the chassis",
     longpigmeal: "Hurts the body",

@@ -867,6 +867,7 @@ const vi = {
     snakebonesoup: "Tăng sát thương lên sâu",
     gorge_carrot_cake: "Chiếc bánh là một lời nói dối",
     gorge_candy: "Tăng tốc đôi tay",
+    gorge_garlicbread: "Làm các Batilisk gần đó hoảng sợ",
     cucumbersalad: "Xua tan độ ẩm",
     bowlofgears: "Nâng cấp khung máy",
     longpigmeal: "Làm đau cơ thể",
