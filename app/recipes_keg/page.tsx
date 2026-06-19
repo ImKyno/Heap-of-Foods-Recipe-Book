@@ -40,7 +40,14 @@ const TEMPERATURE_DURATION_MAP = {
   FOOD_TEMP_BRIEF: 5,
   FOOD_TEMP_AVERAGE: 10,
   FOOD_TEMP_LONG: 15,
-  FOOD_TEMP_DURATION: 480,
+  FOOD_TEMP_DURATION: 240,
+};
+
+const TEMPERATURE_VALUE_MAP = {
+  5: 5,
+  10: 10,
+  15: 15,
+  240: 40,
 };
 
 const FOODTYPE_ORDER = [
@@ -189,12 +196,18 @@ export default function CookPotKeg() {
     temperatureDuration: number,
   ) => {
     const sign = temperature > 0 ? "+" : temperature < 0 ? "-" : "0";
-    const tempValue = 15;
-    const seconds = temperatureDuration;
+    const tempValue = temperatureDuration >= 480 ? 40: temperatureDuration;
+
     let timeString = "";
-    if (seconds <= 60) timeString = `${seconds} ${t("time.seconds")}`;
-    else if (seconds < 480) timeString = `${seconds / 60} ${t("time.minutes")}`;
-    else timeString = t("time.oneday");
+
+    if (temperatureDuration <= 60) {
+      timeString = `${temperatureDuration} ${t("time.seconds")}`;
+    } else if (temperatureDuration < 480) {
+      timeString = `${temperatureDuration / 60} ${t("time.minutes")}`;
+    } else {
+      timeString = `4 ${t("time.minutes")}`;
+    }
+
     return `${sign}${tempValue} ${t("time.for")} ${timeString}`;
   };
 
