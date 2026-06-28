@@ -12,6 +12,11 @@
     "sanity": 15,
     "cooktime": 24,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      1
+    ],
     "characterfood": [
       "webber"
     ],
@@ -81,7 +86,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "mayonnaise_chicken",
@@ -96,6 +102,11 @@
     "sanity": 25,
     "cooktime": 24,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      1
+    ],
     "characterfood": [
       "walter"
     ],
@@ -152,7 +163,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "mayonnaise_tallbird",
@@ -167,6 +179,11 @@
     "sanity": 5,
     "cooktime": 24,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      5,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -221,7 +238,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "mayonnaise_nightmare",
@@ -236,6 +254,11 @@
     "sanity": -5,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      4,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -290,7 +313,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "tartarsauce",
@@ -305,6 +329,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      1
+    ],
     "characterfood": [
       "wes"
     ],
@@ -361,7 +390,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "butter_beefalo",
@@ -376,6 +406,11 @@
     "sanity": 40,
     "cooktime": 96,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -416,7 +451,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "butter_koalefant",
@@ -431,6 +467,11 @@
     "sanity": 20,
     "cooktime": 96,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -471,7 +512,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "butter_goat",
@@ -486,6 +528,11 @@
     "sanity": 0,
     "cooktime": 96,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -526,7 +573,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "truffleoil",
@@ -541,6 +589,11 @@
     "sanity": -20,
     "cooktime": 24,
     "stacksize": 2,
+    "pigcoinvalue": [
+      3,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -595,7 +648,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_sturgeon",
@@ -610,6 +664,11 @@
     "sanity": 33,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      1
+    ],
     "characterfood": [
       "waxwell"
     ],
@@ -666,7 +725,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_berries",
@@ -681,6 +741,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -721,7 +786,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_berries_juicy",
@@ -736,6 +802,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -776,7 +847,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_pomegranate",
@@ -791,6 +863,11 @@
     "sanity": 30,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": [
       "wortox"
     ],
@@ -833,7 +910,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_dragonfruit",
@@ -844,10 +922,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 10,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 40,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -888,7 +971,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_banana",
@@ -903,6 +987,11 @@
     "sanity": 33,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": [
       "wonkey"
     ],
@@ -945,7 +1034,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_cave_banana",
@@ -960,6 +1050,11 @@
     "sanity": 25,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": [
       "wonkey"
     ],
@@ -1002,7 +1097,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_durian",
@@ -1017,6 +1113,11 @@
     "sanity": -20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": [
       "wurt"
     ],
@@ -1059,7 +1160,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_watermelon",
@@ -1074,6 +1176,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1114,7 +1221,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_fig",
@@ -1129,6 +1237,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": [
       "wendy"
     ],
@@ -1171,7 +1284,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_glowberry",
@@ -1182,10 +1296,15 @@
     "temperatureDuration": null,
     "debuff": true,
     "health": 20,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": -10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1227,7 +1346,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_nightberry",
@@ -1242,6 +1362,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1282,7 +1407,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_kokonut",
@@ -1297,6 +1423,11 @@
     "sanity": 33,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": [
       "wormwood"
     ],
@@ -1339,7 +1470,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "jelly_pineapple",
@@ -1354,6 +1486,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1394,7 +1531,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_cucumber",
@@ -1409,6 +1547,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1449,7 +1592,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_carrot",
@@ -1464,6 +1608,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1504,7 +1653,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_corn",
@@ -1519,6 +1669,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1559,7 +1714,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_eggplant",
@@ -1574,6 +1730,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1614,7 +1775,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_pumpkin",
@@ -1629,6 +1791,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1669,7 +1836,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_garlic",
@@ -1684,6 +1852,11 @@
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1724,7 +1897,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_onion",
@@ -1739,6 +1913,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1779,7 +1958,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_pepper",
@@ -1794,6 +1974,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": [
       "willow"
     ],
@@ -1836,7 +2021,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_tomato",
@@ -1851,6 +2037,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1891,7 +2082,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_potato",
@@ -1906,6 +2098,11 @@
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": [
       "wolfgang"
     ],
@@ -1948,7 +2145,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_asparagus",
@@ -1963,6 +2161,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2003,7 +2206,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_aloe",
@@ -2018,6 +2222,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2058,7 +2267,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_radish",
@@ -2073,6 +2283,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2113,7 +2328,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_fennel",
@@ -2124,10 +2340,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 30,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": -15,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2168,7 +2389,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_sweetpotato",
@@ -2183,6 +2405,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2223,7 +2450,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_parznip",
@@ -2238,6 +2466,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2279,7 +2512,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_turnip",
@@ -2294,6 +2528,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2334,7 +2573,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_rice",
@@ -2349,6 +2589,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2389,7 +2634,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_kelp",
@@ -2404,6 +2650,11 @@
     "sanity": -5,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2444,7 +2695,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_seaweeds",
@@ -2459,6 +2711,11 @@
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2499,7 +2756,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_avocado",
@@ -2514,6 +2772,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2554,7 +2817,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_lichen",
@@ -2569,6 +2833,11 @@
     "sanity": -15,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2609,7 +2878,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_lotus",
@@ -2624,6 +2894,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2664,7 +2939,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_taroroot",
@@ -2679,6 +2955,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2719,7 +3000,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_waterycress",
@@ -2730,10 +3012,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 20,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2774,7 +3061,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_cactus",
@@ -2789,6 +3077,11 @@
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2830,7 +3123,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_redcap",
@@ -2845,6 +3139,11 @@
     "sanity": -15,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2885,7 +3184,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_greencap",
@@ -2900,6 +3200,11 @@
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2940,7 +3245,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_bluecap",
@@ -2955,6 +3261,11 @@
     "sanity": -5,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2995,7 +3306,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_mooncap",
@@ -3010,6 +3322,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3050,7 +3367,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_whitecap",
@@ -3065,6 +3383,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3105,7 +3428,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_truffles",
@@ -3120,6 +3444,11 @@
     "sanity": 33,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3160,7 +3489,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_sporecap",
@@ -3171,10 +3501,15 @@
     "temperatureDuration": null,
     "debuff": true,
     "health": -20,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": -20,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3215,7 +3550,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_sporecap_dark",
@@ -3230,6 +3566,11 @@
     "sanity": -30,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3270,7 +3611,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_cavetuber",
@@ -3285,6 +3627,11 @@
     "sanity": 10,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3325,7 +3672,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "pickles_cavetuber_blooming",
@@ -3340,6 +3688,11 @@
     "sanity": 25,
     "cooktime": 72,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3380,7 +3733,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_pondfish",
@@ -3395,6 +3749,11 @@
     "sanity": 5,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3449,7 +3808,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_pondeel",
@@ -3464,6 +3824,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3518,7 +3883,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_wobster",
@@ -3533,6 +3899,11 @@
     "sanity": 5,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3587,7 +3958,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_wobster_moonglass",
@@ -3602,6 +3974,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3656,7 +4033,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_wobster_monkeyisland",
@@ -3671,6 +4049,11 @@
     "sanity": 30,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3725,7 +4108,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_1",
@@ -3740,6 +4124,11 @@
     "sanity": 5,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3794,7 +4183,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_2",
@@ -3809,6 +4199,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3863,7 +4258,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_3",
@@ -3878,6 +4274,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3932,7 +4333,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_4",
@@ -3947,6 +4349,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4001,7 +4408,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_5",
@@ -4016,6 +4424,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4070,7 +4483,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_6",
@@ -4085,6 +4499,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4139,7 +4558,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_7",
@@ -4154,6 +4574,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4208,7 +4633,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_8",
@@ -4223,6 +4649,11 @@
     "sanity": 5,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4277,7 +4708,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_small_9",
@@ -4292,6 +4724,11 @@
     "sanity": 5,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4346,7 +4783,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_pufferfish",
@@ -4361,6 +4799,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4415,7 +4858,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_1",
@@ -4430,6 +4874,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4484,7 +4933,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_2",
@@ -4499,6 +4949,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4553,7 +5008,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_3",
@@ -4568,6 +5024,11 @@
     "sanity": 30,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4622,7 +5083,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_4",
@@ -4637,6 +5099,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4691,7 +5158,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_5",
@@ -4706,6 +5174,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4760,7 +5233,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_6",
@@ -4775,6 +5249,11 @@
     "sanity": 20,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4829,7 +5308,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_7",
@@ -4844,6 +5324,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4898,7 +5383,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_8",
@@ -4913,6 +5399,11 @@
     "sanity": 30,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4967,7 +5458,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_medium_9",
@@ -4982,6 +5474,11 @@
     "sanity": 30,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5036,7 +5533,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_oceanfish_midnight_carp",
@@ -5051,6 +5549,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5105,7 +5608,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_tropicalfish",
@@ -5120,6 +5624,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5174,7 +5683,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_pierrotfish",
@@ -5189,6 +5699,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5243,7 +5758,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_neonfish",
@@ -5258,6 +5774,11 @@
     "sanity": 10,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5312,7 +5833,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_grouper",
@@ -5327,6 +5849,11 @@
     "sanity": 25,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5381,7 +5908,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_koi",
@@ -5396,6 +5924,11 @@
     "sanity": 25,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5450,7 +5983,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_salmonfish",
@@ -5465,6 +5999,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5519,7 +6058,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_jellyfish",
@@ -5534,6 +6074,11 @@
     "sanity": 0,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5588,7 +6133,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_jellyfish_rainbow",
@@ -5603,6 +6149,11 @@
     "sanity": 15,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5657,7 +6208,8 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
   },
   {
     "name": "agedroe_swordfish_blue",
@@ -5672,6 +6224,11 @@
     "sanity": 25,
     "cooktime": 48,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5726,6 +6283,38 @@
         "amount": 1,
         "comparator": "equal"
       }
-    ]
+    ],
+    "invalid": null
+  },
+  {
+    "name": "wetgoop2",
+    "priority": -2,
+    "foodtype": "GENERIC",
+    "spoilage": 2880,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "health": 0,
+    "hunger": 0,
+    "sanity": 0,
+    "cooktime": 1,
+    "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      0,
+      0
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [],
+    "excluded": [],
+    "card_def": [],
+    "invalid": true
   }
 ]

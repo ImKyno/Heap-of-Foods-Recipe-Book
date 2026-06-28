@@ -12,6 +12,11 @@
     "sanity": -10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": [
       "winona"
     ],
@@ -22,6 +27,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -79,6 +88,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -87,6 +101,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -134,6 +152,11 @@
     "sanity": 10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -142,6 +165,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -203,6 +230,11 @@
     "sanity": -10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      1
+    ],
     "characterfood": [
       "wes"
     ],
@@ -213,6 +245,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -253,6 +289,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      5,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -261,6 +302,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -336,6 +381,11 @@
     "sanity": 15,
     "cooktime": 3.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": [
       "willow"
     ],
@@ -346,6 +396,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -393,6 +447,11 @@
     "sanity": -5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": [
       "wormwood"
     ],
@@ -403,6 +462,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -450,6 +513,11 @@
     "sanity": 5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -458,6 +526,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -505,6 +577,11 @@
     "sanity": 33,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": [
       "wendy"
     ],
@@ -515,6 +592,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -576,6 +657,11 @@
     "sanity": 33,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      6,
+      0
+    ],
     "characterfood": [
       "wickerbottom"
     ],
@@ -586,6 +672,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -633,13 +723,18 @@
     "foodtype": "VEGGIE",
     "spoilage": 2880,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": false,
     "health": 20,
     "hunger": 25,
     "sanity": -10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -648,6 +743,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -688,13 +787,18 @@
     "foodtype": "MEAT",
     "spoilage": 3840,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": -5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -703,6 +807,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -757,6 +865,11 @@
     "sanity": 20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -765,6 +878,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -821,6 +938,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -829,6 +951,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -886,10 +1012,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 1,
-    "hunger": 6.375,
+    "hunger": 4.6875,
     "sanity": 0,
     "cooktime": 1,
     "stacksize": 3,
+    "pigcoinvalue": [
+      1,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -898,6 +1029,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -938,6 +1073,11 @@
     "sanity": 15,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -946,6 +1086,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1003,10 +1147,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 8,
-    "hunger": 25,
+    "hunger": 56.25,
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1015,6 +1164,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1094,10 +1247,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 3,
-    "hunger": 37.5,
+    "hunger": 45,
     "sanity": 15,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1106,6 +1264,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1175,10 +1337,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 20,
-    "hunger": 100,
-    "sanity": 5,
+    "hunger": 75,
+    "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1187,6 +1354,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1261,6 +1432,11 @@
     "sanity": 10,
     "cooktime": 0.75,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1269,6 +1445,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1333,10 +1513,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 40,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 40,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1345,6 +1530,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1405,6 +1594,11 @@
     "sanity": 15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": [
       "wolfgang"
     ],
@@ -1415,6 +1609,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1453,15 +1651,20 @@
     "name": "gorge_fishball_skewers",
     "priority": 35,
     "foodtype": "MEAT",
-    "spoilage": 2880,
+    "spoilage": 4800,
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
-    "health": 25,
+    "health": 50,
     "hunger": 37.5,
-    "sanity": 20,
+    "sanity": 5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1470,6 +1673,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1531,6 +1738,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1539,6 +1751,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1600,6 +1816,11 @@
     "sanity": 5,
     "cooktime": 0.6,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1608,6 +1829,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1655,6 +1880,11 @@
     "sanity": 10,
     "cooktime": 0.75,
     "stacksize": 2,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1663,6 +1893,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1733,10 +1967,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 25,
-    "hunger": 40,
+    "hunger": 62.5,
     "sanity": 20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1745,6 +1984,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1820,6 +2063,11 @@
     "sanity": 5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1828,6 +2076,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1896,6 +2148,11 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": [
       "sammy"
     ],
@@ -1906,6 +2163,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -1953,6 +2214,11 @@
     "sanity": 5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -1961,6 +2227,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2022,6 +2292,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2030,6 +2305,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2098,6 +2377,11 @@
     "sanity": 25,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2106,6 +2390,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2140,7 +2428,7 @@
       {
         "items": [
           "onion",
-          "onion"
+          "onion_cooked"
         ],
         "comparator": "equal"
       },
@@ -2186,9 +2474,14 @@
     "debuff": false,
     "health": 5,
     "hunger": 12.5,
-    "sanity": 25,
+    "sanity": 33,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": [
       "woodie"
     ],
@@ -2199,6 +2492,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2260,6 +2557,11 @@
     "sanity": 15,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2268,6 +2570,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2315,6 +2621,11 @@
     "sanity": 5,
     "cooktime": 0.75,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": [
       "sammy"
     ],
@@ -2325,6 +2636,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2393,6 +2708,11 @@
     "sanity": 15,
     "cooktime": 0.6,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2401,6 +2721,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2462,6 +2786,11 @@
     "sanity": 5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2470,6 +2799,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2530,6 +2863,11 @@
     "sanity": 15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2538,6 +2876,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2585,6 +2927,11 @@
     "sanity": 10,
     "cooktime": 0.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2593,6 +2940,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2640,6 +2991,11 @@
     "sanity": 60,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2648,6 +3004,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2695,6 +3055,11 @@
     "sanity": 10,
     "cooktime": 0.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2703,6 +3068,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2768,6 +3137,11 @@
     "sanity": 10,
     "cooktime": 1.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2776,6 +3150,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2837,6 +3215,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2845,6 +3228,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -2941,6 +3328,11 @@
     "sanity": 5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -2949,6 +3341,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3010,6 +3406,11 @@
     "sanity": 30,
     "cooktime": 0.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3018,6 +3419,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3079,6 +3484,11 @@
     "sanity": 15,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3087,6 +3497,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3155,6 +3569,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3163,6 +3582,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3224,6 +3647,11 @@
     "sanity": 25,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3232,6 +3660,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3307,6 +3739,11 @@
     "sanity": 25,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3315,6 +3752,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3376,6 +3817,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3384,6 +3830,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3459,6 +3909,11 @@
     "sanity": 33,
     "cooktime": 0.75,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      0
+    ],
     "characterfood": [
       "wanda"
     ],
@@ -3469,6 +3924,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3512,10 +3971,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 15,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 40,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3524,6 +3988,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3585,6 +4053,11 @@
     "sanity": 15,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3593,6 +4066,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3661,6 +4138,11 @@
     "sanity": 50,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3669,6 +4151,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3747,6 +4233,11 @@
     "sanity": 50,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3755,6 +4246,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3830,6 +4325,11 @@
     "sanity": 40,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3838,6 +4338,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3919,6 +4423,11 @@
     "sanity": 25,
     "cooktime": 0.75,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3927,6 +4436,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -3988,6 +4501,11 @@
     "sanity": 50,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -3996,6 +4514,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4071,6 +4593,11 @@
     "sanity": 40,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4079,6 +4606,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4154,6 +4685,11 @@
     "sanity": -5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4162,6 +4698,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4223,6 +4763,11 @@
     "sanity": 15,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4231,6 +4776,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4286,6 +4835,11 @@
     "sanity": 30,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4294,6 +4848,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4369,6 +4927,11 @@
     "sanity": 5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      15,
+      0,
+      0
+    ],
     "characterfood": [
       "wathgrithr"
     ],
@@ -4379,6 +4942,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4459,6 +5026,11 @@
     "sanity": 5,
     "cooktime": 2.25,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      1,
+      0
+    ],
     "characterfood": [
       "wilson"
     ],
@@ -4469,6 +5041,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4518,11 +5094,16 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
-    "health": 5,
+    "health": 10,
     "hunger": 100,
     "sanity": 15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4531,13 +5112,17 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
           "tag_meat"
         ],
         "amount": 1,
-        "comparator": "equal"
+        "comparator": "morethan"
       },
       {
         "items": [
@@ -4566,14 +5151,28 @@
           "tomato"
         ],
         "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_monster"
+        ],
+        "amount": 1,
+        "comparator": "morethan"
       }
     ],
     "card_def": [
       {
         "items": [
+          "monstermeat"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
           "meat"
         ],
-        "amount": 2,
+        "amount": 1,
         "comparator": "equal"
       },
       {
@@ -4605,6 +5204,11 @@
     "sanity": 0,
     "cooktime": 0.75,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": [
       "partitio"
     ],
@@ -4615,6 +5219,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4681,6 +5289,11 @@
     "sanity": 20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4689,6 +5302,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4764,6 +5381,11 @@
     "sanity": 25,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      1
+    ],
     "characterfood": [
       "waxwell"
     ],
@@ -4774,6 +5396,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4845,10 +5471,15 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 60,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 50,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4857,6 +5488,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4932,6 +5567,11 @@
     "sanity": 100,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4940,6 +5580,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -4987,6 +5631,11 @@
     "sanity": 40,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -4995,6 +5644,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5056,6 +5709,11 @@
     "sanity": 60,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5064,6 +5722,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5125,6 +5787,11 @@
     "sanity": 60,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5133,6 +5800,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5194,6 +5865,11 @@
     "sanity": 3,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5202,6 +5878,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5250,6 +5930,11 @@
     "sanity": 10,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5258,6 +5943,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5305,6 +5994,11 @@
     "sanity": 50,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5313,6 +6007,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5346,6 +6044,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5354,6 +6057,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5394,6 +6101,11 @@
     "sanity": 15,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5402,6 +6114,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5443,6 +6159,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5451,6 +6172,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5505,6 +6230,11 @@
     "sanity": 150,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": [
       "wx78"
     ],
@@ -5515,6 +6245,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5562,6 +6296,11 @@
     "sanity": -300,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5570,6 +6309,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5619,6 +6362,11 @@
     "sanity": 33,
     "cooktime": 5,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5627,6 +6375,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5702,6 +6454,11 @@
     "sanity": 15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5710,6 +6467,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5771,6 +6532,11 @@
     "sanity": 30,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5779,6 +6545,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5847,6 +6617,11 @@
     "sanity": 33,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5855,6 +6630,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5909,6 +6688,11 @@
     "sanity": 50,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5917,6 +6701,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -5983,6 +6771,11 @@
     "sanity": 0,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -5991,6 +6784,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6071,6 +6868,11 @@
     "sanity": -150,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      3,
+      2
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6079,6 +6881,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6134,12 +6940,17 @@
     "spoilage": null,
     "temperature": null,
     "temperatureDuration": null,
-    "debuff": false,
+    "debuff": true,
     "health": 30,
-    "hunger": 75,
+    "hunger": 150,
     "sanity": 15,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6148,6 +6959,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": 30,
+    "healthnaughty": 15,
+    "sanitynice": -25,
+    "sanitynaughty": 25,
     "requires": [
       {
         "items": [
@@ -6158,7 +6973,14 @@
       },
       {
         "items": [
-          "boneshard"
+          "tomato"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "red_cap"
         ],
         "amount": 1,
         "comparator": "equal"
@@ -6175,14 +6997,14 @@
       },
       {
         "items": [
-          "boneshard"
+          "tomato"
         ],
         "amount": 1,
         "comparator": "equal"
       },
       {
         "items": [
-          "twigs"
+          "red_cap"
         ],
         "amount": 1,
         "comparator": "equal"
@@ -6202,6 +7024,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6210,6 +7037,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6271,6 +7102,11 @@
     "sanity": 25,
     "cooktime": 1.6,
     "stacksize": 2,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6279,6 +7115,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6354,6 +7194,11 @@
     "sanity": 5,
     "cooktime": 2.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6362,6 +7207,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6435,6 +7284,11 @@
     "sanity": 20,
     "cooktime": 2.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6443,6 +7297,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6517,6 +7375,11 @@
     "sanity": 5,
     "cooktime": 2.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6525,6 +7388,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6604,6 +7471,11 @@
     "sanity": 20,
     "cooktime": 1.1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6612,6 +7484,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6666,6 +7542,11 @@
     "sanity": 10,
     "cooktime": 1.6,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6674,6 +7555,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6721,6 +7606,11 @@
     "sanity": 1,
     "cooktime": 0.1,
     "stacksize": null,
+    "pigcoinvalue": [
+      1,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6729,6 +7619,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6799,6 +7693,11 @@
     "sanity": 60,
     "cooktime": 2.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6807,6 +7706,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6868,6 +7771,11 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6876,6 +7784,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -6938,6 +7850,11 @@
     "sanity": -15,
     "cooktime": 1.6,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -6946,6 +7863,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7007,6 +7928,11 @@
     "sanity": 33,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7015,6 +7941,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7083,6 +8013,11 @@
     "sanity": 12.5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7091,6 +8026,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7152,6 +8091,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7160,6 +8104,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7235,6 +8183,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7243,6 +8196,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7304,6 +8261,11 @@
     "sanity": 20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7312,6 +8274,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7373,6 +8339,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7381,6 +8352,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7442,6 +8417,11 @@
     "sanity": 40,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7450,6 +8430,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7525,6 +8509,11 @@
     "sanity": 15,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7533,6 +8522,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7608,6 +8601,11 @@
     "sanity": -5,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      3,
+      2
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7616,6 +8614,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7677,6 +8679,11 @@
     "sanity": -5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7685,6 +8692,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7746,6 +8757,11 @@
     "sanity": 15,
     "cooktime": 2.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7754,6 +8770,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7815,6 +8835,11 @@
     "sanity": 50,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7823,6 +8848,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7899,6 +8928,11 @@
     "sanity": 33,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      2,
+      0
+    ],
     "characterfood": [
       "webber"
     ],
@@ -7909,6 +8943,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -7956,6 +8994,11 @@
     "sanity": 10,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      1,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -7964,6 +9007,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8011,6 +9058,11 @@
     "sanity": -15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8019,6 +9071,10 @@
     "monsterfood": true,
     "monsterhealth": 10,
     "monstersanity": 15,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8080,6 +9136,11 @@
     "sanity": 20,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8088,6 +9149,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8149,6 +9214,11 @@
     "sanity": 5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8157,6 +9227,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8218,6 +9292,11 @@
     "sanity": 1,
     "cooktime": 1,
     "stacksize": 3,
+    "pigcoinvalue": [
+      1,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8226,6 +9305,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8273,6 +9356,11 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8281,6 +9369,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8364,6 +9456,11 @@
     "sanity": 30,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8372,6 +9469,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8454,6 +9555,11 @@
     "sanity": 50,
     "cooktime": 0.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": [
       "wonkey"
     ],
@@ -8464,6 +9570,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8525,6 +9635,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8533,6 +9648,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8608,6 +9727,11 @@
     "sanity": 15,
     "cooktime": 0.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8616,6 +9740,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8677,6 +9805,11 @@
     "sanity": 5,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8685,6 +9818,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8732,6 +9869,11 @@
     "sanity": 33,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8740,6 +9882,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8801,6 +9947,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8809,6 +9960,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8858,6 +10013,11 @@
     "sanity": 25,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8866,6 +10026,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8926,6 +10090,11 @@
     "sanity": -15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -8934,6 +10103,10 @@
     "monsterfood": true,
     "monsterhealth": 5,
     "monstersanity": 15,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -8995,6 +10168,11 @@
     "sanity": 0,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9003,6 +10181,10 @@
     "monsterfood": true,
     "monsterhealth": 15,
     "monstersanity": 0,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9050,6 +10232,11 @@
     "sanity": -5,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9058,6 +10245,10 @@
     "monsterfood": true,
     "monsterhealth": 20,
     "monstersanity": 5,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9112,6 +10303,11 @@
     "sanity": -30,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": [
       "wurt"
     ],
@@ -9122,6 +10318,10 @@
     "monsterfood": true,
     "monsterhealth": 10,
     "monstersanity": 30,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9196,6 +10396,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9204,6 +10409,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9251,6 +10460,11 @@
     "sanity": 33,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9259,6 +10473,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9306,6 +10524,11 @@
     "sanity": 15,
     "cooktime": 1.1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9314,6 +10537,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9375,6 +10602,11 @@
     "sanity": 20,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9383,6 +10615,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9440,10 +10676,15 @@
     "temperatureDuration": null,
     "debuff": true,
     "health": 10,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": -5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9452,6 +10693,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9499,6 +10744,11 @@
     "sanity": 0,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9507,6 +10757,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9568,6 +10822,11 @@
     "sanity": -5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9576,6 +10835,10 @@
     "monsterfood": true,
     "monsterhealth": 60,
     "monstersanity": 5,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9637,6 +10900,11 @@
     "sanity": -20,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9645,6 +10913,10 @@
     "monsterfood": true,
     "monsterhealth": 60,
     "monstersanity": 20,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9720,6 +10992,11 @@
     "sanity": -20,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      8,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9728,6 +11005,10 @@
     "monsterfood": true,
     "monsterhealth": 20,
     "monstersanity": 20,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9803,6 +11084,11 @@
     "sanity": 15,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9811,6 +11097,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9858,6 +11148,11 @@
     "sanity": 8,
     "cooktime": 1.1,
     "stacksize": 2,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9866,6 +11161,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9927,6 +11226,11 @@
     "sanity": 10,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -9935,6 +11239,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -9996,6 +11304,11 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": 2,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10004,6 +11317,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10079,6 +11396,11 @@
     "sanity": 15,
     "cooktime": 2.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10087,6 +11409,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10163,6 +11489,11 @@
     "sanity": 10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10171,6 +11502,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10259,6 +11594,11 @@
     "sanity": 65,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      2,
+      0
+    ],
     "characterfood": [
       "walter"
     ],
@@ -10269,6 +11609,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10330,6 +11674,11 @@
     "sanity": 20,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10338,6 +11687,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10399,6 +11752,11 @@
     "sanity": 20,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10407,6 +11765,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10468,6 +11830,11 @@
     "sanity": 5,
     "cooktime": 0.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10476,6 +11843,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10551,6 +11922,11 @@
     "sanity": 5,
     "cooktime": 3,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      15,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10559,6 +11935,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10634,6 +12014,11 @@
     "sanity": 10,
     "cooktime": 1.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10642,6 +12027,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10717,6 +12106,11 @@
     "sanity": 0,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10725,6 +12119,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10800,6 +12198,11 @@
     "sanity": 33,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      5,
+      2
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10808,6 +12211,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10890,6 +12297,11 @@
     "sanity": 5,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10898,6 +12310,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -10946,6 +12362,11 @@
     "sanity": 5,
     "cooktime": 1.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -10954,6 +12375,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11008,6 +12433,11 @@
     "sanity": 33,
     "cooktime": 0.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11016,6 +12446,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11073,10 +12507,15 @@
     "temperatureDuration": null,
     "debuff": true,
     "health": 20,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": -10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11085,6 +12524,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11132,6 +12575,11 @@
     "sanity": 10,
     "cooktime": 0.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11140,6 +12588,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11215,6 +12667,11 @@
     "sanity": -15,
     "cooktime": 1.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11223,6 +12680,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11284,6 +12745,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11292,6 +12758,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11367,6 +12837,11 @@
     "sanity": 60,
     "cooktime": 1.1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      2,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11375,6 +12850,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11443,6 +12922,11 @@
     "sanity": 10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11451,6 +12935,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11512,6 +13000,11 @@
     "sanity": 20,
     "cooktime": 1.6,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": [
       "wortox"
     ],
@@ -11522,6 +13015,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11590,6 +13087,11 @@
     "sanity": 40,
     "cooktime": 1.8,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11598,6 +13100,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11674,6 +13180,11 @@
     "sanity": 5,
     "cooktime": 0.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11682,6 +13193,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11764,6 +13279,11 @@
     "sanity": 33,
     "cooktime": 0.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11772,6 +13292,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11847,6 +13371,11 @@
     "sanity": 50,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11855,6 +13384,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -11916,6 +13449,11 @@
     "sanity": 30,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -11924,6 +13462,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12010,6 +13552,11 @@
     "sanity": 33,
     "cooktime": 1.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      3,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12018,6 +13565,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12093,6 +13644,11 @@
     "sanity": 20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12101,6 +13657,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12148,6 +13708,11 @@
     "sanity": 0,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      0,
+      0
+    ],
     "characterfood": [
       "partitio"
     ],
@@ -12158,6 +13723,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12219,6 +13788,11 @@
     "sanity": -10,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      4,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12227,6 +13801,10 @@
     "monsterfood": true,
     "monsterhealth": 20,
     "monstersanity": 10,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12288,6 +13866,11 @@
     "sanity": -20,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      4,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12296,6 +13879,10 @@
     "monsterfood": true,
     "monsterhealth": 30,
     "monstersanity": 20,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12357,6 +13944,11 @@
     "sanity": 25,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      2,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12365,6 +13957,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12440,6 +14036,11 @@
     "sanity": 20,
     "cooktime": 0.15,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12448,6 +14049,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12502,6 +14107,11 @@
     "sanity": 50,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      5,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12510,6 +14120,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12578,6 +14192,11 @@
     "sanity": 5,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12586,6 +14205,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12654,13 +14277,18 @@
     "foodtype": "MEAT",
     "spoilage": 3840,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": -15,
     "hunger": 42.5,
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12669,6 +14297,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12744,6 +14376,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      3,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12752,6 +14389,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12827,6 +14468,11 @@
     "sanity": 25,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12835,6 +14481,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12910,6 +14560,11 @@
     "sanity": 5,
     "cooktime": 1.3,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      0,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -12918,6 +14573,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -12993,6 +14652,11 @@
     "sanity": 10,
     "cooktime": 2.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      12,
+      0,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13001,6 +14665,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -13069,6 +14737,11 @@
     "sanity": 15,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      5,
+      0
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13077,6 +14750,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -13159,6 +14836,11 @@
     "sanity": 25,
     "cooktime": 3.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      3,
+      2
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13167,6 +14849,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -13242,6 +14928,11 @@
     "sanity": 33,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      4,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13250,6 +14941,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -13325,6 +15020,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      10,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13333,6 +15033,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [
@@ -13408,6 +15112,11 @@
     "sanity": 33,
     "cooktime": 1,
     "stacksize": 2,
+    "pigcoinvalue": [
+      7,
+      1,
+      1
+    ],
     "characterfood": null,
     "mermfood": null,
     "mermhealth": null,
@@ -13416,6 +15125,10 @@
     "monsterfood": null,
     "monsterhealth": null,
     "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
     "requires": [
       {
         "items": [

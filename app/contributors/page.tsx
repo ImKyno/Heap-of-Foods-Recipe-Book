@@ -16,6 +16,7 @@ import {
   faPalette,
   faBookAtlas,
   faLanguage,
+  faBookBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 interface Contributor {
@@ -40,6 +41,7 @@ const BADGE_ICONS: Record<string, any> = {
   "contributors.badges.modlocpl": faLanguage,
   "contributors.badges.modloczh": faLanguage,
   "contributors.badges.modlocvi": faLanguage,
+  "contributors.badges.modwiki": faBookBookmark,
 };
 
 const BADGE_COLORS: Record<string, string> = {
@@ -54,6 +56,7 @@ const BADGE_COLORS: Record<string, string> = {
   "contributors.badges.modlocpl": "#378b9a",
   "contributors.badges.modloczh": "#378b9a",
   "contributors.badges.modlocvi": "#378b9a",
+  "contributors.badges.modwiki": "#6c3425",
 };
 
 function getBadgeColor(badgeKey: string): string {

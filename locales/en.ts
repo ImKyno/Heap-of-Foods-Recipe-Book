@@ -116,6 +116,7 @@ const en = {
       modlocpl: "Translator - Polski",
       modloczh: "Translator - 简体中文",
       modlocvi: "Translator - Tiếng Việt",
+      modwiki: "Wiki Writer",
     },
   },
 
@@ -137,7 +138,7 @@ const en = {
     tip10: "Caramel Cube and Jawsbreaker are Kyno's favourite dishes.",
     tip11: "Wheat can be ground at the Mealing Stone to produce Flour.",
     tip12: "You can use Flour to make a simple Loaf of Bread. Yet, there are many other uses for Flour besides breads.",
-    tip13: "Pig King trades a variety of new items. For example, Grass Tufts for Wild Wheat Tufts and Berry Bushes for Spotty Shurbs.",
+    tip13: "Pig King trades a variety of new items. For example, Grass Tufts for Wild Wheat Tufts and Berry Bushes for Spotty Shrubs.",
     tip14: "The Pig Elder trades a variety of exclusive items in exchange for foods.",
     tip15: "You can Tap Sugarwood Trees using the Tree Tapping Kit, to make them produce a sweet Sap every three days.",
     tip16: "Careful, Tapped Sugarwood Trees that are overflowing with Sap and not harvested can spoil. Producing Ruined Sap instead!",
@@ -242,6 +243,7 @@ const en = {
       characterfood: "Favorite Food",
     },
     event: "Special Event",
+    pigcoin: "Koin Type",
     noresults: "Nothing found with the current filter",
     trydifferent: "Try using different filters instead.",
     clear: "Clear All Filters",
@@ -264,8 +266,15 @@ const en = {
       priority: "Cooking Priority",
       cooktime: "Cooking Time",
       spoilage: "Spoilage Time",
+      pigcoin: "Koin Amount",
     },
     clear: "Reset to Default",
+  },
+
+  pigcoins: {
+    coin1: "Koin",
+    coin2: "Sapphire Medallion",
+    coin3: "Cerulean Mark",
   },
 
   characterfood: {
@@ -329,6 +338,7 @@ const en = {
       xmas: "Winter's Feast",
       halloween: "Hallowed Nights",
     },
+    invalid: "Invalid Recipe",
   },
 
   tooltips: {
@@ -665,6 +675,7 @@ const en = {
   },
 
   recipes_keg: {
+    wetgoop2: "Sludge",
     beer: "Beer",
     paleale: "Pale Ale",
     mead: "Mead",
@@ -736,6 +747,7 @@ const en = {
   },
 
   recipes_jar: {
+    wetgoop2: "Sludge",
     mayonnaise: "Mayonnaise",
     mayonnaise_chicken: "Chicken Mayonnaise",
     mayonnaise_tallbird: "Tallbird Mayonnaise",
@@ -873,6 +885,7 @@ const en = {
     longpigmeal: "Hurts the body",
     duckyouglermz: "Stimulates bloomness",
     eyeballspaghetti: "Calls the monster",
+    soulstew: "Stats are based on inclination",
     fortunecookie: "Tells your fortune",
     honeyjar: "Pacifies nearby bees",
     watercup: "Cleanses all side effects",
@@ -936,6 +949,7 @@ const en = {
     wine_glowberry: "Gives off a healthy glow",
     wine_nightberry: "Grants night vision",
     juice_mooncap: "Wards off sleep",
+    souljuice: "Stats are based on inclination and Increases Soul yield",
 
     // PRESERVES JAR RECIPES
     mayonnaise: "Restores hunger over time",
@@ -1090,6 +1104,8 @@ const en = {
     sugarflywings: "Sugarfly Wings",
     firenettles: "Fire Nettle Fronds",
     firenettles_dried: "Dried Fire Nettle Fronds",
+    icenettles: "Ice Nettle Fronds",
+    icenettles_dried: "Dried Ice Nettle Fronds",
     forgetmelots: "Forget-Me-Lots",
     forgetmelots_dried: "Dried Forget-Me-Lots",
     tillweed: "Tillweeds",
@@ -1323,7 +1339,7 @@ const en = {
     dairy: "Dairy",
     egg: "Egg",
     fat: "Fat",
-    fireweed: "Fire Nettles Fronds",
+    fireweed: "Fire Nettle Fronds",
     fish: "Fish",
     flour: "Flour",
     foliage: "Foliage",
@@ -1331,6 +1347,7 @@ const en = {
     frozen: "Frozen",
     fruit: "Fruit",
     gummybug: "Gummy Slug",
+    iceweed: "Ice Nettle Fronds",
     inedible: "Inedible",
     jellyfish: "Jellyfish",
     jellyfish_rainbow: "Rainbow Jellyfish",

@@ -116,6 +116,7 @@ const vi = {
       modlocpl: "Dịch Giả - Polski",
       modloczh: "Dịch Giả - 简体中文",
       modlocvi: "Dịch Giả - Tiếng Việt",
+      modwiki: "Người viết Wiki",
     },
   },
 
@@ -242,6 +243,7 @@ const vi = {
       characterfood: "Món Khoái Khẩu",
     },
     event: "Sự Kiện Đặc Biệt",
+    pigcoin: "Loại Tiền Tệ",
     noresults: "Không tìm thấy gì với bộ lọc hiện tại",
     trydifferent: "Thử dùng bộ lọc khác xem.",
     clear: "Xóa Tất Cả Bộ Lọc",
@@ -264,8 +266,15 @@ const vi = {
       priority: "Độ Ưu Tiên Nấu",
       cooktime: "Thời Gian Nấu",
       spoilage: "Thời Gian Hư Hỏng",
+      pigcoin: "Số lượng xu",
     },
     clear: "Đặt Lại Mặc Định",
+  },
+
+  pigcoins: {
+    coin1: "Bạc",
+    coin2: "Huy chương Ngọc lục bảo",
+    coin3: "Dấu ấn Lam ngọc",
   },
 
   characterfood: {
@@ -329,6 +338,7 @@ const vi = {
       xmas: "Tiệc Mùa Đông",
       halloween: "Đêm Ma Quái",
     },
+    invalid: "Đơn Thuốc Không Hợp Lệ",
   },
 
   tooltips: {
@@ -665,6 +675,7 @@ const vi = {
   },
 
   recipes_keg: {
+    wetgoop2: "Bùn Nhão",
     beer: "Bia",
     paleale: "Bia Ale Nhạt",
     mead: "Rượu Mật Ong",
@@ -736,6 +747,7 @@ const vi = {
   },
 
   recipes_jar: {
+    wetgoop2: "Bùn Nhão",
     mayonnaise: "Xốt Mayonnaise",
     mayonnaise_chicken: "Xốt Mayonnaise Trứng Gà",
     mayonnaise_tallbird: "Xốt Mayonnaise Trứng Tallbird",
@@ -873,6 +885,7 @@ const vi = {
     longpigmeal: "Làm đau cơ thể",
     duckyouglermz: "Kích thích sự nở rộ",
     eyeballspaghetti: "Gọi quái vật",
+    soulstew: "Các chỉ số dựa trên thiên hướng",
     fortunecookie: "Tiên đoán vận mệnh",
     honeyjar: "Xoa dịu ong gần đó",
     watercup: "Thanh tẩy mọi hiệu ứng phụ",
@@ -936,6 +949,7 @@ const vi = {
     wine_glowberry: "Tỏa ra ánh sáng khỏe khoắn",
     wine_nightberry: "Cho khả năng nhìn đêm",
     juice_mooncap: "Xua cơn buồn ngủ",
+    souljuice: "Các chỉ số dựa trên thiên hướng tăng lượng Linh hồn thu được",
 
     // PRESERVES JAR RECIPES
     mayonnaise: "Hồi độ no theo thời gian",
@@ -1090,6 +1104,8 @@ const vi = {
     sugarflywings: "Cánh Sugarfly",
     firenettles: "Lá Tầm Ma Lửa",
     firenettles_dried: "Lá Tầm Ma Lửa Khô",
+    icenettles: "Lá Cây Tầm Ma Băng",
+    icenettles_dried: "Lá Tầm Ma Khô",
     forgetmelots: "Hoa Lưu Ly",
     forgetmelots_dried: "Hoa Lưu Ly Khô",
     tillweed: "Cỏ Dại",
@@ -1331,6 +1347,7 @@ const vi = {
     frozen: "Đông Lạnh",
     fruit: "Trái Cây",
     gummybug: "Sên Dẻo",
+    iceweed: "Lá Cây Tầm Ma Băng",
     inedible: "Không Ăn Được",
     jellyfish: "Sứa",
     jellyfish_rainbow: "Sứa Cầu Vồng",

@@ -12,6 +12,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -67,6 +72,11 @@
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      3,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -122,6 +132,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      1,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -178,6 +193,11 @@
     "sanity": 30,
     "cooktime": 1.2,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      0,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -263,6 +283,11 @@
     "sanity": 20,
     "cooktime": 2.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      0,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -339,6 +364,11 @@
     "sanity": 10,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      0,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -409,6 +439,11 @@
     "sanity": 60,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      2,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -471,6 +506,11 @@
     "sanity": 33,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      2,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -547,6 +587,11 @@
     "sanity": 5,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -609,6 +654,11 @@
     "sanity": 5,
     "cooktime": 2.5,
     "stacksize": 3,
+    "pigcoinvalue": [
+      8,
+      3,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -657,6 +707,11 @@
     "sanity": 0,
     "cooktime": 2.5,
     "stacksize": 3,
+    "pigcoinvalue": [
+      8,
+      3,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -738,6 +793,11 @@
     "sanity": 2,
     "cooktime": 2.5,
     "stacksize": 3,
+    "pigcoinvalue": [
+      8,
+      3,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -793,13 +853,18 @@
     "foodtype": "GOODIES",
     "spoilage": 2880,
     "temperature": -40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": 20,
     "hunger": 8,
     "sanity": 60,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      6,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -876,6 +941,11 @@
     "sanity": 20,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      4,
+      3,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -945,13 +1015,18 @@
     "foodtype": "GOODIES",
     "spoilage": 2880,
     "temperature": -40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": 60,
     "hunger": 12.5,
     "sanity": 60,
     "cooktime": 1,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      7,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1028,6 +1103,11 @@
     "sanity": 10,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1097,13 +1177,18 @@
     "foodtype": "VEGGIE",
     "spoilage": 4800,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": 5,
-    "hunger": 40,
+    "hunger": 56.25,
     "sanity": 33,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      2,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1180,6 +1265,11 @@
     "sanity": 25,
     "cooktime": 1.7,
     "stacksize": null,
+    "pigcoinvalue": [
+      7,
+      1,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1235,13 +1325,18 @@
     "foodtype": "MEAT",
     "spoilage": 7200,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": false,
     "health": -5,
     "hunger": 62.5,
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      2,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1311,13 +1406,18 @@
     "foodtype": "GOODIES",
     "spoilage": 4800,
     "temperature": -40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": false,
     "health": 20,
     "hunger": 12.5,
     "sanity": 5,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      3,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1387,13 +1487,18 @@
     "foodtype": "GOODIES",
     "spoilage": 4800,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": 40,
     "hunger": 25,
     "sanity": 10,
     "cooktime": 0.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      3,
+      0
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1463,6 +1568,11 @@
     "sanity": 0,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      1,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1518,13 +1628,18 @@
     "foodtype": "MEAT",
     "spoilage": 7200,
     "temperature": 40,
-    "temperatureDuration": 480,
+    "temperatureDuration": 240,
     "debuff": true,
     "health": 60,
     "hunger": 100,
     "sanity": 15,
     "cooktime": 2,
     "stacksize": null,
+    "pigcoinvalue": [
+      0,
+      6,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1594,6 +1709,11 @@
     "sanity": 15,
     "cooktime": 1.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      3,
+      8,
+      1
+    ],
     "characterfood": null,
     "requires": [
       {
@@ -1663,6 +1783,11 @@
     "sanity": 120,
     "cooktime": 3.5,
     "stacksize": null,
+    "pigcoinvalue": [
+      15,
+      5,
+      2
+    ],
     "characterfood": null,
     "requires": [
       {

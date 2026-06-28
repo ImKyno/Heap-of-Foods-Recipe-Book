@@ -81,6 +81,8 @@ interface Recipe {
   example?: string[];
   excluded?: string[];
 
+  pigcoinvalue?: number[];
+
   required?: { ingredient: string; count: number }[];
   nameRequirement?: { ingredient: string; count: number }[];
   nameEqualsRequirement?: { ingredient: string; count: number }[];
@@ -182,7 +184,7 @@ export default function CookPotWarly() {
     temperatureDuration: number,
   ) => {
     const sign = temperature > 0 ? "+" : temperature < 0 ? "-" : "0";
-    const tempValue = temperatureDuration >= 480 ? 40: temperatureDuration;
+    const tempValue = temperatureDuration >= 240 ? 40: temperatureDuration;
 
     let timeString = "";
 
@@ -210,6 +212,7 @@ export default function CookPotWarly() {
   const [filterTemp, setFilterTemp] = useState<string | null>(null);
   const [filterDebuff, setFilterDebuff] = useState<boolean | null>(null);
   const [filterFoodType, setFilterFoodType] = useState<string[]>([]);
+  const [filterCoins, setFilterCoins] = useState<number[]>([]);
 
   const [search, setSearch] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -232,6 +235,15 @@ export default function CookPotWarly() {
     }
     if (filterFoodType.length > 0) {
       if (!filterFoodType.includes(recipe.foodtype)) return false;
+    }
+    if (filterCoins.length > 0) {
+      const hasSelectedCoin = filterCoins.some(
+        coin => (recipe.pigcoinvalue?.[coin] ?? 0) > 0
+      );
+
+      if (!hasSelectedCoin) {
+        return false;
+      }
     }
     return true;
   });
@@ -256,6 +268,22 @@ export default function CookPotWarly() {
           valA = a.spoilage ?? 0;
           valB = b.spoilage ?? 0;
           break;
+        case "pigcoin": {
+          const getCoins = (r: any) => r.pigcoinvalue ?? [0, 0, 0];
+          const aCoins = getCoins(a);
+          const bCoins = getCoins(b);
+          const dir = sortDirection === "asc" ? -1 : 1;
+
+          for (let i = 2; i >= 0; i--) {
+            const diff = (aCoins[i] ?? 0) - (bCoins[i] ?? 0);
+
+            if (diff !== 0) {
+              return diff * dir;
+            }
+          }
+
+        return 0;
+        }
         default:
           valA = a[sortType] ?? 0;
           valB = b[sortType] ?? 0;
@@ -589,43 +617,46 @@ export default function CookPotWarly() {
               <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 flex items-start gap-4 z-50">
                 {/* FILTER PANEL */}
                 {filtersOpen && (
-                  <div className="w-11/12 sm:w-[300px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 flex flex-col gap-4 font-bold shadow-sm dark:shadow-none">
-                    <DropdownGroup
-                      title={t("filters.temperature")}
-                      icon={getAssetPath("/icons/cooking/icon_temperature.png")}
-                    >
-                      <CheckboxFilter
-                        label={t("card.temperature.hot")}
-                        checked={filterTemp === "hot"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "hot" ? null : "hot")
-                        }
-                      />
-                      <CheckboxFilter
-                        label={t("card.temperature.cold")}
-                        checked={filterTemp === "cold"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "cold" ? null : "cold")
-                        }
-                      />
-                      <CheckboxFilter
-                        label={t("card.temperature.none")}
-                        checked={filterTemp === "none"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "none" ? null : "none")
-                        }
-                      />
-                    </DropdownGroup>
-
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
-
-                    <DropdownGroup
-                      title={t("filters.foodtype")}
-                      icon={getAssetPath("/icons/cooking/icon_foodtype.png")}
-                    >
-                      {FOODTYPE_ORDER.filter((type) =>
-                        recipes.some((r: any) => r.foodtype === type)
-                        ).map((type) => (
+                  <div className="w-11/12 sm:w-[420px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 font-bold shadow-sm dark:shadow-none">
+                    <div className="grid grid-cols-2 gap-2">
+                      {/* TEMPERATURE */}
+                      <div className="border-r-4 border-zinc-700/20 dark:border-white/20">
+                        <DropdownGroup
+                          title={t("filters.temperature")}
+                          icon={getAssetPath("/icons/cooking/icon_temperature.png")}
+                        >
+                          <CheckboxFilter
+                            label={t("card.temperature.hot")}
+                            checked={filterTemp === "hot"}
+                            onChange={() =>
+                            setFilterTemp(filterTemp === "hot" ? null : "hot")
+                            }
+                          />
+                          <CheckboxFilter
+                            label={t("card.temperature.cold")}
+                            checked={filterTemp === "cold"}
+                            onChange={() =>
+                            setFilterTemp(filterTemp === "cold" ? null : "cold")
+                            }
+                          />
+                          <CheckboxFilter
+                            label={t("card.temperature.none")}
+                            checked={filterTemp === "none"}
+                            onChange={() =>
+                            setFilterTemp(filterTemp === "none" ? null : "none")
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
+                      {/* FOODTYPE */}
+                      <div className="">
+                        <DropdownGroup
+                          title={t("filters.foodtype")}
+                          icon={getAssetPath("/icons/cooking/icon_foodtype.png")}
+                        >
+                          {FOODTYPE_ORDER.filter((type) =>
+                            recipes.some((r: any) => r.foodtype === type),
+                          ).map((type) => (
                           <CheckboxFilter
                             key={type}
                             label={t(`foodtypes.${type}`)}
@@ -635,40 +666,85 @@ export default function CookPotWarly() {
                                 prev.includes(type)
                                   ? prev.filter((t) => t !== type)
                                   : [...prev, type],
+                                )
+                              }
+                            />
+                          ))}
+                        </DropdownGroup>
+                      </div>
+                      <div className="col-span-2 h-1 bg-zinc-700/20 dark:bg-white/20" />
+                      {/* COINS */}
+                      <div className="border-r-4 border-zinc-700/20 dark:border-white/20 pr-4">
+                        <DropdownGroup
+                          title={t("filters.pigcoin")}
+                          icon={getAssetPath("/icons/cooking/icon_value.png")}
+                        >
+                          <CheckboxFilter
+                            label={t("pigcoins.coin1")}
+                            checked={filterCoins.includes(0)}
+                            onChange={() =>
+                              setFilterCoins(prev =>
+                              prev.includes(0)
+                                ? prev.filter(c => c !== 0)
+                                : [...prev, 0]
                               )
                             }
                           />
-                        ))}
-                    </DropdownGroup>
-
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
-
-                    <DropdownGroup
-                      title={t("filters.debuff.title")}
-                      icon={getAssetPath("/icons/cooking/icon_debuff.png")}
-                    >
-                      <CheckboxFilter
-                        label={t("filters.debuff.hasdebuff")}
-                        checked={filterDebuff === true}
-                        onChange={() =>
-                          setFilterDebuff(filterDebuff === true ? null : true)
-                        }
-                      />
-                    </DropdownGroup>
-
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
-
+                          <CheckboxFilter
+                            label={t("pigcoins.coin2")}
+                            checked={filterCoins.includes(1)}
+                            onChange={() =>
+                              setFilterCoins(prev =>
+                              prev.includes(1)
+                                ? prev.filter(c => c !== 1)
+                                : [...prev, 1]
+                              )
+                            }
+                          />
+                          <CheckboxFilter
+                            label={t("pigcoins.coin3")}
+                            checked={filterCoins.includes(2)}
+                            onChange={() =>
+                              setFilterCoins(prev =>
+                              prev.includes(2)
+                                ? prev.filter(c => c !== 2)
+                                : [...prev, 2]
+                              )
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
+                      {/* MISC */}
+                      <div className="">
+                        <DropdownGroup
+                          title={t("filters.debuff.title")}
+                          icon={getAssetPath("/icons/cooking/icon_debuff.png")}
+                        >
+                          <CheckboxFilter
+                            label={t("filters.debuff.hasdebuff")}
+                            checked={filterDebuff === true}
+                            onChange={() =>
+                            setFilterDebuff(filterDebuff === true ? null : true)
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
+                    </div>
+                  <div className="w-full h-1 mt-2 bg-zinc-700/20 dark:bg-white/20" />
+                  <div className="mt-4 flex justify-center">
                     <button
                       onClick={() => {
                         setFilterTemp(null);
                         setFilterFoodType([]);
                         setFilterDebuff(null);
+                        setFilterCoins([]);
                       }}
-                      className="bg-zinc-300 dark:bg-zinc-500 hover:bg-red-700 rounded-lg py-2 text-sm font-bold cursor-pointer"
+                      className="bg-zinc-300 dark:bg-zinc-500 hover:bg-red-700 rounded-lg py-2 px-20 text-sm font-bold cursor-pointer"
                     >
                       {t("filters.clear")}
                     </button>
                   </div>
+                </div>
                 )}
 
                 {/* SORT PANEL */}
@@ -736,6 +812,11 @@ export default function CookPotWarly() {
                         checked={sortType === "spoilage"}
                         onChange={() => setSortType("spoilage")}
                       />
+                      <CheckboxFilter
+                        label={t("sorting.type.pigcoin")}
+                        checked={sortType === "pigcoin"}
+                        onChange={() => setSortType("pigcoin")}
+                      />
                     </DropdownGroup>
 
                     <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
@@ -789,6 +870,20 @@ export default function CookPotWarly() {
             onClick={() => setSelected(recipe)}
             className="bg-white dark:bg-zinc-900 rounded-2xl p-3 flex flex-col items-center gap-3 cursor-pointer hover:scale-105 transition shadow-sm dark:shadow-none w-full sm:w-64"
           >
+          {recipe.pigcoinvalue?.some(v => v > 0) && (
+            <div className="flex items-center justify-start w-full">
+              {recipe.pigcoinvalue.map((value, index) =>
+                value > 0 ? (
+                  <img
+                    key={index}
+                    src={getAssetPath(`/icons/cooking/icon_coin${index + 1}.png`)}
+                    className="w-7 h-7"
+                    alt=""
+                    />
+                  ) : null
+                )}
+              </div>
+            )}
             <SkeletonImage
               src={getAssetPath(`/foods_cookpot_warly/${recipe.name}.png`)}
               className="w-24 h-24"
@@ -993,6 +1088,38 @@ export default function CookPotWarly() {
                 />
               )}
             </Block>
+              {selected.pigcoinvalue && (
+              <Block>
+                {selected.pigcoinvalue.map((value: number, index: number) => (
+                <div
+                  key={index}
+                  className="relative group flex items-center gap-2 min-w-[70px] justify-center"
+                >
+                  <img
+                    src={getAssetPath(`/icons/cooking/icon_coin${index + 1}.png`)}
+                    className="w-10 h-10 object-contain"
+                    alt=""
+                  />
+                  <span className="font-semibold text-lg">
+                    {value}
+                  </span>
+                  <div
+                  className="
+                  absolute bottom-full mb-2
+                  left-1/2 -translate-x-1/2
+                  hidden group-hover:block
+                  bg-black text-white dark:bg-white dark:text-black
+                  text-xs font-semibold
+                  px-3 py-1 rounded whitespace-nowrap
+                  shadow-lg z-50 pointer-events-none
+                  "
+                  >
+                    {t(`pigcoins.coin${index + 1}`)}
+                  </div>
+                </div>
+              ))}
+            </Block>
+            )}
             <div className="flex justify-center items-center flex-wrap font-semibold">
               {selected.name && (
                 <TopEffect

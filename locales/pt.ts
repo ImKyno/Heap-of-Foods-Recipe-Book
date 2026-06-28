@@ -116,6 +116,7 @@ const pt = {
       modlocpl: "Tradutor - Polski",
       modloczh: "Tradutor - 简体中文",
       modlocvi: "Tradutor - Tiếng Việt",
+      modwiki: "Escritor da Wiki",
     },
   },
 
@@ -242,6 +243,7 @@ const pt = {
       characterfood: "Comida Favorita",
     },
     event: "Evento Especial",
+    pigcoin: "Tipo de Moeda",
     noresults: "Nada encontrado com o filtro atual.",
     trydifferent: "Tente user filtros diferentes.",
     clear: "Limpar Todos Filtros",
@@ -264,8 +266,15 @@ const pt = {
       priority: "Prioridade de Cozimento",
       cooktime: "Tempo de Cozimento",
       spoilage: "Tempo até Estragar",
+      pigcoin: "Quantidade de Moedas",
     },
     clear: "Resetar para Padrão",
+  },
+
+  pigcoins: {
+    coin1: "Prata",
+    coin2: "Medalhão Esmeralda",
+    coin3: "Marca Cerúlea",
   },
 
   characterfood: {
@@ -329,6 +338,7 @@ const pt = {
       xmas: "Banquete de Inverno",
       halloween: "Noites Assombrosas",
     },
+    invalid: "Receita Inválida",
   },
 
   tooltips: {
@@ -665,6 +675,7 @@ const pt = {
   },
 
   recipes_keg: {
+    wetgoop2: "Porcaria",
     beer: "Cerveja",
     paleale: "Pale Ale",
     mead: "Hidromel",
@@ -736,6 +747,7 @@ const pt = {
   },
 
   recipes_jar: {
+    wetgoop2: "Porcaria",
     mayonnaise: "Maionese",
     mayonnaise_chicken: "Maionese de Galinha",
     mayonnaise_tallbird: "Maionese de Passaralto",
@@ -873,6 +885,7 @@ const pt = {
     longpigmeal: "Machuca o corpo",
     duckyouglermz: "Estimula o florescimento",
     eyeballspaghetti: "Invoca o monstro",
+    soulstew: "Status são baseados na inclinação",
     fortunecookie: "Conta sua fortuna",
     honeyjar: "Pacifica abelhas próximas",
     watercup: "Limpa todos os efeitos colaterais",
@@ -936,6 +949,7 @@ const pt = {
     wine_glowberry: "Emite um brilho saudável",
     wine_nightberry: "Garante visão noturna",
     juice_mooncap: "Espanta o sono",
+    souljuice: "Status são baseados na inclinação e aumenta ganho de Alma",
 
     // PRESERVES JAR RECIPES
     mayonnaise: "Restaura fome com o tempo",
@@ -1089,11 +1103,13 @@ const pt = {
     moonbutterflywings: "Asas de Mariposa Lunar",
     sugarflywings: "Asas de Borboleta de Açúcar",
     firenettles: "Urtigas Flamejantes",
-    firenettles_dried: "Urtigas Flamejantes Secas",
+    firenettles_dried: "Urtiga Flamejantes Seca",
+    icenttles: "Urtiga Gélida",
+    icenettles_dried: "Urtiga Gélidas Seca",
     forgetmelots: "Nome-Esquecido",
-    forgetmelots_dried: "Nome-Esquecido Secos",
+    forgetmelots_dried: "Nome-Esquecido Seco",
     tillweed: "Tillweeds",
-    tillweed_dried: "Tillweeds Secas",
+    tillweed_dried: "Tillweeds Seco",
     honey: "Mel",
     honeycomb: "Favo de Mel",
     royal_jelly: "Geleia Real",
@@ -1331,6 +1347,7 @@ const pt = {
     frozen: "Congelado",
     fruit: "Fruta",
     gummybug: "Lesma Gosmosa",
+    iceweed: "Urtiga Gélida",
     inedible: "Incomestível",
     jellyfish: "Água-viva",
     jellyfish_rainbow: "Água-viva Arco-íris",

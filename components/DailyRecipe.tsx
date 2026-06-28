@@ -44,6 +44,7 @@ export default function DailyRecipe() {
     "kyno_syrup",
     "littlebread",
     "watercup",
+    "wetgoop2",
   ]);
 
   const allRecipesRaw = [

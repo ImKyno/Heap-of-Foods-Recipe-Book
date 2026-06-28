@@ -48,6 +48,20 @@ function extractString(block, key) {
   return match ? match[1].trim() : null
 }
 
+function extractPigcoinValue(block) {
+  const match = block.match(
+    /pigcoinvalue\s*=\s*\{\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*\}/
+  )
+
+  if (!match) return null
+
+  return [
+    Number(match[1]),
+    Number(match[2]),
+    Number(match[3]),
+  ]
+}
+
 function extractCharacterFood(block) {
   const single = block.match(/characterfood\s*=\s*"(\w+)"/)
   if (single) return [single[1]]
@@ -140,6 +154,7 @@ for (const recipe of rawRecipes) {
     continue
   }
 
+  const pigcoinvalue = extractPigcoinValue(block)
   const characterfood = extractCharacterFood(block)
 
   const requires = extractItemBlocks(block, "required")
@@ -193,6 +208,7 @@ for (const recipe of rawRecipes) {
     cooktime: extractNumber(block, "cooktime"),
     stacksize: extractNumber(block, "stacksize"),
 
+    pigcoinvalue,
     characterfood,
 
     requires,

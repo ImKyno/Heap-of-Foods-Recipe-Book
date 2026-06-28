@@ -83,11 +83,15 @@ interface Recipe {
   example?: string[];
   excluded?: string[];
 
+  pigcoinvalue?: number[];
+
   required?: { ingredient: string; count: number }[];
   nameRequirement?: { ingredient: string; count: number }[];
   nameEqualsRequirement?: { ingredient: string; count: number }[];
   tagCountRequirement?: { tag: string; count: number }[];
   tagRequirement?: string[];
+
+  invalid?: boolean;
 }
 
 type IngredientBlock = {
@@ -137,7 +141,7 @@ const SortOption = ({ value, label, current, onChange }: SortOptionProps) => (
 export default function CookPotKeg() {
   const { t } = useTranslation();
 
-  usePageTitle(t("pages.cookpot_keg.title")); 
+  usePageTitle(t("pages.cookpot_keg.title"));
 
   const SPOILAGE_LABELS = useMemo(
     () => ({
@@ -196,7 +200,7 @@ export default function CookPotKeg() {
     temperatureDuration: number,
   ) => {
     const sign = temperature > 0 ? "+" : temperature < 0 ? "-" : "0";
-    const tempValue = temperatureDuration >= 480 ? 40: temperatureDuration;
+    const tempValue = temperatureDuration >= 240 ? 40 : temperatureDuration;
 
     let timeString = "";
 
@@ -223,8 +227,11 @@ export default function CookPotKeg() {
 
   const [filterTemp, setFilterTemp] = useState<string | null>(null);
   const [filterDebuff, setFilterDebuff] = useState<boolean | null>(null);
-  const [filterCharacterFood, setFilterCharacterFood] = useState<boolean | null>(null);
+  const [filterCharacterFood, setFilterCharacterFood] = useState<
+    boolean | null
+  >(null);
   const [filterFoodType, setFilterFoodType] = useState<string[]>([]);
+  const [filterCoins, setFilterCoins] = useState<number[]>([]);
 
   const [search, setSearch] = useState("");
   const [searchOpen, setSearchOpen] = useState(false);
@@ -251,6 +258,15 @@ export default function CookPotKeg() {
     if (filterFoodType.length > 0) {
       if (!filterFoodType.includes(recipe.foodtype)) return false;
     }
+    if (filterCoins.length > 0) {
+      const hasSelectedCoin = filterCoins.some(
+        (coin) => (recipe.pigcoinvalue?.[coin] ?? 0) > 0,
+      );
+
+      if (!hasSelectedCoin) {
+        return false;
+      }
+    }
     return true;
   });
 
@@ -274,6 +290,22 @@ export default function CookPotKeg() {
           valA = a.spoilage ?? 0;
           valB = b.spoilage ?? 0;
           break;
+        case "pigcoin": {
+          const getCoins = (r: any) => r.pigcoinvalue ?? [0, 0, 0];
+          const aCoins = getCoins(a);
+          const bCoins = getCoins(b);
+          const dir = sortDirection === "asc" ? -1 : 1;
+
+          for (let i = 2; i >= 0; i--) {
+            const diff = (aCoins[i] ?? 0) - (bCoins[i] ?? 0);
+
+            if (diff !== 0) {
+              return diff * dir;
+            }
+          }
+
+          return 0;
+        }
         default:
           valA = a[sortType] ?? 0;
           valB = b[sortType] ?? 0;
@@ -290,7 +322,7 @@ export default function CookPotKeg() {
       label: t(`recipes_keg.${r.name}`),
     }));
   }, [sortedRecipes, t]);
-  
+
   // FUZZY SEARCH
   const fuse = useMemo(() => {
     return new Fuse(recipesWithLabel, {
@@ -407,7 +439,7 @@ export default function CookPotKeg() {
 
   const selectedIndex = useMemo(() => {
     if (!selected) return -1;
-    return sortedRecipes.findIndex(r => r.name === selected.name);
+    return sortedRecipes.findIndex((r) => r.name === selected.name);
   }, [selected, sortedRecipes]);
 
   const goNext = () => {
@@ -443,7 +475,7 @@ export default function CookPotKeg() {
     const params = new URLSearchParams(window.location.search);
     const name = params.get("recipe");
     if (name) {
-      const recipe = sortedRecipes.find(r => r.name === name);
+      const recipe = sortedRecipes.find((r) => r.name === name);
       if (recipe) {
         setSelected(recipe);
         const element = document.getElementById(`recipe-${recipe.name}`);
@@ -536,7 +568,9 @@ export default function CookPotKeg() {
                       }`}
                     >
                       <img
-                        src={getAssetPath(`/foods_cookpot_keg/${recipe.name}.png`)}
+                        src={getAssetPath(
+                          `/foods_cookpot_keg/${recipe.name}.png`,
+                        )}
                         className="w-10 h-10 object-contain"
                       />
                       <span className="text-sm font-semibold">
@@ -607,92 +641,162 @@ export default function CookPotKeg() {
               <div className="absolute top-full mt-3 left-1/2 -translate-x-1/2 flex items-start gap-4 z-50">
                 {/* FILTER PANEL */}
                 {filtersOpen && (
-                  <div className="w-11/12 sm:w-[300px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 flex flex-col gap-4 font-bold shadow-sm dark:shadow-none">
-                    <DropdownGroup
-                      title={t("filters.temperature")}
-                      icon={getAssetPath("/icons/cooking/icon_temperature.png")}
-                    >
-                      <CheckboxFilter
-                        label={t("card.temperature.hot")}
-                        checked={filterTemp === "hot"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "hot" ? null : "hot")
-                        }
-                      />
-                      <CheckboxFilter
-                        label={t("card.temperature.cold")}
-                        checked={filterTemp === "cold"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "cold" ? null : "cold")
-                        }
-                      />
-                      <CheckboxFilter
-                        label={t("card.temperature.none")}
-                        checked={filterTemp === "none"}
-                        onChange={() =>
-                          setFilterTemp(filterTemp === "none" ? null : "none")
-                        }
-                      />
-                    </DropdownGroup>
-
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
-
-                    <DropdownGroup
-                      title={t("filters.foodtype")}
-                      icon={getAssetPath("/icons/cooking/icon_foodtype.png")}
-                    >
-                      {FOODTYPE_ORDER.filter((type) =>
-                        recipes.some((r: any) => r.foodtype === type)
-                        ).map((type) => (
+                  <div className="w-11/12 sm:w-[500px] bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-4 font-bold shadow-sm dark:shadow-none">
+                    <div className="grid grid-cols-2 gap-2">
+                      {/* TEMPERATURE */}
+                      <div className="border-r-4 border-zinc-700/20 dark:border-white/20 pr-4">
+                        <DropdownGroup
+                          title={t("filters.temperature")}
+                          icon={getAssetPath(
+                            "/icons/cooking/icon_temperature.png",
+                          )}
+                        >
                           <CheckboxFilter
-                            key={type}
-                            label={t(`foodtypes.${type}`)}
-                            checked={filterFoodType.includes(type)}
+                            label={t("card.temperature.hot")}
+                            checked={filterTemp === "hot"}
                             onChange={() =>
-                              setFilterFoodType((prev) =>
-                                prev.includes(type)
-                                  ? prev.filter((t) => t !== type)
-                                  : [...prev, type],
+                              setFilterTemp(filterTemp === "hot" ? null : "hot")
+                            }
+                          />
+                          <CheckboxFilter
+                            label={t("card.temperature.cold")}
+                            checked={filterTemp === "cold"}
+                            onChange={() =>
+                              setFilterTemp(
+                                filterTemp === "cold" ? null : "cold",
                               )
                             }
                           />
-                        ))}
-                    </DropdownGroup>
+                          <CheckboxFilter
+                            label={t("card.temperature.none")}
+                            checked={filterTemp === "none"}
+                            onChange={() =>
+                              setFilterTemp(
+                                filterTemp === "none" ? null : "none",
+                              )
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
 
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
+                      {/* FOODTYPE */}
+                      <div>
+                        <DropdownGroup
+                          title={t("filters.foodtype")}
+                          icon={getAssetPath(
+                            "/icons/cooking/icon_foodtype.png",
+                          )}
+                        >
+                          {FOODTYPE_ORDER.filter((type) =>
+                            recipes.some((r: any) => r.foodtype === type),
+                          ).map((type) => (
+                            <CheckboxFilter
+                              key={type}
+                              label={t(`foodtypes.${type}`)}
+                              checked={filterFoodType.includes(type)}
+                              onChange={() =>
+                                setFilterFoodType((prev) =>
+                                  prev.includes(type)
+                                    ? prev.filter((t) => t !== type)
+                                    : [...prev, type],
+                                )
+                              }
+                            />
+                          ))}
+                        </DropdownGroup>
+                      </div>
 
-                    <DropdownGroup
-                      title={t("filters.debuff.title")}
-                      icon={getAssetPath("/icons/cooking/icon_debuff.png")}
-                    >
-                      <CheckboxFilter
-                        label={t("filters.debuff.hasdebuff")}
-                        checked={filterDebuff === true}
-                        onChange={() =>
-                          setFilterDebuff(filterDebuff === true ? null : true)
-                        }
-                      />
-                      <CheckboxFilter
-                        label={t("filters.debuff.characterfood")}
-                        checked={filterCharacterFood === true}
-                        onChange={() =>
-                          setFilterCharacterFood(filterCharacterFood === true ? null : true)
-                        }
-                      />
-                    </DropdownGroup>
+                      <div className="col-span-2 h-1 bg-zinc-700/20 dark:bg-white/20" />
 
-                    <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
+                      {/* COINS */}
+                      <div className="border-r-4 border-zinc-700/20 dark:border-white/20 pr-4">
+                        <DropdownGroup
+                          title={t("filters.pigcoin")}
+                          icon={getAssetPath("/icons/cooking/icon_value.png")}
+                        >
+                          <CheckboxFilter
+                            label={t("pigcoins.coin1")}
+                            checked={filterCoins.includes(0)}
+                            onChange={() =>
+                              setFilterCoins((prev) =>
+                                prev.includes(0)
+                                  ? prev.filter((c) => c !== 0)
+                                  : [...prev, 0],
+                              )
+                            }
+                          />
 
-                    <button
-                      onClick={() => {
-                        setFilterTemp(null);
-                        setFilterFoodType([]);
-                        setFilterDebuff(null);
-                      }}
-                      className="bg-zinc-300 dark:bg-zinc-500 hover:bg-red-700 rounded-lg py-2 text-sm font-bold cursor-pointer"
-                    >
-                      {t("filters.clear")}
-                    </button>
+                          <CheckboxFilter
+                            label={t("pigcoins.coin2")}
+                            checked={filterCoins.includes(1)}
+                            onChange={() =>
+                              setFilterCoins((prev) =>
+                                prev.includes(1)
+                                  ? prev.filter((c) => c !== 1)
+                                  : [...prev, 1],
+                              )
+                            }
+                          />
+
+                          <CheckboxFilter
+                            label={t("pigcoins.coin3")}
+                            checked={filterCoins.includes(2)}
+                            onChange={() =>
+                              setFilterCoins((prev) =>
+                                prev.includes(2)
+                                  ? prev.filter((c) => c !== 2)
+                                  : [...prev, 2],
+                              )
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
+
+                      {/* MISC */}
+                      <div>
+                        <DropdownGroup
+                          title={t("filters.debuff.title")}
+                          icon={getAssetPath("/icons/cooking/icon_debuff.png")}
+                        >
+                          <CheckboxFilter
+                            label={t("filters.debuff.hasdebuff")}
+                            checked={filterDebuff === true}
+                            onChange={() =>
+                              setFilterDebuff(
+                                filterDebuff === true ? null : true,
+                              )
+                            }
+                          />
+
+                          <CheckboxFilter
+                            label={t("filters.debuff.characterfood")}
+                            checked={filterCharacterFood === true}
+                            onChange={() =>
+                              setFilterCharacterFood(
+                                filterCharacterFood === true ? null : true,
+                              )
+                            }
+                          />
+                        </DropdownGroup>
+                      </div>
+                    </div>
+
+                    <div className="w-full h-1 mt-2 bg-zinc-700/20 dark:bg-white/20" />
+
+                    <div className="mt-4 flex justify-center">
+                      <button
+                        onClick={() => {
+                          setFilterTemp(null);
+                          setFilterFoodType([]);
+                          setFilterDebuff(null);
+                          setFilterCharacterFood(null);
+                          setFilterCoins([]);
+                        }}
+                        className="bg-zinc-300 dark:bg-zinc-500 hover:bg-red-700 rounded-lg py-2 px-20 text-sm font-bold cursor-pointer"
+                      >
+                        {t("filters.clear")}
+                      </button>
+                    </div>
                   </div>
                 )}
 
@@ -761,6 +865,11 @@ export default function CookPotKeg() {
                         checked={sortType === "spoilage"}
                         onChange={() => setSortType("spoilage")}
                       />
+                      <CheckboxFilter
+                        label={t("sorting.type.pigcoin")}
+                        checked={sortType === "pigcoin"}
+                        onChange={() => setSortType("pigcoin")}
+                      />
                     </DropdownGroup>
 
                     <div className="w-full h-1 bg-zinc-700/20 dark:bg-white/20" />
@@ -814,6 +923,22 @@ export default function CookPotKeg() {
             onClick={() => setSelected(recipe)}
             className="bg-white dark:bg-zinc-900 rounded-2xl p-3 flex flex-col items-center gap-3 cursor-pointer hover:scale-105 transition shadow-sm dark:shadow-none w-full sm:w-64"
           >
+            {recipe.pigcoinvalue?.some((v) => v > 0) && (
+              <div className="flex items-center justify-start w-full">
+                {recipe.pigcoinvalue.map((value, index) =>
+                  value > 0 ? (
+                    <img
+                      key={index}
+                      src={getAssetPath(
+                        `/icons/cooking/icon_coin${index + 1}.png`,
+                      )}
+                      className="w-7 h-7"
+                      alt=""
+                    />
+                  ) : null,
+                )}
+              </div>
+            )}
             <SkeletonImage
               src={getAssetPath(`/foods_cookpot_keg/${recipe.name}.png`)}
               className="w-24 h-24"
@@ -829,8 +954,8 @@ export default function CookPotKeg() {
                   icon={getAssetPath(
                     recipe.temperature > 0
                       ? "/icons/cooking/icon_temperature_hot.png"
-                      : "/icons/cooking/icon_temperature_cold.png"
-                    )}
+                      : "/icons/cooking/icon_temperature_cold.png",
+                  )}
                   value={
                     recipe.temperature > 0
                       ? t("card.temperature.hot")
@@ -846,6 +971,12 @@ export default function CookPotKeg() {
                   tooltip={t("tooltips.debuff")}
                 />
               )}
+              {recipe.invalid && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.invalid")}
+                />
+              )}
               {recipe.characterfood &&
                 (Array.isArray(recipe.characterfood)
                   ? recipe.characterfood
@@ -853,7 +984,9 @@ export default function CookPotKeg() {
                 ).map((char) => (
                   <TopEffect
                     key={char}
-                    icon={getAssetPath(`/icons/characters/character_${char}.png`)}
+                    icon={getAssetPath(
+                      `/icons/characters/character_${char}.png`,
+                    )}
                     value={t(`characterfood.${char}`)}
                     tooltip={t("tooltips.characterfood")}
                   />
@@ -864,27 +997,28 @@ export default function CookPotKeg() {
       </div>
       {/* SELECTED CARD */}
       <AnimatedOverlay isOpen={!!selected} onClose={() => setSelected(null)}>
-        {selected && (<>
-          {/* PREVIOUS */}
-          {selectedIndex > 0 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                goPrev();
-              }}
-              className="absolute left-2 sm:left-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
-            >
-              <FontAwesomeIcon icon={faCircleChevronLeft} />
-            </button>
-          )}
-          <div
-            className="recipe-popup-panel bg-white dark:bg-zinc-900 rounded-2xl p-4 sm:p-8 w-11/12 md:w-[750px] max-h-[90vh] overflow-y-auto hide-scrollbar relative shadow-xl dark:shadow-none"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex justify-end">
+        {selected && (
+          <>
+            {/* PREVIOUS */}
+            {selectedIndex > 0 && (
               <button
-                onClick={() => setSelected(null)}
-                className="
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goPrev();
+                }}
+                className="absolute left-2 sm:left-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
+              >
+                <FontAwesomeIcon icon={faCircleChevronLeft} />
+              </button>
+            )}
+            <div
+              className="recipe-popup-panel bg-white dark:bg-zinc-900 rounded-2xl p-4 sm:p-8 w-11/12 md:w-[750px] max-h-[90vh] overflow-y-auto hide-scrollbar relative shadow-xl dark:shadow-none"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex justify-end">
+                <button
+                  onClick={() => setSelected(null)}
+                  className="
                       bg-zinc-100 dark:bg-zinc-800
                       hover:bg-zinc-200 dark:hover:bg-zinc-700
                       px-3 py-1
@@ -896,186 +1030,234 @@ export default function CookPotKeg() {
                       flex items-center gap-2
                       cursor-pointer
                       "
+                >
+                  <FontAwesomeIcon icon={faArrowRightFromBracket} />
+                  {t("main.close")}
+                </button>
+              </div>
+
+              <SkeletonImage
+                src={getAssetPath(`/foods_cookpot_keg/${selected.name}.png`)}
+                className="w-24 h-24 mx-auto mb-4"
+              />
+
+              <h2 className="text-center text-2xl font-semibold">
+                {t(`recipes_keg.${selected.name}`)}
+              </h2>
+
+              <div className="flex justify-center my-4">
+                <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
+              </div>
+              <Block
+                showInfo={true}
+                infoText={
+                  <>
+                    <div className="font-bold mb-1">
+                      {t("card.ingredients.info.state_title")}
+                    </div>
+
+                    <p className="mb-2">
+                      {t("card.ingredients.info.state_p1")}
+                    </p>
+
+                    <p className="mb-2">
+                      {t("card.ingredients.info.state_p2")}
+                    </p>
+
+                    <p className="mb-3">
+                      {t("card.ingredients.info.state_p3")}
+                    </p>
+
+                    <div className="font-bold mb-1">
+                      {t("card.ingredients.info.excluded_title")}
+                    </div>
+
+                    <p className="mb-2">
+                      {t("card.ingredients.info.excluded_p1")}
+                    </p>
+
+                    <p className="mb-2">
+                      {t("card.ingredients.info.excluded_p2")}
+                    </p>
+
+                    <p>{t("card.ingredients.info.excluded_p3")}</p>
+                  </>
+                }
+                infoLink="https://dontstarve.wiki.gg/wiki/Crock_Pot/Recipe_Table"
               >
-                <FontAwesomeIcon icon={faArrowRightFromBracket} />
-                {t("main.close")}
-              </button>
-            </div>
+                <IngredientsTable recipe={selected} />
+              </Block>
+              <div className="flex justify-center my-3">
+                <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
+              </div>
+              {/* FOODTYPE + EFFECTS */}
+              <div className="flex justify-center items-center gap-4 mb-3 mt-2 flex-wrap font-semibold">
+                {selected.foodtype && (
+                  <FoodType type={selected.foodtype} t={t} />
+                )}
 
-            <SkeletonImage
-              src={getAssetPath(`/foods_cookpot_keg/${selected.name}.png`)}
-              className="w-24 h-24 mx-auto mb-4"
-            />
-
-            <h2 className="text-center text-2xl font-semibold">
-              {t(`recipes_keg.${selected.name}`)}
-            </h2>
-
-            <div className="flex justify-center my-4">
-              <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
-            </div>
-            <Block
-              showInfo={true}
-              infoText={
-                <>
-                  <div className="font-bold mb-1">
-                    {t("card.ingredients.info.state_title")}
-                  </div>
-
-                  <p className="mb-2">{t("card.ingredients.info.state_p1")}</p>
-
-                  <p className="mb-2">{t("card.ingredients.info.state_p2")}</p>
-
-                  <p className="mb-3">{t("card.ingredients.info.state_p3")}</p>
-
-                  <div className="font-bold mb-1">
-                    {t("card.ingredients.info.excluded_title")}
-                  </div>
-
-                  <p className="mb-2">
-                    {t("card.ingredients.info.excluded_p1")}
-                  </p>
-
-                  <p className="mb-2">
-                    {t("card.ingredients.info.excluded_p2")}
-                  </p>
-
-                  <p>{t("card.ingredients.info.excluded_p3")}</p>
-                </>
-              }
-              infoLink="https://dontstarve.wiki.gg/wiki/Crock_Pot/Recipe_Table"
-            >
-              <IngredientsTable recipe={selected} />
-            </Block>
-            <div className="flex justify-center my-3">
-              <div className="w-full h-1 bg-zinc-200 dark:bg-zinc-700" />
-            </div>
-            {/* FOODTYPE + EFFECTS */}
-            <div className="flex justify-center items-center gap-4 mb-3 mt-2 flex-wrap font-semibold">
-              {selected.foodtype && <FoodType type={selected.foodtype} t={t} />}
-
-              {selected.temperature != null && (
-                <TopEffect
-                  icon={getAssetPath(
-                    selected.temperature > 0
-                      ? "/icons/cooking/icon_temperature_hot.png"
-                      : "/icons/cooking/icon_temperature_cold.png"
+                {selected.temperature != null && (
+                  <TopEffect
+                    icon={getAssetPath(
+                      selected.temperature > 0
+                        ? "/icons/cooking/icon_temperature_hot.png"
+                        : "/icons/cooking/icon_temperature_cold.png",
                     )}
-                  value={FormatTemperature(
-                    selected.temperature,
-                    selected.temperatureDuration,
-                  )}
-                  tooltip={t("tooltips.temperature")}
-                />
-              )}
+                    value={FormatTemperature(
+                      selected.temperature,
+                      selected.temperatureDuration,
+                    )}
+                    tooltip={t("tooltips.temperature")}
+                  />
+                )}
 
-              {selected.debuff && (
-                <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_debuff.png")}
-                  value={t(`recipes_debuff.${selected.name}`)}
-                  tooltip={t("tooltips.debuff")}
-                />
-              )}
-            </div>
+                {selected.debuff && (
+                  <TopEffect
+                    icon={getAssetPath("/icons/cooking/icon_debuff.png")}
+                    value={t(`recipes_debuff.${selected.name}`)}
+                    tooltip={t("tooltips.debuff")}
+                  />
+                )}
 
-            {/* STATUS */}
-            <Block>
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_health.png")}
-                value={selected.health}
-                tooltip={t("tooltips.health")}
-                isStatus
-                recipe={selected}
-                stat="health"
-              />
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_hunger.png")}
-                value={selected.hunger}
-                tooltip={t("tooltips.hunger")}
-                isStatus
-                recipe={selected}
-                stat="hunger"
-              />
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_sanity.png")}
-                value={selected.sanity}
-                tooltip={t("tooltips.sanity")}
-                isStatus
-                recipe={selected}
-                stat="sanity"
-              />
-            </Block>
+                {selected.invalid && (
+                  <TopEffect
+                    icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                    value={t(`card.invalid`)}
+                  />
+                )}
+              </div>
 
-            <Block>
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_priority.png")}
-                value={selected.priority}
-                tooltip={t("tooltips.priority")}
-              />
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_cooktime.png")}
-                value={FormatCookTime(selected.cooktime)}
-                tooltip={t("tooltips.cooktime")}
-              />
-              <Stat
-                icon={getAssetPath("/icons/cooking/icon_spoilage.png")}
-                value={GetSpoilageLabel(selected.spoilage)}
-                tooltip={t("tooltips.spoilage")}
-              />
-              {selected.stacksize && (
+              {/* STATUS */}
+              <Block>
                 <Stat
-                  icon={getAssetPath("/icons/cooking/icon_stacksize.png")}
-                  value={selected.stacksize}
-                  tooltip={t("tooltips.stacksize")}
+                  icon={getAssetPath("/icons/cooking/icon_health.png")}
+                  value={selected.health}
+                  tooltip={t("tooltips.health")}
+                  isStatus
+                  recipe={selected}
+                  stat="health"
                 />
+                <Stat
+                  icon={getAssetPath("/icons/cooking/icon_hunger.png")}
+                  value={selected.hunger}
+                  tooltip={t("tooltips.hunger")}
+                  isStatus
+                  recipe={selected}
+                  stat="hunger"
+                />
+                <Stat
+                  icon={getAssetPath("/icons/cooking/icon_sanity.png")}
+                  value={selected.sanity}
+                  tooltip={t("tooltips.sanity")}
+                  isStatus
+                  recipe={selected}
+                  stat="sanity"
+                />
+              </Block>
+
+              <Block>
+                <Stat
+                  icon={getAssetPath("/icons/cooking/icon_priority.png")}
+                  value={selected.priority}
+                  tooltip={t("tooltips.priority")}
+                />
+                <Stat
+                  icon={getAssetPath("/icons/cooking/icon_cooktime.png")}
+                  value={FormatCookTime(selected.cooktime)}
+                  tooltip={t("tooltips.cooktime")}
+                />
+                <Stat
+                  icon={getAssetPath("/icons/cooking/icon_spoilage.png")}
+                  value={GetSpoilageLabel(selected.spoilage)}
+                  tooltip={t("tooltips.spoilage")}
+                />
+                {selected.stacksize && (
+                  <Stat
+                    icon={getAssetPath("/icons/cooking/icon_stacksize.png")}
+                    value={selected.stacksize}
+                    tooltip={t("tooltips.stacksize")}
+                  />
+                )}
+              </Block>
+              {selected.pigcoinvalue && (
+                <Block>
+                  {selected.pigcoinvalue.map((value: number, index: number) => (
+                    <div
+                      key={index}
+                      className="relative group flex items-center gap-2 min-w-[70px] justify-center"
+                    >
+                      <img
+                        src={getAssetPath(
+                          `/icons/cooking/icon_coin${index + 1}.png`,
+                        )}
+                        className="w-10 h-10 object-contain"
+                        alt=""
+                      />
+                      <span className="font-semibold text-lg">{value}</span>
+                      <div
+                        className="
+                  absolute bottom-full mb-2
+                  left-1/2 -translate-x-1/2
+                  hidden group-hover:block
+                  bg-black text-white dark:bg-white dark:text-black
+                  text-xs font-semibold
+                  px-3 py-1 rounded whitespace-nowrap
+                  shadow-lg z-50 pointer-events-none
+                  "
+                      >
+                        {t(`pigcoins.coin${index + 1}`)}
+                      </div>
+                    </div>
+                  ))}
+                </Block>
               )}
-            </Block>
-            <div className="flex justify-center items-center flex-wrap font-semibold">
-              {selected.name && (
-                <TopEffect
-                  icon={getAssetPath("/icons/cooking/icon_debug.png")}
-                  tooltip={t("tooltips.debug.title")}
-                  value={
-                    <span>
-                      <span className="font-semibold">
-                        {t("tooltips.debug.spawn")}:{" "}
+              <div className="flex justify-center items-center flex-wrap font-semibold">
+                {selected.name && (
+                  <TopEffect
+                    icon={getAssetPath("/icons/cooking/icon_debug.png")}
+                    tooltip={t("tooltips.debug.title")}
+                    value={
+                      <span>
+                        <span className="font-semibold">
+                          {t("tooltips.debug.spawn")}:{" "}
+                        </span>
+                        <span className="font-mono font-semibold">
+                          {selected.name}
+                        </span>
                       </span>
-                    <span className="font-mono font-semibold">
-                      {selected.name}
-                    </span>
-                  </span>
-                  }
-                />
-              )}
+                    }
+                  />
+                )}
+              </div>
+              {(() => {
+                const suggestion = recommendRecipe(selected, recipes);
+                return suggestion ? (
+                  <SeeAlso
+                    suggested={suggestion}
+                    imageBasePath="/foods_cookpot_keg"
+                    translationPrefix="recipes_keg"
+                    onSelect={(recipe) => {
+                      setSelected(null);
+                      selectRecipe(recipe);
+                    }}
+                  />
+                ) : null;
+              })()}
             </div>
-            {(() => {
-              const suggestion = recommendRecipe(selected, recipes);
-              return suggestion ? (
-                <SeeAlso
-                  suggested={suggestion}
-                  imageBasePath="/foods_cookpot_keg"
-                  translationPrefix="recipes_keg"
-                  onSelect={(recipe) => {
-                    setSelected(null);
-                    selectRecipe(recipe);
-                  }}
-                />
-              ) : null;
-            })()}
-          </div>
-          {/* NEXT */}
-          {selectedIndex < sortedRecipes.length - 1 && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                goNext();
-              }}
-              className="absolute right-2 sm:right-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
-            >
-              <FontAwesomeIcon icon={faCircleChevronRight} />
-            </button>
-          )}
-        </>)}
+            {/* NEXT */}
+            {selectedIndex < sortedRecipes.length - 1 && (
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  goNext();
+                }}
+                className="absolute right-2 sm:right-6 text-3xl sm:text-5xl text-white hover:text-white/80 dark:text-white/70 dark:hover:text-white/90 transition cursor-pointer z-10 drop-shadow"
+              >
+                <FontAwesomeIcon icon={faCircleChevronRight} />
+              </button>
+            )}
+          </>
+        )}
       </AnimatedOverlay>
     </div>
   );
@@ -1245,6 +1427,18 @@ function Stat({ icon, value, tooltip, isStatus = false, recipe, stat }: any) {
     }
   }
 
+  const niceValue = recipe?.[`${stat}nice`];
+  if (typeof niceValue === "number" && niceValue !== 0) {
+    extrasMap[niceValue] ??= [];
+    extrasMap[niceValue].push("wortox_nice");
+  }
+
+  const naughtyValue = recipe?.[`${stat}naughty`];
+  if (typeof naughtyValue === "number" && naughtyValue !== 0) {
+    extrasMap[naughtyValue] ??= [];
+    extrasMap[naughtyValue].push("wortox_naughty");
+  }
+
   const extraValues = Object.entries(extrasMap).map(([value, chars]) => ({
     value: Number(value),
     characters: [...new Set(chars)],
@@ -1255,33 +1449,38 @@ function Stat({ icon, value, tooltip, isStatus = false, recipe, stat }: any) {
       <img src={icon} className="w-9 h-9 object-contain" />
 
       <div className="flex flex-col items-center leading-tight">
-  <span className={`text-base font-semibold ${colorClass}`}>
-    {displayValue}
-  </span>
-
-  {extraValues.map((extra, i) => (
-    <span
-      key={i}
-      className=" font-semibold flex items-center gap-1 text-zinc-600 dark:text-zinc-400"
-    >
-      (
-      <span className="text-green-500 font-semibold">
-        {extra.value > 0 ? `+${extra.value}` : extra.value}
-      </span>
-
-      {extra.characters.map((char, index) => (
-        <span key={char} className="flex items-center font-bold">
-          <img
-            src={getAssetPath(`/icons/characters/character_${char}.png`)}
-            className="w-7 h-7"
-          />
-          {index < extra.characters.length - 1 && ""}
+        <span className={`text-base font-semibold ${colorClass}`}>
+          {displayValue}
         </span>
-      ))}
-      )
-    </span>
-  ))}
-</div>
+
+        {extraValues.map((extra, i) => (
+          <span
+            key={i}
+            className=" font-semibold flex items-center gap-1 text-zinc-600 dark:text-zinc-400"
+          >
+            (
+            <span className="text-green-500 font-semibold">
+              {extra.value > 0 ? `+${extra.value}` : extra.value}
+            </span>
+            {extra.characters.map((char, index) => (
+              <span key={char} className="flex items-center font-bold">
+                <img
+                  src={
+                    char === "wortox_nice"
+                    ? getAssetPath("/icons/characters/character_wortox_nice.png")
+                    : char === "wortox_naughty"
+                    ? getAssetPath("/icons/characters/character_wortox_naughty.png")
+                    : getAssetPath(`/icons/characters/character_${char}.png`)
+                  }
+                  className="w-7 h-7"
+                />
+                {index < extra.characters.length - 1 && ""}
+              </span>
+            ))}
+            )
+          </span>
+        ))}
+      </div>
 
       <div
         className="
@@ -1561,7 +1760,13 @@ function IngredientsTable({ recipe }: { recipe: Recipe }) {
         <div className="text-sm font-bold mb-2">
           {t("card.ingredients.required")}
         </div>
-        <IngredientList items={required} t={t} />
+        {required.length > 0 ? (
+          <IngredientList items={required} t={t} />
+        ) : (
+          <div className="opacity-70">
+            <FontAwesomeIcon icon={faCircleMinus} className="scale-170 p-2" />
+          </div>
+        )}
       </div>
 
       <div className="min-w-[180px] max-w-[220px] flex-1">
@@ -1581,7 +1786,13 @@ function IngredientsTable({ recipe }: { recipe: Recipe }) {
         <div className="text-sm font-bold mb-2">
           {t("card.ingredients.example")}
         </div>
-        <IngredientList items={example} t={t} />
+        {example.length > 0 ? (
+          <IngredientList items={example} t={t} />
+        ) : (
+          <div className="opacity-70">
+            <FontAwesomeIcon icon={faCircleMinus} className="scale-170 p-2" />
+          </div>
+        )}
       </div>
     </div>
   );

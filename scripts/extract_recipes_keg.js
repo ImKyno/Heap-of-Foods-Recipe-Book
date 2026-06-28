@@ -32,7 +32,6 @@ const BLOCKED_RECIPES = new Set([
 
 const IGNORE_DEBUFF_RECIPES = new Set([
   "nukacola",
-  "souljuice",
   "wine_durian",
   "juice_sporecap",
   "juice_sporecap_dark",
@@ -55,6 +54,20 @@ function extractString(block, key) {
 function extractBoolean(block, key) {
   const match = block.match(new RegExp(`${key}\\s*=\\s*(true|false)`))
   return match ? match[1] === "true" : null
+}
+
+function extractPigcoinValue(block) {
+  const match = block.match(
+    /pigcoinvalue\s*=\s*\{\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*\}/
+  )
+
+  if (!match) return null
+
+  return [
+    Number(match[1]),
+    Number(match[2]),
+    Number(match[3]),
+  ]
 }
 
 function extractCharacterFood(block) {
@@ -149,6 +162,7 @@ for (const recipe of rawRecipes) {
     continue
   }
 
+  const pigcoinvalue = extractPigcoinValue(block)
   const characterfood = extractCharacterFood(block)
 
   const mermfood = extractBoolean(block, "mermfood")
@@ -212,6 +226,7 @@ for (const recipe of rawRecipes) {
     cooktime: extractNumber(block, "cooktime"),
     stacksize: extractNumber(block, "stacksize"),
 
+    pigcoinvalue,
     characterfood,
 
     mermfood,
@@ -222,10 +237,17 @@ for (const recipe of rawRecipes) {
     monsterfood,
     monsterhealth,
     monstersanity,
+
+    healthnice: extractNumber(block, "healthnice"),
+    healthnaughty: extractNumber(block, "healthnaughty"),
+    sanitynice: extractNumber(block, "sanitynice"),
+    sanitynaughty: extractNumber(block, "sanitynaughty"),
     
     requires,
     excluded,
-    card_def
+    card_def,
+
+    invalid: extractBoolean(block, "invalid")
   })
 }
 

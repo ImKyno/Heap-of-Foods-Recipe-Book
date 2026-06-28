@@ -962,6 +962,19 @@
         "debug": ["firenettles", "firenettles_dried"]
     },
     {
+        "name": "icenettles",
+        "cooked": false,
+        "dried": true,
+        "foodtype": "VEGGIE",
+        "cooktype": ["DECORATION"],
+        "cookvalue": [1.0],
+        "spoilage": [1440, null],
+        "health": [-5, -5],
+        "hunger": [0, 0],
+        "sanity": [-3, -3],
+        "debug": ["kyno_icenettles", "kyno_icenettles_dried"]
+    },
+    {
         "name": "forgetmelots",
         "cooked": false,
         "dried": true,

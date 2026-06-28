@@ -10,6 +10,11 @@
     "badges": ["contributors.badges.donator"]
   },
   {
+    "name": "Bombobbit",
+    "image": "/icons/contributors/contributor_bombobbit.png",
+    "badges": ["contributors.badges.modwiki"]
+  },
+  {
     "name": "DemonRebuilt",
     "image": "/icons/contributors/contributor_demon_rebuilt.png",
     "badges": ["contributors.badges.contentcreator"],
@@ -29,7 +34,8 @@
   {
     "name": "Eventide",
     "image": "/icons/contributors/contributor_eventide.png",
-    "badges": ["contributors.badges.donator", "contributors.badges.modtester", "contributors.badges.modlocpt"]
+    "badges": ["contributors.badges.donator", "contributors.badges.modtester", "contributors.badges.modwiki", 
+    "contributors.badges.modlocpt"]
   },
   {
     "name": "Fliphe",

@@ -15,6 +15,7 @@ local kyno_foods_jar =
 		nameoverride = "KYNO_MAYONNAISE",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_REHUNGER,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -54,6 +55,7 @@ local kyno_foods_jar =
 		nameoverride = "KYNO_MAYONNAISE",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_REHUNGER,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -92,6 +94,7 @@ local kyno_foods_jar =
 		nameoverride = "KYNO_MAYONNAISE",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_REHUNGER,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 5, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -129,6 +132,7 @@ local kyno_foods_jar =
 		nameoverride = "KYNO_MAYONNAISE",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_DESANITY,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 4, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -165,6 +169,7 @@ local kyno_foods_jar =
 		scale = .90,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_REHUNGER,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 1},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = -TUNING.KYNO_LUCK_MED },
 		required = 
@@ -201,6 +206,7 @@ local kyno_foods_jar =
 		sanity = 40,
 		cooktime = 96,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -229,6 +235,7 @@ local kyno_foods_jar =
 		sanity = 20,
 		cooktime = 96,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -257,6 +264,7 @@ local kyno_foods_jar =
 		sanity = 0,
 		cooktime = 96,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {0, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -287,6 +295,7 @@ local kyno_foods_jar =
 		stacksize = 2,
 		goldvalue = 10,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {3, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink", "truffles"},
 		required = 
@@ -319,6 +328,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_EXQUISITE,
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {7, 1, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"exquisite"},
 		required = 
@@ -356,6 +366,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -386,6 +397,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -416,6 +428,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {6, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -441,12 +454,13 @@ local kyno_foods_jar =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 10,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = 40,
 		cooktime = 48,
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -477,6 +491,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monkeyqueenbribe"},
 		required = 
@@ -509,6 +524,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monkeyqueenbribe"},
 		required = 
@@ -541,6 +557,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -587,6 +604,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {6, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -617,6 +635,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -642,13 +661,14 @@ local kyno_foods_jar =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 20,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = -10,
 		cooktime = 48,
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_GLOW,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -704,6 +724,7 @@ local kyno_foods_jar =
 		nightvision = true,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -742,6 +763,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -773,6 +795,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_JELLY",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -803,6 +826,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -833,6 +857,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -863,6 +888,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -893,6 +919,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -923,6 +950,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -953,6 +981,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {6, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -983,6 +1012,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {6, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1015,6 +1045,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1046,6 +1077,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1076,6 +1108,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1107,6 +1140,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1137,6 +1171,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1167,6 +1202,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1191,12 +1227,13 @@ local kyno_foods_jar =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 30,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = -15,
 		cooktime = 72,
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1227,6 +1264,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1258,6 +1296,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {4, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1288,6 +1327,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1318,6 +1358,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {7, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1348,6 +1389,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1378,6 +1420,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1408,6 +1451,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1438,6 +1482,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1468,6 +1513,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1498,6 +1544,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1522,12 +1569,13 @@ local kyno_foods_jar =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 20,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = 10,
 		cooktime = 72,
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1558,6 +1606,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1588,6 +1637,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {3, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1618,6 +1668,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {3, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1648,6 +1699,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {3, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1679,6 +1731,7 @@ local kyno_foods_jar =
 		nameoverride = "KYNO_PICKLES",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SLEEP_RESISTANCE,
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {4, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1719,6 +1772,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {3, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1750,6 +1804,7 @@ local kyno_foods_jar =
 		goldvalue = 10,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"truffles"},
 		required = 
@@ -1775,13 +1830,14 @@ local kyno_foods_jar =
 		foodtype = FOODTYPE.MONSTER,
 		perishtime = TUNING.PERISH_MED,
 		health = -20,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = -20,
 		cooktime = 72,
 		scale = .90,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPORECAP,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat", "acidrainimmune"},
 		required = 
@@ -1827,6 +1883,7 @@ local kyno_foods_jar =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPORECAP_DARK,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat", "acidrainimmune"},
 		required = 
@@ -1871,6 +1928,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {6, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1902,6 +1960,7 @@ local kyno_foods_jar =
 		scale = .90,
 		nameoverride = "KYNO_PICKLES",
 		overridebuild = "kyno_foodrecipes_jar",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1931,6 +1990,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1962,6 +2022,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1993,6 +2054,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2024,6 +2086,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2055,6 +2118,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2086,6 +2150,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2117,6 +2182,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2148,6 +2214,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2179,6 +2246,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2210,6 +2278,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2241,6 +2310,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2272,6 +2342,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2305,6 +2376,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2336,6 +2408,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2368,6 +2441,7 @@ local kyno_foods_jar =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_PUFFERFISH,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2408,6 +2482,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2439,6 +2514,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2470,6 +2546,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2501,6 +2578,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2532,6 +2610,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2563,6 +2642,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2594,6 +2674,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2627,6 +2708,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2658,6 +2740,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2690,6 +2773,7 @@ local kyno_foods_jar =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_DARKNESS,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {8, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2725,6 +2809,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2756,6 +2841,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2787,6 +2873,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2818,6 +2905,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2849,6 +2937,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2880,6 +2969,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2911,6 +3001,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2943,6 +3034,7 @@ local kyno_foods_jar =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_GLOW,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 1, 1},
 		floater = TUNING.HOF_FLOATER,
 		prefabs = { "kyno_jellyfish_rainbow_light_greater" },
 		required = 
@@ -2999,6 +3091,7 @@ local kyno_foods_jar =
 		cooktime = 48,
 		nameoverride = "AGEDROE",
 		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3016,6 +3109,27 @@ local kyno_foods_jar =
 			{ items = { "kyno_spotspice" }, amount = 1 },
 			{ items = { "kyno_salt" }, amount = 1 },
 		},
+	},
+
+	-- This recipe is for when brewing an invalid product, we need this to prevent a crash.
+	wetgoop2 =
+	{
+		test = function(brewer, names, tags) return true end,
+		priority = -2,
+		perishtime = TUNING.PERISH_FAST,
+		foodtype = FOODTYPE.GENERIC,
+		health = 0,
+		hunger = 0,
+		sanity = 0,
+		cooktime = 1,
+		isfertilizer = true,
+		nutrients = {32, 8, 8},
+		pigcoinvalue = {0, 0, 0},
+        floater = {"small", nil, nil},
+		required = {},
+		excluded = {},
+		card_def = {},
+		invalid = true,
 	},
 }
 

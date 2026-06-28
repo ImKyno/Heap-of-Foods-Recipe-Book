@@ -16,6 +16,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPEED,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_sw",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink", "nospice"},
 		required = 
@@ -52,6 +53,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_sw",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -83,6 +85,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_sw",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -115,6 +118,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_NAUGHTINESS,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_sw",
+		pigcoinvalue = {3, 1, 1},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = -TUNING.KYNO_LUCK_MEDLARGE },
 		required = 
@@ -152,6 +156,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPEED,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_sw",
+		pigcoinvalue = {10, 5, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -188,6 +193,7 @@ local kyno_foods =
 		cooktime = 3.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -218,6 +224,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -249,6 +256,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -279,6 +287,7 @@ local kyno_foods =
 		sanity = 33,
 		cooktime = 0.5,
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -315,6 +324,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {0, 6, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -349,6 +359,7 @@ local kyno_foods =
 		nochill = true,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -381,6 +392,7 @@ local kyno_foods =
 		nochill = true,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {5, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -413,6 +425,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_BONESOUP,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {10, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -446,6 +459,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_ham",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -472,12 +486,13 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SUPERSLOW,
 		health = 1,
-		hunger = 6.375,
+		hunger = 4.6875,
 		sanity = 0,
 		cooktime = 1,
 		stacksize = 3,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {1, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -506,6 +521,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -533,11 +549,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SLOW,
 		health = 8,
-		hunger = 25,
+		hunger = 56.25,
 		sanity = 10,
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -567,11 +584,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 3,
-		hunger = 37.5,
+		hunger = 45,
 		sanity = 15,
 		cooktime = .5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -600,11 +618,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_FASTISH,
 		health = 20,
-		hunger = 100,
-		sanity = 5,
+		hunger = 75,
+		sanity = 15,
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -638,6 +657,7 @@ local kyno_foods =
 		cooktime = .75,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -664,11 +684,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
 		health = 40,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = 40,
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -699,6 +720,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -722,13 +744,14 @@ local kyno_foods =
 		test = function(cooker, names, tags) return tags.fish and names.twigs and tags.spotspice end,
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
-		perishtime = TUNING.PERISH_FAST,
-		health = 25,
+		perishtime = TUNING.PERISH_MED,
+		health = 50,
 		hunger = 37.5,
-		sanity = 20,
+		sanity = 5,
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -760,6 +783,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -792,6 +816,7 @@ local kyno_foods =
 		cooktime = .60,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -823,6 +848,7 @@ local kyno_foods =
 		stacksize = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -850,11 +876,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_FAST,
 		health = 25,
-		hunger = 40,
+		hunger = 62.5,
 		sanity = 20,
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -888,6 +915,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -919,6 +947,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"sammyfood"},
 		required = 
@@ -951,6 +980,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -982,6 +1012,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1015,6 +1046,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {2, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1025,7 +1057,7 @@ local kyno_foods =
 		excluded = 
 		{
     		{ items = { "potato", "potato_cooked" } },
-			{ items = { "onion", "onion" } },
+			{ items = { "onion", "onion_cooked" } },
 			{ items = { "kyno_bacon", "kyno_bacon_cooked" } },
 		},
 		card_def = 
@@ -1044,10 +1076,11 @@ local kyno_foods =
 		perishtime = TUNING.PERISH_MED,
 		health = 5,
 		hunger = 12.5,
-		sanity = 25,
+		sanity = 33,
 		cooktime = 0.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1081,6 +1114,7 @@ local kyno_foods =
 		cooktime = .5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1112,6 +1146,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CAKE,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"sammyfood"},
 		required = 
@@ -1149,6 +1184,7 @@ local kyno_foods =
 		cooktime = .60,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1182,6 +1218,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_BATILISK,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {0, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1217,6 +1254,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1247,6 +1285,7 @@ local kyno_foods =
 		cooktime = 0.8,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1276,6 +1315,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -1307,6 +1347,7 @@ local kyno_foods =
 		cooktime = 0.8,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1338,6 +1379,7 @@ local kyno_foods =
 		cooktime = 1.7,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1370,6 +1412,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {10, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1405,6 +1448,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {10, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1437,6 +1481,7 @@ local kyno_foods =
 		cooktime = .70,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1468,6 +1513,7 @@ local kyno_foods =
 		cooktime = 1.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1500,6 +1546,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1531,6 +1578,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1564,6 +1612,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1596,6 +1645,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {8, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1630,6 +1680,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_HANDS,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {0, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -1661,11 +1712,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SLOW,
 		health = 15,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = 40,
 		cooktime = 1.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -1699,6 +1751,7 @@ local kyno_foods =
 		cooktime = 1.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -1732,6 +1785,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1765,6 +1819,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1799,6 +1854,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1833,6 +1889,7 @@ local kyno_foods =
 		cooktime = .75,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1864,6 +1921,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1897,6 +1955,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1930,6 +1989,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {6, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1962,6 +2022,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -1991,6 +2052,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2025,6 +2087,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {15, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2059,6 +2122,7 @@ local kyno_foods =
 		cooktime = 2.25,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {10, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2080,21 +2144,23 @@ local kyno_foods =
 	
 	gorge_shooter_sandwich =
 	{
-		test = function(cooker, names, tags) return tags.meat and tags.bread and tags.spotspice and not tags.fish 
-		and not (names.tomato or names.tomato_cooked) end, 
+		test = function(cooker, names, tags) return (tags.meat and tags.meat >= 1)
+		and tags.bread and tags.spotspice and not tags.fish and not (names.tomato or names.tomato_cooked)
+		and not (tags.monster and tags.monster > 1) end, 
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_SLOW,
-		health = 5,
+		health = 10,
 		hunger = 100,
 		sanity = 15,
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {2, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
-			{ items = { "tag_meat" }, amount = 1 },
+			{ items = { "tag_meat" }, amount = 1, comparator = "morethan" },
 			{ items = { "tag_bread" }, amount = 1 },
 			{ items = { "tag_spotspice" }, amount = 1 },
 		},
@@ -2102,10 +2168,12 @@ local kyno_foods =
 		{
     		{ items = { "tag_fish" } },
 			{ items = { "tomato" } },
+			{ items = { "tag_monster" }, amount = 1, comparator = "morethan" },
 		},
 		card_def = 
 		{
-			{ items = { "meat" }, amount = 2 },
+			{ items = { "monstermeat" }, amount = 1 },
+			{ items = { "meat" }, amount = 1 },
 			{ items = { "bread" }, amount = 1 },
 			{ items = { "kyno_spotspice" }, amount = 1 },
 		},
@@ -2124,6 +2192,7 @@ local kyno_foods =
 		cooktime = .75,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2157,6 +2226,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2190,6 +2260,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2219,11 +2290,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_FAST,
 		health = 60,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = 50,
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {5, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2258,6 +2330,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_KYNO,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 1, 1},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = TUNING.KYNO_LUCK_MEDLARGE },
 		tags = {"honeyed"},
@@ -2289,6 +2362,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2320,6 +2394,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2352,6 +2427,7 @@ local kyno_foods =
 		nameoverride = "WAFFLES",
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {3, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -2385,6 +2461,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_gorge",
+		pigcoinvalue = {0, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -2415,6 +2492,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {2, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2444,6 +2522,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {0, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2471,6 +2550,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {0, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2500,6 +2580,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_DRY,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {2, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2534,6 +2615,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2567,6 +2649,7 @@ local kyno_foods =
 		potlevel = "low",
 		pickupsound = "metal",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"preparedgears"},
 		required = 
@@ -2604,6 +2687,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_HURT,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = -TUNING.KYNO_LUCK_HUGE },
 		required = 
@@ -2639,6 +2723,7 @@ local kyno_foods =
 		potlevel = "med",
 		scale = .95,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {0, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2682,6 +2767,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2713,6 +2799,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -2745,6 +2832,7 @@ local kyno_foods =
 		cooktime = 1.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"popcorn"},
 		required = 
@@ -2778,6 +2866,7 @@ local kyno_foods =
 		cooktime = .5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink"},
 		required = 
@@ -2813,6 +2902,7 @@ local kyno_foods =
 		cooktime = .5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink"},
 		required = 
@@ -2848,6 +2938,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {2, 3, 2},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -2872,24 +2963,31 @@ local kyno_foods =
 	
 	soulstew = 
 	{
-		test = function(cooker, names, tags) return (names.kyno_bottle_soul and names.kyno_bottle_soul >= 2) and names.boneshard end,
+		test = function(cooker, names, tags) return (names.kyno_bottle_soul and names.kyno_bottle_soul >= 2)
+		and (names.tomato or names.tomato_cooked) and (names.red_cap or names.red_cap_cooked or names.kyno_red_cap_dried) end,
 		priority = 10,
 		foodtype = FOODTYPE.PREPAREDSOUL,
 		perishtime = nil,
 		fireproof = true,
 		health = 30,
-		hunger = 75,
+		healthnice = 30,
+		healthnaughty = 15,
+		hunger = 150,
 		sanity = 15,
+		sanitynice = -25,
+		sanitynaughty = 25,
 		cooktime = 1.2,
 		bottlesize = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"preparedsoul", "bottled"},
 		required = 
 		{
 			{ items = { "kyno_bottle_soul" }, amount = 2, comparator = "morethan" },
-			{ items = { "boneshard" }, amount = 1 },
+			{ items = { "tomato" }, amount = 1 },
+			{ items = { "red_cap" }, amount = 1 },
 		},
 		excluded = 
 		{
@@ -2898,8 +2996,8 @@ local kyno_foods =
 		card_def = 
 		{
 			{ items = { "kyno_bottle_soul" }, amount = 2 },
-			{ items = { "boneshard" }, amount = 1 },
-			{ items = { "twigs" }, amount = 1 },
+			{ items = { "tomato" }, amount = 1 },
+			{ items = { "red_cap" }, amount = 1 },
 		},
 		oneatenfn = function(inst, eater)
 			if eater:HasTag("soulstealer") and eater.components.health ~= nil and not eater.components.health:IsDead() and
@@ -2933,6 +3031,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_FORTUNE,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -2968,6 +3067,7 @@ local kyno_foods =
 		cooktime = 1.6,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3011,6 +3111,7 @@ local kyno_foods =
 		cooktime = 2.3,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3044,6 +3145,7 @@ local kyno_foods =
 		cooktime = 2.3,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3077,6 +3179,7 @@ local kyno_foods =
 		cooktime = 2.3,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3110,6 +3213,7 @@ local kyno_foods =
 		cooktime = 1.1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink"},
 		required = 
@@ -3142,6 +3246,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_BEEFRIENDLY,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -3181,6 +3286,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CLEAR,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {1, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink", "nospice"},
 		required = 
@@ -3219,6 +3325,7 @@ local kyno_foods =
 		cooktime = 2.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3252,6 +3359,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_FROG,
         potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {8, 2, 1},
         floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3288,6 +3396,7 @@ local kyno_foods =
 		cooktime = 1.6,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3320,6 +3429,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3352,6 +3462,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3383,6 +3494,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3416,6 +3528,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3448,6 +3561,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3479,6 +3593,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3510,6 +3625,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3543,6 +3659,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3577,6 +3694,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {2, 3, 2},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -3614,6 +3732,7 @@ local kyno_foods =
 		nightvision = true,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3653,6 +3772,7 @@ local kyno_foods =
 		cooktime = 2.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {8, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3687,6 +3807,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3720,6 +3841,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {0, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3751,6 +3873,7 @@ local kyno_foods =
 		cooktime = 1.2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {1, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3780,6 +3903,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "monstermeat"},
 		required = 
@@ -3823,6 +3947,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3854,6 +3979,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {0, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3886,6 +4012,7 @@ local kyno_foods =
 		stacksize = 3,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {1, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3916,6 +4043,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -3951,6 +4079,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -3985,6 +4114,7 @@ local kyno_foods =
 		cooktime = .8,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "monkeyqueenbribe"},
 		required = 
@@ -4020,6 +4150,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_FISHING,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4057,6 +4188,7 @@ local kyno_foods =
 		cooktime = 0.8,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -4089,6 +4221,7 @@ local kyno_foods =
 		cooktime = 1.2,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4118,6 +4251,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4151,6 +4285,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_EATER,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4184,6 +4319,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4216,6 +4352,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4261,6 +4398,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4301,6 +4439,7 @@ local kyno_foods =
 		sanity = -5,
 		cooktime = 1.2,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4344,6 +4483,7 @@ local kyno_foods =
 		cooktime = 1,
 		scale = 1.8,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4391,6 +4531,7 @@ local kyno_foods =
 		sanity = 5,
 		cooktime = 1,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {2, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4421,6 +4562,7 @@ local kyno_foods =
 		sanity = 33,
 		cooktime = 1.2,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink"},
 		required = 
@@ -4452,6 +4594,7 @@ local kyno_foods =
 		cooktime = 1.1,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4490,6 +4633,7 @@ local kyno_foods =
 		sanity = 20,
 		cooktime = .5,
 		overridebuild = "kyno_foodrecipes_cookpot",
+		pigcoinvalue = {4, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4519,13 +4663,14 @@ local kyno_foods =
 		secondaryfoodtype = FOODTYPE.MONSTER,
 		perishtime = TUNING.PERISH_SUPERSLOW,
 		health = 10,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = -5,
 		cooktime = 1,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CURSE,
 		potlevel = "low",
 		pickupsound = "wood",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"wereitem"},
 		required = 
@@ -4577,6 +4722,7 @@ local kyno_foods =
 		cooktime = 1,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_FEARSLEEP,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4618,6 +4764,7 @@ local kyno_foods =
 		sanity = -5,
 		cooktime = 2,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4664,6 +4811,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4710,6 +4858,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {0, 8, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat"},
 		required = 
@@ -4756,6 +4905,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SUGARBOMBS,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = TUNING.KYNO_LUCK_SUPERTINY },
 		required = 
@@ -4787,6 +4937,7 @@ local kyno_foods =
 		stacksize = 2,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4819,6 +4970,7 @@ local kyno_foods =
 		cooktime = 1.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4853,6 +5005,7 @@ local kyno_foods =
 		cooktime = 2.0,
 		stacksize = 2,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4887,6 +5040,7 @@ local kyno_foods =
 		cooktime = 2.5,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4923,6 +5077,7 @@ local kyno_foods =
 		cooktime = 0.5,
 		potlevel = "med",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {0, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -4958,6 +5113,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -4991,6 +5147,7 @@ local kyno_foods =
 		potlevel = "low",
 		nameoverride = "BUTTERFLYMUFFIN",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5021,6 +5178,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5052,6 +5210,7 @@ local kyno_foods =
 		cooktime = .7,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_INSPIRATION,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5093,6 +5252,7 @@ local kyno_foods =
 		potlevel = "high",
 		scale = 1.3,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 15, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -5132,6 +5292,7 @@ local kyno_foods =
 		cooktime = 1.3,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5165,6 +5326,7 @@ local kyno_foods =
 		sanity = 0,
 		cooktime = 1.5,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {2, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5200,6 +5362,7 @@ local kyno_foods =
 		scale = 2,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CRAB,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {0, 5, 2},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"masterfood"},
 		required = 
@@ -5238,6 +5401,7 @@ local kyno_foods =
 		cooktime = 2,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5266,6 +5430,7 @@ local kyno_foods =
 		sanity = 5,
 		cooktime = 1.3,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5296,6 +5461,7 @@ local kyno_foods =
 		sanity = 33,
 		cooktime = 0.8,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {10, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5322,11 +5488,12 @@ local kyno_foods =
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_MED,
 		health = 20,
-		hunger = 40,
+		hunger = 56.25,
 		sanity = -10,
 		cooktime = 0.5,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_NAUGHTINESS,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		luckitem = { luck = -TUNING.KYNO_LUCK_MEDLARGE },
 		required = 
@@ -5359,6 +5526,7 @@ local kyno_foods =
 		sanity = 10,
 		cooktime = 0.7,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5391,6 +5559,7 @@ local kyno_foods =
 		sanity = -15,
 		cooktime = 1.3,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {4, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5424,6 +5593,7 @@ local kyno_foods =
 		sanity = 5,
 		cooktime = 1,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 1, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -5460,6 +5630,7 @@ local kyno_foods =
 		sanity = 60,
 		cooktime = 1.1,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 2, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"fooddrink"},
 		required = 
@@ -5493,6 +5664,7 @@ local kyno_foods =
 		sanity = 10,
 		cooktime = 0.5,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed", "fooddrink"},
 		required = 
@@ -5525,6 +5697,7 @@ local kyno_foods =
 		cooktime = 1.6,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -5559,6 +5732,7 @@ local kyno_foods =
 		sanity = 40,
 		cooktime = 1.8,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"honeyed"},
 		required = 
@@ -5593,6 +5767,7 @@ local kyno_foods =
 		sanity = 5,
 		cooktime = .7,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5625,6 +5800,7 @@ local kyno_foods =
 		sanity = 33,
 		cooktime = .7,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5657,6 +5833,7 @@ local kyno_foods =
 		sanity = 50,
 		cooktime = 1,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5688,6 +5865,7 @@ local kyno_foods =
 		sanity = 30,
 		cooktime = .5,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5724,6 +5902,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_PLANARDEFENSE,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 3, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5762,6 +5941,7 @@ local kyno_foods =
 		cooktime = 1,
 		potlevel = "high",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -5794,6 +5974,7 @@ local kyno_foods =
 		potlevel = "high",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_TRUFFLES,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {4, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"truffles"},
 		required = 
@@ -5833,6 +6014,7 @@ local kyno_foods =
 		potlevel = "high",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPORECAP,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {2, 4, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat", "acidrainimmune"},
 		required = 
@@ -5879,6 +6061,7 @@ local kyno_foods =
 		cooktime = 1,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SPORECAP_DARK,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {2, 4, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monstermeat", "acidrainimmune"},
 		required = 
@@ -5925,6 +6108,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_EXQUISITE,
 		scale = 1.5,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {10, 2, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"sharkboifood", "exquisite"},
 		required = 
@@ -5962,6 +6146,7 @@ local kyno_foods =
 		cooktime = .15,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CURSE_MONKEY,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {0, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"monkeyqueenbribe"},
 		required = 
@@ -6005,6 +6190,7 @@ local kyno_foods =
 		potlevel = "high",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CRAFTING,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {3, 5, 1},
 		floater = TUNING.HOF_FLOATER,
 		prefabs = { "kyno_craftingbuff" },
 		required = 
@@ -6040,6 +6226,7 @@ local kyno_foods =
 		cooktime = .5,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6076,6 +6263,7 @@ local kyno_foods =
 		potlevel = "med",
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_BERSERKER,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6112,6 +6300,7 @@ local kyno_foods =
 		sanity = 10,
 		cooktime = 1,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {8, 3, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6146,6 +6335,7 @@ local kyno_foods =
 		sanity = 25,
 		cooktime = 1.2,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {8, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6179,6 +6369,7 @@ local kyno_foods =
 		sanity = 5,
 		cooktime = 1.3,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {7, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6212,6 +6403,7 @@ local kyno_foods =
 		cooktime = 2.5,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_HUNGERRATE,
 		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {12, 0, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6250,7 +6442,7 @@ local kyno_foods =
 		cooktime = 1,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_GREENTHUMB,
 		overridebuild = "kyno_foodrecipes_cookpot1",
-		pigcoinvalue = {7, 2, 0},
+		pigcoinvalue = {7, 5, 0},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6292,7 +6484,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_SOOTHING,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
-		pigcoinvalue = {10, 3, 1},
+		pigcoinvalue = {10, 3, 2},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6336,7 +6528,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_RAINY,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
-		pigcoinvalue = {3, 4, 0},
+		pigcoinvalue = {3, 4, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6378,7 +6570,7 @@ local kyno_foods =
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_MIDNIGHT,
 		potlevel = "low",
 		overridebuild = "kyno_foodrecipes_cookpot1",
-		pigcoinvalue = {8, 1, 1},
+		pigcoinvalue = {3, 10, 1},
 		floater = TUNING.HOF_FLOATER,
 		required = 
 		{
@@ -6419,6 +6611,7 @@ local kyno_foods =
 		stacksize = 2,
 		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_JAWSBREAKER,
 		potlevel = "low",
+		pigcoinvalue = {7, 1, 1},
 		luckitem = { luck = TUNING.KYNO_LUCK_MEDLARGE },
 		tags = {"nospice", "itemshowcaser_valid"},
 		required = 
