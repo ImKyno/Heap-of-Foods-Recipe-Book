@@ -923,6 +923,9 @@ local kyno_foods_seasonal =
 			{ items = { "kyno_sugar" }, amount = 2 },
 			{ items = { "nightmarefuel" }, amount = 1 },
 		},
+		oneatenfn = function(inst, eater)
+
+		end,
 	},
 	
 	spooky_tacodile =

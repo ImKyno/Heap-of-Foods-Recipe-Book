@@ -969,6 +969,7 @@ const vi = {
 
     // SEASONAL RECIPES
     spooky_jellybeans: "Giảm tinh thần theo thời gian",
+    spooky_skullcandy: "Hồi sinh người chết",
   },
 
   ingredients: {

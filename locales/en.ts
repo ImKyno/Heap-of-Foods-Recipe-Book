@@ -969,6 +969,7 @@ const en = {
 
     // SEASONAL RECIPES
     spooky_jellybeans: "Decreases sanity over time",
+    spooky_skullcandy: "Revives the dead",
   },
 
   ingredients: {

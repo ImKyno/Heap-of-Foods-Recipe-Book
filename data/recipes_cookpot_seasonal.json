@@ -1846,7 +1846,7 @@
     "spoilage": null,
     "temperature": null,
     "temperatureDuration": null,
-    "debuff": false,
+    "debuff": true,
     "health": 5,
     "hunger": 15,
     "sanity": -15,
