@@ -10095,7 +10095,9 @@
       1,
       0
     ],
-    "characterfood": null,
+    "characterfood": [
+      "wurt"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,
@@ -10173,7 +10175,9 @@
       1,
       0
     ],
-    "characterfood": null,
+    "characterfood": [
+      "wurt"
+    ],
     "mermfood": null,
     "mermhealth": null,
     "mermhunger": null,

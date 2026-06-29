@@ -4379,6 +4379,7 @@ local kyno_foods =
 				eater.components.sanity:DoDelta(15)
 			end
 		end,
+		characterfood = {"wurt"},
 		monsterfood = true,
 		monsterhealth = 5,
 		monstersanity = 15,
@@ -4422,6 +4423,7 @@ local kyno_foods =
 				eater.components.health:DoDelta(15)
 			end
 		end,
+		characterfood = {"wurt"},
 		monsterfood = true,
 		monsterhealth = 15,
 		monstersanity = 0,
