@@ -453,6 +453,7 @@ const vi = {
     preserved: "20 Ngày",
     superslow: "40 Ngày",
     never: "Không Bao Giờ",
+    days: "Ngày",
   },
 
   recipes: {

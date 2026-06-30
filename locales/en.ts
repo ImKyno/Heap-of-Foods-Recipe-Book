@@ -453,6 +453,7 @@ const en = {
     preserved: "20 Days",
     superslow: "40 Days",
     never: "Never",
+    days: "Days",
   },
 
   recipes: {

@@ -194,16 +194,24 @@ for (const recipe of rawRecipes) {
       : null
 
   let spoilage = null
+  let spoilageDays = null
   let perishKeyRaw = extractString(block, "perishtime")?.replace("TUNING.", "")
+
   if (perishKeyRaw) {
     let perishValue = PERISH_MAP[perishKeyRaw] || Number(perishKeyRaw)
 
-    if (perishValue > PERISH_MAP.PERISH_SUPERSLOW) {
-      perishKeyRaw = "PERISH_SUPERSLOW"
-      perishValue = PERISH_MAP[perishKeyRaw]
-    }
+    if (perishValue === 9000000) {
+      spoilage = perishValue
+      spoilageDays = 18750
+    } else {
+      if (perishValue > PERISH_MAP.PERISH_SUPERSLOW) {
+        perishKeyRaw = "PERISH_SUPERSLOW"
+        perishValue = PERISH_MAP[perishKeyRaw]
+      }
 
-    spoilage = perishValue
+      spoilage = perishValue
+      spoilageDays = perishValue ? (perishValue / 480) : null
+    }
   }
 
   const hasOneatenfn = /oneatenfn\s*=\s*function/.test(block)
@@ -217,6 +225,7 @@ for (const recipe of rawRecipes) {
     foodtype:
       extractString(block, "foodtype")?.replace("FOODTYPE.", "") || null,
     spoilage,
+    spoilageDays,
     temperature,
     temperatureDuration,
     debuff,

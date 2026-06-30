@@ -6290,7 +6290,7 @@
     "name": "wetgoop2",
     "priority": -2,
     "foodtype": "GENERIC",
-    "spoilage": 2880,
+    "spoilage": null,
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,

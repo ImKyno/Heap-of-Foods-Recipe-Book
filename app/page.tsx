@@ -131,7 +131,15 @@ export default function HomePage() {
       ...mapRecipes(recipes_seasonal, "recipes_seasonal", "/foods_seasonal"),
     ];
 
-    return [...recipeItems, ...expandedIngredients];
+    const seen = new Set<string>();
+
+    const deduped = recipeItems.filter((item) => {
+      if (seen.has(item.name)) return false;
+      seen.add(item.name);
+      return true;
+    });
+
+    return [...deduped, ...expandedIngredients];
   }, [t, expandedIngredients]);
 
   const fuse = useMemo(() => {

@@ -453,6 +453,7 @@ const pt = {
     preserved: "20 Dias",
     superslow: "40 Dias",
     never: "Nunca",
+    days: "Dias",
   },
 
   recipes: {
