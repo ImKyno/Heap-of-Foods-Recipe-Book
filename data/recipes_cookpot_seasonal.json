@@ -1894,7 +1894,7 @@
         "items": [
           "boneshard"
         ],
-        "amount": 2,
+        "amount": 1,
         "comparator": "equal"
       },
       {

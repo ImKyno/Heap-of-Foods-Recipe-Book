@@ -919,7 +919,7 @@ local kyno_foods_seasonal =
 		},
 		card_def = 
 		{
-			{ items = { "boneshard" }, amount = 2 },
+			{ items = { "boneshard" }, amount = 1 },
 			{ items = { "kyno_sugar" }, amount = 2 },
 			{ items = { "nightmarefuel" }, amount = 1 },
 		},
