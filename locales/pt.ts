@@ -547,7 +547,7 @@ const pt = {
     eyeballspaghetti: "Olhopaguete",
     soulstew: "Sopa de Almas",
     fortunecookie: "Biscoito da Sorte",
-    hornocupia: "Cornocupia",
+    hornocupia: "Cornucopia",
     cheese_yellow: "Queijo",
     cheese_white: "Queijo Branco",
     cheese_koalefant: "Queijo de Coalefante",

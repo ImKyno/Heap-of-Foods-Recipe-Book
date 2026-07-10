@@ -7,10 +7,11 @@ local kyno_foods_seasonal =
 		priority = 35,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_FAST,
-		health = 10,
-		hunger = 25,
-		sanity = 15,
+		health = 15,
+		hunger = 18.75,
+		sanity = 5,
 		cooktime = 1,
+		stacksize = 2,
 		potlevel = "med",
 		scale = 1,
 		nameoverride = "BERRYSAUCE",
@@ -37,13 +38,13 @@ local kyno_foods_seasonal =
 	festive_bibingka =
 	{
 		test = function(cooker, names, tags) return (tags.succulent and tags.succulent >= 2) and tags.foliage and tags.veggie 
-		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) and not tags.fish end,
+		and not tags.meat and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) and not tags.fish end,
 		priority = 35,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
-		health = 20,
-		hunger = 20,
-		sanity = 0,
+		health = 30,
+		hunger = 56.25,
+		sanity = 5,
 		cooktime = 1.3,
 		potlevel = "med",
 		scale = 1,
@@ -60,7 +61,7 @@ local kyno_foods_seasonal =
 		},
 		excluded = 
 		{
-    		
+    		{ items = { "tag_meat" } },
 		},
 		card_def = 
 		{
@@ -107,7 +108,7 @@ local kyno_foods_seasonal =
 	festive_fishdish =
 	{
 		test = function(cooker, names, tags) return tags.fish and tags.succulent and not tags.sweetener and not tags.wobster
-		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
+		and not tags.foliage and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_FASTISH,
@@ -131,6 +132,7 @@ local kyno_foods_seasonal =
 		{
     		{ items = { "tag_sweetener" } },
 			{ items = { "tag_wobster" } },
+			{ items = { "tag_foliage" } },
 		},
 		card_def = 
 		{
@@ -146,10 +148,13 @@ local kyno_foods_seasonal =
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_SLOW,
+		temperature = TUNING.HOT_FOOD_BONUS_TEMP,
+        temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
 		health = 5,
 		hunger = 32.5,
 		sanity = 15,
 		cooktime = 1.5,
+		stacksize = 2,
 		potlevel = "med",
 		scale = 1,
 		nameoverride = "GRAVY",
@@ -217,7 +222,7 @@ local kyno_foods_seasonal =
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_FASTISH,
 		temperature = TUNING.HOT_FOOD_BONUS_TEMP,
-		temperatureduration = TUNING.FOOD_TEMP_AVERAGE,
+		temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
 		health = 5,
 		hunger = 75,
 		sanity = 5,
@@ -255,7 +260,7 @@ local kyno_foods_seasonal =
 		foodtype = FOODTYPE.GOODIES,
 		perishtime = TUNING.PERISH_MED,
 		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
-		temperatureduration = TUNING.FOOD_TEMP_AVERAGE,
+		temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
 		health = 15,
 		hunger = 12.5,
 		sanity = 33,
@@ -296,7 +301,7 @@ local kyno_foods_seasonal =
 		priority = 30,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SUPERSLOW,
-		health = 20,
+		health = 30,
 		hunger = 32.5,
 		sanity = 15,
 		cooktime = 2,
@@ -361,14 +366,14 @@ local kyno_foods_seasonal =
 	
 	festive_pickledherring =
 	{
-		test = function(cooker, names, tags) return tags.fish and (tags.spotspice and tags.spotspice >= 2) and not tags.flour 
-		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
+		test = function(cooker, names, tags) return tags.fish and (tags.spotspice and tags.spotspice >= 2)
+		and tags.foliage and not tags.flour and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_FASTISH,
 		health = 40,
 		hunger = 37.5,
-		sanity = 0,
+		sanity = 15,
 		cooktime = 1.5,
 		potlevel = "med",
 		scale = 1,
@@ -380,6 +385,7 @@ local kyno_foods_seasonal =
 		required = 
 		{
 			{ items = { "tag_fish" }, amount = 1 },
+			{ items = { "tag_foliage" }, amount = 1 },
 			{ items = { "tag_spotspice" }, amount = 2, comparator = "morethan" },
 		},
 		excluded = 
@@ -388,7 +394,8 @@ local kyno_foods_seasonal =
 		},
 		card_def = 
 		{
-			{ items = { "pondfish" }, amount = 2 },
+			{ items = { "pondfish" }, amount = 1 },
+			{ items = { "foliage" }, amount = 1 },
 			{ items = { "kyno_spotspice" }, amount = 2 },
 		},
 	},
@@ -400,10 +407,11 @@ local kyno_foods_seasonal =
 		priority = 35,
 		foodtype = FOODTYPE.GOODIES,
 		perishtime = TUNING.PERISH_MED,
-		health = 40,
+		health = 30,
 		hunger = 12.5,
-		sanity = 5,
+		sanity = 15,
 		cooktime = .8,
+		stacksize = 2,
 		potlevel = "med",
 		scale = 1,
 		nameoverride = "POLISHCOOKIE",
@@ -431,14 +439,14 @@ local kyno_foods_seasonal =
 	
 	festive_pumpkinpie =
 	{
-		test = function(cooker, names, tags) return (names.pumpkin or names.pumpkin_cooked) and tags.flour and tags.sweetener 
-		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
+		test = function(cooker, names, tags) return ((names.pumpkin or 0) + (names.pumpkin_cooked or 0) >= 2)
+		and tags.flour and tags.sweetener and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 30,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SLOW,
-		health = 20,
+		health = 5,
 		hunger = 62.5,
-		sanity = 10,
+		sanity = 33,
 		cooktime = 1.8,
 		potlevel = "med",
 		scale = 1,
@@ -449,7 +457,7 @@ local kyno_foods_seasonal =
 		tags = {"honeyed", "xmas"},
 		required = 
 		{
-			{ items = { "pumpkin" }, amount = 1 },
+			{ items = { "pumpkin" }, amount = 2 },
 			{ items = { "tag_flour" }, amount = 1 },
 			{ items = { "tag_sweetener" }, amount = 1 },
 		},
@@ -468,14 +476,15 @@ local kyno_foods_seasonal =
 	festive_roastedturkey =
 	{
 		test = function(cooker, names, tags) return (names.drumstick or names.drumstick_cooked) 
-		and (tags.spotspice and tags.spotspice >= 2) and tags.succulent and not tags.fruit and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
+		and tags.spotspice and (tags.succulent and tags.succulent >= 2) and not tags.fruit
+		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_MED,
-		health = 10,
-		hunger = 80,
-		sanity = 20,
-		cooktime = 1,
+		health = 5,
+		hunger = 85,
+		sanity = 25,
+		cooktime = 1.5,
 		potlevel = "med",
 		scale = 1,
 		nameoverride = "ROASTTURKEY",
@@ -486,31 +495,32 @@ local kyno_foods_seasonal =
 		required = 
 		{
 			{ items = { "drumstick" }, amount = 1 },
-			{ items = { "tag_spotspice" }, amount = 2, comparator = "morethan" },
-			{ items = { "tag_succulent" }, amount = 1 },
+			{ items = { "tag_spotspice" }, amount = 1 },
+			{ items = { "tag_succulent" }, amount = 2, comparator = "morethan" },
 		},
 		excluded = 
 		{
-    		
+    		{ items = { "tag_fruit" } },
 		},
 		card_def = 
 		{
 			{ items = { "drumstick" }, amount = 1 },
-			{ items = { "kyno_spotspice" }, amount = 2 },
-			{ items = { "succulent_picked" }, amount = 1 },
+			{ items = { "kyno_spotspice" }, amount = 1 },
+			{ items = { "succulent_picked" }, amount = 2 },
 		},
 	},
 	
 	festive_stuffing =
 	{
-		test = function(cooker, names, tags) return tags.flour and (tags.veggie and tags.veggie >= 2) and tags.fruit 
+		test = function(cooker, names, tags) return tags.flour and (names.pumpkin or names.pumpkin_cooked)
+		and (names.kyno_radish or names.kyno_radish_cooked) and (tags.fruit and tags.fruit > 1) and not tags.banana
 		and (TUNING.HOF_SEASONALFOOD or IsSpecialEventActive(SPECIAL_EVENTS.WINTERS_FEAST)) end,
 		priority = 30,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SLOW,
-		health = 15,
-		hunger = 32.5,
-		sanity = 20,
+		health = 12,
+		hunger = 125,
+		sanity = 5,
 		cooktime = 1.5,
 		potlevel = "med",
 		scale = 1,
@@ -522,18 +532,20 @@ local kyno_foods_seasonal =
 		required = 
 		{
 			{ items = { "tag_flour" }, amount = 1 },
-			{ items = { "tag_veggie" }, amount = 2, comparator = "morethan" },
+			{ items = { "pumpkin" }, amount = 1 },
+			{ items = { "kyno_radish" }, amount = 1 },
 			{ items = { "tag_fruit" }, amount = 1 },
 		},
 		excluded = 
 		{
-    		
+    		{ items = { "tag_banana" } },
 		},
 		card_def = 
 		{
 			{ items = { "kyno_flour" }, amount = 1 },
-			{ items = { "carrot" }, amount = 2 },
-			{ items = { "berries" }, amount = 1 },
+			{ items = { "pumpkin" }, amount = 1 },
+			{ items = { "kyno_radish" }, amount = 1 },
+			{ items = { "kyno_pineapple_halved" }, amount = 1 },
 		},
 	},
 	
@@ -544,9 +556,9 @@ local kyno_foods_seasonal =
 		priority = 35,
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_MED,
-		health = 20,
+		health = 10,
 		hunger = 37.5,
-		sanity = 20,
+		sanity = 33,
 		cooktime = 1,
 		potlevel = "med",
 		scale = 1,
@@ -580,8 +592,8 @@ local kyno_foods_seasonal =
 		foodtype = FOODTYPE.VEGGIE,
 		perishtime = TUNING.PERISH_SLOW,
 		health = 5,
-		hunger = 20,
-		sanity = 50,
+		hunger = 32.5,
+		sanity = 60,
 		cooktime = 2,
 		potlevel = "med",
 		scale = 1,
@@ -615,8 +627,8 @@ local kyno_foods_seasonal =
 		priority = 35,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_SUPERSLOW,
-		health = 25,
-		hunger = 50,
+		health = 30,
+		hunger = 62.5,
 		sanity = 15,
 		cooktime = 2,
 		potlevel = "med",

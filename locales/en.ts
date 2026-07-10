@@ -547,7 +547,7 @@ const en = {
     eyeballspaghetti: "Eyespaghetti",
     soulstew: "Soul Stew",
     fortunecookie: "Fortune Cookie",
-    hornocupia: "Cornocupia",
+    hornocupia: "Cornucopia",
     cheese_yellow: "Cheese",
     cheese_white: "White Cheese",
     cheese_koalefant: "Koalefant Cheese",
