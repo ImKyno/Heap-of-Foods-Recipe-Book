@@ -41,6 +41,7 @@ const BADGE_ICONS: Record<string, any> = {
   "contributors.badges.modlocpl": faLanguage,
   "contributors.badges.modloczh": faLanguage,
   "contributors.badges.modlocvi": faLanguage,
+  "contributors.badges.modlockr": faLanguage,
   "contributors.badges.modwiki": faBookBookmark,
 };
 
@@ -56,6 +57,7 @@ const BADGE_COLORS: Record<string, string> = {
   "contributors.badges.modlocpl": "#378b9a",
   "contributors.badges.modloczh": "#378b9a",
   "contributors.badges.modlocvi": "#378b9a",
+  "contributors.badges.modlockr": "#378b9a",
   "contributors.badges.modwiki": "#6c3425",
 };
 

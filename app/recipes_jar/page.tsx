@@ -155,19 +155,29 @@ export default function CookPotJar() {
     [t],
   );
 
+  const DAY_SECONDS = 480
+
   const GetSpoilageLabel = (spoilage: number | undefined) => {
-    if (spoilage == null) return t("spoilagetime.never");
+    if (spoilage == null) return t("spoilagetime.never")
+
+    if (spoilage > PERISH_MAP.PERISH_SUPERSLOW) {
+      const days = spoilage / DAY_SECONDS
+      return `${days} ${t("spoilagetime.days")}`
+    }
 
     const entries = Object.entries(PERISH_MAP) as [
       keyof typeof PERISH_MAP,
       number,
-    ][];
-    entries.sort((a, b) => a[1] - b[1]);
+    ][]
+
+    entries.sort((a, b) => a[1] - b[1])
+
     for (const [key, value] of entries) {
-      if (spoilage <= value) return SPOILAGE_LABELS[key];
+      if (spoilage <= value) return SPOILAGE_LABELS[key]
     }
-    return SPOILAGE_LABELS.PERISH_SUPERSLOW;
-  };
+
+    return SPOILAGE_LABELS.PERISH_SUPERSLOW
+  }
 
   const FormatCookTime = (cooktime: number | undefined) => {
     if (!cooktime) return `0 ${t("time.seconds")}`;

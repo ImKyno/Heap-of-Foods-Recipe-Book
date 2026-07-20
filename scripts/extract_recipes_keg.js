@@ -143,6 +143,22 @@ function extractItemBlocks(block, key) {
   return itemBlocks
 }
 
+function parsePerishTime(expr) {
+  if (!expr) return null
+
+  expr = expr.replace(/TUNING\./g, "").trim()
+
+  expr = expr.replace(/PERISH_[A-Z]+/g, match => {
+    return PERISH_MAP[match] ?? match
+  })
+
+  try {
+    return Function(`"use strict"; return (${expr})`)()
+  } catch {
+    return null
+  }
+}
+
 const rawRecipes = extractRecipesFromLua(lua)
 
 for (const recipe of rawRecipes) {
@@ -195,22 +211,17 @@ for (const recipe of rawRecipes) {
 
   let spoilage = null
   let spoilageDays = null
-  let perishKeyRaw = extractString(block, "perishtime")?.replace("TUNING.", "")
+  const perishExpr = extractString(block, "perishtime")
 
-  if (perishKeyRaw) {
-    let perishValue = PERISH_MAP[perishKeyRaw] || Number(perishKeyRaw)
+  if (perishExpr) {
+    let perishValue = parsePerishTime(perishExpr)
 
     if (perishValue === 9000000) {
       spoilage = perishValue
       spoilageDays = 18750
-    } else {
-      if (perishValue > PERISH_MAP.PERISH_SUPERSLOW) {
-        perishKeyRaw = "PERISH_SUPERSLOW"
-        perishValue = PERISH_MAP[perishKeyRaw]
-      }
-
+    } else if (perishValue != null) {
       spoilage = perishValue
-      spoilageDays = perishValue ? (perishValue / 480) : null
+      spoilageDays = perishValue / 480
     }
   }
 

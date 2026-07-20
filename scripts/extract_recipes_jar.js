@@ -140,6 +140,22 @@ function extractItemBlocks(block, key) {
   return itemBlocks
 }
 
+function parsePerishTime(expr) {
+  if (!expr) return null
+
+  expr = expr.replace(/TUNING\./g, "").trim()
+
+  expr = expr.replace(/PERISH_[A-Z]+/g, match => {
+    return PERISH_MAP[match] ?? match
+  })
+
+  try {
+    return Function(`"use strict"; return (${expr})`)()
+  } catch {
+    return null
+  }
+}
+
 const rawRecipes = extractRecipesFromLua(lua)
 
 for (const recipe of rawRecipes) {
@@ -191,16 +207,19 @@ for (const recipe of rawRecipes) {
       : null
 
   let spoilage = null
-  let perishKeyRaw = extractString(block, "perishtime")?.replace("TUNING.", "")
-  if (perishKeyRaw) {
-    let perishValue = PERISH_MAP[perishKeyRaw] || Number(perishKeyRaw)
+  let spoilageDays = null
+  const perishExpr = extractString(block, "perishtime")
 
-    if (perishValue > PERISH_MAP.PERISH_SUPERSLOW) {
-      perishKeyRaw = "PERISH_SUPERSLOW"
-      perishValue = PERISH_MAP[perishKeyRaw]
+  if (perishExpr) {
+    let perishValue = parsePerishTime(perishExpr)
+
+    if (perishValue === 9000000) {
+      spoilage = perishValue
+      spoilageDays = 18750
+    } else if (perishValue != null) {
+      spoilage = perishValue
+      spoilageDays = perishValue / 480
     }
-
-    spoilage = perishValue
   }
 
   const hasOneatenfn = /oneatenfn\s*=\s*function/.test(block)

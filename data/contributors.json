@@ -54,6 +54,11 @@
     "badges": ["contributors.badges.donator", "contributors.badges.modartist", "contributors.badges.modtester"]
   },
   {
+    "name": "HEMOGRO",
+    "image": "/icons/contributors/contributor_hemogro.gif",
+    "badges": ["contributors.badges.modlockr"]
+  },
+  {
     "name": "Jazzy Games",
     "image": "/icons/contributors/contributor_jazzy_games.png",
     "badges": ["contributors.badges.donator", "contributors.badges.contentcreator"],
