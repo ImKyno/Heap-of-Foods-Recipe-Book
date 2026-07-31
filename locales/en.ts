@@ -275,7 +275,7 @@ const en = {
 
   pigcoins: {
     coin1: "Koin",
-    coin2: "Sapphire Medallion",
+    coin2: "Emerald Medallion",
     coin3: "Cerulean Mark",
   },
 
