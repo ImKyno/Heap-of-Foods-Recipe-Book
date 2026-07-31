@@ -1622,7 +1622,7 @@
         "health": [0, 1],
         "hunger": [12.5, 12.5],
         "sanity": [-5, 15],
-        "debug": ["kyno_moon_froglegs", "kyno_moon_froglegs"]
+        "debug": ["kyno_moon_froglegs", "kyno_moon_froglegs_cooked"]
     },
     {
         "name": "batwing",
