@@ -48,6 +48,19 @@ function extractString(block, key) {
   return match ? match[1].trim() : null
 }
 
+function extractNoSpice(block) {
+  const match = block.match(/tags\s*=\s*\{([^\}]*)\}/)
+
+  if (!match) return false
+
+  const tags = match[1]
+    .split(",")
+    .map(s => s.replace(/["\s]/g, "").trim())
+    .filter(Boolean)
+
+  return tags.includes("nospice")
+}
+
 function extractPigcoinValue(block) {
   const match = block.match(
     /pigcoinvalue\s*=\s*\{\s*(-?\d+)\s*,\s*(-?\d+)\s*,\s*(-?\d+)\s*\}/
@@ -193,6 +206,8 @@ for (const recipe of rawRecipes) {
   const debuff =
     hasOneatenfn && !IGNORE_DEBUFF_RECIPES.has(name)
 
+  const nospice = extractNoSpice(block)
+
   recipes.push({
     name,
     priority: extractNumber(block, "priority"),
@@ -202,6 +217,7 @@ for (const recipe of rawRecipes) {
     temperature,
     temperatureDuration,
     debuff,
+    nospice,
     health: extractNumber(block, "health"),
     hunger: extractNumber(block, "hunger"),
     sanity: extractNumber(block, "sanity"),

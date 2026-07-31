@@ -243,6 +243,7 @@ const vi = {
       hasdebuff: "Hiệu Ứng Phụ",
       characterfood: "Món Khoái Khẩu",
     },
+    nospice: "Không Thể Thêm Gia Vị",
     event: "Sự Kiện Đặc Biệt",
     pigcoin: "Loại Tiền Tệ",
     noresults: "Không tìm thấy gì với bộ lọc hiện tại",
@@ -335,6 +336,7 @@ const vi = {
     debuff: {
       hasEffect: "Hiệu Ứng Phụ"
     },
+    nospice: "Không Thể Thêm Gia Vị",
     event: {
       xmas: "Tiệc Mùa Đông",
       halloween: "Đêm Ma Quái",
@@ -354,6 +356,7 @@ const vi = {
     foodtype: "Loại Thức Ăn",
     cooktype: "Giá Trị Nguyên Liệu",
     debuff: "Hiệu Ứng Tạm Thời",
+    nospice: "Các Çoại Gia Vị Của Warly",
     characterfood: "Món Khoái Khẩu",
     event: "Sự Kiện Đặc Biệt",
     debug: {

@@ -75,6 +75,7 @@ interface Recipe {
   temperature?: number;
   temperatureDuration?: number;
   debuff?: boolean;
+  nospice?: boolean;
   foodtype?: string;
   stacksize?: number;
 
@@ -211,6 +212,7 @@ export default function CookPotWarly() {
 
   const [filterTemp, setFilterTemp] = useState<string | null>(null);
   const [filterDebuff, setFilterDebuff] = useState<boolean | null>(null);
+  const [filterNoSpice, setFilterNoSpice] = useState<boolean | null>(null);
   const [filterFoodType, setFilterFoodType] = useState<string[]>([]);
   const [filterCoins, setFilterCoins] = useState<number[]>([]);
 
@@ -232,6 +234,9 @@ export default function CookPotWarly() {
     }
     if (filterDebuff !== null) {
       if (recipe.debuff !== filterDebuff) return false;
+    }
+    if (filterNoSpice !== null) {
+       if (recipe.nospice !== filterNoSpice) return false;
     }
     if (filterFoodType.length > 0) {
       if (!filterFoodType.includes(recipe.foodtype)) return false;
@@ -727,6 +732,13 @@ export default function CookPotWarly() {
                             setFilterDebuff(filterDebuff === true ? null : true)
                             }
                           />
+                          <CheckboxFilter
+                            label={t("filters.nospice")}
+                            checked={filterNoSpice === true}
+                            onChange={() =>
+                            setFilterNoSpice(filterNoSpice === true ? null : true)
+                            }
+                          />
                         </DropdownGroup>
                       </div>
                     </div>
@@ -737,6 +749,7 @@ export default function CookPotWarly() {
                         setFilterTemp(null);
                         setFilterFoodType([]);
                         setFilterDebuff(null);
+                        setFilterNoSpice(null);
                         setFilterCoins([]);
                       }}
                       className="bg-zinc-300 dark:bg-zinc-500 hover:bg-red-700 rounded-lg py-2 px-20 text-sm font-bold cursor-pointer"
@@ -916,6 +929,13 @@ export default function CookPotWarly() {
                   tooltip={t("tooltips.debuff")}
                 />
               )}
+              {recipe.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
+                />
+              )}
             </div>
           </div>
         ))}
@@ -1032,6 +1052,14 @@ export default function CookPotWarly() {
                   icon={getAssetPath("/icons/cooking/icon_debuff.png")}
                   value={t(`recipes_debuff.${selected.name}`)}
                   tooltip={t("tooltips.debuff")}
+                />
+              )}
+
+              {selected.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
                 />
               )}
             </div>

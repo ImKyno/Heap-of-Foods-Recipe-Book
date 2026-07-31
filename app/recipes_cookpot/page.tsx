@@ -79,6 +79,7 @@ interface Recipe {
   temperature?: number;
   temperatureDuration?: number;
   debuff?: boolean;
+  nospice?: boolean;
   foodtype?: string;
   stacksize?: number;
 
@@ -234,6 +235,7 @@ export default function CookPot() {
 
   const [filterTemp, setFilterTemp] = useState<string | null>(null);
   const [filterDebuff, setFilterDebuff] = useState<boolean | null>(null);
+  const [filterNoSpice, setFilterNoSpice] = useState<boolean | null>(null);
   const [filterCharacterFood, setFilterCharacterFood] = useState<
     boolean | null
   >(null);
@@ -258,6 +260,9 @@ export default function CookPot() {
     }
     if (filterDebuff !== null) {
       if (recipe.debuff !== filterDebuff) return false;
+    }
+    if (filterNoSpice !== null) {
+       if (recipe.nospice !== filterNoSpice) return false;
     }
     if (filterCharacterFood === true) {
       if (!recipe.characterfood) return false;
@@ -758,6 +763,13 @@ export default function CookPot() {
                             }
                           />
                           <CheckboxFilter
+                            label={t("filters.nospice")}
+                            checked={filterNoSpice === true}
+                            onChange={() =>
+                            setFilterNoSpice(filterNoSpice === true ? null : true)
+                            }
+                          />
+                          <CheckboxFilter
                             label={t("filters.debuff.characterfood")}
                             checked={filterCharacterFood === true}
                             onChange={() =>
@@ -776,6 +788,7 @@ export default function CookPot() {
                         setFilterTemp(null);
                         setFilterFoodType([]);
                         setFilterDebuff(null);
+                        setFilterNoSpice(null);
                         setFilterCharacterFood(null);
                         setFilterCoins([]);
                       }}
@@ -952,6 +965,13 @@ export default function CookPot() {
                   tooltip={t("tooltips.debuff")}
                 />
               )}
+              {recipe.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
+                />
+              )}
               {recipe.characterfood &&
                 (Array.isArray(recipe.characterfood)
                   ? recipe.characterfood
@@ -1080,6 +1100,14 @@ export default function CookPot() {
                   icon={getAssetPath("/icons/cooking/icon_debuff.png")}
                   value={t(`recipes_debuff.${selected.name}`)}
                   tooltip={t("tooltips.debuff")}
+                />
+              )}
+
+              {selected.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
                 />
               )}
             </div>

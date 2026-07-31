@@ -75,6 +75,7 @@ interface Recipe {
   temperature?: number;
   temperatureDuration?: number;
   debuff?: boolean;
+  nospice?: boolean;
   foodtype?: string;
   stacksize?: number;
 
@@ -217,6 +218,7 @@ export default function CookPotSeasonal() {
 
   const [filterTemp, setFilterTemp] = useState<string | null>(null);
   const [filterDebuff, setFilterDebuff] = useState<boolean | null>(null);
+  const [filterNoSpice, setFilterNoSpice] = useState<boolean | null>(null);
   const [filterFoodType, setFilterFoodType] = useState<string[]>([]);
   const [filterEvent, setFilterEvent] = useState<string[]>([]);
   const [filterCoins, setFilterCoins] = useState<number[]>([]);
@@ -239,6 +241,9 @@ export default function CookPotSeasonal() {
     }
     if (filterDebuff !== null) {
       if (recipe.debuff !== filterDebuff) return false;
+    }
+    if (filterNoSpice !== null) {
+       if (recipe.nospice !== filterNoSpice) return false;
     }
     if (filterFoodType.length > 0) {
       if (!filterFoodType.includes(recipe.foodtype)) return false;
@@ -754,6 +759,15 @@ export default function CookPotSeasonal() {
                               )
                             }
                           />
+                          <CheckboxFilter
+                            label={t("filters.nospice")}
+                            checked={filterNoSpice === true}
+                            onChange={() =>
+                            setFilterNoSpice(
+                                filterNoSpice === true ? null : true,
+                              )
+                            }
+                          />
                         </DropdownGroup>
                       </div>
                     </div>
@@ -786,6 +800,7 @@ export default function CookPotSeasonal() {
                           setFilterTemp(null);
                           setFilterFoodType([]);
                           setFilterDebuff(null);
+                          setFilterNoSpice(null);
                           setFilterEvent([]);
                           setFilterCoins([]);
                         }}
@@ -966,6 +981,13 @@ export default function CookPotSeasonal() {
                   tooltip={t("tooltips.debuff")}
                 />
               )}
+              {recipe.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
+                />
+              )}
               {GetFoodEvent(recipe.name) && (
                 <TopEffect
                   icon={getAssetPath("/icons/cooking/icon_event.png")}
@@ -1089,6 +1111,14 @@ export default function CookPotSeasonal() {
                   icon={getAssetPath("/icons/cooking/icon_debuff.png")}
                   value={t(`recipes_debuff.${selected.name}`)}
                   tooltip={t("tooltips.debuff")}
+                />
+              )}
+
+              {selected.nospice && (
+                <TopEffect
+                  icon={getAssetPath("/icons/cooking/icon_invalid.png")}
+                  value={t("card.nospice")}
+                  tooltip={t("tooltips.nospice")}
                 />
               )}
 

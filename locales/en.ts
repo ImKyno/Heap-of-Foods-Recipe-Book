@@ -243,6 +243,7 @@ const en = {
       hasdebuff: "Side Effect",
       characterfood: "Favorite Food",
     },
+    nospice: "Not Spiceable",
     event: "Special Event",
     pigcoin: "Koin Type",
     noresults: "Nothing found with the current filter",
@@ -335,6 +336,7 @@ const en = {
     debuff: {
       hasEffect: "Side Effect"
     },
+    nospice: "Not Spiceable",
     event: {
       xmas: "Winter's Feast",
       halloween: "Hallowed Nights",
@@ -354,6 +356,7 @@ const en = {
     foodtype: "Food Type",
     cooktype: "Ingredient Value",
     debuff: "Temporary Effect",
+    nospice: "Warly's Spices",
     characterfood: "Favorite Food",
     event: "Special Event",
     debug: {

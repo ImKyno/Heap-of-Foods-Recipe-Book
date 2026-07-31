@@ -243,6 +243,7 @@ const pt = {
       hasdebuff: "Efeito Especial",
       characterfood: "Comida Favorita",
     },
+    nospice: "Não Pode Ser Temperado",
     event: "Evento Especial",
     pigcoin: "Tipo de Moeda",
     noresults: "Nada encontrado com o filtro atual.",
@@ -335,6 +336,7 @@ const pt = {
     debuff: {
       hasEffect: "Efeito Especial"
     },
+    nospice: "Não Pode Ser Temperado",
     event: {
       xmas: "Banquete de Inverno",
       halloween: "Noites Assombrosas",
@@ -354,6 +356,7 @@ const pt = {
     foodtype: "Tipo da Receita",
     cooktype: "Tipo do Ingrediente",
     debuff: "Efeito Temporário",
+    nospice: "Temperos do Warly",
     characterfood: "Comida Favorita",
     event: "Evento Especial",
     debug: {
