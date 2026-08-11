@@ -648,6 +648,9 @@ const pt = {
     mandrakepie: "Torta de Mandrágora",
     rainparfait: "Delícia de Garoa",
     midnightfeast: "Colhedor Noturno",
+    marshmallows: "Marshmallows",
+    kokonutcookies: "Biscoitos de Coco",
+    chocolate_cake: "Bolo de Chocolate",
     jawsbreaker: "Quebra-queixo",
   },
 
@@ -677,6 +680,9 @@ const pt = {
     lavaeeggboiled: "Ovo de Lava Assado",
     tiramisu: "Tiramisu",
     mandrakebaobuns: "Bao de Mandrágora no Vapor",
+    brownie: "Brownie",
+    bbqribs: "Costelinhas de Porco",
+    swordfishbluedinner: "Bento Gélido",
   },
 
   recipes_keg: {
@@ -933,6 +939,8 @@ const pt = {
     lavaeeggboiled: "Garante imunidade contra dano de fogo",
     tiramisu: "Acelera o corpo e dissipa umidade",
     mandrakebaobuns: "Aumenta a eficiência de cura",
+    bbqribs: "Diminui a repulsão",
+    swordfishbluedinner: "Garante ataques gélidos",
 
     // WOODEN KEG RECIPES
     beer: "Aumenta a força",

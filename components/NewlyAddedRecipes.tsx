@@ -38,16 +38,12 @@ interface FoodTypeProps {
 }
 
 const NEW_RECIPES = [
-  { name: "cavetubertea", source: "cookpot" as const },
-  { name: "mandrakepie", source: "cookpot" as const },
-  { name: "rainparfait", source: "cookpot" as const },
-  { name: "midnightfeast", source: "cookpot" as const },
-  { name: "mandrakebaobuns", source: "warly" as const },
-  { name: "mandrakebeer", source: "keg" as const },
-  { name: "juice_cavetuber", source: "keg" as const },
-  { name: "juice_cavetuber_blooming", source: "keg" as const },
-  { name: "pickles_cavetuber", source: "jar" as const },
-  { name: "pickles_cavetuber_blooming", source: "jar" as const },
+  { name: "marshmallows", source: "cookpot" as const },
+  { name: "kokonutcookies", source: "cookpot" as const },
+  { name: "chocolate_cake", source: "cookpot" as const },
+  { name: "brownie", source: "warly" as const },
+  { name: "bbqribs", source: "warly" as const },
+  { name: "swordfishbluedinner", source: "warly" as const },
 ];
 
 export default function NewlyAddedRecipes() {

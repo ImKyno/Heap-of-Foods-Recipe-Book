@@ -875,7 +875,14 @@
         "comparator": "morethan"
       }
     ],
-    "excluded": [],
+    "excluded": [
+      {
+        "items": [
+          "tag_chocolate"
+        ],
+        "comparator": "equal"
+      }
+    ],
     "card_def": [
       {
         "items": [

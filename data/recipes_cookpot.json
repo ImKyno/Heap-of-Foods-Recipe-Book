@@ -8,6 +8,7 @@
     "temperature": 40,
     "temperatureDuration": 5,
     "debuff": true,
+    "nospice": true,
     "health": 5,
     "hunger": 9.375,
     "sanity": -10,
@@ -32,7 +33,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": true,
     "requires": [
       {
         "items": [
@@ -86,6 +86,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 18.75,
     "sanity": 5,
@@ -108,7 +109,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -152,6 +152,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 18.75,
     "sanity": 10,
@@ -174,7 +175,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -232,6 +232,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 40,
     "hunger": 12.5,
     "sanity": -10,
@@ -256,7 +257,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -293,6 +293,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": true,
+    "nospice": false,
     "health": 60,
     "hunger": 37.5,
     "sanity": 15,
@@ -315,7 +316,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -387,6 +387,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 75,
     "sanity": 15,
@@ -411,7 +412,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -455,6 +455,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -20,
     "hunger": 100,
     "sanity": -15,
@@ -479,7 +480,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -523,6 +523,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": 5,
@@ -545,7 +546,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -589,6 +589,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 12.5,
     "sanity": 33,
@@ -613,7 +614,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -671,6 +671,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 12.5,
     "sanity": 33,
@@ -695,7 +696,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -746,6 +746,7 @@
     "temperature": 40,
     "temperatureDuration": 240,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": -10,
@@ -768,7 +769,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -812,6 +812,7 @@
     "temperature": 40,
     "temperatureDuration": 240,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": -5,
@@ -834,7 +835,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -885,6 +885,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 40,
     "hunger": 75,
     "sanity": 20,
@@ -907,7 +908,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -960,6 +960,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 62.5,
     "sanity": 15,
@@ -982,7 +983,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1040,6 +1040,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 1,
     "hunger": 4.6875,
     "sanity": 0,
@@ -1062,7 +1063,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1099,6 +1099,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 75,
     "sanity": 15,
@@ -1121,7 +1122,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1179,6 +1179,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 56.25,
     "sanity": 10,
@@ -1201,7 +1202,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1281,6 +1281,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 3,
     "hunger": 45,
     "sanity": 15,
@@ -1303,7 +1304,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1373,6 +1373,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 75,
     "sanity": 15,
@@ -1395,7 +1396,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1466,6 +1466,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": 10,
@@ -1488,7 +1489,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1553,6 +1553,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 56.25,
     "sanity": 40,
@@ -1575,7 +1576,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1632,6 +1632,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 75,
     "sanity": 15,
@@ -1656,7 +1657,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1700,6 +1700,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 50,
     "hunger": 37.5,
     "sanity": 5,
@@ -1722,7 +1723,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1780,6 +1780,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": 5,
@@ -1802,7 +1803,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1860,6 +1860,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -10,
     "hunger": 25,
     "sanity": 5,
@@ -1882,7 +1883,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -1926,6 +1926,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 50,
     "sanity": 10,
@@ -1948,7 +1949,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2019,6 +2019,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 62.5,
     "sanity": 20,
@@ -2041,7 +2042,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2113,6 +2113,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 25,
     "sanity": 5,
@@ -2135,7 +2136,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2200,6 +2200,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 37.5,
     "sanity": 10,
@@ -2224,7 +2225,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2268,6 +2268,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 62.5,
     "sanity": 5,
@@ -2290,7 +2291,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2348,6 +2348,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 50,
     "hunger": 85,
     "sanity": 15,
@@ -2370,7 +2371,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2435,6 +2435,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 3,
     "hunger": 50,
     "sanity": 25,
@@ -2457,7 +2458,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2537,6 +2537,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 12.5,
     "sanity": 33,
@@ -2561,7 +2562,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2619,6 +2619,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 25,
     "sanity": 15,
@@ -2641,7 +2642,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2685,6 +2685,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 15,
     "hunger": 37.5,
     "sanity": 5,
@@ -2709,7 +2710,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2774,6 +2774,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 15,
@@ -2796,7 +2797,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2854,6 +2854,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 5,
@@ -2876,7 +2877,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2933,6 +2933,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 50,
     "sanity": 15,
@@ -2955,7 +2956,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -2999,6 +2999,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 10,
@@ -3021,7 +3022,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3065,6 +3065,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 25,
     "sanity": 60,
@@ -3087,7 +3088,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3131,6 +3131,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 20,
     "sanity": 10,
@@ -3153,7 +3154,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3215,6 +3215,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 50,
     "hunger": 62.5,
     "sanity": 10,
@@ -3237,7 +3238,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3295,6 +3295,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 75,
     "sanity": 10,
@@ -3317,7 +3318,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3410,6 +3410,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 75,
     "sanity": 5,
@@ -3432,7 +3433,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3490,6 +3490,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 75,
     "sanity": 33,
@@ -3512,7 +3513,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3570,6 +3570,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 100,
     "sanity": 25,
@@ -3592,7 +3593,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3657,6 +3657,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 75,
     "sanity": 15,
@@ -3679,7 +3680,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3737,6 +3737,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 75,
     "sanity": 25,
@@ -3759,7 +3760,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3831,6 +3831,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 25,
     "sanity": 25,
@@ -3853,7 +3854,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -3911,6 +3911,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 150,
     "sanity": 10,
@@ -3933,7 +3934,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4005,6 +4005,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 0,
     "hunger": 20,
     "sanity": 33,
@@ -4029,7 +4030,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4073,6 +4073,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 56.25,
     "sanity": 40,
@@ -4095,7 +4096,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4153,6 +4153,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 20,
     "sanity": 15,
@@ -4175,7 +4176,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4240,6 +4240,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": 50,
@@ -4262,7 +4263,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4337,6 +4337,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 50,
     "hunger": 75,
     "sanity": 50,
@@ -4359,7 +4360,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4431,6 +4431,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 50,
     "sanity": 40,
@@ -4453,7 +4454,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4531,6 +4531,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 50,
     "sanity": 25,
@@ -4553,7 +4554,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4611,6 +4611,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 50,
     "sanity": 50,
@@ -4633,7 +4634,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4705,6 +4705,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 50,
     "sanity": 40,
@@ -4727,7 +4728,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4799,6 +4799,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 75,
     "sanity": -5,
@@ -4821,7 +4822,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4879,6 +4879,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 75,
     "sanity": 15,
@@ -4901,7 +4902,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -4953,6 +4953,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 75,
     "sanity": 30,
@@ -4975,7 +4976,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5047,6 +5047,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 150,
     "sanity": 5,
@@ -5071,7 +5072,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5148,6 +5148,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 100,
     "sanity": 5,
@@ -5172,7 +5173,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5223,6 +5223,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 100,
     "sanity": 15,
@@ -5245,7 +5246,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5330,6 +5330,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 50,
     "sanity": 0,
@@ -5354,7 +5355,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5417,6 +5417,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 62.5,
     "sanity": 20,
@@ -5439,7 +5440,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5511,6 +5511,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 75,
     "sanity": 25,
@@ -5535,7 +5536,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5607,6 +5607,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 56.25,
     "sanity": 50,
@@ -5629,7 +5630,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5701,6 +5701,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -15,
     "hunger": 32.5,
     "sanity": 100,
@@ -5723,7 +5724,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5781,6 +5781,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 37.5,
     "sanity": 40,
@@ -5803,7 +5804,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5861,6 +5861,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 75,
     "sanity": 60,
@@ -5883,7 +5884,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -5941,6 +5941,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 37.5,
     "sanity": 60,
@@ -5963,7 +5964,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6021,6 +6021,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 0,
     "hunger": 6.375,
     "sanity": 3,
@@ -6043,7 +6044,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6088,6 +6088,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": 10,
@@ -6110,7 +6111,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6154,6 +6154,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 12.5,
     "sanity": 50,
@@ -6176,7 +6177,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6206,6 +6206,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 62.5,
     "sanity": 10,
@@ -6228,7 +6229,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6265,6 +6265,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 10,
     "hunger": 25,
     "sanity": 15,
@@ -6287,7 +6288,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6325,6 +6325,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 37.5,
     "sanity": 5,
@@ -6347,7 +6348,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6398,6 +6398,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 150,
     "hunger": 200,
     "sanity": 150,
@@ -6422,7 +6423,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6466,6 +6466,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": -100,
     "hunger": 150,
     "sanity": -300,
@@ -6488,7 +6489,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6534,6 +6534,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 60,
     "hunger": 12.5,
     "sanity": 33,
@@ -6556,7 +6557,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6628,6 +6628,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": 15,
@@ -6650,7 +6651,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6708,6 +6708,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 18.75,
     "sanity": 30,
@@ -6730,7 +6731,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6795,6 +6795,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 75,
     "sanity": 33,
@@ -6817,7 +6818,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6868,6 +6868,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 0,
     "hunger": 18.75,
     "sanity": 50,
@@ -6890,7 +6891,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -6953,6 +6953,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 4.6875,
     "sanity": 3,
@@ -6975,7 +6976,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7052,6 +7052,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 150,
     "hunger": 150,
     "sanity": -150,
@@ -7074,7 +7075,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7132,6 +7132,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 150,
     "sanity": 15,
@@ -7154,7 +7155,6 @@
     "healthnaughty": 15,
     "sanitynice": -25,
     "sanitynaughty": 25,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7212,6 +7212,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 3,
     "hunger": 20,
     "sanity": 5,
@@ -7234,7 +7235,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7292,6 +7292,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 12,
     "hunger": 75,
     "sanity": 25,
@@ -7314,7 +7315,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7386,6 +7386,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 25,
     "sanity": 5,
@@ -7408,7 +7409,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7478,6 +7478,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 25,
     "sanity": 20,
@@ -7500,7 +7501,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7571,6 +7571,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": 5,
@@ -7593,7 +7594,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7669,6 +7669,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 0,
     "sanity": 20,
@@ -7691,7 +7692,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7742,6 +7742,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 25,
     "hunger": 45,
     "sanity": 10,
@@ -7764,7 +7765,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7808,6 +7808,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": true,
+    "nospice": true,
     "health": 1,
     "hunger": 1,
     "sanity": 1,
@@ -7830,7 +7831,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": true,
     "requires": [
       {
         "items": [
@@ -7897,6 +7897,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 12.5,
     "sanity": 60,
@@ -7919,7 +7920,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -7977,6 +7977,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": -20,
     "hunger": 62.5,
     "sanity": 10,
@@ -7999,7 +8000,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8058,6 +8058,7 @@
     "temperature": 40,
     "temperatureDuration": 15,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 32.5,
     "sanity": -15,
@@ -8080,7 +8081,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8138,6 +8138,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 12.5,
     "sanity": 33,
@@ -8160,7 +8161,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8225,6 +8225,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 33,
     "sanity": 12.5,
@@ -8247,7 +8248,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8305,6 +8305,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 12.5,
     "sanity": 5,
@@ -8327,7 +8328,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8399,6 +8399,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 32.5,
     "sanity": 10,
@@ -8421,7 +8422,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8479,6 +8479,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 25,
     "sanity": 20,
@@ -8501,7 +8502,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8559,6 +8559,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -3,
     "hunger": 50,
     "sanity": 10,
@@ -8581,7 +8582,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8639,6 +8639,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 55,
     "sanity": 40,
@@ -8661,7 +8662,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8733,6 +8733,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 75,
     "sanity": 15,
@@ -8755,7 +8756,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8827,6 +8827,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 5,
     "hunger": 30,
     "sanity": -5,
@@ -8849,7 +8850,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8907,6 +8907,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 10,
     "hunger": 25,
     "sanity": -5,
@@ -8929,7 +8930,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -8987,6 +8987,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 62.5,
     "sanity": 15,
@@ -9009,7 +9010,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9067,6 +9067,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 50,
     "hunger": 50,
     "sanity": 50,
@@ -9089,7 +9090,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9162,6 +9162,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 12.5,
     "sanity": 33,
@@ -9186,7 +9187,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9230,6 +9230,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 25,
     "sanity": 10,
@@ -9252,7 +9253,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9296,6 +9296,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -10,
     "hunger": 50,
     "sanity": -15,
@@ -9318,7 +9319,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9376,6 +9376,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 62.5,
     "sanity": 20,
@@ -9398,7 +9399,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9456,6 +9456,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 62.5,
     "sanity": 5,
@@ -9478,7 +9479,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9536,6 +9536,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 0,
     "hunger": 6.375,
     "sanity": 1,
@@ -9558,7 +9559,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9602,6 +9602,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 32.5,
     "sanity": 10,
@@ -9624,7 +9625,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9704,6 +9704,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 12.5,
     "sanity": 30,
@@ -9726,7 +9727,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9805,6 +9805,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 12.5,
     "sanity": 50,
@@ -9829,7 +9830,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9887,6 +9887,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 60,
     "hunger": 150,
     "sanity": 5,
@@ -9909,7 +9910,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -9981,6 +9981,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 18.75,
     "sanity": 25,
@@ -10003,7 +10004,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10061,6 +10061,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 62.5,
     "sanity": 5,
@@ -10083,7 +10084,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10127,6 +10127,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 100,
     "sanity": 33,
@@ -10149,7 +10150,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10207,6 +10207,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 15,
     "hunger": 32.5,
     "sanity": 5,
@@ -10229,7 +10230,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10275,6 +10275,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 20,
@@ -10297,7 +10298,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10354,6 +10354,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": -5,
     "hunger": 32.5,
     "sanity": -15,
@@ -10378,7 +10379,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10436,6 +10436,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": -15,
     "hunger": 37.5,
     "sanity": 0,
@@ -10460,7 +10461,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10504,6 +10504,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -20,
     "hunger": 37.5,
     "sanity": -5,
@@ -10526,7 +10527,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10577,6 +10577,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -10,
     "hunger": 45,
     "sanity": -30,
@@ -10601,7 +10602,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10672,6 +10672,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 12,
     "hunger": 18.25,
     "sanity": 5,
@@ -10694,7 +10695,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10738,6 +10738,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 12.5,
     "sanity": 33,
@@ -10760,7 +10761,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10804,6 +10804,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 25,
     "sanity": 15,
@@ -10826,7 +10827,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10884,6 +10884,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 37.5,
     "sanity": 20,
@@ -10906,7 +10907,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -10964,6 +10964,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 10,
     "hunger": 56.25,
     "sanity": -5,
@@ -10986,7 +10987,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11030,6 +11030,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 25,
     "hunger": 18.75,
     "sanity": 0,
@@ -11052,7 +11053,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11110,6 +11110,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -60,
     "hunger": 62.5,
     "sanity": -5,
@@ -11132,7 +11133,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11190,6 +11190,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": -60,
     "hunger": 37.5,
     "sanity": -20,
@@ -11212,7 +11213,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11284,6 +11284,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": -20,
     "hunger": 37.5,
     "sanity": -20,
@@ -11306,7 +11307,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11378,6 +11378,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 20,
     "sanity": 15,
@@ -11400,7 +11401,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11444,6 +11444,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 8,
     "hunger": 20,
     "sanity": 8,
@@ -11466,7 +11467,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11524,6 +11524,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 32.5,
     "sanity": 10,
@@ -11546,7 +11547,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11604,6 +11604,7 @@
     "temperature": 40,
     "temperatureDuration": 5,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 50,
     "sanity": 10,
@@ -11626,7 +11627,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11698,6 +11698,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 75,
     "sanity": 15,
@@ -11720,7 +11721,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11793,6 +11793,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 25,
     "sanity": 10,
@@ -11815,7 +11816,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11900,6 +11900,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 70,
     "sanity": 50,
@@ -11924,7 +11925,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -11982,6 +11982,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 37.5,
     "sanity": 20,
@@ -12004,7 +12005,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12062,6 +12062,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 18.75,
     "sanity": 20,
@@ -12084,7 +12085,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12142,6 +12142,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 5,
@@ -12164,7 +12165,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12236,6 +12236,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 60,
     "hunger": 150,
     "sanity": 5,
@@ -12258,7 +12259,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12330,6 +12330,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 25,
     "sanity": 10,
@@ -12352,7 +12353,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12424,6 +12424,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 32.5,
     "sanity": 33,
@@ -12446,7 +12447,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12518,6 +12518,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 40,
     "hunger": 62.5,
     "sanity": 33,
@@ -12540,7 +12541,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12619,6 +12619,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 25,
     "sanity": 5,
@@ -12641,7 +12642,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12692,6 +12692,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 37.5,
     "sanity": 5,
@@ -12714,7 +12715,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12765,6 +12765,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 10,
     "hunger": 18.75,
     "sanity": 15,
@@ -12787,7 +12788,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12845,6 +12845,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 20,
     "hunger": 56.25,
     "sanity": -10,
@@ -12867,7 +12868,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -12911,6 +12911,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 60,
     "hunger": 50,
     "sanity": 10,
@@ -12933,7 +12934,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13005,6 +13005,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 62.5,
     "sanity": -15,
@@ -13027,7 +13028,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13085,6 +13085,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 20,
     "sanity": 5,
@@ -13107,7 +13108,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13179,6 +13179,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 32.5,
     "sanity": 60,
@@ -13201,7 +13202,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13266,6 +13266,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 12.5,
     "sanity": 10,
@@ -13288,7 +13289,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13346,6 +13346,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 32.5,
     "sanity": 20,
@@ -13370,7 +13371,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13435,6 +13435,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": 40,
@@ -13457,7 +13458,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13530,6 +13530,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 20,
     "hunger": 62.5,
     "sanity": 5,
@@ -13552,7 +13553,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13631,6 +13631,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 40,
     "hunger": 37.5,
     "sanity": 33,
@@ -13653,7 +13654,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13725,6 +13725,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 25,
     "hunger": 32.5,
     "sanity": 50,
@@ -13747,7 +13748,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13805,6 +13805,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 37.5,
     "sanity": 30,
@@ -13827,7 +13828,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -13910,6 +13910,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 15,
     "hunger": 32.5,
     "sanity": 33,
@@ -13932,7 +13933,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14004,6 +14004,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 62.5,
     "sanity": 20,
@@ -14026,7 +14027,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14070,6 +14070,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 62.5,
     "sanity": 0,
@@ -14094,7 +14095,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14152,6 +14152,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": -20,
     "hunger": 37.5,
     "sanity": -10,
@@ -14174,7 +14175,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14232,6 +14232,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": -30,
     "hunger": 45,
     "sanity": -20,
@@ -14254,7 +14255,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14312,6 +14312,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 100,
     "hunger": 150,
     "sanity": 25,
@@ -14334,7 +14335,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14406,6 +14406,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 20,
     "hunger": 25,
     "sanity": 20,
@@ -14428,7 +14429,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14479,6 +14479,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": -15,
     "hunger": 18.75,
     "sanity": 50,
@@ -14501,7 +14502,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14566,6 +14566,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 32.5,
     "sanity": 5,
@@ -14588,7 +14589,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14660,6 +14660,7 @@
     "temperature": 40,
     "temperatureDuration": 240,
     "debuff": true,
+    "nospice": false,
     "health": -15,
     "hunger": 42.5,
     "sanity": 10,
@@ -14682,7 +14683,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14754,6 +14754,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 15,
     "hunger": 62.5,
     "sanity": 10,
@@ -14776,7 +14777,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14848,6 +14848,7 @@
     "temperature": 40,
     "temperatureDuration": 10,
     "debuff": false,
+    "nospice": false,
     "health": 5,
     "hunger": 25,
     "sanity": 25,
@@ -14870,7 +14871,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -14942,6 +14942,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": false,
+    "nospice": false,
     "health": 30,
     "hunger": 62.5,
     "sanity": 5,
@@ -14964,7 +14965,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15036,6 +15036,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 150,
     "sanity": 10,
@@ -15058,7 +15059,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15123,6 +15123,7 @@
     "temperature": -40,
     "temperatureDuration": 10,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 30,
     "sanity": 15,
@@ -15145,7 +15146,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15224,6 +15224,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 120,
     "hunger": 175,
     "sanity": 25,
@@ -15246,7 +15247,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15318,6 +15318,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 10,
     "hunger": 25,
     "sanity": 33,
@@ -15340,7 +15341,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15412,6 +15412,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": false,
     "health": 30,
     "hunger": 75,
     "sanity": 15,
@@ -15434,7 +15435,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": false,
     "requires": [
       {
         "items": [
@@ -15498,6 +15498,274 @@
     ]
   },
   {
+    "name": "marshmallows",
+    "priority": 30,
+    "foodtype": "VEGGIE",
+    "spoilage": 19200,
+    "spoilageDays": 40,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "nospice": false,
+    "health": 5,
+    "hunger": 18.75,
+    "sanity": 25,
+    "cooktime": 1.3,
+    "stacksize": 2,
+    "pigcoinvalue": [
+      5,
+      5,
+      0
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "tag_fruit"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "boneshard"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "pomegranate"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "boneshard"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "kokonutcookies",
+    "priority": 35,
+    "foodtype": "VEGGIE",
+    "spoilage": 9600,
+    "spoilageDays": 20,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "nospice": false,
+    "health": 20,
+    "hunger": 18.75,
+    "sanity": 5,
+    "cooktime": 1.5,
+    "stacksize": 2,
+    "pigcoinvalue": [
+      4,
+      0,
+      1
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_kokonut_halved"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sweetener"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_kokonut_halved"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "honey"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "chocolate_cake",
+    "priority": 30,
+    "foodtype": "GOODIES",
+    "spoilage": 7200,
+    "spoilageDays": 15,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "nospice": false,
+    "health": -10,
+    "hunger": 62.5,
+    "sanity": 50,
+    "cooktime": 2,
+    "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      4,
+      1
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "chocolate_black"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_dairy"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_egg"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "chocolate_black"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "goatmilk"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "bird_egg"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
     "name": "jawsbreaker",
     "priority": 100,
     "foodtype": "GOODIES",
@@ -15506,6 +15774,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
+    "nospice": true,
     "health": -30,
     "hunger": 25,
     "sanity": 33,
@@ -15528,7 +15797,6 @@
     "healthnaughty": null,
     "sanitynice": null,
     "sanitynaughty": null,
-    "nospice": true,
     "requires": [
       {
         "items": [

@@ -648,6 +648,9 @@ const en = {
     mandrakepie: "Mandrake Pie",
     rainparfait: "Drizzle Delight",
     midnightfeast: "Night Harvester",
+    marshmallows: "Marshmallows",
+    kokonutcookies: "Coconut Cookies",
+    chocolate_cake: "Chocolate Cake",
     jawsbreaker: "Jawsbreaker",
   },
 
@@ -677,6 +680,9 @@ const en = {
     lavaeeggboiled: "Lava Boiled Egg",
     tiramisu: "Tirameesu",
     mandrakebaobuns: "Steamed Mandrake Bao",
+    brownie: "Brownie",
+    bbqribs: "Pork Ribs",
+    swordfishbluedinner: "Chilled Bento",
   },
 
   recipes_keg: {
@@ -933,6 +939,8 @@ const en = {
     lavaeeggboiled: "Grants fire immunity",
     tiramisu: "Speeds the body and dissipates moisture",
     mandrakebaobuns: "Increases healing efficiency",
+    bbqribs: "Decreases knockback",
+    swordfishbluedinner: "Grants chilled attacks",
 
     // WOODEN KEG RECIPES
     beer: "Increases strength",

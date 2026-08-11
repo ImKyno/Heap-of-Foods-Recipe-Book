@@ -1875,5 +1875,258 @@
         "comparator": "equal"
       }
     ]
+  },
+  {
+    "name": "brownie",
+    "priority": 35,
+    "foodtype": "GOODIES",
+    "spoilage": 4800,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "nospice": false,
+    "health": -10,
+    "hunger": 32.5,
+    "sanity": 100,
+    "cooktime": 2,
+    "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      4,
+      2
+    ],
+    "characterfood": null,
+    "requires": [
+      {
+        "items": [
+          "tag_chocolate"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_dairy"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "chocolate_black"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "goatmilk"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "bbqribs",
+    "priority": 35,
+    "foodtype": "MEAT",
+    "spoilage": 9600,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "nospice": false,
+    "health": 60,
+    "hunger": 75,
+    "sanity": 33,
+    "cooktime": 2,
+    "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      3,
+      1
+    ],
+    "characterfood": null,
+    "requires": [
+      {
+        "items": [
+          "tag_meat"
+        ],
+        "amount": 2,
+        "comparator": "morethan"
+      },
+      {
+        "items": [
+          "tag_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_syrup"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [
+      {
+        "items": [
+          "tag_fish"
+        ],
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_monster"
+        ],
+        "amount": 1,
+        "comparator": "morethan"
+      }
+    ],
+    "card_def": [
+      {
+        "items": [
+          "meat"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "monstermeat"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_syrup"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "swordfishbluedinner",
+    "priority": 35,
+    "foodtype": "MEAT",
+    "spoilage": 3840,
+    "temperature": -40,
+    "temperatureDuration": 240,
+    "debuff": true,
+    "nospice": false,
+    "health": 40,
+    "hunger": 75,
+    "sanity": 25,
+    "cooktime": 2,
+    "stacksize": null,
+    "pigcoinvalue": [
+      2,
+      10,
+      1
+    ],
+    "characterfood": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_swordfish_blue"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_iceweed"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_rice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_swordfish_blue"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_icenettles"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_flour"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_rice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
   }
 ]

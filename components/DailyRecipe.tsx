@@ -8,11 +8,10 @@ import SkeletonImage from "@/components/SkeletonImage";
 
 import recipes from "@/data/recipes_cookpot.json";
 import recipes_warly from "@/data/recipes_cookpot_warly.json";
-import recipes_seasonal from "@/data/recipes_cookpot_seasonal.json";
 import recipes_jar from "@/data/recipes_cookpot_jar.json";
 import recipes_keg from "@/data/recipes_cookpot_keg.json";
 
-type SourceKeys = "cookpot" | "warly" | "jar" | "keg" | "seasonal";
+type SourceKeys = "cookpot" | "warly" | "jar" | "keg";
 
 interface RecipeType {
   name: string;
@@ -50,7 +49,6 @@ export default function DailyRecipe() {
   const allRecipesRaw = [
     ...recipes.map(r => ({ ...r, prefix: "recipes", icon: "foods_cookpot", source: "cookpot" })),
     ...recipes_warly.map(r => ({ ...r, prefix: "recipes_warly", icon: "foods_cookpot_warly", source: "warly" })),
-    ...recipes_seasonal.map(r => ({ ...r, prefix: "recipes_seasonal", icon: "foods_cookpot_seasonal", source: "seasonal" })),
     ...recipes_jar.map(r => ({ ...r, prefix: "recipes_jar", icon: "foods_cookpot_jar", source: "jar" })),
     ...recipes_keg.map(r => ({ ...r, prefix: "recipes_keg", icon: "foods_cookpot_keg", source: "keg" })),
   ];
@@ -67,11 +65,6 @@ export default function DailyRecipe() {
       icon: getAssetPath("/icons/misc/icon_cookpot_warly.png"),
       name: t("main.cookpot_warly"),
       page: "/recipes_warly",
-    },
-    seasonal: {
-      icon: getAssetPath("/icons/misc/icon_cookpot_seasonal.png"),
-      name: t("main.cookpot_seasonal"),
-      page: "/recipes_seasonal",
     },
     jar: {
       icon: getAssetPath("/icons/misc/icon_cookpot_jar.png"),

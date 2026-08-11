@@ -3233,7 +3233,6 @@ local kyno_foods =
 			{ items = { "ice" }, amount = 2 },
 			{ items = { "goatmilk" }, amount = 2 },
 		},
-		card_def = {ingredients = {{"ice", 2}, {"goatmilk", 2}}},
 	},
 	
 	honeyjar =
@@ -6471,7 +6470,6 @@ local kyno_foods =
 			{ items = { "ice" }, amount = 1 },
 		},
 		tags = {"honeyed", "fooddrink"},
-		card_def = {ingredients = {{"kyno_cavetuber_blooming", 1}, {"tillweed", 1}, {"honey", 1}, {"ice", 1}}},
 		prefabs = { "kyno_greenthumbbuff" },
 		oneatenfn = function(inst, eater)
 			eater:AddDebuff("kyno_greenthumbbuff", "kyno_greenthumbbuff")
@@ -6512,7 +6510,6 @@ local kyno_foods =
 			{ items = { "meat" }, amount = 2 },
 		},
 		tags = {"mandrake"},
-		card_def = {ingredients = {{"mandrake", 1}, {"kyno_flour", 1}, {"meat", 2}}},
 		oneatenfn = function(inst, eater)
 			if eater.SoundEmitter ~= nil then
 				eater.SoundEmitter:PlaySound("dontstarve/creatures/mandrake/death")
@@ -6557,7 +6554,6 @@ local kyno_foods =
 			{ items = { "honey" }, amount = 1 },
 		},
 		tags = {"honeyed"},
-		card_def = {ingredients = {{"watermelon", 1}, {"berries", 1}, {"goatmilk", 1}, {"honey", 1}}},
 		prefabs = { "kyno_wetnessbuff" },
 		oneatenfn = function(inst, eater)
 			eater:AddDebuff("kyno_wetnessbuff", "kyno_wetnessbuff")
@@ -6598,11 +6594,113 @@ local kyno_foods =
 			{ items = { "kyno_taroroot" }, amount = 1 },
 			{ items = { "goatmilk" }, amount = 1 },
 		},
-		card_def = {ingredients = {{"oceanfish_midnight_carp_inv", 1}, {"foliage", 1}, {"kyno_taroroot", 1}, {"goatmilk", 1}}},
 		prefabs = { "kyno_nightkillbuff" },
 		oneatenfn = function(inst, eater)
 			eater:AddDebuff("kyno_nightkillbuff", "kyno_nightkillbuff")
 		end,
+	},
+
+	marshmallows =
+	{
+		test = function(cooker, names, tags) return (tags.fruit and tags.fruit >= 2) and tags.sugar and names.boneshard end,
+		priority = 30,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_SUPERSLOW,
+		health = 5,
+		hunger = 18.75,
+		sanity = 25,
+		cooktime = 1.3,
+		stacksize = 2,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 5, 0},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "tag_fruit" }, amount = 2 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "boneshard" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "pomegranate" }, amount = 2 },
+			{ items = { "kyno_sugar" }, amount = 1 },
+			{ items = { "boneshard" }, amount = 1 },
+		},
+	},
+
+	kokonutcookies =
+	{
+		test = function(cooker, names, tags) return names.kyno_kokonut_halved and tags.flour and tags.sugar and tags.sweetener end,
+		priority = 35,
+		foodtype = FOODTYPE.VEGGIE,
+		perishtime = TUNING.PERISH_PRESERVED,
+		health = 20,
+		hunger = 18.75,
+		sanity = 5,
+		cooktime = 1.5,
+		stacksize = 2,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {4, 0, 1},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "kyno_kokonut_halved" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "tag_sweetener" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "kyno_kokonut_halved" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "kyno_sugar" }, amount = 1 },
+			{ items = { "honey" }, amount = 1 },
+		},
+	},
+
+	chocolate_cake =
+	{
+		test = function(cooker, names, tags) return names.chocolate_black and tags.dairy and tags.flour and tags.egg end,
+		priority = 30,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_SLOW,
+		health = -10,
+		hunger = 62.5,
+		sanity = 50,
+		cooktime = 2,
+		potlevel = "med",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 4, 1},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"eggfood"},
+		required = 
+		{
+			{ items = { "chocolate_black" }, amount = 1 },
+			{ items = { "tag_dairy" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "tag_egg" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "chocolate_black" }, amount = 1 },
+			{ items = { "goatmilk" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "bird_egg" }, amount = 1 },
+		},
 	},
 
 	jawsbreaker =

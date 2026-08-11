@@ -648,6 +648,9 @@ const vi = {
     mandrakepie: "Bánh Pie Mandrake",
     rainparfait: "Món Ngon Rưới Nước",
     midnightfeast: "Người Gặt Đêm",
+    marshmallows: "Kẹo Dẻo Xốp",
+    kokonutcookies: "Bánh Quy Dừa",
+    chocolate_cake: "Bánh Sô-cô-la",
     jawsbreaker: "Kẹo Vỡ Hàm",
   },
 
@@ -677,6 +680,9 @@ const vi = {
     lavaeeggboiled: "Trứng Luộc Dung Nham",
     tiramisu: "Tirameesu",
     mandrakebaobuns: "Bánh Bao Mandrake Hấp",
+    brownie: "Bánh Brownie",
+    bbqribs: "Sườn Heo",
+    swordfishbluedinner: "Bento ướp Lạnh",
   },
 
   recipes_keg: {
@@ -933,6 +939,8 @@ const vi = {
     lavaeeggboiled: "Cho miễn nhiễm lửa",
     tiramisu: "Tăng tốc cơ thể và xua tan độ ẩm",
     mandrakebaobuns: "Tăng hiệu quả hồi máu",
+    bbqribs: "Giảm độ đẩy lùi",
+    swordfishbluedinner: "Cung cấp các đòn tấn công băng",
 
     // WOODEN KEG RECIPES
     beer: "Tăng sức mạnh",

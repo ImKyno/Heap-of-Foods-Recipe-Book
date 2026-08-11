@@ -947,7 +947,6 @@ local kyno_foods_warly =
 			{ items = { "kyno_cavetuber_blooming" }, amount = 1 },
 		},
 		tags = {"masterfood", "mandrake"},
-		card_def = {ingredients = {{"mandrake", 1}, {"kyno_flour", 1}, {"kyno_cavetuber_blooming", 1}, {"meat", 1}}},
 		prefabs = { "kyno_healingbuff" },
 		oneatenfn = function(inst, eater)
 			if eater.SoundEmitter ~= nil then
@@ -956,6 +955,123 @@ local kyno_foods_warly =
 
 			eater:AddDebuff("kyno_healingbuff", "kyno_healingbuff")
 		end,
+	},
+
+	brownie =
+	{
+		test = function(cooker, names, tags) return tags.chocolate and tags.sugar and tags.flour and tags.dairy end,
+		priority = 35,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_MED,
+		health = -10,
+		hunger = 32.5,
+		sanity = 100,
+		cooktime = 2,
+		overridebuild = "kyno_foodrecipes_warly",
+		pigcoinvalue = {6, 4, 2},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"masterfood", "eggfood"},
+		required = 
+		{
+			{ items = { "tag_chocolate" }, amount = 1 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "tag_dairy" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "chocolate_black" }, amount = 1 },
+			{ items = { "kyno_sugar" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "goatmilk" }, amount = 1 },
+		},
+	},
+
+	bbqribs =
+	{
+		test = function(cooker, names, tags) return (tags.meat and tags.meat >= 2) and tags.spotspice and tags.syrup
+		and not (tags.monster and tags.monster > 1) and not tags.fish end,
+		priority = 35,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_PRESERVED,
+		health = 60,
+		hunger = 75,
+		sanity = 33,
+		cooktime = 2,
+		potlevel = "low",
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_KNOCKBACK,
+		overridebuild = "kyno_foodrecipes_warly",
+		pigcoinvalue = {10, 3, 1},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"masterfood"},
+		prefabs = { "kyno_knockbackbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_knockbackbuff", "kyno_knockbackbuff")
+		end,
+		required = 
+		{
+			{ items = { "tag_meat" }, amount = 2, comparator = "morethan" },
+			{ items = { "tag_spotspice" }, amount = 1 },
+			{ items = { "tag_syrup" }, amount = 1 },
+		},
+		excluded = 
+		{
+			{ items = { "tag_fish" } },
+			{ items = { "tag_monster" }, amount = 1, comparator = "morethan" },
+		},
+		card_def = 
+		{
+			{ items = { "meat" }, amount = 1 },
+			{ items = { "monstermeat" }, amount = 1 },
+			{ items = { "kyno_spotspice" }, amount = 1 },
+			{ items = { "kyno_syrup" }, amount = 1 },
+		},
+	},
+
+	swordfishbluedinner =
+	{
+		test = function(cooker, names, tags) return names.kyno_swordfish_blue and tags.iceweed and tags.flour
+		and (names.kyno_rice or names.kyno_rice_cooked) end,
+		priority = 35,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_FASTISH,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
+		health = 40,
+		hunger = 75,
+		sanity = 25,
+		cooktime = 2,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CHILLEDATTACK,
+		overridebuild = "kyno_foodrecipes_warly",
+		pigcoinvalue = {2, 10, 1},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"masterfood", "sharkboifood", "exquisite", "marinefood"},
+		prefabs = { "kyno_chilledbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_chilledbuff", "kyno_chilledbuff")
+		end,
+		required = 
+		{
+			{ items = { "kyno_swordfish_blue" }, amount = 1 },
+			{ items = { "tag_iceweed" }, amount = 1 },
+			{ items = { "tag_flour" }, amount = 1 },
+			{ items = { "kyno_rice" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "kyno_swordfish_blue" }, amount = 1 },
+			{ items = { "kyno_icenettles" }, amount = 1 },
+			{ items = { "kyno_flour" }, amount = 1 },
+			{ items = { "kyno_rice" }, amount = 1 },
+		},
 	},
 }
 
