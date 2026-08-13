@@ -649,7 +649,7 @@ const en = {
     rainparfait: "Drizzle Delight",
     midnightfeast: "Night Harvester",
     marshmallows: "Marshmallows",
-    kokonutcookies: "Coconut Cookies",
+    kokonutcookies: "Starveos",
     chocolate_cake: "Chocolate Cake",
     jawsbreaker: "Jawsbreaker",
   },

@@ -649,7 +649,7 @@ const pt = {
     rainparfait: "Delícia de Garoa",
     midnightfeast: "Colhedor Noturno",
     marshmallows: "Marshmallows",
-    kokonutcookies: "Biscoitos de Coco",
+    kokonutcookies: "Starveos",
     chocolate_cake: "Bolo de Chocolate",
     jawsbreaker: "Quebra-queixo",
   },

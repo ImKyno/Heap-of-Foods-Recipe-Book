@@ -649,7 +649,7 @@ const vi = {
     rainparfait: "Món Ngon Rưới Nước",
     midnightfeast: "Người Gặt Đêm",
     marshmallows: "Kẹo Dẻo Xốp",
-    kokonutcookies: "Bánh Quy Dừa",
+    kokonutcookies: "Starveos",
     chocolate_cake: "Bánh Sô-cô-la",
     jawsbreaker: "Kẹo Vỡ Hàm",
   },
