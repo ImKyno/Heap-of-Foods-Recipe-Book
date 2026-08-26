@@ -220,6 +220,12 @@ const pt = {
     tip91: "Partitio é um porco orgulhoso que vive na Floresta Decídua. Ele vende apenas produtos de alta qualidade e está ansioso para conhecer novos clientes.",
     tip92: "Após alguns acontecimentos infelizes no passado, Partitio agora se recusa a fazer negócios com os Povo-peixe novamente!",
     tip93: "Partitio descobriu que alguém destruiu sua casa e agora precisa de ajuda para reconstruí-la ao seu antigo esplendor antes de voltar a fazer negócios.",
+    tip94: "O Chantilly Cintilante permite que seus ataques causem acertos críticos com um impressionante bônus de 150% de dano!",
+    tip95: "O Pirulito Cintilante concede um efeito aleatório ao ser comido. Está se sentindo com sorte hoje?",
+    tip96: "Maçãs Cintilantes Encantadas são itens raros que podem ser obtidos ao derrotar chefes poderosos. Concedem invencibilidade por um período limitado.",
+    tip97: "O Sanduíche Vivo aumenta a eficiência de cortar árvores, fazendo com que elas deixem cair mais troncos quando derrubadas. Woodie pode aproveitar esse efeito por ainda mais tempo que os outros sobreviventes.",
+    tip98: "Mandrágoras Anciãs possuem chance de dropar Sementes de plantas e ervas daninhas dependendo da estação.",
+    tip99: "Poças de Sal artificiais produzem Cristais de Sal mais devagar que Poças de Sal naturais e só podem ser construídas em terrenos rochosos.",
   },
   
   time: {
@@ -400,6 +406,7 @@ const pt = {
     BUTTER: "Manteiga",
     SYRUP: "Xarope",
     SUGAR: "Açúcar",
+    PRECIOUS: "Precioso",
     CHOCOLATE: "Chocolate",
     BREAD: "Pão",
     CHEESE: "Queijo",
@@ -651,6 +658,8 @@ const pt = {
     marshmallows: "Marshmallows",
     kokonutcookies: "Starveos",
     chocolate_cake: "Bolo de Chocolate",
+    opalpreciouscream: "Chantilly Cintilante",
+    catfishstick: "Bagre Negro Grelhado",
     jawsbreaker: "Quebra-queixo",
   },
 
@@ -683,6 +692,7 @@ const pt = {
     brownie: "Brownie",
     bbqribs: "Costelinhas de Porco",
     swordfishbluedinner: "Bento Gélido",
+    opalpreciouslollipop: "Pirulito Cintilante",
   },
 
   recipes_keg: {
@@ -905,7 +915,7 @@ const pt = {
     gummyworms: "Garante visão noturna",
     sea_pudding: "Aumenta o ganho de pescas",
     parznip_soup: "Acelera a digestão",
-    livingsandwich: "Estimula a maldição",
+    livingsandwich: "Aumenta a eficiência de cortar árvores",
     lunarsoup: "Espanta o medo e o sono",
     meatwaltz: "Estimula a força",
     completebreakfast: "Estimula a inspiração",
@@ -924,6 +934,8 @@ const pt = {
     mandrakepie: "Acalma criaturas próximas",
     rainparfait: "Restaura a sanidade quando molhado",
     midnightfeast: "Executa criaturas à noite",
+    opalpreciouscream: "Garante ataques críticos",
+    catfishstick: "Diminui a sorte",
     jawsbreaker: "Atrai criaturas do oceano",
 
     // WARLY RECIPES
@@ -941,6 +953,7 @@ const pt = {
     mandrakebaobuns: "Aumenta a eficiência de cura",
     bbqribs: "Diminui a repulsão",
     swordfishbluedinner: "Garante ataques gélidos",
+    opalpreciouslollipop: "Garante um efeito aleatório",
 
     // WOODEN KEG RECIPES
     beer: "Aumenta a força",
@@ -1019,6 +1032,7 @@ const pt = {
     spotspice: "Tempero",
     salt: "Sal",
     sugar: "Açúcar",
+    opalpreciouspowder: "Açúcar Iridescente",
     oil: "Olé",
     truffles: "Trufas",
     truffles_cooked: "Trufas Assadas",

@@ -10885,9 +10885,9 @@
     "temperatureDuration": null,
     "debuff": true,
     "nospice": false,
-    "health": 10,
+    "health": -20,
     "hunger": 56.25,
-    "sanity": -5,
+    "sanity": -33,
     "cooktime": 1,
     "stacksize": null,
     "pigcoinvalue": [
@@ -13442,6 +13442,86 @@
     ]
   },
   {
+    "name": "brigadeiro",
+    "priority": 35,
+    "foodtype": "GOODIES",
+    "spoilage": 3840,
+    "spoilageDays": 8,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "nospice": false,
+    "health": 20,
+    "hunger": 32.5,
+    "sanity": 60,
+    "cooktime": 1,
+    "stacksize": null,
+    "pigcoinvalue": [
+      6,
+      2,
+      0
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "chocolate_black"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_twiggynuts"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "chocolate_black"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_sugar"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_twiggynuts"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
     "name": "fltsandwich",
     "priority": 30,
     "foodtype": "MEAT",
@@ -15235,6 +15315,166 @@
           "bird_egg"
         ],
         "amount": 1,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "opalpreciouscream",
+    "priority": 35,
+    "foodtype": "GOODIES",
+    "spoilage": 9600,
+    "spoilageDays": 20,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "nospice": true,
+    "health": 15,
+    "hunger": 32.5,
+    "sanity": 33,
+    "cooktime": 1.5,
+    "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      4,
+      2
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_opalpreciouspowder"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "milkywhites"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sweetener"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_opalpreciouspowder"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "milkywhites"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "honey"
+        ],
+        "amount": 2,
+        "comparator": "equal"
+      }
+    ]
+  },
+  {
+    "name": "catfishstick",
+    "priority": 30,
+    "foodtype": "MEAT",
+    "spoilage": 3840,
+    "spoilageDays": 8,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "nospice": false,
+    "health": 25,
+    "hunger": 32.5,
+    "sanity": 5,
+    "cooktime": 1,
+    "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      1,
+      0
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "oceanfish_medium_4_inv"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_veggie"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "twigs"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "oceanfish_medium_4_inv"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "carrot"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "twigs"
+        ],
+        "amount": 2,
         "comparator": "equal"
       }
     ]

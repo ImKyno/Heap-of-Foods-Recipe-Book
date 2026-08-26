@@ -38,12 +38,9 @@ interface FoodTypeProps {
 }
 
 const NEW_RECIPES = [
-  { name: "marshmallows", source: "cookpot" as const },
-  { name: "kokonutcookies", source: "cookpot" as const },
-  { name: "chocolate_cake", source: "cookpot" as const },
-  { name: "brownie", source: "warly" as const },
-  { name: "bbqribs", source: "warly" as const },
-  { name: "swordfishbluedinner", source: "warly" as const },
+  { name: "opalpreciouscream", source: "cookpot" as const },
+  { name: "catfishstick", source: "cookpot" as const },
+  { name: "opalpreciouslollipop", source: "warly" as const },
 ];
 
 export default function NewlyAddedRecipes() {

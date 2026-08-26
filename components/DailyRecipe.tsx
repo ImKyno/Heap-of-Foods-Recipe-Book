@@ -39,6 +39,7 @@ export default function DailyRecipe() {
   const pathname = usePathname();
 
   const blacklistRecipes = new Set<string>([
+    "catfishstick",
     "gorge_bread",
     "kyno_syrup",
     "littlebread",

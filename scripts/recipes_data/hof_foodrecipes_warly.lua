@@ -1073,6 +1073,50 @@ local kyno_foods_warly =
 			{ items = { "kyno_rice" }, amount = 1 },
 		},
 	},
+
+	opalpreciouslollipop =
+	{
+		test = function(cooker, names, tags) return names.kyno_opalpreciouspowder and tags.sweetener and names.nightmarefuel
+		and names.twigs end,
+		priority = 35,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_PRESERVED,
+		health = 40,
+		hunger = 32.5,
+		sanity = 15,
+		cooktime = 1,
+		bank = "opalpreciouslollipop",
+		anim = "idle",
+		bloom = true,
+		shine = true,
+		named = STRINGS.KYNO_OPALPRECIOUSLOLLIPOP_NAMES,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_RANDOM,
+		pigcoinvalue = {10, 7, 3},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"masterfood", "shimmerfood", "nospice"},
+		prefabs = { "kyno_randombuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_randombuff", "kyno_randombuff")
+		end,
+		required = 
+		{
+			{ items = { "kyno_opalpreciouspowder" }, amount = 1 },
+			{ items = { "tag_sweetener" }, amount = 1 },
+			{ items = { "nightmarefuel" }, amount = 1 },
+			{ items = { "twigs" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "kyno_opalpreciouspowder" }, amount = 1 },
+			{ items = { "honey" }, amount = 1 },
+			{ items = { "nightmarefuel" }, amount = 1 },
+			{ items = { "twigs" }, amount = 1 },
+		},
+	},
 }
 
 for k, recipe in pairs(kyno_foods_warly) do

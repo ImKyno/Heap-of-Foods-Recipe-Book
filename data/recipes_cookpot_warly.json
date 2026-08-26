@@ -2128,5 +2128,87 @@
         "comparator": "equal"
       }
     ]
+  },
+  {
+    "name": "opalpreciouslollipop",
+    "priority": 35,
+    "foodtype": "GOODIES",
+    "spoilage": 9600,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": true,
+    "nospice": true,
+    "health": 40,
+    "hunger": 32.5,
+    "sanity": 15,
+    "cooktime": 1,
+    "stacksize": null,
+    "pigcoinvalue": [
+      10,
+      7,
+      3
+    ],
+    "characterfood": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_opalpreciouspowder"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_sweetener"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "nightmarefuel"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "twigs"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_opalpreciouspowder"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "honey"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "nightmarefuel"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "twigs"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ]
   }
 ]

@@ -4635,17 +4635,29 @@ local kyno_foods =
 		foodtype = FOODTYPE.MEAT,
 		secondaryfoodtype = FOODTYPE.MONSTER,
 		perishtime = TUNING.PERISH_SUPERSLOW,
-		health = 10,
+		health = -20,
 		hunger = 56.25,
-		sanity = -5,
+		sanity = -33,
 		cooktime = 1,
-		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CURSE,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_WOODCUTTER,
 		potlevel = "low",
 		pickupsound = "wood",
+		were_mode = "beaver", -- Always transform into the Werebeaver.
 		overridebuild = "kyno_foodrecipes_cookpot1",
 		pigcoinvalue = {6, 0, 0},
 		floater = TUNING.HOF_FLOATER,
 		tags = {"wereitem"},
+		oneatenfn = function(inst, eater)
+			eater:DoTaskInTime(1, function()
+				eater:AddDebuff("kyno_woodcutterbuff", "kyno_woodcutterbuff")
+			end)
+
+			if eater ~= nil and eater.SoundEmitter ~= nil then
+				eater.SoundEmitter:PlaySound("dontstarve/creatures/leif/livinglog_burn")
+			else
+				inst.SoundEmitter:PlaySound("dontstarve/creatures/leif/livinglog_burn")
+			end
+		end,
 		required = 
 		{
 			{ items = { "livinglog" }, amount = 2, comparator = "morethan" },
@@ -5729,6 +5741,39 @@ local kyno_foods =
 			{ items = { "honey" }, amount = 1 },
 		},
 	},
+
+	brigadeiro =
+	{
+		test = function(cooker, names, tags) return names.chocolate_black and tags.sugar
+		and (names.kyno_twiggynuts and names.kyno_twiggynuts >= 2) end,
+		priority = 35,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_FASTISH,
+		health = 20,
+		hunger = 32.5,
+		sanity = 60,
+		cooktime = 1,
+		potlevel = "low",
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {6, 2, 0},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "chocolate_black" }, amount = 1 },
+			{ items = { "tag_sugar" }, amount = 1 },
+			{ items = { "kyno_twiggynuts" }, amount = 2 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "chocolate_black" }, amount = 1 },
+			{ items = { "kyno_sugar" }, amount = 1 },
+			{ items = { "kyno_twiggynuts" }, amount = 2 },
+		},
+	},
 	
 	fltsandwich =
 	{
@@ -6503,6 +6548,86 @@ local kyno_foods =
 			{ items = { "goatmilk" }, amount = 1 },
 			{ items = { "kyno_flour" }, amount = 1 },
 			{ items = { "bird_egg" }, amount = 1 },
+		},
+	},
+
+	opalpreciouscream =
+	{
+		test = function(cooker, names, tags) return names.kyno_opalpreciouspowder and names.milkywhites
+		and (tags.sweetener and tags.sweetener >= 2) end,
+		priority = 35,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_PRESERVED,
+		health = 15,
+		hunger = 32.5,
+		sanity = 33,
+		cooktime = 1.5,
+		bank = "opalpreciouscream",
+		anim = "idle",
+		bloom = true,
+		shine = true,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_CRITDAMAGE,
+		pigcoinvalue = {8, 4, 2},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"critfood", "shimmerfood", "nospice"},
+		prefabs = { "kyno_critdamagebuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_critdamagebuff", "kyno_critdamagebuff")
+		end,
+		required = 
+		{
+			{ items = { "kyno_opalpreciouspowder" }, amount = 1 },
+			{ items = { "milkywhites" }, amount = 1 },
+			{ items = { "tag_sweetener" }, amount = 2 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "kyno_opalpreciouspowder" }, amount = 1 },
+			{ items = { "milkywhites" }, amount = 1 },
+			{ items = { "honey" }, amount = 2 },
+		},
+	},
+
+	catfishstick =
+	{
+		test = function(cooker, names, tags) return names.oceanfish_medium_4_inv and tags.veggie and names.twigs end,
+		priority = 30,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_FASTISH,
+		health = 25,
+		hunger = 32.5,
+		sanity = 5,
+		cooktime = 1,
+		potlevel = "low",
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_BADLUCK,
+		overridebuild = "kyno_foodrecipes_cookpot1",
+		pigcoinvalue = {5, 1, 0},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"marinefood"},
+		luckitem = { luck = -TUNING.KYNO_LUCK_SUPERTINY },
+		prefabs = { "kyno_badluckbuff" },
+		oneatenfn = function(inst, eater)
+			eater:AddDebuff("kyno_badluckbuff", "kyno_badluckbuff")
+		end,
+		required = 
+		{
+			{ items = { "oceanfish_medium_4_inv" }, amount = 1 },
+			{ items = { "tag_veggie" }, amount = 1 },
+			{ items = { "twigs" }, amount = 1 },
+		},
+		excluded = 
+		{
+
+		},
+		card_def = 
+		{
+			{ items = { "oceanfish_medium_4_inv" }, amount = 1 },
+			{ items = { "carrot" }, amount = 1 },
+			{ items = { "twigs" }, amount = 2 },
 		},
 	},
 

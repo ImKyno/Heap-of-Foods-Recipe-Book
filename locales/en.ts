@@ -220,6 +220,12 @@ const en = {
     tip91: "Partitio is a proud pig living in the Deciduous Forest. He only sells high quality stuff and is looking forward to meet new costumers.",
     tip92: "After some unfortunate past events, Partitio now refuses to do any business with the Mermfolk ever again!",
     tip93: "Partitio found out someone had broken his house and now he needs help to rebuild it back to its former glory in order to start doing business again.",
+    tip94: "The Shimmer Whipped Cream allows your attacks to critical strike for a whopping total of 150% bonus damage!",
+    tip95: "The Shimmer Lollipop grants a random Side Effect when eaten. Are you feeling lucky today?",
+    tip96: "Enchanted Shimmer Apples are rare items that can be obtained by defeating powerful bosses. They grant invincibility for a limited duration.",
+    tip97: "The Living Sandwich increases the chopping efficiency, making trees drop more logs when chopped down. Woodie gets to enjoy this for even longer than other survivors.",
+    tip98: "Elder Mandrakes have a chance to drop Crop and Weed Seeds depending on the season.",
+    tip99: "Artificial Salt Ponds produce Salt Crystals slower than natural Salt Ponds and can only be constructed on rocky grounds.",
   },
 
   time: {
@@ -400,6 +406,7 @@ const en = {
     BUTTER: "Butter",
     SYRUP: "Syrup",
     SUGAR: "Sugar",
+    PRECIOUS: "Precious",
     CHOCOLATE: "Chocolate",
     BREAD: "Bread",
     CHEESE: "Cheese",
@@ -651,6 +658,8 @@ const en = {
     marshmallows: "Marshmallows",
     kokonutcookies: "Starveos",
     chocolate_cake: "Chocolate Cake",
+    opalpreciouscream: "Shimmer Whipped Cream",
+    catfishstick: "Grilled Black Catfish",
     jawsbreaker: "Jawsbreaker",
   },
 
@@ -683,6 +692,7 @@ const en = {
     brownie: "Brownie",
     bbqribs: "Pork Ribs",
     swordfishbluedinner: "Chilled Bento",
+    opalpreciouslollipop: "Shimmer Lollipop",
   },
 
   recipes_keg: {
@@ -905,7 +915,7 @@ const en = {
     gummyworms: "Grants night vision",
     sea_pudding: "Increases fishing yields",
     parznip_soup: "Speeds digestion",
-    livingsandwich: "Stimulates the curse",
+    livingsandwich: "Increases chopping efficiency",
     lunarsoup: "Wards off fear and sleep",
     meatwaltz: "Slightly boosts inspiration",
     completebreakfast: "Slightly boosts mightiness",
@@ -924,6 +934,8 @@ const en = {
     mandrakepie: "Soothes nearby creatures",
     rainparfait: "Restores sanity when wet",
     midnightfeast: "Executes creatures at night",
+    opalpreciouscream: "Grants critical attacks",
+    catfishstick: "Decreases luck",
     jawsbreaker: "Allures ocean creatures",
 
     // WARLY RECIPES
@@ -941,6 +953,7 @@ const en = {
     mandrakebaobuns: "Increases healing efficiency",
     bbqribs: "Decreases knockback",
     swordfishbluedinner: "Grants chilled attacks",
+    opalpreciouslollipop: "Grants a random side effect",
 
     // WOODEN KEG RECIPES
     beer: "Increases strength",
@@ -1019,6 +1032,7 @@ const en = {
     spotspice: "Spot Spice",
     salt: "Salt",
     sugar: "Sugar",
+    opalpreciouspowder: "Iridescent Powdered Sugar",
     oil: "Oil",
     truffles: "Truffles",
     truffles_cooked: "Roasted Truffles",

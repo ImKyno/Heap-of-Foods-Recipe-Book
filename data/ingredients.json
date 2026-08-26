@@ -286,6 +286,19 @@
         "debug": "kyno_sugar"
     },
     {
+        "name": "opalpreciouspowder",
+        "cooked": false,
+        "dried": false,
+        "foodtype": "GENERIC",
+        "cooktype": ["PRECIOUS", "SUGAR"],
+        "cookvalue": [1.0, 2.0],
+        "spoilage": [null],
+        "health": [0],
+        "hunger": [0],
+        "sanity": [0],
+        "debug": "kyno_opalpreciouspowder"
+    },
+    {
         "name": "oil",
         "cooked": false,
         "dried": false,

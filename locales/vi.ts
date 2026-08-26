@@ -220,6 +220,12 @@ const vi = {
     tip91: "Partitio là một chú heo đầy tự hào sống trong Khu Rừng Rụng Lá. Anh ta chỉ bán những mặt hàng chất lượng cao và luôn mong được gặp gỡ khách hàng mới.",
     tip92: "Sau một số sự kiện không may trong quá khứ, Partitio giờ đây từ chối làm ăn với Người Cá thêm lần nào nữa!",
     tip93: "Partitio phát hiện có kẻ đã phá hỏng ngôi nhà của mình. Giờ anh ta cần giúp đỡ để khôi phục nó về thời kỳ huy hoàng trước khi có thể tiếp tục kinh doanh.",
+    tip94: "Kem Bông Óng Ánh cho phép các đòn tấn công của bạn gây sát thương chí mạng với mức cộng thêm lên tới 150%!",
+    tip95: "Kẹo mút lấp lánh khi ăn sẽ gây ra một tác dụng phụ ngẫu nhiên. Hôm nay bạn có cảm thấy may mắn không?",
+    tip96: "Táo Lấp Lánh Phù Phép là những vật phẩm quý hiếm có thể nhận được khi đánh bại các boss hùng mạnh. Chúng ban cho khả năng bất khả xâm phạm trong một khoảng thời gian giới hạn.",
+    tip97: "Sandwich Sống giúp tăng hiệu suất chặt cây, khiến cây rơi ra nhiều khúc gỗ hơn khi bị đốn hạ. Woodie có thể tận hưởng lợi ích này lâu hơn so với các nhân vật sống sót khác.",
+    tip98: "Mandrake Cổ Thụ trưởng thành có cơ hội rơi ra Hạt giống Cây trồng và Hạt giống Cỏ dại tùy theo mùa.",
+    tip99: "Các hồ muối nhân tạo sản xuất tinh thể muối chậm hơn so với hồ muối tự nhiên và chỉ có thể được xây dựng trên nền đất đá.",
   },
 
   time: {
@@ -400,6 +406,7 @@ const vi = {
     BUTTER: "Bơ",
     SYRUP: "Xi-rô",
     SUGAR: "Đường",
+    PRECIOUS: "Quý Giá",
     CHOCOLATE: "Sô Cô La",
     BREAD: "Bánh Mì",
     CHEESE: "Phô Mai",
@@ -651,6 +658,8 @@ const vi = {
     marshmallows: "Kẹo Dẻo Xốp",
     kokonutcookies: "Starveos",
     chocolate_cake: "Bánh Sô-cô-la",
+    opalpreciouscream: "Kem Bông Óng Ánh",
+    catfishstick: "Cá Trê Đen Nướng",
     jawsbreaker: "Kẹo Vỡ Hàm",
   },
 
@@ -683,6 +692,7 @@ const vi = {
     brownie: "Bánh Brownie",
     bbqribs: "Sườn Heo",
     swordfishbluedinner: "Bento ướp Lạnh",
+    opalpreciouslollipop: "Kẹo Mút Nhũ",
   },
 
   recipes_keg: {
@@ -905,7 +915,7 @@ const vi = {
     gummyworms: "Cho khả năng nhìn đêm",
     sea_pudding: "Tăng sản lượng câu cá",
     parznip_soup: "Tăng tốc tiêu hóa",
-    livingsandwich: "Kích thích lời nguyền",
+    livingsandwich: "Tăng hiệu suất chặt gỗ",
     lunarsoup: "Xua tan nỗi sợ và cơn buồn ngủ",
     meatwaltz: "Tăng nhẹ cảm hứng",
     completebreakfast: "Tăng nhẹ sức mạnh cơ bắp",
@@ -924,6 +934,8 @@ const vi = {
     mandrakepie: "Trấn an các sinh vật gần đó",
     rainparfait: "Khôi phục sự tỉnh táo khi bị ướt",
     midnightfeast: "Giết các sinh vật vào ban đêm",
+    opalpreciouscream: "Mang lại khả năng gây sát thương chí mạng",
+    catfishstick: "Giảm độ may mắn",
     jawsbreaker: "Dụ sinh vật đại dương",
 
     // WARLY RECIPES
@@ -941,6 +953,7 @@ const vi = {
     mandrakebaobuns: "Tăng hiệu quả hồi máu",
     bbqribs: "Giảm độ đẩy lùi",
     swordfishbluedinner: "Cung cấp các đòn tấn công băng",
+    opalpreciouslollipop: "Mang lại một hiệu ứng phụ ngẫu nhiên",
 
     // WOODEN KEG RECIPES
     beer: "Tăng sức mạnh",
@@ -1019,6 +1032,7 @@ const vi = {
     spotspice: "Gia Vị Đốm",
     salt: "Muối",
     sugar: "Đường",
+    opalpreciouspowder: "Đường Bột Óng Ánh",
     oil: "Dầu Ăn",
     truffles: "Nấm Truffle",
     truffles_cooked: "Nấm Truffle Nướng",
