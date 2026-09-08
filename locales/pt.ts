@@ -387,7 +387,8 @@ const pt = {
     PREPAREDPOOP: "Horrível",
     PREPAREDSOUL: "Alma",
     ALCOHOLIC: "Guloseimas Alcoólicas",
-    ALCOHOLICMONSTER: "Guloseimas Alcoólicas de Monstro"
+    ALCOHOLICMONSTER: "Guloseimas Alcoólicas de Monstro",
+    LUNAR_SHARDS: "Estilhaços Lunares"
   },
 
   cooktypes : {
@@ -709,6 +710,7 @@ const pt = {
     nukacola_quantum: "Nuka-Cola Quantum",
     nukacola_dark: "Nuka-Cola Dark",
     nukacola_twist: "Nuka-Cola Twist",
+    nukacola_bramble: "Nuka-Cola Bramble",
     nukashine: "Nukashine",
     ricesake: "Saquê",
     coffee_mocha: "Mocha",
@@ -852,6 +854,7 @@ const pt = {
     agedroe_oceanfish_medium_7: "Ovas Maturadas de Koi Dourado",
     agedroe_oceanfish_medium_8: "Ovas Maturadas de Brema Gélido",
     agedroe_oceanfish_medium_9: "Ovas Maturadas de Peixe-doce",
+    agedroe_oceanfish_glass_carp: "Ovas Maturadas de Carpa de Vidro",
     agedroe_oceanfish_midnight_carp: "Ovas Maturadas de Carpa da Meia Noite",
     agedroe_tropicalfish: "Ovas Maturadas de Peixe Tropical",
     agedroe_pierrotfish: "Ovas Maturadas de Peixe Pierrot",
@@ -966,6 +969,7 @@ const pt = {
     nukacola_quantum: "Emite um brilho saudável",
     nukacola_dark: "Aumenta vida máxima",
     nukacola_twist: "Aumenta status máximo",
+    nukacola_bramble: "Garante defensa espinhosa",
     nukashine: "Garante visão noturna e pode causar apagões",
     ricesake: "Aumenta a defesa",
     coffee_mocha: "Acelera o corpo e diminui perda de fome",
@@ -1273,6 +1277,7 @@ const pt = {
     oceanfish_medium_8_inv: "Brema Gélido",
     oceanfish_medium_9_inv: "Peixe-doce",
     oceanfish_sturgeon_inv: "Esturjão",
+    oceanfish_glass_carp_inv: "Carpa de Vidro",
     oceanfish_midnight_carp_inv: "Carpa da Meia Noite",
     tropicalfish: "Peixe Tropical",
     tropicalfish_cooked: "Peixe Tropical Assado",
@@ -1322,6 +1327,7 @@ const pt = {
     roe_oceanfish_medium_8: "Ovas de Brema Gélido",
     roe_oceanfish_medium_9: "Ovas de Peixe-doce",
     roe_oceanfish_sturgeon: "Ovas de Esturjão",
+    roe_oceanfish_glass_carp: "Ovas de Carpa de Vidro",
     roe_oceanfish_midnight_carp: "Ovas de Carpa da Meia Noite",
     roe_tropicalfish: "Ovas de Peixe Tropical",
     roe_pierrotfish: "Ovas de Peixe Pierrot",

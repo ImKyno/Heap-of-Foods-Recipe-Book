@@ -930,6 +930,86 @@
     "invalid": null
   },
   {
+    "name": "nukacola_bramble",
+    "priority": 30,
+    "foodtype": "GOODIES",
+    "spoilage": 19200,
+    "spoilageDays": 40,
+    "temperature": -40,
+    "temperatureDuration": 240,
+    "debuff": true,
+    "health": 40,
+    "hunger": 32.5,
+    "sanity": -15,
+    "cooktime": 72,
+    "stacksize": null,
+    "pigcoinvalue": [
+      8,
+      4,
+      2
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "healthnice": null,
+    "healthnaughty": null,
+    "sanitynice": null,
+    "sanitynaughty": null,
+    "requires": [
+      {
+        "items": [
+          "nukacola"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "cactus_meatdurian"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "nukacola"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "cactus_meat"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "ice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "invalid": null
+  },
+  {
     "name": "nukashine",
     "priority": 30,
     "foodtype": "ALCOHOLIC",

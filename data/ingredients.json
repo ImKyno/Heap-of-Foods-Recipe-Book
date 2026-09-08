@@ -2171,6 +2171,19 @@
         "debug": "oceanfish_sturgeon_inv"
     },
     {
+        "name": "oceanfish_glass_carp_inv",
+        "cooked": false,
+        "dried": false,
+        "foodtype": "LUNAR_SHARDS",
+        "cooktype": ["MEAT", "FISH"],
+        "cookvalue": [1, 1],
+        "spoilage": [480],
+        "health": [-25],
+        "hunger": [25],
+        "sanity": [25],
+        "debug": "oceanfish_glass_carp_inv"
+    },
+    {
         "name": "oceanfish_midnight_carp_inv",
         "cooked": false,
         "dried": false,
@@ -2650,6 +2663,19 @@
         "hunger": [4.6875],
         "sanity": [0],
         "debug": "kyno_roe_oceanfish_sturgeon"
+    },
+    {
+        "name": "roe_oceanfish_glass_carp",
+        "cooked": false,
+        "dried": false,
+        "foodtype": "MEAT",
+        "cooktype": ["MEAT", "FISH", "ROE"],
+        "cookvalue": [0.25, 0.25, 1],
+        "spoilage": [2880],
+        "health": [1],
+        "hunger": [4.6875],
+        "sanity": [0],
+        "debug": "kyno_roe_oceanfish_glass_carp"
     },
     {
         "name": "roe_oceanfish_midnight_carp",

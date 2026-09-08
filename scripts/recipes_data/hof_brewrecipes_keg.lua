@@ -514,6 +514,55 @@ local kyno_foods_keg =
 			end
 		end,
 	},
+
+	nukacola_bramble =
+	{
+		test = function(cooker, names, tags) return names.nukacola and (names.cactus_meat or names.durian) and tags.frozen end,
+		priority = 30,
+		foodtype = FOODTYPE.GOODIES,
+		perishtime = TUNING.PERISH_SUPERSLOW,
+		temperature = TUNING.COLD_FOOD_BONUS_TEMP,
+		temperatureduration = TUNING.BUFF_FOOD_TEMP_DURATION,
+		health = 40,
+		hunger = 32.5,
+		sanity = -15,
+		cooktime = 72,
+		oneat_desc = STRINGS.UI.COOKBOOK.FOOD_EFFECTS_THORNS,
+		nameoverride = "NUKACOLA",
+		overridebuild = "kyno_foodrecipes_keg1",
+		pigcoinvalue = {8, 4, 2},
+		floater = TUNING.HOF_FLOATER,
+		tags = {"fooddrink"},
+		required = 
+		{
+			{ items = { "nukacola" }, amount = 1 },
+			{ items = { "cactus_meat" "durian" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "nukacola" }, amount = 1 },
+			{ items = { "cactus_meat" }, amount = 1 },
+			{ items = { "ice" }, amount = 1 },
+		},
+		prefabs = { "kyno_thornsbuff" },
+		oneatenfn = function(inst, eater)
+			eater:PushEvent("bottlecap")
+			eater:AddDebuff("kyno_thornsbuff", "kyno_thornsbuff")
+
+			if TryLuckRoll(eater, TUNING.KYNO_NUKACOLA_BOTTLECAP_CHANCE, HofLuckFormulas.NukaColaBottleCap) then
+				local cap = SpawnPrefab("kyno_bottlecap")
+				if eater.components.inventory ~= nil and eater:HasTag("player")
+				and not eater.components.health:IsDead() and not eater:HasTag("playerghost") then
+					eater.components.inventory:GiveItem(cap)
+				end
+			end
+		end,
+	},
 	
 	nukashine =
 	{

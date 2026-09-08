@@ -38,6 +38,8 @@ interface FoodTypeProps {
 }
 
 const NEW_RECIPES = [
+  { name: "nukacola_bramble", source: "keg" as const },
+  { name: "agedroe_oceanfish_glass_carp", source: "jar" as const },
   { name: "opalpreciouscream", source: "cookpot" as const },
   { name: "catfishstick", source: "cookpot" as const },
   { name: "opalpreciouslollipop", source: "warly" as const },

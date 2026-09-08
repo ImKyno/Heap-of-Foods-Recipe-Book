@@ -5537,6 +5537,81 @@
     "invalid": null
   },
   {
+    "name": "agedroe_oceanfish_glass_carp",
+    "priority": 30,
+    "foodtype": "MEAT",
+    "spoilage": 9600,
+    "temperature": null,
+    "temperatureDuration": null,
+    "debuff": false,
+    "health": -25,
+    "hunger": 32.5,
+    "sanity": 50,
+    "cooktime": 48,
+    "stacksize": null,
+    "pigcoinvalue": [
+      5,
+      3,
+      0
+    ],
+    "characterfood": null,
+    "mermfood": null,
+    "mermhealth": null,
+    "mermhunger": null,
+    "mermsanity": null,
+    "monsterfood": null,
+    "monsterhealth": null,
+    "monstersanity": null,
+    "requires": [
+      {
+        "items": [
+          "kyno_roe_oceanfish_glass_carp"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_salt"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "excluded": [],
+    "card_def": [
+      {
+        "items": [
+          "kyno_roe_oceanfish_glass_carp"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_spotspice"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "kyno_salt"
+        ],
+        "amount": 1,
+        "comparator": "equal"
+      }
+    ],
+    "invalid": null
+  },
+  {
     "name": "agedroe_oceanfish_midnight_carp",
     "priority": 30,
     "foodtype": "MEAT",
@@ -5544,7 +5619,7 @@
     "temperature": null,
     "temperatureDuration": null,
     "debuff": true,
-    "health": 33,
+    "health": 40,
     "hunger": 25,
     "sanity": 10,
     "cooktime": 48,

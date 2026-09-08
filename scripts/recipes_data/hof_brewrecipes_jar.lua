@@ -2760,13 +2760,45 @@ local kyno_foods_jar =
 		},
 	},
 
+	agedroe_oceanfish_glass_carp =
+	{
+		test = function(brewer, names, tags) return names.kyno_roe_oceanfish_glass_carp and names.kyno_salt and names.kyno_spotspice end,
+		priority = 30,
+		foodtype = FOODTYPE.MEAT,
+		perishtime = TUNING.PERISH_PRESERVED,
+		health = -25,
+		hunger = 32.5,
+		sanity = 50,
+		cooktime = 48,
+		nameoverride = "AGEDROE",
+		overridebuild = "kyno_foodrecipes_jar1",
+		pigcoinvalue = {5, 3, 0},
+		floater = TUNING.HOF_FLOATER,
+		required = 
+		{
+			{ items = { "kyno_roe_oceanfish_glass_carp" }, amount = 1 },
+			{ items = { "tag_spotspice" }, amount = 1 },
+			{ items = { "kyno_salt" }, amount = 1 },
+		},
+		excluded = 
+		{
+    		
+		},
+		card_def = 
+		{
+			{ items = { "kyno_roe_oceanfish_glass_carp" }, amount = 1 },
+			{ items = { "kyno_spotspice" }, amount = 1 },
+			{ items = { "kyno_salt" }, amount = 1 },
+		},
+	},
+
 	agedroe_oceanfish_midnight_carp =
 	{
 		test = function(brewer, names, tags) return names.kyno_roe_oceanfish_midnight_carp and names.kyno_salt and names.kyno_spotspice end,
 		priority = 30,
 		foodtype = FOODTYPE.MEAT,
 		perishtime = TUNING.PERISH_PRESERVED,
-		health = 33,
+		health = 40,
 		hunger = 25,
 		sanity = 10,
 		cooktime = 48,
