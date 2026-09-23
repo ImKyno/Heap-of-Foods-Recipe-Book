@@ -970,7 +970,8 @@
       },
       {
         "items": [
-          "cactus_meatdurian"
+          "cactus_meat",
+          "durian"
         ],
         "amount": 1,
         "comparator": "equal"

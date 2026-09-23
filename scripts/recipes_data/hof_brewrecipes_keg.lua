@@ -536,7 +536,7 @@ local kyno_foods_keg =
 		required = 
 		{
 			{ items = { "nukacola" }, amount = 1 },
-			{ items = { "cactus_meat" "durian" }, amount = 1 },
+			{ items = { "cactus_meat", "durian" }, amount = 1 },
 			{ items = { "ice" }, amount = 1 },
 		},
 		excluded = 
