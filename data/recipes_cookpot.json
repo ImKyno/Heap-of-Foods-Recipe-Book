@@ -13997,9 +13997,23 @@
         ],
         "amount": 1,
         "comparator": "equal"
+      },
+      {
+        "items": [
+          "tag_butter"
+        ],
+        "amount": 1,
+        "comparator": "equal"
       }
     ],
-    "excluded": [],
+    "excluded": [
+      {
+        "items": [
+          "tag_inedible"
+        ],
+        "comparator": "equal"
+      }
+    ],
     "card_def": [
       {
         "items": [
@@ -14017,9 +14031,16 @@
       },
       {
         "items": [
-          "twigs"
+          "butter"
         ],
-        "amount": 2,
+        "amount": 1,
+        "comparator": "equal"
+      },
+      {
+        "items": [
+          "berries"
+        ],
+        "amount": 1,
         "comparator": "equal"
       }
     ]

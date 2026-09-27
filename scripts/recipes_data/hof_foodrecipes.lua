@@ -5991,7 +5991,8 @@ local kyno_foods =
 	
 	monkeyislandmeal =
 	{
-		test = function(cooker, names, tags) return names.wobster_monkeyisland_land and tags.banana end,
+		test = function(cooker, names, tags) return names.wobster_monkeyisland_land and tags.banana
+		and tags.butter and not tags.inedible end,
 		priority = 35,
 		foodtype = FOODTYPE.GOODIES,
 		perishtime = TUNING.PERISH_MED,
@@ -6008,16 +6009,18 @@ local kyno_foods =
 		{
 			{ items = { "wobster_monkeyisland_land" }, amount = 1 },
 			{ items = { "tag_banana" }, amount = 1 },
+			{ items = { "tag_butter" }, amount = 1 },
 		},
 		excluded = 
 		{
-    		
+    		{ items = { "tag_inedible" } },
 		},
 		card_def = 
 		{
 			{ items = { "wobster_monkeyisland_land" }, amount = 1 },
 			{ items = { "kyno_banana" }, amount = 1 },
-			{ items = { "twigs" }, amount = 2 },
+			{ items = { "butter" }, amount = 1 },
+			{ items = { "berries" }, amount = 1 },
 		},
 		oneatenfn = function(inst, eater)
 			if eater.components.inventory ~= nil and eater.components.cursable ~= nil
