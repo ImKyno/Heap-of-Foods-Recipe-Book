@@ -4433,7 +4433,7 @@
     "debuff": false,
     "nospice": false,
     "health": 60,
-    "hunger": 50,
+    "hunger": 56.25,
     "sanity": 40,
     "cooktime": 0.5,
     "stacksize": null,

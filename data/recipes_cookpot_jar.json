@@ -3196,7 +3196,7 @@
     "temperatureDuration": null,
     "debuff": false,
     "health": 20,
-    "hunger": 50,
+    "hunger": 56.25,
     "sanity": -10,
     "cooktime": 72,
     "stacksize": null,
